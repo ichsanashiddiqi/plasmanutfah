@@ -14,7 +14,7 @@ class Auth extends CI_Controller
 	{
 
 		if ($this->session->userdata('email')) {
-			redirect('templates/topbar');
+			redirect('templates');
 		}
 
 		$this->form_validation->set_rules('email', 'Email', 'trim|required|valid_email');
@@ -69,11 +69,14 @@ class Auth extends CI_Controller
 
 	public function landing()
 	{
-		$this->load->view('templates/header.php');
-		$this->load->view('templates/sidebar.php');
-		$this->load->view('templates/topbar.php');
-		$this->load->view('landing/landing.php');
-		$this->load->view('templates/footer.php');
+
+		$data['user'] = $this->db->get_where('user', ['email' => $this->session->userdata('email')])->row_array();
+
+		$this->load->view('templates/header.php', $data);
+		$this->load->view('templates/sidebar.php', $data);
+		$this->load->view('templates/topbar.php', $data);
+		$this->load->view('landing/landing.php', $data);
+		$this->load->view('templates/footer.php', $data);
 	}
 
 	public function registration()

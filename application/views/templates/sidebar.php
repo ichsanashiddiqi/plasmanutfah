@@ -51,7 +51,7 @@
 
             <!-- Nav - add user -->
             <li class="nav-item active">
-                <a class="nav-link" href="registration">
+                <a class="nav-link" href="<?= base_url('auth/registration'); ?>">
                     <i class="fas fa-user"></i>
                     <span>Tambah Pengguna</span></a>
             </li>
@@ -72,7 +72,7 @@
                 </a>
                 <div id="collapsePages" class="collapse" aria-labelledby="headingPages" data-parent="#accordionSidebar">
                     <div class="bg-white py-2 collapse-inner rounded">
-                        <a class="collapse-item" href="blank.html">Abaka</a>
+                        <a class="collapse-item" href="<?= base_url('tanaman/abaka'); ?>">Abaka</a>
                         <a class="collapse-item" href="blank.html">Bunga Matahari</a>
                         <a class="collapse-item" href="blank.html">Jarak Pagar</a>
                         <a class="collapse-item" href="blank.html">Kapas</a>
