@@ -75,7 +75,7 @@
                         <a class="collapse-item" href="<?= base_url('tanaman/abaka'); ?>">Abaka</a>
                         <a class="collapse-item" href="blank.html">Bunga Matahari</a>
                         <a class="collapse-item" href="blank.html">Jarak Pagar</a>
-                        <a class="collapse-item" href="blank.html">Kapas</a>
+                        <a class="collapse-item" href="<?= base_url('tanaman/kapas'); ?>">Kapas</a>
                         <a class="collapse-item" href="blank.html">Kapuk</a>
                         <a class="collapse-item" href="blank.html">Kemirir</a>
                         <a class="collapse-item" href="blank.html">Kenaf</a>
