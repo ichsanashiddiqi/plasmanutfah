@@ -73,16 +73,16 @@
                 <div id="collapsePages" class="collapse" aria-labelledby="headingPages" data-parent="#accordionSidebar">
                     <div class="bg-white py-2 collapse-inner rounded">
                         <a class="collapse-item" href="<?= base_url('tanaman/abaka'); ?>">Abaka</a>
-                        <a class="collapse-item" href="blank.html">Bunga Matahari</a>
-                        <a class="collapse-item" href="blank.html">Jarak Pagar</a>
+                        <a class="collapse-item" href="<?= base_url('tanaman/bunga_matahari'); ?>">Bunga Matahari</a>
+                        <a class="collapse-item" href="<?= base_url('tanaman/jarak_pagar'); ?>">Jarak Pagar</a>
                         <a class="collapse-item" href="<?= base_url('tanaman/kapas'); ?>">Kapas</a>
-                        <a class="collapse-item" href="blank.html">Kapuk</a>
-                        <a class="collapse-item" href="blank.html">Kemirir</a>
-                        <a class="collapse-item" href="blank.html">Kenaf</a>
-                        <a class="collapse-item" href="blank.html">Rami</a>
-                        <a class="collapse-item" href="blank.html">Tebu</a>
-                        <a class="collapse-item" href="blank.html">Tembakau</a>
-                        <a class="collapse-item" href="blank.html">Wijen</a>
+                        <a class="collapse-item" href="<?= base_url('tanaman/kapuk'); ?>">Kapuk</a>
+                        <a class="collapse-item" href="<?= base_url('tanaman/kemirir'); ?>">Kemirir</a>
+                        <a class="collapse-item" href="<?= base_url('tanaman/kenaf'); ?>">Kenaf</a>
+                        <a class="collapse-item" href="<?= base_url('tanaman/rami'); ?>">Rami</a>
+                        <a class="collapse-item" href="<?= base_url('tanaman/tebu'); ?>">Tebu</a>
+                        <a class="collapse-item" href="<?= base_url('tanaman/tembakau'); ?>">Tembakau</a>
+                        <a class="collapse-item" href="<?= base_url('tanaman/wijen'); ?>">Wijen</a>
                     </div>
                 </div>
             </li>
