@@ -59,9 +59,6 @@
                                 <th>Ketahanan kekeringan</th>
                                 <th>Kekuatan serat</th>
                                 <th>Kehalusan serat</th>
-                                <th>p1</th>
-                                <th>p2</th>
-                                <th>p3</th>
 
                             </tr>
                         </thead>
@@ -113,9 +110,6 @@
                                     <td><?php echo $abk->kar_36 ?></td>
                                     <td><?php echo $abk->kar_37 ?></td>
                                     <td><?php echo $abk->kar_38 ?></td>
-                                    <td><?php echo $abk->p1 ?></td>
-                                    <td><?php echo $abk->p2 ?></td>
-                                    <td><?php echo $abk->p3 ?></td>
 
                                 </tr>
                             <?php } ?>

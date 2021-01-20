@@ -69,54 +69,53 @@
                             <i class="fa fa-file-excel-o"></i> Export to Excel</a> -->
                         <tbody>
                             <?php $no = 1;
-                            foreach ($dat_abaka as $abk) {
+                            foreach ($dat_kemiri as $kemiri) {
                             ?>
                                 <tr>
                                     <td><?php echo $no++ ?></td>
-                                    <td><?php echo $abk->no_aksesi ?></td>
-                                    <td><?php echo $abk->nama_aksesi ?></td>
-                                    <td><?php echo $abk->kar_01 ?></td>
-                                    <td><?php echo $abk->kar_02 ?></td>
-                                    <td><?php echo $abk->kar_03 ?></td>
-                                    <td><?php echo $abk->kar_04 ?></td>
-                                    <td><?php echo $abk->kar_05 ?></td>
-                                    <td><?php echo $abk->kar_06 ?></td>
-                                    <td><?php echo $abk->kar_07 ?></td>
-                                    <td><?php echo $abk->kar_08 ?></td>
-                                    <td><?php echo $abk->kar_09 ?></td>
-                                    <td><?php echo $abk->kar_10 ?></td>
-                                    <td><?php echo $abk->kar_11 ?></td>
-                                    <td><?php echo $abk->kar_12 ?></td>
-                                    <td><?php echo $abk->kar_13 ?></td>
-                                    <td><?php echo $abk->kar_14 ?></td>
-                                    <td><?php echo $abk->kar_15 ?></td>
-                                    <td><?php echo $abk->kar_16 ?></td>
-                                    <td><?php echo $abk->kar_17 ?></td>
-                                    <td><?php echo $abk->kar_18 ?></td>
-                                    <td><?php echo $abk->kar_19 ?></td>
-                                    <td><?php echo $abk->kar_20 ?></td>
-                                    <td><?php echo $abk->kar_21 ?></td>
-                                    <td><?php echo $abk->kar_22 ?></td>
-                                    <td><?php echo $abk->kar_23 ?></td>
-                                    <td><?php echo $abk->kar_24 ?></td>
-                                    <td><?php echo $abk->kar_25 ?></td>
-                                    <td><?php echo $abk->kar_26 ?></td>
-                                    <td><?php echo $abk->kar_27 ?></td>
-                                    <td><?php echo $abk->kar_28 ?></td>
-                                    <td><?php echo $abk->kar_29 ?></td>
-                                    <td><?php echo $abk->kar_30 ?></td>
-                                    <td><?php echo $abk->kar_31 ?></td>
-                                    <td><?php echo $abk->kar_32 ?></td>
-                                    <td><?php echo $abk->kar_33 ?></td>
-                                    <td><?php echo $abk->kar_34 ?></td>
-                                    <td><?php echo $abk->kar_35 ?></td>
-                                    <td><?php echo $abk->kar_36 ?></td>
-                                    <td><?php echo $abk->kar_37 ?></td>
-                                    <td><?php echo $abk->kar_38 ?></td>
-                                    <td><?php echo $abk->p1 ?></td>
-                                    <td><?php echo $abk->p2 ?></td>
-                                    <td><?php echo $abk->p3 ?></td>
-
+                                    <td><?php echo $kemiri->no_aksesi ?></td>
+                                    <td><?php echo $kemiri->nama_aksesi ?></td>
+                                    <td><?php echo $kemiri->kar_01 ?></td>
+                                    <td><?php echo $kemiri->kar_02 ?></td>
+                                    <td><?php echo $kemiri->kar_03 ?></td>
+                                    <td><?php echo $kemiri->kar_04 ?></td>
+                                    <td><?php echo $kemiri->kar_05 ?></td>
+                                    <td><?php echo $kemiri->kar_06 ?></td>
+                                    <td><?php echo $kemiri->kar_07 ?></td>
+                                    <td><?php echo $kemiri->kar_08 ?></td>
+                                    <td><?php echo $kemiri->kar_09 ?></td>
+                                    <td><?php echo $kemiri->kar_10 ?></td>
+                                    <td><?php echo $kemiri->kar_11 ?></td>
+                                    <td><?php echo $kemiri->kar_12 ?></td>
+                                    <td><?php echo $kemiri->kar_13 ?></td>
+                                    <td><?php echo $kemiri->kar_14 ?></td>
+                                    <td><?php echo $kemiri->kar_15 ?></td>
+                                    <td><?php echo $kemiri->kar_16 ?></td>
+                                    <td><?php echo $kemiri->kar_17 ?></td>
+                                    <td><?php echo $kemiri->kar_18 ?></td>
+                                    <td><?php echo $kemiri->kar_19 ?></td>
+                                    <td><?php echo $kemiri->kar_20 ?></td>
+                                    <td><?php echo $kemiri->kar_21 ?></td>
+                                    <td><?php echo $kemiri->kar_22 ?></td>
+                                    <td><?php echo $kemiri->kar_23 ?></td>
+                                    <td><?php echo $kemiri->kar_24 ?></td>
+                                    <td><?php echo $kemiri->kar_25 ?></td>
+                                    <td><?php echo $kemiri->kar_26 ?></td>
+                                    <td><?php echo $kemiri->kar_27 ?></td>
+                                    <td><?php echo $kemiri->kar_28 ?></td>
+                                    <td><?php echo $kemiri->kar_29 ?></td>
+                                    <td><?php echo $kemiri->kar_30 ?></td>
+                                    <td><?php echo $kemiri->kar_31 ?></td>
+                                    <td><?php echo $kemiri->kar_32 ?></td>
+                                    <td><?php echo $kemiri->kar_33 ?></td>
+                                    <td><?php echo $kemiri->kar_34 ?></td>
+                                    <td><?php echo $kemiri->kar_35 ?></td>
+                                    <td><?php echo $kemiri->kar_36 ?></td>
+                                    <td><?php echo $kemiri->kar_37 ?></td>
+                                    <td><?php echo $kemiri->kar_38 ?></td>
+                                    <td><?php echo $kemiri->p1 ?></td>
+                                    <td><?php echo $kemiri->p2 ?></td>
+                                    <td><?php echo $kemiri->p3 ?></td>
                                 </tr>
                             <?php } ?>
                         </tbody>

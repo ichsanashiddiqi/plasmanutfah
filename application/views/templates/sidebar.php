@@ -77,7 +77,7 @@
                         <a class="collapse-item" href="<?= base_url('tanaman/jarak_pagar'); ?>">Jarak Pagar</a>
                         <a class="collapse-item" href="<?= base_url('tanaman/kapas'); ?>">Kapas</a>
                         <a class="collapse-item" href="<?= base_url('tanaman/kapuk'); ?>">Kapuk</a>
-                        <a class="collapse-item" href="<?= base_url('tanaman/kemirir'); ?>">Kemirir</a>
+                        <a class="collapse-item" href="<?= base_url('tanaman/kemiri'); ?>">Kemiri</a>
                         <a class="collapse-item" href="<?= base_url('tanaman/kenaf'); ?>">Kenaf</a>
                         <a class="collapse-item" href="<?= base_url('tanaman/rami'); ?>">Rami</a>
                         <a class="collapse-item" href="<?= base_url('tanaman/tebu'); ?>">Tebu</a>

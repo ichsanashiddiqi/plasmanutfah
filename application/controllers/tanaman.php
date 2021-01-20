@@ -34,6 +34,18 @@ class Tanaman extends CI_Controller
 		$this->load->view('templates/footer.php', $data);
 	}
 
+	public function bunga_matahari()
+	{
+		$data['dat_bunga_matahari'] = $this->db->get('dat_bunga_matahari')->result();
+		$data['user'] = $this->db->get_where('user', ['email' => $this->session->userdata('email')])->row_array();
+
+		$this->load->view('templates/header.php', $data);
+		$this->load->view('templates/sidebar.php', $data);
+		$this->load->view('templates/topbar.php', $data);
+		$this->load->view('db_tanaman/bunga_matahari.php', $data);
+		$this->load->view('templates/footer.php', $data);
+	}
+
 
 	public function jarak_pagar()
 	{
@@ -67,7 +79,7 @@ class Tanaman extends CI_Controller
 		$this->load->view('templates/header.php', $data);
 		$this->load->view('templates/sidebar.php', $data);
 		$this->load->view('templates/topbar.php', $data);
-		$this->load->view('db_tanaman/kemiri.php', $data);
+		$this->load->view('db_tanaman/kemirir.php', $data);
 		$this->load->view('templates/footer.php', $data);
 	}
 
