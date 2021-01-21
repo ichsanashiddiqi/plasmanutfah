@@ -21,47 +21,40 @@
                                 <th>No</th>
                                 <th>No. Aksesi</th>
                                 <th>Nama Aksesi</th>
-                                <th>Umur berbunga</th>
-                                <th>Umur panen serat</th>
-                                <th>Umur panen benih</th>
-                                <th>Bentuk daun</th>
-                                <th>Panjang daun</th>
-                                <th>Lebar daun</th>
-                                <th>Luas daun</th>
-                                <th>Sudut daun</th>
-                                <th>Bentuk jantung</th>
+                                <th>Helai Daun</th>
+                                <th>Warna daun</th>
+                                <th>Warna sendi</th>
+                                <th>Telinga daun</th>
+                                <th>Warna sendi</th>
+                                <th>Sifat lepas pelepah</th>
+                                <th>Lapisan lilin</th>
+                                <th>Warna pelepah</th>
                                 <th>Warna batang</th>
-                                <th>Warna helai daun</th>
-                                <th>Warna tangkai daun</th>
-                                <th>Warna bunga</th>
-                                <th>Warna jantung</th>
-                                <th>Warna buah muda</th>
-                                <th>Warna buah matang</th>
-                                <th>Warna biji</th>
-                                <th>Diameter batang bawah</th>
-                                <th>Diameter batang tengah</th>
-                                <th>Diameter batang atas</th>
-                                <th>Tinggi tanaman</th>
-                                <th>Jumlah batang</th>
-                                <th>Jumlah pohon</th>
-                                <th>Berat batang segar</th>
-                                <th>Berat serat kering</th>
-                                <th>Rendemen serat</th>
-                                <th>Produksi serat kering</th>
-                                <th>Jumlah buah</th>
-                                <th>Panjang buah</th>
-                                <th>Diameter buah</th>
-                                <th>Jumlah biji</th>
-                                <th>Berat biji</th>
-                                <th>Berat 1000 biji</th>
-                                <th>Produksi biji</th>
-                                <th>Ketahanan hama/penyakit</th>
-                                <th>Ketahanan kekeringan</th>
-                                <th>Kekuatan serat</th>
-                                <th>Kehalusan serat</th>
-                                <th>p1</th>
-                                <th>p2</th>
-                                <th>p3</th>
+                                <th>Lapisan lilin batang</th>
+                                <th>Bentuk ruas</th>
+                                <th>Susunan ruas</th>
+                                <th>Noda gabus</th>
+                                <th>Retak gabuk</th>
+                                <th>Retakan tumbuh</th>
+                                <th>Retakan tumbuh</th>
+                                <th>Penampang melintang</th>
+                                <th>Teras</th>
+                                <th>Teras</th>
+                                <th>Bentuk</th>
+                                <th>Bagian terlebar</th>
+                                <th>Ukuran sayap</th>
+                                <th>Tepi sayap</th>
+                                <th>Pusat tumbuh</th>
+                                <th>Rambut tepi basal</th>
+                                <th>Rambut jambul</th>
+                                <th>Ukuran rambut jambul</th>
+                                <th>kar_20</th>
+                                <th>kar_21</th>
+                                <th>kar_30</th>
+                                <th>kar_31</th>
+                                <th>kar_32</th>
+                                <th>kar_33</th>
+                                <th>kar_34</th>
 
                             </tr>
                         </thead>
@@ -69,53 +62,46 @@
                             <i class="fa fa-file-excel-o"></i> Export to Excel</a> -->
                         <tbody>
                             <?php $no = 1;
-                            foreach ($dat_abaka as $abk) {
+                            foreach ($dat_tebu as $tebu) {
                             ?>
                                 <tr>
                                     <td><?php echo $no++ ?></td>
-                                    <td><?php echo $abk->no_aksesi ?></td>
-                                    <td><?php echo $abk->nama_aksesi ?></td>
-                                    <td><?php echo $abk->kar_01 ?></td>
-                                    <td><?php echo $abk->kar_02 ?></td>
-                                    <td><?php echo $abk->kar_03 ?></td>
-                                    <td><?php echo $abk->kar_04 ?></td>
-                                    <td><?php echo $abk->kar_05 ?></td>
-                                    <td><?php echo $abk->kar_06 ?></td>
-                                    <td><?php echo $abk->kar_07 ?></td>
-                                    <td><?php echo $abk->kar_08 ?></td>
-                                    <td><?php echo $abk->kar_09 ?></td>
-                                    <td><?php echo $abk->kar_10 ?></td>
-                                    <td><?php echo $abk->kar_11 ?></td>
-                                    <td><?php echo $abk->kar_12 ?></td>
-                                    <td><?php echo $abk->kar_13 ?></td>
-                                    <td><?php echo $abk->kar_14 ?></td>
-                                    <td><?php echo $abk->kar_15 ?></td>
-                                    <td><?php echo $abk->kar_16 ?></td>
-                                    <td><?php echo $abk->kar_17 ?></td>
-                                    <td><?php echo $abk->kar_18 ?></td>
-                                    <td><?php echo $abk->kar_19 ?></td>
-                                    <td><?php echo $abk->kar_20 ?></td>
-                                    <td><?php echo $abk->kar_21 ?></td>
-                                    <td><?php echo $abk->kar_22 ?></td>
-                                    <td><?php echo $abk->kar_23 ?></td>
-                                    <td><?php echo $abk->kar_24 ?></td>
-                                    <td><?php echo $abk->kar_25 ?></td>
-                                    <td><?php echo $abk->kar_26 ?></td>
-                                    <td><?php echo $abk->kar_27 ?></td>
-                                    <td><?php echo $abk->kar_28 ?></td>
-                                    <td><?php echo $abk->kar_29 ?></td>
-                                    <td><?php echo $abk->kar_30 ?></td>
-                                    <td><?php echo $abk->kar_31 ?></td>
-                                    <td><?php echo $abk->kar_32 ?></td>
-                                    <td><?php echo $abk->kar_33 ?></td>
-                                    <td><?php echo $abk->kar_34 ?></td>
-                                    <td><?php echo $abk->kar_35 ?></td>
-                                    <td><?php echo $abk->kar_36 ?></td>
-                                    <td><?php echo $abk->kar_37 ?></td>
-                                    <td><?php echo $abk->kar_38 ?></td>
-                                    <td><?php echo $abk->p1 ?></td>
-                                    <td><?php echo $abk->p2 ?></td>
-                                    <td><?php echo $abk->p3 ?></td>
+                                    <td><?php echo $tebu->no_aksesi ?></td>
+                                    <td><?php echo $tebu->nama_aksesi ?></td>
+                                    <td><?php echo $tebu->kar_01 ?></td>
+                                    <td><?php echo $tebu->kar_02 ?></td>
+                                    <td><?php echo $tebu->kar_03 ?></td>
+                                    <td><?php echo $tebu->kar_04 ?></td>
+                                    <td><?php echo $tebu->kar_05 ?></td>
+                                    <td><?php echo $tebu->kar_06 ?></td>
+                                    <td><?php echo $tebu->kar_07 ?></td>
+                                    <td><?php echo $tebu->kar_08 ?></td>
+                                    <td><?php echo $tebu->kar_09 ?></td>
+                                    <td><?php echo $tebu->kar_10 ?></td>
+                                    <td><?php echo $tebu->kar_11 ?></td>
+                                    <td><?php echo $tebu->kar_12 ?></td>
+                                    <td><?php echo $tebu->kar_13 ?></td>
+                                    <td><?php echo $tebu->kar_14 ?></td>
+                                    <td><?php echo $tebu->kar_15 ?></td>
+                                    <td><?php echo $tebu->kar_16 ?></td>
+                                    <td><?php echo $tebu->kar_17 ?></td>
+                                    <td><?php echo $tebu->kar_18 ?></td>
+                                    <td><?php echo $tebu->kar_19 ?></td>
+                                    <td><?php echo $tebu->kar_22 ?></td>
+                                    <td><?php echo $tebu->kar_23 ?></td>
+                                    <td><?php echo $tebu->kar_24 ?></td>
+                                    <td><?php echo $tebu->kar_25 ?></td>
+                                    <td><?php echo $tebu->kar_26 ?></td>
+                                    <td><?php echo $tebu->kar_27 ?></td>
+                                    <td><?php echo $tebu->kar_28 ?></td>
+                                    <td><?php echo $tebu->kar_29 ?></td>
+                                    <td><?php echo $tebu->kar_20 ?></td>
+                                    <td><?php echo $tebu->kar_21 ?></td>
+                                    <td><?php echo $tebu->kar_30 ?></td>
+                                    <td><?php echo $tebu->kar_31 ?></td>
+                                    <td><?php echo $tebu->kar_32 ?></td>
+                                    <td><?php echo $tebu->kar_33 ?></td>
+                                    <td><?php echo $tebu->kar_34 ?></td>
 
                                 </tr>
                             <?php } ?>

@@ -21,47 +21,36 @@
                                 <th>No</th>
                                 <th>No. Aksesi</th>
                                 <th>Nama Aksesi</th>
-                                <th>Umur berbunga</th>
-                                <th>Umur panen serat</th>
-                                <th>Umur panen benih</th>
+                                <th>Warna daun</th>
+                                <th>Bulu daun</th>
+                                <th>Posisi daun</th>
                                 <th>Bentuk daun</th>
-                                <th>Panjang daun</th>
-                                <th>Lebar daun</th>
-                                <th>Luas daun</th>
-                                <th>Sudut daun</th>
-                                <th>Bentuk jantung</th>
-                                <th>Warna batang</th>
-                                <th>Warna helai daun</th>
-                                <th>Warna tangkai daun</th>
-                                <th>Warna bunga</th>
-                                <th>Warna jantung</th>
-                                <th>Warna buah muda</th>
-                                <th>Warna buah matang</th>
+                                <th>Permukaan daun</th>
+                                <th>Sudut daun pada batang</th>
+                                <th>Warna mahkota bunga</th>
+                                <th>Warna bibir bunga</th>
+                                <th>Bulu mahkota bunga</th>
+                                <th>Jumlah bunga per buku</th>
+                                <th>Bunga pertama pada ruas ke</th>
+                                <th>Rata-rata panjang ruas</th>
+                                <th>Bentuk polong</th>
+                                <th>Jumlah kelopak polong</th>
+                                <th>Warna polong kering</th>
                                 <th>Warna biji</th>
-                                <th>Diameter batang bawah</th>
-                                <th>Diameter batang tengah</th>
-                                <th>Diameter batang atas</th>
+                                <th>Cabang</th>
+                                <th>Warna batang</th>
+                                <th>Bulu batang</th>
+                                <th>Penampang batang</th>
+                                <th>Umur 50% berbunga</th>
+                                <th>Umur 75% masa panen</th>
                                 <th>Tinggi tanaman</th>
-                                <th>Jumlah batang</th>
-                                <th>Jumlah pohon</th>
-                                <th>Berat batang segar</th>
-                                <th>Berat serat kering</th>
-                                <th>Rendemen serat</th>
-                                <th>Produksi serat kering</th>
-                                <th>Jumlah buah</th>
-                                <th>Panjang buah</th>
-                                <th>Diameter buah</th>
-                                <th>Jumlah biji</th>
-                                <th>Berat biji</th>
-                                <th>Berat 1000 biji</th>
-                                <th>Produksi biji</th>
-                                <th>Ketahanan hama/penyakit</th>
-                                <th>Ketahanan kekeringan</th>
-                                <th>Kekuatan serat</th>
-                                <th>Kehalusan serat</th>
-                                <th>p1</th>
-                                <th>p2</th>
-                                <th>p3</th>
+                                <th>Jumlah cabang per tanaman</th>
+                                <th>Jumlah polong per tanaman</th>
+                                <th>Jumlah polong per ruas</th>
+                                <th>Jumlah lokul per polong</th>
+                                <th>Panjang polong</th>
+                                <th>Jumlah biji per polong</th>
+                                <th>Hasil biji per 15 m persegi</th>
 
                             </tr>
                         </thead>
@@ -69,53 +58,43 @@
                             <i class="fa fa-file-excel-o"></i> Export to Excel</a> -->
                         <tbody>
                             <?php $no = 1;
-                            foreach ($dat_abaka as $abk) {
+                            foreach ($dat_wijjen as $wijen) {
                             ?>
                                 <tr>
                                     <td><?php echo $no++ ?></td>
-                                    <td><?php echo $abk->no_aksesi ?></td>
-                                    <td><?php echo $abk->nama_aksesi ?></td>
-                                    <td><?php echo $abk->kar_01 ?></td>
-                                    <td><?php echo $abk->kar_02 ?></td>
-                                    <td><?php echo $abk->kar_03 ?></td>
-                                    <td><?php echo $abk->kar_04 ?></td>
-                                    <td><?php echo $abk->kar_05 ?></td>
-                                    <td><?php echo $abk->kar_06 ?></td>
-                                    <td><?php echo $abk->kar_07 ?></td>
-                                    <td><?php echo $abk->kar_08 ?></td>
-                                    <td><?php echo $abk->kar_09 ?></td>
-                                    <td><?php echo $abk->kar_10 ?></td>
-                                    <td><?php echo $abk->kar_11 ?></td>
-                                    <td><?php echo $abk->kar_12 ?></td>
-                                    <td><?php echo $abk->kar_13 ?></td>
-                                    <td><?php echo $abk->kar_14 ?></td>
-                                    <td><?php echo $abk->kar_15 ?></td>
-                                    <td><?php echo $abk->kar_16 ?></td>
-                                    <td><?php echo $abk->kar_17 ?></td>
-                                    <td><?php echo $abk->kar_18 ?></td>
-                                    <td><?php echo $abk->kar_19 ?></td>
-                                    <td><?php echo $abk->kar_20 ?></td>
-                                    <td><?php echo $abk->kar_21 ?></td>
-                                    <td><?php echo $abk->kar_22 ?></td>
-                                    <td><?php echo $abk->kar_23 ?></td>
-                                    <td><?php echo $abk->kar_24 ?></td>
-                                    <td><?php echo $abk->kar_25 ?></td>
-                                    <td><?php echo $abk->kar_26 ?></td>
-                                    <td><?php echo $abk->kar_27 ?></td>
-                                    <td><?php echo $abk->kar_28 ?></td>
-                                    <td><?php echo $abk->kar_29 ?></td>
-                                    <td><?php echo $abk->kar_30 ?></td>
-                                    <td><?php echo $abk->kar_31 ?></td>
-                                    <td><?php echo $abk->kar_32 ?></td>
-                                    <td><?php echo $abk->kar_33 ?></td>
-                                    <td><?php echo $abk->kar_34 ?></td>
-                                    <td><?php echo $abk->kar_35 ?></td>
-                                    <td><?php echo $abk->kar_36 ?></td>
-                                    <td><?php echo $abk->kar_37 ?></td>
-                                    <td><?php echo $abk->kar_38 ?></td>
-                                    <td><?php echo $abk->p1 ?></td>
-                                    <td><?php echo $abk->p2 ?></td>
-                                    <td><?php echo $abk->p3 ?></td>
+                                    <td><?php echo $wijen->no_aksesi ?></td>
+                                    <td><?php echo $wijen->nama_aksesi ?></td>
+                                    <td><?php echo $wijen->kar_01 ?></td>
+                                    <td><?php echo $wijen->kar_02 ?></td>
+                                    <td><?php echo $wijen->kar_03 ?></td>
+                                    <td><?php echo $wijen->kar_04 ?></td>
+                                    <td><?php echo $wijen->kar_05 ?></td>
+                                    <td><?php echo $wijen->kar_06 ?></td>
+                                    <td><?php echo $wijen->kar_07 ?></td>
+                                    <td><?php echo $wijen->kar_08 ?></td>
+                                    <td><?php echo $wijen->kar_09 ?></td>
+                                    <td><?php echo $wijen->kar_10 ?></td>
+                                    <td><?php echo $wijen->kar_11 ?></td>
+                                    <td><?php echo $wijen->kar_12 ?></td>
+                                    <td><?php echo $wijen->kar_13 ?></td>
+                                    <td><?php echo $wijen->kar_14 ?></td>
+                                    <td><?php echo $wijen->kar_15 ?></td>
+                                    <td><?php echo $wijen->kar_16 ?></td>
+                                    <td><?php echo $wijen->kar_17 ?></td>
+                                    <td><?php echo $wijen->kar_18 ?></td>
+                                    <td><?php echo $wijen->kar_19 ?></td>
+                                    <td><?php echo $wijen->kar_20 ?></td>
+                                    <td><?php echo $wijen->kar_21 ?></td>
+                                    <td><?php echo $wijen->kar_22 ?></td>
+                                    <td><?php echo $wijen->kar_23 ?></td>
+                                    <td><?php echo $wijen->kar_24 ?></td>
+                                    <td><?php echo $wijen->kar_25 ?></td>
+                                    <td><?php echo $wijen->kar_26 ?></td>
+                                    <td><?php echo $wijen->kar_27 ?></td>
+                                    <td><?php echo $wijen->kar_28 ?></td>
+                                    <td><?php echo $wijen->kar_29 ?></td>
+                                    <td><?php echo $wijen->kar_30 ?></td>
+                                    <td><?php echo $wijen->kar_31 ?></td>
 
                                 </tr>
                             <?php } ?>
