@@ -22,7 +22,7 @@
 
             <!-- Nav Item - Dashboard -->
             <li class="nav-item active">
-                <a class="nav-link" href="index.html">
+                <a class="nav-link" href="<?= base_url('auth/landing'); ?>">
                     <i class="fas fa-seedling"></i>
                     <span>Menu Utama</span></a>
             </li>
