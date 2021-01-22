@@ -14,7 +14,7 @@ class Auth extends CI_Controller
 	{
 
 		if ($this->session->userdata('email')) {
-			redirect('templates');
+			redirect('auth/landing');
 		}
 
 		$this->form_validation->set_rules('email', 'Email', 'trim|required|valid_email');

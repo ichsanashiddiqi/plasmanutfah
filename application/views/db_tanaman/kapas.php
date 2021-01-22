@@ -21,6 +21,7 @@
                                 <th>No</th>
                                 <th>No. Aksesi</th>
                                 <th>Nama Aksesi</th>
+                                <th>Gambar</th>
                                 <th>Tipe percabangan</th>
                                 <th>Warna batang</th>
                                 <th>Bulu batang</th>
@@ -79,6 +80,7 @@
                                     <td><?php echo $no++ ?></td>
                                     <td><?php echo $kps->no_aksesi ?></td>
                                     <td><?php echo $kps->nama_aksesi ?></td>
+                                    <td><img src="<?php echo base_url('assets/data/image' . $kps->image) ?>" width="64" /></td>
                                     <td><?php echo $kps->kar_01 ?></td>
                                     <td><?php echo $kps->kar_02 ?></td>
                                     <td><?php echo $kps->kar_03 ?></td>
