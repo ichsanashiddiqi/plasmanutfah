@@ -21,6 +21,7 @@
                                 <th>No</th>
                                 <th>No. Aksesi</th>
                                 <th>Nama Aksesi</th>
+                                <th>Gambar</th>
                                 <th>Umur panen serat 1</th>
                                 <th>Umur panen serat 2</th>
                                 <th>Umur panen serat 3</th>
@@ -75,6 +76,7 @@
                                     <td><?php echo $no++ ?></td>
                                     <td><?php echo $rami->no_aksesi ?></td>
                                     <td><?php echo $rami->nama_aksesi ?></td>
+                                    <td><img src="<?php echo base_url('assets/data/image' . $rami->Image) ?>" width="64" /></td>
                                     <td><?php echo $rami->kar_01 ?></td>
                                     <td><?php echo $rami->kar_02 ?></td>
                                     <td><?php echo $rami->kar_03 ?></td>

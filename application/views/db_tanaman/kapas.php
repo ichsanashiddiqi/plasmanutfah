@@ -19,6 +19,7 @@
 
                             <tr>
                                 <th>No</th>
+                                <th>Action</th>
                                 <th>No. Aksesi</th>
                                 <th>Nama Aksesi</th>
                                 <th>Gambar</th>

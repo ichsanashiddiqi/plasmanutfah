@@ -21,6 +21,7 @@
                                 <th>No</th>
                                 <th>No. Aksesi</th>
                                 <th>Nama Aksesi</th>
+                                <th>Gambar</th>
                                 <th>Tipe</th>
                                 <th>Habitus</th>
                                 <th>Kerapatan</th>
@@ -78,6 +79,7 @@
                                     <td><?php echo $no++ ?></td>
                                     <td><?php echo $tembakau->no_aksesi ?></td>
                                     <td><?php echo $tembakau->nama_aksesi ?></td>
+                                    <td><img src="<?php echo base_url('assets/data/image' . $tembakau->Image) ?>" width="64" /></td>
                                     <td><?php echo $tembakau->kar_01 ?></td>
                                     <td><?php echo $tembakau->kar_02 ?></td>
                                     <td><?php echo $tembakau->kar_03 ?></td>

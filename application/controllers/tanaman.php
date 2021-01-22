@@ -13,7 +13,7 @@ class Tanaman extends CI_Controller
 	public function abaka()
 	{
 
-		$data['dat_abaka'] = $this->db->get('dat_abaka')->result();
+		$data['dat_abaka'] = $this->m_view_tabel->v_tabel_abaka()->result();
 		$data['user'] = $this->db->get_where('user', ['email' => $this->session->userdata('email')])->row_array();
 
 		$this->load->view('templates/header.php', $data);
@@ -37,7 +37,7 @@ class Tanaman extends CI_Controller
 
 	public function bunga_matahari()
 	{
-		$data['dat_bunga_matahari'] = $this->db->get('dat_bunga_matahari')->result();
+		$data['dat_bunga_matahari'] = $this->m_view_tabel->v_tabel_bungamatahari()->result();
 		$data['user'] = $this->db->get_where('user', ['email' => $this->session->userdata('email')])->row_array();
 
 		$this->load->view('templates/header.php', $data);
@@ -50,7 +50,7 @@ class Tanaman extends CI_Controller
 
 	public function jarak_pagar()
 	{
-		$data['dat_jarak_pagar'] = $this->db->get('dat_jarak_pagar')->result();
+		$data['dat_jarak_pagar'] = $this->m_view_tabel->v_tabel_jarakpagar()->result();
 		$data['user'] = $this->db->get_where('user', ['email' => $this->session->userdata('email')])->row_array();
 
 		$this->load->view('templates/header.php', $data);
@@ -62,7 +62,7 @@ class Tanaman extends CI_Controller
 
 	public function kapuk()
 	{
-		$data['dat_kapuk'] = $this->db->get('dat_kapuk')->result();
+		$data['dat_kapuk'] = $this->m_view_tabel->v_tabel_kapuk()->result();
 		$data['user'] = $this->db->get_where('user', ['email' => $this->session->userdata('email')])->row_array();
 
 		$this->load->view('templates/header.php', $data);
@@ -74,7 +74,7 @@ class Tanaman extends CI_Controller
 
 	public function kemiri()
 	{
-		$data['dat_kemiri'] = $this->db->get('dat_kemiri')->result();
+		$data['dat_kemiri'] = $this->m_view_tabel->v_tabel_kemiri()->result();
 		$data['user'] = $this->db->get_where('user', ['email' => $this->session->userdata('email')])->row_array();
 
 		$this->load->view('templates/header.php', $data);
@@ -86,7 +86,7 @@ class Tanaman extends CI_Controller
 
 	public function kenaf()
 	{
-		$data['dat_kenaf'] = $this->db->get('dat_kenaf')->result();
+		$data['dat_kenaf'] = $this->m_view_tabel->v_tabel_kenaf()->result();
 		$data['user'] = $this->db->get_where('user', ['email' => $this->session->userdata('email')])->row_array();
 
 		$this->load->view('templates/header.php', $data);
@@ -98,7 +98,7 @@ class Tanaman extends CI_Controller
 
 	public function rami()
 	{
-		$data['dat_rami'] = $this->db->get('dat_rami')->result();
+		$data['dat_rami'] = $this->m_view_tabel->v_tabel_rami()->result();
 		$data['user'] = $this->db->get_where('user', ['email' => $this->session->userdata('email')])->row_array();
 
 		$this->load->view('templates/header.php', $data);
@@ -110,7 +110,7 @@ class Tanaman extends CI_Controller
 
 	public function tebu()
 	{
-		$data['dat_tebu'] = $this->db->get('dat_tebu')->result();
+		$data['dat_tebu'] = $this->m_view_tabel->v_tabel_tebu()->result();
 		$data['user'] = $this->db->get_where('user', ['email' => $this->session->userdata('email')])->row_array();
 
 		$this->load->view('templates/header.php', $data);
@@ -122,7 +122,7 @@ class Tanaman extends CI_Controller
 
 	public function tembakau()
 	{
-		$data['dat_tembakau'] = $this->db->get('dat_tembakau')->result();
+		$data['dat_tembakau'] = $this->m_view_tabel->v_tabel_tembakau()->result();
 		$data['user'] = $this->db->get_where('user', ['email' => $this->session->userdata('email')])->row_array();
 
 		$this->load->view('templates/header.php', $data);
@@ -134,7 +134,7 @@ class Tanaman extends CI_Controller
 
 	public function wijen()
 	{
-		$data['dat_wijen'] = $this->db->get('dat_wijen')->result();
+		$data['dat_wijen'] = $this->m_view_tabel->v_tabel_wijen()->result();
 		$data['user'] = $this->db->get_where('user', ['email' => $this->session->userdata('email')])->row_array();
 
 		$this->load->view('templates/header.php', $data);

@@ -21,6 +21,7 @@
                                 <th>No</th>
                                 <th>No. Aksesi</th>
                                 <th>Nama Aksesi</th>
+                                <th>Gambar</th>
                                 <th>Helai Daun</th>
                                 <th>Warna daun</th>
                                 <th>Warna sendi</th>
@@ -63,6 +64,7 @@
                                     <td><?php echo $no++ ?></td>
                                     <td><?php echo $jp->no_aksesi ?></td>
                                     <td><?php echo $jp->nama_aksesi ?></td>
+                                    <td><img src="<?php echo base_url('assets/data/image' . $jp->Image) ?>" width="64" /></td>
                                     <td><?php echo $jp->kar_01 ?></td>
                                     <td><?php echo $jp->kar_02 ?></td>
                                     <td><?php echo $jp->kar_03 ?></td>

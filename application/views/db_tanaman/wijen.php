@@ -21,6 +21,7 @@
                                 <th>No</th>
                                 <th>No. Aksesi</th>
                                 <th>Nama Aksesi</th>
+                                <th>Gambar</th>
                                 <th>Warna daun</th>
                                 <th>Bulu daun</th>
                                 <th>Posisi daun</th>
@@ -64,6 +65,7 @@
                                     <td><?php echo $no++ ?></td>
                                     <td><?php echo $wijen->no_aksesi ?></td>
                                     <td><?php echo $wijen->nama_aksesi ?></td>
+                                    <td><img src="<?php echo base_url('assets/data/image' . $wijen->Image) ?>" width="64" /></td>
                                     <td><?php echo $wijen->kar_01 ?></td>
                                     <td><?php echo $wijen->kar_02 ?></td>
                                     <td><?php echo $wijen->kar_03 ?></td>

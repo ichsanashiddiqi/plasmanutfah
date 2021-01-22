@@ -21,6 +21,7 @@
                                 <th>No</th>
                                 <th>No. Aksesi</th>
                                 <th>Nama Aksesi</th>
+                                <th>Gambar</th>
                                 <th>Tipe kapuk</th>
                                 <th>Tipe percabangan</th>
                                 <th>Sifat meluruhkan cabang bawah</th>
@@ -67,6 +68,7 @@
                                     <td><?php echo $no++ ?></td>
                                     <td><?php echo $kapuk->no_aksesi ?></td>
                                     <td><?php echo $kapuk->nama_aksesi ?></td>
+                                    <td><img src="<?php echo base_url('assets/data/image' . $kapuk->Image) ?>" width="64" /></td>
                                     <td><?php echo $kapuk->kar_01 ?></td>
                                     <td><?php echo $kapuk->kar_02 ?></td>
                                     <td><?php echo $kapuk->kar_03 ?></td>

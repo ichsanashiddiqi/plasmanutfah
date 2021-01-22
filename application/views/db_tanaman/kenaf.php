@@ -21,6 +21,7 @@
                                 <th>No</th>
                                 <th>No. Aksesi</th>
                                 <th>Nama Aksesi</th>
+                                <th>Gambar</th>
                                 <th>Warna batang 1</th>
                                 <th>Warna batang 2</th>
                                 <th>Warna daun</th>
@@ -70,6 +71,7 @@
                                     <td><?php echo $no++ ?></td>
                                     <td><?php echo $kenaf->no_aksesi ?></td>
                                     <td><?php echo $kenaf->nama_aksesi ?></td>
+                                    <td><img src="<?php echo base_url('assets/data/image' . $kenaf->Image) ?>" width="64" /></td>
                                     <td><?php echo $kenaf->kar_01 ?></td>
                                     <td><?php echo $kenaf->kar_02 ?></td>
                                     <td><?php echo $kenaf->kar_03 ?></td>

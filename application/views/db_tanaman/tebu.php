@@ -21,6 +21,7 @@
                                 <th>No</th>
                                 <th>No. Aksesi</th>
                                 <th>Nama Aksesi</th>
+                                <th>Gambar</th>
                                 <th>Helai Daun</th>
                                 <th>Warna daun</th>
                                 <th>Warna sendi</th>
@@ -68,6 +69,7 @@
                                     <td><?php echo $no++ ?></td>
                                     <td><?php echo $tebu->no_aksesi ?></td>
                                     <td><?php echo $tebu->nama_aksesi ?></td>
+                                    <td><img src="<?php echo base_url('assets/data/image' . $tebu->Image) ?>" width="64" /></td>
                                     <td><?php echo $tebu->kar_01 ?></td>
                                     <td><?php echo $tebu->kar_02 ?></td>
                                     <td><?php echo $tebu->kar_03 ?></td>
