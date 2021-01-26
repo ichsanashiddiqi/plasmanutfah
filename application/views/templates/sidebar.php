@@ -21,9 +21,9 @@
             <hr class="sidebar-divider my-0">
 
             <!-- Nav Item - Dashboard -->
-            <li class="nav-item active">
+            <li class="nav-item">
                 <a class="nav-link" href="<?= base_url('auth/landing'); ?>">
-                    <i class="fas fa-seedling"></i>
+                    <i class="fas fa-fw fa-seedling"></i>
                     <span>Menu Utama</span></a>
             </li>
 
@@ -36,21 +36,21 @@
             </div>
 
             <!-- Nav - Profil Pengelolaan -->
-            <li class="nav-item active">
+            <li class="nav-item">
                 <a class="nav-link" href="index.html">
                     <i class="fas fa-users"></i>
                     <span>Profil Pengelolaan</span></a>
             </li>
 
             <!-- Nav - Status  -->
-            <li class="nav-item active">
+            <li class="nav-item">
                 <a class="nav-link" href="index.html">
                     <i class="fas fa-table"></i>
                     <span>Status Komputerisasi Data</span></a>
             </li>
 
             <!-- Nav - add user -->
-            <li class="nav-item active">
+            <li class="nav-item">
                 <a class="nav-link" href="<?= base_url('auth/registration'); ?>">
                     <i class="fas fa-user"></i>
                     <span>Tambah Pengguna</span></a>

@@ -81,9 +81,8 @@ class Auth extends CI_Controller
 
 	public function registration()
 	{
-		if ($this->session->userdata('email')) {
-			redirect('user');
-		}
+		$data['user'] = $this->db->get_where('user', ['email' => $this->session->userdata('email')])->row_array();
+
 		$this->form_validation->set_rules('name', 'Name', 'required|trim');
 		$this->form_validation->set_rules('email', 'Email', 'required|trim|valid_email|is_unique[user.email]', [
 			'is_unique' => 'Email ini sudah pernah dipakai!'
@@ -114,7 +113,7 @@ class Auth extends CI_Controller
 			$this->db->insert('user', $data);
 
 			$this->session->set_flashdata('message', '<div class="alert alert-success" role="alert">Congratulation! your account has been created. Please activate your account</div>');
-			redirect('auth');
+			redirect('auth/index');
 		}
 	}
 
