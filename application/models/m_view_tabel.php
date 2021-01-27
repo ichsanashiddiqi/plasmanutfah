@@ -14,7 +14,7 @@ class M_view_tabel extends CI_Model
     function v_tabel_abaka()
     {
         $this->db->select('dat_abaka.*, foto_abaka.No_aksesi as no_aksesi, foto_abaka.Image');
-        $this->db->join('foto_abaka', 'foto_abaka.No_aksesi = dat_kapas.no_aksesi');
+        $this->db->join('foto_abaka', 'foto_abaka.No_aksesi = dat_abaka.no_aksesi');
         $this->db->from('dat_abaka');
         $query = $this->db->get();
         return $query;
@@ -95,7 +95,7 @@ class M_view_tabel extends CI_Model
     function v_tabel_wijen()
     {
         $this->db->select('dat_wijen.*, foto_wijen.No_aksesi as no_aksesi, foto_wijen.Image');
-        $this->db->join('foto_wijen', 'foto_wijen.No_aksesi = dat_wijen.no_aksesi');
+        $this->db->join('foto_wijen', 'foto_wijen.No_aksesi = dat_wijen.no_aksesi', 'left outer');
         $this->db->from('dat_wijen');
         $query = $this->db->get();
         return $query;

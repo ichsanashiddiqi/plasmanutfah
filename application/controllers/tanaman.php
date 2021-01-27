@@ -9,6 +9,7 @@ class Tanaman extends CI_Controller
 		$this->load->library('form_validation');
 		$this->load->helper('url');
 		$this->load->model('m_view_tabel');
+		$this->load->library('session');
 	}
 	public function abaka()
 	{

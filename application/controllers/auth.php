@@ -9,6 +9,7 @@ class Auth extends CI_Controller
 	{
 		parent::__construct();
 		$this->load->library('form_validation');
+		$this->load->library('session');
 	}
 	public function index()
 	{
@@ -93,11 +94,11 @@ class Auth extends CI_Controller
 		]);
 		$this->form_validation->set_rules('password2', 'Password', 'required|trim|matches[password1]');
 		if ($this->form_validation->run() == false) {
-			$this->load->view('templates/header.php');
-			$this->load->view('templates/sidebar.php');
-			$this->load->view('templates/topbar.php');
-			$this->load->view('landing/registration.php');
-			$this->load->view('templates/footer.php');
+			$this->load->view('templates/header.php', $data);
+			$this->load->view('templates/sidebar.php', $data);
+			$this->load->view('templates/topbar.php', $data);
+			$this->load->view('landing/registration.php', $data);
+			$this->load->view('templates/footer.php', $data);
 		} else {
 			$email = $this->input->post('email', true);
 			$data = [

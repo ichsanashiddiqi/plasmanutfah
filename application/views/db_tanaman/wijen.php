@@ -36,6 +36,7 @@
                                 <th>Rata-rata panjang ruas</th>
                                 <th>Bentuk polong</th>
                                 <th>Jumlah kelopak polong</th>
+                                <th>Kerapatan bulu polong</th>
                                 <th>Warna polong kering</th>
                                 <th>Warna biji</th>
                                 <th>Cabang</th>
@@ -59,7 +60,7 @@
                             <i class="fa fa-file-excel-o"></i> Export to Excel</a> -->
                         <tbody>
                             <?php $no = 1;
-                            foreach ($dat_wijjen as $wijen) {
+                            foreach ($dat_wijen as $wijen) {
                             ?>
                                 <tr>
                                     <td><?php echo $no++ ?></td>
