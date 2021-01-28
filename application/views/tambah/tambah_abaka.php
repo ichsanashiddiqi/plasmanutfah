@@ -67,6 +67,9 @@
         </div>
     </div>
     <hr>
+
+    <!-- Pembeda di data aksesi dan karakteristik-->
+
     <div class="card text-left">
         <div class="card-header">
             <ul class="nav nav-tabs card-header-tabs">
@@ -88,6 +91,9 @@
         <div class="card-body">
             <div class="tab-content">
                 <div role="tabpanel" class="tab-pane active" id="paspor">
+
+                    <!-- form pertama -->
+
                     <h5 class="card-title">Data Paspor</h5>
                     <!-- <p class="card-text">With supporting text below as a natural lead-in to additional content.</p> -->
                     <form class="user">
