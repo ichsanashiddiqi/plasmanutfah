@@ -3,20 +3,19 @@
 
     <!-- Page Heading -->
     <div class="d-sm-flex align-items-center justify-content-between mb-4">
-        <h1 class="h3 mb-0 text-gray-800">Dashboard</h1>
+        <h1 class="h3 mb-0 text-gray-800">Abaka</h1>
     </div>
 
     <!-- Content Row -->
-
+    <a type="button" class="btn btn-outline-success" href="<?= base_url('tambah/abaka'); ?>">Tambah Data Abaka</a>
+    <hr>
     <div class="row">
         <div class="card shadow mb-4">
             <div class="card-header py-3">
-                <h6 class="m-0 font-weight-bold text-primary">DataTables Example</h6>
+                <h6 class="m-0 font-weight-bold text-primary">Data Abaka</h6>
             </div>
             <div class="card-body">
                 <div class="table-responsive">
-                    <a type="button" class="btn btn-outline-success" href="<?= base_url('tambah/abaka'); ?>">Success</a>
-
                     <table class="table table-bordered" id="dataTable" width="100%" cellspacing="0">
                         <thead>
 
