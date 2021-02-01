@@ -261,9 +261,9 @@
                             <div class="col-sm">
                                 <select class="form-control form-select-user" id="autoSizingSelect">
                                     <option selected>Warna Jantung</option>
-                                    <option value="1">Merah</option>
-                                    <option value="2">Merah Gelap</option>
-                                    <option value="3">Coklat</option>
+                                    <option value="1">1. Merah</option>
+                                    <option value="2">2. Merah Gelap</option>
+                                    <option value="3">3. Coklat</option>
                                 </select>
                             </div>
 
@@ -278,9 +278,9 @@
                             <div class="col-sm">
                                 <select class="form-control form-select-user" id="autoSizingSelect">
                                     <option selected>Warna Buah Muda</option>
-                                    <option value="1">Hijau</option>
-                                    <option value="2">Merah</option>
-                                    <option value="3">Coklat</option>
+                                    <option value="1">1. Hijau</option>
+                                    <option value="2">2. Merah</option>
+                                    <option value="3">3. Coklat</option>
                                 </select>
                             </div>
 
@@ -295,10 +295,10 @@
                             <div class="col-sm">
                                 <select class="form-control form-select-user" id="autoSizingSelect">
                                     <option selected>Warna Buah Matang</option>
-                                    <option value="1">Hijau</option>
-                                    <option value="2">Merah</option>
-                                    <option value="3">Coklat</option>
-                                    <option value="4">Kuning</option>
+                                    <option value="1">1. Hijau</option>
+                                    <option value="2">2. Merah</option>
+                                    <option value="3">3. Coklat</option>
+                                    <option value="4">4. Kuning</option>
                                 </select>
                             </div>
 
@@ -310,18 +310,18 @@
                             <div class="col-sm">
                                 <select class="form-control form-select-user" id="autoSizingSelect">
                                     <option selected>Bentuk Daun</option>
-                                    <option value="1">Ovate</option>
-                                    <option value="2">Cordate</option>
-                                    <option value="3">Lanceolate</option>
-                                    <option value="4">Cord - Lanceolate</option>
+                                    <option value="1">1. Ovate</option>
+                                    <option value="2">2. Cordate</option>
+                                    <option value="3">3. Lanceolate</option>
+                                    <option value="4">4. Cord - Lanceolate</option>
                                 </select>
                             </div>
                             <div class="col-sm">
                                 <select class="form-control form-select-user" id="autoSizingSelect">
                                     <option selected>Warna Biji</option>
-                                    <option value="1">Hitam</option>
-                                    <option value="2">Coklat</option>
-                                    <option value="3">Abu-Abu</option>
+                                    <option value="1">1. Hitam</option>
+                                    <option value="2">2. Coklat</option>
+                                    <option value="3">3. Abu-Abu</option>
                                 </select>
                             </div>
 
@@ -461,7 +461,41 @@
                 </div>
                 <div role="tabpanel" class="tab-pane" id="foto">
                     <h5 class="card-title">Data Foto</h5>
-                    <p class="card-text">With supporting text below as a natural lead-in to additional content.</p>
+                    <div class="form-group row">
+                        <label for="email" class="col-sm-2 col-form-label">Email</label>
+                        <div class="col-sm-10">
+                            <input type="text" class="form-control" id="email" name="email" value="<?= $user['email']; ?>" readonly>
+                        </div>
+                    </div>
+                    <div class="form-group row">
+                        <label for="name" class="col-sm-2 col-form-label">Nama Gambar</label>
+                        <div class="col-sm-10">
+                            <input type="text" class="form-control" id="name" name="name">
+                        </div>
+                    </div>
+                    <div class="form-group row">
+                        <label for="name" class="col-sm-2 col-form-label">Keterangan</label>
+                        <div class="col-sm-10">
+                            <textarea type="text" class="form-control" id="name" name="name">
+                            </textarea>
+                        </div>
+                    </div>
+                    <div class="form-group row">
+                        <div class="col-sm-2">Picture</div>
+                        <div class="col-sm-10">
+                            <div class="row">
+                                <div class="col-sm-3">
+                                    <img src="<?= base_url('/assets/upload.png'); ?>" class="img-thumbnail">
+                                </div>
+                                <div class="col-sm-9">
+                                    <div class="custom-file">
+                                        <input type="file" class="custom-file-input" id="image" name="image">
+                                        <label class="custom-file-label" for="image">Choose file</label>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
                     <a href="#" class="btn btn-primary">Go somewhere</a>
                 </div>
                 <div role="tabpanel" class="tab-pane" id="stok">
