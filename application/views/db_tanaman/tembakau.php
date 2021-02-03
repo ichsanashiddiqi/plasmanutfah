@@ -72,11 +72,11 @@
                         <!-- <a class="pull-right btn btn-warning btn-large" style="margin-right:40px" href="<?= base_url('export/exportBro'); ?>">
                             <i class="fa fa-file-excel-o"></i> Export to Excel</a> -->
                         <tbody>
-                            <?php $no = 1;
+                            <?php
                             foreach ($dat_tembakau as $tembakau) {
                             ?>
                                 <tr>
-                                    <td><?php echo $no++ ?></td>
+                                    <td><?php echo $tembakau->no ?></td>
                                     <td><?php echo $tembakau->no_aksesi ?></td>
                                     <td><?php echo $tembakau->nama_aksesi ?></td>
                                     <td><img src="<?php echo base_url('assets/data/image' . $tembakau->Image) ?>" width="64" /></td>

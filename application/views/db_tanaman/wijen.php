@@ -59,11 +59,11 @@
                         <!-- <a class="pull-right btn btn-warning btn-large" style="margin-right:40px" href="<?= base_url('export/exportBro'); ?>">
                             <i class="fa fa-file-excel-o"></i> Export to Excel</a> -->
                         <tbody>
-                            <?php $no = 1;
+                            <?php
                             foreach ($dat_wijen as $wijen) {
                             ?>
                                 <tr>
-                                    <td><?php echo $no++ ?></td>
+                                    <td><?php echo $wijen->no ?></td>
                                     <td><?php echo $wijen->no_aksesi ?></td>
                                     <td><?php echo $wijen->nama_aksesi ?></td>
                                     <td><img src="<?php echo base_url('assets/data/image' . $wijen->Image) ?>" width="64" /></td>

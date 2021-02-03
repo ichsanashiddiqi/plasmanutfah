@@ -64,11 +64,11 @@
                         <!-- <a class="pull-right btn btn-warning btn-large" style="margin-right:40px" href="<?= base_url('export/exportBro'); ?>">
                             <i class="fa fa-file-excel-o"></i> Export to Excel</a> -->
                         <tbody>
-                            <?php $no = 1;
+                            <?php
                             foreach ($dat_kenaf as $kenaf) {
                             ?>
                                 <tr>
-                                    <td><?php echo $no++ ?></td>
+                                    <td><?php echo $kenaf->no ?></td>
                                     <td><?php echo $kenaf->no_aksesi ?></td>
                                     <td><?php echo $kenaf->nama_aksesi ?></td>
                                     <td><img src="<?php echo base_url('assets/data/image' . $kenaf->Image) ?>" width="64" /></td>

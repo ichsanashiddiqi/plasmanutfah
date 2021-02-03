@@ -74,11 +74,11 @@
                         <!-- <a class="pull-right btn btn-warning btn-large" style="margin-right:40px" href="<?= base_url('export/exportBro'); ?>">
                             <i class="fa fa-file-excel-o"></i> Export to Excel</a> -->
                         <tbody>
-                            <?php $no = 1;
+                            <?php
                             foreach ($dat_kapas as $kps) {
                             ?>
                                 <tr>
-                                    <td><?php echo $no++ ?></td>
+                                    <td><?php echo $kps->no ?></td>
                                     <td><a href=""><i class="fas fa-edit" style="color: chartreuse;"></i></a>
                                         <a href=""><i class="fas fa-trash-alt" style="color: red;"></i></a>
                                     </td>
