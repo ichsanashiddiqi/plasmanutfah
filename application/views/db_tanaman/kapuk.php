@@ -69,26 +69,132 @@
                                     <td><?php echo $kapuk->no_aksesi ?></td>
                                     <td><?php echo $kapuk->nama_aksesi ?></td>
                                     <td><img src="<?php echo base_url('assets/data/image' . $kapuk->Image) ?>" width="64" /></td>
-                                    <td><?php echo $kapuk->kar_01 ?></td>
-                                    <td><?php echo $kapuk->kar_02 ?></td>
-                                    <td><?php echo $kapuk->kar_03 ?></td>
-                                    <td><?php echo $kapuk->kar_04 ?></td>
-                                    <td><?php echo $kapuk->kar_05 ?></td>
-                                    <td><?php echo $kapuk->kar_06 ?></td>
-                                    <td><?php echo $kapuk->kar_07 ?></td>
-                                    <td><?php echo $kapuk->kar_08 ?></td>
-                                    <td><?php echo $kapuk->kar_09 ?></td>
+                                    <td><?php if ($kapuk->kar_01 == 1) {
+                                            echo 'Indica';
+                                        } else if ($kapuk->kar_01 == 2) {
+                                            echo 'Carabia';
+                                        } else if ($kapuk->kar_01 == 3) {
+                                            echo 'Hibrida (campuran)';
+                                        } ?></td>
+                                    <td><?php if ($kapuk->kar_02 == 1) {
+                                            echo 'Perempuan';
+                                        } else if ($kapuk->kar_02 == 2) {
+                                            echo 'Lanang';
+                                        } else if ($kapuk->kar_02 == 3) {
+                                            echo 'Minyak (campuran)';
+                                        } else if ($kapuk->kar_02 == 4) {
+                                            echo 'Sapu';
+                                        } else if ($kapuk->kar_02 == 5) {
+                                            echo 'Tidak Teratur';
+                                        } ?></td>
+                                    <td><?php if ($kapuk->kar_03 == 1) {
+                                            echo 'Ada';
+                                        } else if ($kapuk->kar_03 == 2) {
+                                            echo 'Tidak Ada';
+                                        } ?></td>
+                                    <td><?php if ($kapuk->kar_04 == 1) {
+                                            echo 'Tidak Ada';
+                                        } else if ($kapuk->kar_04 == 2) {
+                                            echo 'Kecil';
+                                        } else if ($kapuk->kar_04 == 3) {
+                                            echo 'Sedang';
+                                        } else if ($kapuk->kar_04 == 4) {
+                                            echo 'Besar';
+                                        }  ?></td>
+                                    <td><?php if ($kapuk->kar_05 == 1) {
+                                            echo 'Tidak Ada';
+                                        } else if ($kapuk->kar_05 == 2) {
+                                            echo 'Kecil';
+                                        } else if ($kapuk->kar_05 == 3) {
+                                            echo 'Sedang';
+                                        } else if ($kapuk->kar_05 == 4) {
+                                            echo 'Besar';
+                                        } ?></td>
+                                    <td><?php if ($kapuk->kar_06 == 1) {
+                                            echo 'Sedikit';
+                                        } else if ($kapuk->kar_06 == 2) {
+                                            echo 'Sedang';
+                                        } else if ($kapuk->kar_06 == 3) {
+                                            echo 'Banyak';
+                                        }  ?></td>
+                                    <td><?php if ($kapuk->kar_07 == 1) {
+                                            echo 'Pendek Besar';
+                                        } else if ($kapuk->kar_07 == 2) {
+                                            echo 'Pendek Kecil';
+                                        } else if ($kapuk->kar_07 == 3) {
+                                            echo 'Panjang Besar';
+                                        } else if ($kapuk->kar_07 == 4) {
+                                            echo 'Panjang Kecil';
+                                        } else if ($kapuk->kar_07 == 5) {
+                                            echo 'Bentuk Lainnya';
+                                        } ?></td>
+                                    <td><?php if ($kapuk->kar_08 == 1) {
+                                            echo 'Sedikit';
+                                        } else if ($kapuk->kar_08 == 2) {
+                                            echo 'Sedang';
+                                        } else if ($kapuk->kar_08 == 3) {
+                                            echo 'Banyak';
+                                        } ?></td>
+                                    <td><?php if ($kapuk->kar_09 == 1) {
+                                            echo 'Pendek Besar';
+                                        } else if ($kapuk->kar_09 == 2) {
+                                            echo 'Pendek Kecil';
+                                        } else if ($kapuk->kar_09 == 3) {
+                                            echo 'Panjang Besar';
+                                        } else if ($kapuk->kar_09 == 4) {
+                                            echo 'Panjang Kecil';
+                                        } else if ($kapuk->kar_09 == 5) {
+                                            echo 'Bentuk Lainnya';
+                                        } ?></td>
                                     <td><?php echo $kapuk->kar_10 ?></td>
                                     <td><?php echo $kapuk->kar_11 ?></td>
-                                    <td><?php echo $kapuk->kar_12 ?></td>
-                                    <td><?php echo $kapuk->kar_13 ?></td>
-                                    <td><?php echo $kapuk->kar_14 ?></td>
+                                    <td><?php if ($kapuk->kar_12 == 1) {
+                                            echo 'Mudah Pecah';
+                                        } else if ($kapuk->kar_12 == 2) {
+                                            echo 'Tidak Mudah Pecah';
+                                        } ?></td>
+                                    <td><?php if ($kapuk->kar_13 == 1) {
+                                            echo 'Pendek';
+                                        } else if ($kapuk->kar_13 == 2) {
+                                            echo 'Sedang';
+                                        } else if ($kapuk->kar_13 == 3) {
+                                            echo 'Panjang';
+                                        } ?></td>
+                                    <td><?php if ($kapuk->kar_14 == 1) {
+                                            echo 'Lurus';
+                                        } else if ($kapuk->kar_14 == 2) {
+                                            echo 'Melengkung';
+                                        }  ?></td>
                                     <td><?php echo $kapuk->kar_15 ?></td>
-                                    <td><?php echo $kapuk->kar_16 ?></td>
-                                    <td><?php echo $kapuk->kar_17 ?></td>
+                                    <td><?php if ($kapuk->kar_16 == 1) {
+                                            echo 'Menjari';
+                                        } else if ($kapuk->kar_16 == 2) {
+                                            echo 'Menjari Dangkal';
+                                        } else if ($kapuk->kar_16 == 3) {
+                                            echo 'Tunggal';
+                                        } else if ($kapuk->kar_16 == 3) {
+                                            echo 'Bentuk Lainnya';
+                                        } ?></td>
+                                    <td><?php if ($kapuk->kar_17 == 1) {
+                                            echo 'Merah';
+                                        } else if ($kapuk->kar_17 == 2) {
+                                            echo 'Kuning';
+                                        } else if ($kapuk->kar_17 == 3) {
+                                            echo 'Hijau';
+                                        } else if ($kapuk->kar_17 == 3) {
+                                            echo 'Lainnya';
+                                        } ?></td>
                                     <td><?php echo $kapuk->kar_18 ?></td>
                                     <td><?php echo $kapuk->kar_19 ?></td>
-                                    <td><?php echo $kapuk->kar_20 ?></td>
+                                    <td><?php if ($kapuk->kar_20 == 1) {
+                                            echo 'Putih';
+                                        } else if ($kapuk->kar_20 == 2) {
+                                            echo 'Krem';
+                                        } else if ($kapuk->kar_20 == 3) {
+                                            echo 'Tunggal';
+                                        } else if ($kapuk->kar_20 == 3) {
+                                            echo 'Putih Keabu-abuan';
+                                        } ?></td>
                                     <td><?php echo $kapuk->kar_21 ?></td>
                                     <td><?php echo $kapuk->kar_22 ?></td>
                                     <td><?php echo $kapuk->kar_23 ?></td>

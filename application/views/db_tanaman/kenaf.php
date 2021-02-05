@@ -72,28 +72,234 @@
                                     <td><?php echo $kenaf->no_aksesi ?></td>
                                     <td><?php echo $kenaf->nama_aksesi ?></td>
                                     <td><img src="<?php echo base_url('assets/data/image' . $kenaf->Image) ?>" width="64" /></td>
-                                    <td><?php echo $kenaf->kar_01 ?></td>
-                                    <td><?php echo $kenaf->kar_02 ?></td>
-                                    <td><?php echo $kenaf->kar_03 ?></td>
-                                    <td><?php echo $kenaf->kar_04 ?></td>
-                                    <td><?php echo $kenaf->kar_05 ?></td>
-                                    <td><?php echo $kenaf->kar_06 ?></td>
-                                    <td><?php echo $kenaf->kar_07 ?></td>
-                                    <td><?php echo $kenaf->kar_08 ?></td>
-                                    <td><?php echo $kenaf->kar_09 ?></td>
-                                    <td><?php echo $kenaf->kar_10 ?></td>
-                                    <td><?php echo $kenaf->kar_11 ?></td>
-                                    <td><?php echo $kenaf->kar_12 ?></td>
-                                    <td><?php echo $kenaf->kar_13 ?></td>
-                                    <td><?php echo $kenaf->kar_14 ?></td>
-                                    <td><?php echo $kenaf->kar_15 ?></td>
-                                    <td><?php echo $kenaf->kar_16 ?></td>
-                                    <td><?php echo $kenaf->kar_17 ?></td>
-                                    <td><?php echo $kenaf->kar_18 ?></td>
-                                    <td><?php echo $kenaf->kar_19 ?></td>
+                                    <td><?php if ($kenaf->kar_01 == 1) {
+                                            echo 'Hijau';
+                                        } else if ($kenaf->kar_01 == 2) {
+                                            echo 'Hijau Kombinasi Merah';
+                                        } else if ($kenaf->kar_01 == 3) {
+                                            echo 'Hijau Kombinasi Coklat';
+                                        } else if ($kenaf->kar_01 == 4) {
+                                            echo 'Merah';
+                                        } else if ($kenaf->kar_01 == 5) {
+                                            echo 'Coklat';
+                                        } else if ($kenaf->kar_01 == 6) {
+                                            echo 'Warna Lainnya';
+                                        } ?></td>
+                                    <td><?php if ($kenaf->kar_02 == 1) {
+                                            echo 'Hijau';
+                                        } else if ($kenaf->kar_02 == 2) {
+                                            echo 'Hijau Kombinasi Merah';
+                                        } else if ($kenaf->kar_02 == 3) {
+                                            echo 'Hijau Kombinasi Coklat';
+                                        } else if ($kenaf->kar_02 == 4) {
+                                            echo 'Merah';
+                                        } else if ($kenaf->kar_02 == 5) {
+                                            echo 'Coklat';
+                                        } else if ($kenaf->kar_02 == 6) {
+                                            echo 'Warna Lainnya';
+                                        } ?></td>
+                                    <td><?php if ($kenaf->kar_03 == 1) {
+                                            echo 'Hijau';
+                                        } else if ($kenaf->kar_03 == 2) {
+                                            echo 'Merah';
+                                        } else if ($kenaf->kar_03 == 3) {
+                                            echo 'Hijau Tua';
+                                        } else if ($kenaf->kar_03 == 4) {
+                                            echo 'Warna Lainnya';
+                                        } ?></td>
+                                    <td><?php if ($kenaf->kar_04 == 1) {
+                                            echo 'Hijau';
+                                        } else if ($kenaf->kar_04 == 2) {
+                                            echo 'Hijau Kombinasi Merah';
+                                        } else if ($kenaf->kar_04 == 3) {
+                                            echo 'Hijau Kombinasi Coklat';
+                                        } else if ($kenaf->kar_04 == 4) {
+                                            echo 'Merah';
+                                        } else if ($kenaf->kar_04 == 5) {
+                                            echo 'Coklat';
+                                        } else if ($kenaf->kar_04 == 6) {
+                                            echo 'Warna Lainnya';
+                                        } ?></td>
+                                    <td><?php if ($kenaf->kar_05 == 1) {
+                                            echo 'Hijau';
+                                        } else if ($kenaf->kar_05 == 2) {
+                                            echo 'Hijau Kombinasi Merah';
+                                        } else if ($kenaf->kar_05 == 3) {
+                                            echo 'Hijau Kombinasi Coklat';
+                                        } else if ($kenaf->kar_05 == 4) {
+                                            echo 'Merah';
+                                        } else if ($kenaf->kar_05 == 5) {
+                                            echo 'Coklat';
+                                        } else if ($kenaf->kar_05 == 6) {
+                                            echo 'Warna Lainnya';
+                                        } ?></td>
+                                    <td><?php if ($kenaf->kar_06 == 1) {
+                                            echo 'Hijau';
+                                        } else if ($kenaf->kar_06 == 2) {
+                                            echo 'Hijau Kombinasi Merah';
+                                        } else if ($kenaf->kar_06 == 3) {
+                                            echo 'Hijau Kombinasi Coklat';
+                                        } else if ($kenaf->kar_06 == 4) {
+                                            echo 'Merah';
+                                        } else if ($kenaf->kar_06 == 5) {
+                                            echo 'Coklat';
+                                        } else if ($kenaf->kar_06 == 6) {
+                                            echo 'Warna Lainnya';
+                                        } ?></td>
+                                    <td><?php if ($kenaf->kar_07 == 1) {
+                                            echo 'Hijau';
+                                        } else if ($kenaf->kar_07 == 2) {
+                                            echo 'Hijau Kombinasi Merah';
+                                        } else if ($kenaf->kar_07 == 3) {
+                                            echo 'Hijau Kombinasi Coklat';
+                                        } else if ($kenaf->kar_07 == 4) {
+                                            echo 'Merah';
+                                        } else if ($kenaf->kar_07 == 5) {
+                                            echo 'Coklat';
+                                        } else if ($kenaf->kar_07 == 6) {
+                                            echo 'Warna Lainnya';
+                                        } ?></td>
+                                    <td><?php if ($kenaf->kar_08 == 1) {
+                                            echo 'Hijau';
+                                        } else if ($kenaf->kar_08 == 2) {
+                                            echo 'Kuning';
+                                        } else if ($kenaf->kar_08 == 3) {
+                                            echo 'Merah';
+                                        } else if ($kenaf->kar_08 == 4) {
+                                            echo 'Ungu';
+                                        } else if ($kenaf->kar_08 == 5) {
+                                            echo 'Warna Lainnya';
+                                        } ?></td>
+                                    <td><?php if ($kenaf->kar_09 == 1) {
+                                            echo 'Kuning';
+                                        } else if ($kenaf->kar_09 == 2) {
+                                            echo 'Merah';
+                                        } else if ($kenaf->kar_09 == 3) {
+                                            echo 'Ungu';
+                                        } ?></td>
+                                    <td><?php if ($kenaf->kar_10 == 1) {
+                                            echo 'Kuning';
+                                        } else if ($kenaf->kar_10 == 2) {
+                                            echo 'Merah';
+                                        } else if ($kenaf->kar_10 == 3) {
+                                            echo 'Ungu';
+                                        } ?></td>
+                                    <td><?php if ($kenaf->kar_11 == 1) {
+                                            echo 'Hijau';
+                                        } else if ($kenaf->kar_11 == 2) {
+                                            echo 'Kuning';
+                                        } else if ($kenaf->kar_11 == 3) {
+                                            echo 'Merah';
+                                        } else if ($kenaf->kar_11 == 4) {
+                                            echo 'Ungu';
+                                        } else if ($kenaf->kar_11 == 5) {
+                                            echo 'Warna Lainnya';
+                                        } ?></td>
+                                    <td><?php if ($kenaf->kar_12 == 1) {
+                                            echo 'Abu-abu';
+                                        } else if ($kenaf->kar_12 == 2) {
+                                            echo 'Coklat';
+                                        } else if ($kenaf->kar_12 == 3) {
+                                            echo 'Coklat Kemarahan';
+                                        } else if ($kenaf->kar_12 == 4) {
+                                            echo 'Ungu';
+                                        } else if ($kenaf->kar_12 == 5) {
+                                            echo 'Biru';
+                                        } else if ($kenaf->kar_12 == 6) {
+                                            echo 'Warna Lainnya';
+                                        } ?></td>
+                                    <td><?php if ($kenaf->kar_13 == 1) {
+                                            echo 'Halus';
+                                        } else if ($kenaf->kar_13 == 2) {
+                                            echo 'Berbulu';
+                                        } else if ($kenaf->kar_13 == 3) {
+                                            echo 'Berduri';
+                                        } else if ($kenaf->kar_13 == 4) {
+                                            echo 'Lainnya';
+                                        } ?></td>
+                                    <td><?php if ($kenaf->kar_14 == 1) {
+                                            echo 'Dehiscent/Buah mudah pecah';
+                                        } else if ($kenaf->kar_14 == 2) {
+                                            echo 'Buah tidak mudah pecah';
+                                        } ?></td>
+                                    <td><?php if ($kenaf->kar_15 == 1) {
+                                            echo 'Reniform';
+                                        } else if ($kenaf->kar_15 == 2) {
+                                            echo 'Subreniform';
+                                        } else if ($kenaf->kar_15 == 3) {
+                                            echo 'Angular';
+                                        } else if ($kenaf->kar_15 == 4) {
+                                            echo 'Bentuk Lainnya';
+                                        } ?></td>
+                                    <td><?php if ($kenaf->kar_16 == 1) {
+                                            echo 'Sangat Sedikit';
+                                        } else if ($kenaf->kar_16 == 11) {
+                                            echo 'Tidak Bercabang (=1)';
+                                        } else if ($kenaf->kar_16 == 13) {
+                                            echo 'Rudimenter (=2)';
+                                        } else if ($kenaf->kar_16 == 3) {
+                                            echo 'Sedikit';
+                                        } else if ($kenaf->kar_16 == 5) {
+                                            echo 'Sedang';
+                                        } else if ($kenaf->kar_16 == 7) {
+                                            echo 'Banyak (=3)';
+                                        } else if ($kenaf->kar_16 == 9) {
+                                            echo 'Sangat Banyak (=4)';
+                                        } ?></td>
+                                    <td><?php if ($kenaf->kar_17 == 1) {
+                                            echo 'Jantung';
+                                        } else if ($kenaf->kar_17 == 2) {
+                                            echo 'Semi Menjari (=2)';
+                                        } else if ($kenaf->kar_17 == 3) {
+                                            echo 'Menjari (=3)';
+                                        } else if ($kenaf->kar_17 == 4) {
+                                            echo 'Ovate';
+                                        } else if ($kenaf->kar_17 == 5) {
+                                            echo 'Ovate Lanceolate';
+                                        } else if ($kenaf->kar_17 == 6) {
+                                            echo 'Lanceolate';
+                                        } else if ($kenaf->kar_17 == 7) {
+                                            echo 'Eliptical';
+                                        } ?></td>
+                                    <td><?php if ($kenaf->kar_18 == 1) {
+                                            echo 'Halus';
+                                        } else if ($kenaf->kar_18 == 2) {
+                                            echo 'Berbulu';
+                                        } else if ($kenaf->kar_18 == 3) {
+                                            echo 'Berduri';
+                                        } else if ($kenaf->kar_18 == 4) {
+                                            echo 'Berbulu dan Berduri';
+                                        } else if ($kenaf->kar_18 == 5) {
+                                            echo 'Tipe Lainnya';
+                                        } ?></td>
+                                    <td><?php if ($kenaf->kar_19 == 1) {
+                                            echo 'Ada Stipul (=1)';
+                                        } else if ($kenaf->kar_19 == 2) {
+                                            echo 'Tidak Ada Stipul (=1)';
+                                        } else if ($kenaf->kar_19 == 3) {
+                                            echo 'Lain-lain';
+                                        } ?></td>
                                     <td><?php echo $kenaf->kar_20 ?></td>
                                     <td><?php echo $kenaf->kar_21 ?></td>
-                                    <td><?php echo $kenaf->kar_22 ?></td>
+                                    <td><?php if ($kenaf->kar_22 == 1) {
+                                            echo 'Erect (0-20 derajat)';
+                                        } else if ($kenaf->kar_22 == 2) {
+                                            echo 'Semi Erect (21-40 derajat)';
+                                        } else if ($kenaf->kar_22 == 3) {
+                                            echo 'Intermediate (41-60 derajat)';
+                                        } else if ($kenaf->kar_22 == 4) {
+                                            echo 'Semi Intermediate (61-80 derajat)';
+                                        } else if ($kenaf->kar_22 == 5) {
+                                            echo 'Horisontal (81-100 derajat)';
+                                        } else if ($kenaf->kar_22 == 6) {
+                                            echo 'Semi Horisontal (101-120 derajat)';
+                                        } else if ($kenaf->kar_22 == 7) {
+                                            echo 'Descending (121-140 derajat)';
+                                        } else if ($kenaf->kar_22 == 8) {
+                                            echo 'Semi Descending (141-160 derajat)';
+                                        } else if ($kenaf->kar_22 == 9) {
+                                            echo 'Drooping (161-180 derajat)';
+                                        } ?></td>
                                     <td><?php echo $kenaf->kar_23 ?></td>
                                     <td><?php echo $kenaf->kar_24 ?></td>
                                     <td><?php echo $kenaf->kar_25 ?></td>
