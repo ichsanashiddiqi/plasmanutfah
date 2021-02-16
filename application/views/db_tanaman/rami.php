@@ -7,6 +7,8 @@
     </div>
 
     <!-- Content Row -->
+    <a type="button" class="btn btn-outline-success" href="<?= base_url('tambah/rami'); ?>">Tambah Data Rami</a>
+    <hr>
     <div class="row">
         <div class="card shadow mb-4">
             <div class="card-header py-3">

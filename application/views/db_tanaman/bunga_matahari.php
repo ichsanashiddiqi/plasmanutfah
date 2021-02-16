@@ -7,6 +7,8 @@
     </div>
 
     <!-- Content Row -->
+    <a type="button" class="btn btn-outline-success" href="<?= base_url('tambah/bunga_matahari'); ?>">Tambah Data Bunga Matahari</a>
+    <hr>
     <div class="row">
         <div class="card shadow mb-4">
             <div class="card-header py-3">
