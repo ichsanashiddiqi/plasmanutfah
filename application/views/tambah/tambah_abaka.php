@@ -18,46 +18,46 @@
             <form class="user">
                 <div class="form-group row">
                     <div class="col-sm-6 mb-3 mb-sm-0">
-                        <input type="text" class="form-control" id="exampleFirstName" placeholder="No. Aksesi">
+                        <input type="text" class="form-control" id="no_aksesi" name="no_aksesi" placeholder="No. Aksesi">
                     </div>
                     <div class="col-sm-6">
-                        <input type="text" class="form-control" id="exampleLastName" placeholder="No. Aksesi KNPN">
+                        <input type="text" class="form-control" id="no_aksesi_IDN" name="no_aksesi_IDN" placeholder="No. Aksesi KNPN">
                     </div>
                 </div>
                 <div class="form-group">
-                    <input type="text" class="form-control" id="exampleInputEmail" placeholder="Nama Aksesi">
+                    <input type="text" class="form-control" id="nama_aksesi" name="nama_aksesi" placeholder="Nama Aksesi">
                 </div>
                 <hr>
                 <div class="form-group row">
                     <div class="col-sm-6 mb-3 mb-sm-0">
-                        <input type="text" class="form-control" id="exampleInputPassword" placeholder="Negara Asal">
+                        <input type="text" class="form-control" id="Negara_asal" name="Negara_asal" placeholder="Negara Asal">
                     </div>
                     <div class="col-sm-6">
-                        <input type="text" class="form-control" id="exampleRepeatPassword" placeholder="Donor">
+                        <input type="text" class="form-control" id="Donor" name="Donor" placeholder="Donor">
                     </div>
                 </div>
                 <div class="form-group row">
                     <div class="col-sm-6 mb-3 mb-sm-0">
-                        <input type="text" class="form-control" id="exampleInputPassword" placeholder="Desa">
+                        <input type="text" class="form-control" id="Desa" name="Desa" placeholder="Desa">
                     </div>
                     <div class="col-sm-6">
-                        <input type="text" class="form-control" id="exampleRepeatPassword" placeholder="Kecamatan Asal">
+                        <input type="text" class="form-control" id="Kecamatan" name="Kecamatan" placeholder="Kecamatan Asal">
                     </div>
                 </div>
                 <div class="form-group row">
                     <div class="col-sm-6 mb-3 mb-sm-0">
-                        <input type="text" class="form-control" id="exampleInputPassword" placeholder="Kabupaten">
+                        <input type="text" class="form-control" id="Kabupaten" name="Kabupaten" placeholder="Kabupaten">
                     </div>
                     <div class="col-sm-6">
-                        <input type="text" class="form-control" id="exampleRepeatPassword" placeholder="Provinsi Asal">
+                        <input type="text" class="form-control" id="Propinsi" name="Propinsi" placeholder="Provinsi Asal">
                     </div>
                 </div>
                 <div class="form-group row">
                     <div class="col-sm-6 mb-3 mb-sm-0">
-                        <input type="text" class="form-control" id="exampleInputPassword" placeholder="Posisi Lintang">
+                        <input type="text" class="form-control" id="latittude" placeholder="Posisi Lintang">
                     </div>
                     <div class="col-sm-6">
-                        <input type="text" class="form-control" id="exampleRepeatPassword" placeholder="Bujur">
+                        <input type="text" class="form-control" id="longitude" placeholder="Bujur">
                     </div>
                 </div>
                 <!-- <a href="login.html" class="btn btn-primary btn-user btn-block">
@@ -256,10 +256,10 @@
                     <form class="user">
                         <div class="form-group row">
                             <div class="col-sm">
-                                <input type="text" class="form-control" id="exampleFirstName" placeholder="Umur Berbunga">
+                                <input type="text" class="form-control" id="kar_01" name="kar_01" placeholder="Umur Berbunga">
                             </div>
                             <div class="col-sm">
-                                <select class="form-control form-select-user" id="autoSizingSelect">
+                                <select class="form-control form-select-user" id="kar_14" name="kar_14">
                                     <option selected>Warna Jantung</option>
                                     <option value="1">1. Merah</option>
                                     <option value="2">2. Merah Gelap</option>
@@ -268,15 +268,15 @@
                             </div>
 
                             <div class="col-sm">
-                                <input type="text" class="form-control" id="exampleLastName" placeholder="Produksi Serat Kering">
+                                <input type="text" class="form-control" id="kar_27" name="kar_27" placeholder="Produksi Serat Kering">
                             </div>
                         </div>
                         <div class="form-group row">
                             <div class="col-sm">
-                                <input type="text" class="form-control" id="exampleFirstName" placeholder="Umur Panen Serat">
+                                <input type="text" class="form-control" id="kar_02" name="kar_02" placeholder="Umur Panen Serat">
                             </div>
                             <div class="col-sm">
-                                <select class="form-control form-select-user" id="autoSizingSelect">
+                                <select class="form-control form-select-user" id="kar_15" name="kar_15">
                                     <option selected>Warna Buah Muda</option>
                                     <option value="1">1. Hijau</option>
                                     <option value="2">2. Merah</option>
@@ -285,15 +285,15 @@
                             </div>
 
                             <div class="col-sm">
-                                <input type="text" class="form-control" id="exampleLastName" placeholder="Jumlah Buah">
+                                <input type="text" class="form-control" id="kar_28" name="kar_28" placeholder="Jumlah Buah">
                             </div>
                         </div>
                         <div class="form-group row">
                             <div class="col-sm">
-                                <input type="text" class="form-control" id="exampleFirstName" placeholder="Umur Panen Benih">
+                                <input type="text" class="form-control" id="kar_03" name="kar_03" placeholder="Umur Panen Benih">
                             </div>
                             <div class="col-sm">
-                                <select class="form-control form-select-user" id="autoSizingSelect">
+                                <select class="form-control form-select-user" id="kar_16" name="kar_16">
                                     <option selected>Warna Buah Matang</option>
                                     <option value="1">1. Hijau</option>
                                     <option value="2">2. Merah</option>
@@ -303,12 +303,12 @@
                             </div>
 
                             <div class="col-sm">
-                                <input type="text" class="form-control" id="exampleLastName" placeholder="Panjang Buah">
+                                <input type="text" class="form-control" id="kar_29" name="kar_29" placeholder="Panjang Buah">
                             </div>
                         </div>
                         <div class="form-group row">
                             <div class="col-sm">
-                                <select class="form-control form-select-user" id="autoSizingSelect">
+                                <select class="form-control form-select-user" id="kar_04" name="kar_04">
                                     <option selected>Bentuk Daun</option>
                                     <option value="1">1. Ovate</option>
                                     <option value="2">2. Cordate</option>
@@ -317,7 +317,7 @@
                                 </select>
                             </div>
                             <div class="col-sm">
-                                <select class="form-control form-select-user" id="autoSizingSelect">
+                                <select class="form-control form-select-user" id="kar_17" name="kar_17">
                                     <option selected>Warna Biji</option>
                                     <option value="1">1. Hitam</option>
                                     <option value="2">2. Coklat</option>
@@ -326,45 +326,45 @@
                             </div>
 
                             <div class="col-sm">
-                                <input type="text" class="form-control" id="exampleLastName" placeholder="Diameter Buah">
+                                <input type="text" class="form-control" id="kar_30" name="kar_30" placeholder="Diameter Buah">
                             </div>
                         </div>
                         <div class="form-group row">
                             <div class="col-sm">
-                                <input type="text" class="form-control" id="exampleFirstName" placeholder="Panjang Daun">
+                                <input type="text" class="form-control" id="kar_05" name="kar_05" placeholder="Panjang Daun">
                             </div>
                             <div class="col-sm">
-                                <input type="text" class="form-control" id="exampleFirstName" placeholder="Diameter Batang Bawah">
+                                <input type="text" class="form-control" id="kar_18" name="kar_18" placeholder="Diameter Batang Bawah">
                             </div>
                             <div class="col-sm">
-                                <input type="text" class="form-control" id="exampleLastName" placeholder="Jumlah Biji">
-                            </div>
-                        </div>
-                        <div class="form-group row">
-                            <div class="col-sm">
-                                <input type="text" class="form-control" id="exampleFirstName" placeholder="Lebar Daun">
-                            </div>
-                            <div class="col-sm">
-                                <input type="text" class="form-control" id="exampleFirstName" placeholder="Diameter Batang Tengah">
-                            </div>
-                            <div class="col-sm">
-                                <input type="text" class="form-control" id="exampleLastName" placeholder="Berat Biji">
+                                <input type="text" class="form-control" id="kar_31" name="kar_31" placeholder="Jumlah Biji">
                             </div>
                         </div>
                         <div class="form-group row">
                             <div class="col-sm">
-                                <input type="text" class="form-control" id="exampleFirstName" placeholder="Luas Daun">
+                                <input type="text" class="form-control" id="kar_06" name="kar_06" placeholder="Lebar Daun">
                             </div>
                             <div class="col-sm">
-                                <input type="text" class="form-control" id="exampleFirstName" placeholder="Diameter Batang Atas">
+                                <input type="text" class="form-control" id="kar_19" name="kar_19" placeholder="Diameter Batang Tengah">
                             </div>
                             <div class="col-sm">
-                                <input type="text" class="form-control" id="exampleLastName" placeholder="Berat 1000 Biji">
+                                <input type="text" class="form-control" id="kar_32" name="kar_32" placeholder="Berat Biji">
                             </div>
                         </div>
                         <div class="form-group row">
                             <div class="col-sm">
-                                <select class="form-control form-select-user" id="autoSizingSelect">
+                                <input type="text" class="form-control" id="kar_07" name="kar_07" placeholder="Luas Daun">
+                            </div>
+                            <div class="col-sm">
+                                <input type="text" class="form-control" id="kar_20" name="kar_20" placeholder="Diameter Batang Atas">
+                            </div>
+                            <div class="col-sm">
+                                <input type="text" class="form-control" id="kar_33" name="kar_33" placeholder="Berat 1000 Biji">
+                            </div>
+                        </div>
+                        <div class="form-group row">
+                            <div class="col-sm">
+                                <select class="form-control form-select-user" id="kar_08" name="kar_08">
                                     <option selected>Sudut Daun</option>
                                     <option value="1">1. Erect (2-20 derajat)</option>
                                     <option value="2">2. Intermediate (21-60 derajat)</option>
@@ -373,30 +373,30 @@
                                 </select>
                             </div>
                             <div class="col-sm">
-                                <input type="text" class="form-control" id="exampleFirstName" placeholder="Tinggi Tanaman">
+                                <input type="text" class="form-control" id="kar_21" name="kar_21" placeholder="Tinggi Tanaman">
                             </div>
                             <div class="col-sm">
-                                <input type="text" class="form-control" id="exampleLastName" placeholder="Produksi Biji">
+                                <input type="text" class="form-control" id="kar_34" name="kar_34" placeholder="Produksi Biji">
                             </div>
                         </div>
                         <div class="form-group row">
                             <div class="col-sm">
-                                <select class="form-control form-select-user" id="autoSizingSelect">
+                                <select class="form-control form-select-user" id="kar_09" name="kar_09">
                                     <option selected>Bentuk Jantung</option>
                                     <option value="1">1. Cilinder</option>
                                     <option value="2">2. Conr</option>
                                 </select>
                             </div>
                             <div class="col-sm">
-                                <input type="text" class="form-control" id="exampleFirstName" placeholder="Jumlah Batang">
+                                <input type="text" class="form-control" id="kar_22" name="kar_22" placeholder="Jumlah Batang">
                             </div>
                             <div class="col-sm">
-                                <input type="text" class="form-control" id="exampleLastName" placeholder="Ketahanan Hama/Penyakit">
+                                <input type="text" class="form-control" id="kar_35" name="kar_35" placeholder="Ketahanan Hama/Penyakit">
                             </div>
                         </div>
                         <div class="form-group row">
                             <div class="col-sm">
-                                <select class="form-control form-select-user" id="autoSizingSelect">
+                                <select class="form-control form-select-user" id="kar_10" name="kar_10">
                                     <option selected>Warna Batang</option>
                                     <option value="1">1. Hijau</option>
                                     <option value="2">2. Merah</option>
@@ -404,15 +404,15 @@
                                 </select>
                             </div>
                             <div class="col-sm">
-                                <input type="text" class="form-control" id="exampleFirstName" placeholder="Jumlah Pohon">
+                                <input type="text" class="form-control" id="kar_23" name="kar_23" placeholder="Jumlah Pohon">
                             </div>
                             <div class="col-sm">
-                                <input type="text" class="form-control" id="exampleLastName" placeholder="Ketahanan Kekeringan">
+                                <input type="text" class="form-control" id="kar_36" name="kar_36" placeholder="Ketahanan Kekeringan">
                             </div>
                         </div>
                         <div class="form-group row">
                             <div class="col-sm">
-                                <select class="form-control form-select-user" id="autoSizingSelect">
+                                <select class="form-control form-select-user" id="kar_11" name="kar_11">
                                     <option selected>Warna Helai Daun</option>
                                     <option value="1">1. Hijau</option>
                                     <option value="2">2. Merah</option>
@@ -420,15 +420,15 @@
                                 </select>
                             </div>
                             <div class="col-sm">
-                                <input type="text" class="form-control" id="exampleFirstName" placeholder="Berat Batang Segar">
+                                <input type="text" class="form-control" id="kar_24" name="kar_24" placeholder="Berat Batang Segar">
                             </div>
                             <div class="col-sm">
-                                <input type="text" class="form-control" id="exampleLastName" placeholder="Kekuatan Serat">
+                                <input type="text" class="form-control" id="kar_37" name="kar_37" placeholder="Kekuatan Serat">
                             </div>
                         </div>
                         <div class="form-group row">
                             <div class="col-sm">
-                                <select class="form-control form-select-user" id="autoSizingSelect">
+                                <select class="form-control form-select-user" id="kar_12" name="kar_12">
                                     <option selected>Warna Tangkai Daun</option>
                                     <option value="1">1. Hijau</option>
                                     <option value="2">2. Merah</option>
@@ -436,15 +436,15 @@
                                 </select>
                             </div>
                             <div class="col-sm">
-                                <input type="text" class="form-control" id="exampleFirstName" placeholder="Berat Serat Kering">
+                                <input type="text" class="form-control" id="kar_25" name="kar_25" placeholder="Berat Serat Kering">
                             </div>
                             <div class="col-sm">
-                                <input type="text" class="form-control" id="exampleLastName" placeholder="Kehalusan Serat">
+                                <input type="text" class="form-control" id="kar_38" name="kar_38" placeholder="Kehalusan Serat">
                             </div>
                         </div>
                         <div class="form-group row">
                             <div class="col-md-4">
-                                <select class="form-control form-select-user" id="autoSizingSelect">
+                                <select class="form-control form-select-user" id="kar_13" name="kar_13">
                                     <option selected>Warna Bunga</option>
                                     <option value="1">1. Merah</option>
                                     <option value="2">2. Pink Coklat</option>
@@ -454,7 +454,7 @@
                                 </select>
                             </div>
                             <div class="col-md-4">
-                                <input type="text" class="form-control" id="exampleFirstName" placeholder="Rendemen Serat">
+                                <input type="text" class="form-control" id="kar_26" name="kar_26" placeholder="Rendemen Serat">
                             </div>
                         </div>
                     </form>
