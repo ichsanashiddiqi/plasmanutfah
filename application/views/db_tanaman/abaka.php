@@ -75,7 +75,7 @@
                                     <td><?php echo $abk->no ?></td>
                                     <td><?php echo $abk->no_aksesi ?></td>
                                     <td><?php echo $abk->nama_aksesi ?></td>
-                                    <td><img src="<?php echo base_url('assets/data/image' . $abk->Image) ?>" width="64" /></td>
+                                    <td><img src="<?php echo base_url('assets/data/' . $abk->Image) ?>" width="64" /></td>
                                     <td><?php echo $abk->kar_01 ?></td>
                                     <td><?php echo $abk->kar_02 ?></td>
                                     <td><?php echo $abk->kar_03 ?></td>

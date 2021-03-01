@@ -66,7 +66,7 @@
                                     <td><?php echo $jp->no ?></td>
                                     <td><?php echo $jp->no_aksesi ?></td>
                                     <td><?php echo $jp->nama_aksesi ?></td>
-                                    <td><img src="<?php echo base_url('assets/data/image' . $jp->Image) ?>" width="64" /></td>
+                                    <td><img src="<?php echo base_url('assets/data/' . $jp->Image) ?>" width="64" /></td>
                                     <td><?php echo $jp->kar_01 ?></td>
                                     <td><?php echo $jp->kar_02 ?></td>
                                     <td><?php echo $jp->kar_03 ?></td>

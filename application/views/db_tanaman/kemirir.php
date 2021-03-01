@@ -78,7 +78,7 @@
                                     <td><?php echo $kemiri->no ?></td>
                                     <td><?php echo $kemiri->no_aksesi ?></td>
                                     <td><?php echo $kemiri->nama_aksesi ?></td>
-                                    <td><img src="<?php echo base_url('assets/data/image' . $kemiri->Image) ?>" width="64" /></td>
+                                    <td><img src="<?php echo base_url('assets/data/' . $kemiri->Image) ?>" width="64" /></td>
                                     <td><?php echo $kemiri->kar_01 ?></td>
                                     <td><?php echo $kemiri->kar_02 ?></td>
                                     <td><?php echo $kemiri->kar_03 ?></td>

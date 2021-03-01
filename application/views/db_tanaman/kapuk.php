@@ -70,7 +70,7 @@
                                     <td><?php echo $kapuk->no ?></td>
                                     <td><?php echo $kapuk->no_aksesi ?></td>
                                     <td><?php echo $kapuk->nama_aksesi ?></td>
-                                    <td><img src="<?php echo base_url('assets/data/image' . $kapuk->Image) ?>" width="64" /></td>
+                                    <td><img src="<?php echo base_url('assets/data/' . $kapuk->Image) ?>" width="64" /></td>
                                     <td><?php if ($kapuk->kar_01 == 1) {
                                             echo 'Indica';
                                         } else if ($kapuk->kar_01 == 2) {

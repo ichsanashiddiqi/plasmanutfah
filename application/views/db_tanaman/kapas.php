@@ -86,7 +86,7 @@
                                     </td>
                                     <td><?php echo $kps->no_aksesi ?></td>
                                     <td><?php echo $kps->nama_aksesi ?></td>
-                                    <td><img src="<?php echo base_url('assets/data/image' . $kps->image) ?>" width="64" /></td>
+                                    <td><img src="<?php echo base_url('assets/data/' . $kps->image) ?>" width="64" /></td>
                                     <td><?php if ($kps->kar_01 == 3) {
                                             echo 'menyebar';
                                         } else if ($kps->kar_01 == 5) {

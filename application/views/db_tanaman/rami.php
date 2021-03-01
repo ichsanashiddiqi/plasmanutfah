@@ -78,7 +78,7 @@
                                     <td><?php echo $rami->no ?></td>
                                     <td><?php echo $rami->no_aksesi ?></td>
                                     <td><?php echo $rami->nama_aksesi ?></td>
-                                    <td><img src="<?php echo base_url('assets/data/image' . $rami->Image) ?>" width="64" /></td>
+                                    <td><img src="<?php echo base_url('assets/data/' . $rami->Image) ?>" width="64" /></td>
                                     <td><?php echo $rami->kar_01 ?></td>
                                     <td><?php echo $rami->kar_02 ?></td>
                                     <td><?php echo $rami->kar_03 ?></td>

@@ -73,7 +73,7 @@
                                     <td><?php echo $kenaf->no ?></td>
                                     <td><?php echo $kenaf->no_aksesi ?></td>
                                     <td><?php echo $kenaf->nama_aksesi ?></td>
-                                    <td><img src="<?php echo base_url('assets/data/image' . $kenaf->Image) ?>" width="64" /></td>
+                                    <td><img src="<?php echo base_url('assets/data/' . $kenaf->Image) ?>" width="64" /></td>
                                     <td><?php if ($kenaf->kar_01 == 1) {
                                             echo 'Hijau';
                                         } else if ($kenaf->kar_01 == 2) {
