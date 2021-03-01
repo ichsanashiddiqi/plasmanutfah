@@ -3,7 +3,7 @@
 
     <!-- Page Heading -->
     <div class="d-sm-flex align-items-center justify-content-between mb-4">
-        <h1 class="h3 mb-0 text-gray-800">Tanaman Abaka</h1>
+        <h1 class="h3 mb-0 text-gray-800">Tanaman Bunga Matahari</h1>
     </div>
 
     <!-- Content Row -->
@@ -13,64 +13,64 @@
             Featured
         </div>
         <div class="card-body">
-            <h5 class="card-title">Tambah tanaman abaka</h5>
+            <h5 class="card-title">Tambah tanaman bunga matahari</h5>
             <!-- <p class="card-text">With supporting text below as a natural lead-in to additional content.</p> -->
-            <form class="user" method="post" action="<?php echo base_url('add/add_abaka/tambah_aksi'); ?>">
+            <form class="user" method="post" action="<?php echo base_url('add/add_bm/tambah_aksi'); ?>">
                 <div class="form-group row">
                     <div class="col-sm-6 mb-3 mb-sm-0">
-                        <input type="text" class="form-control" id="exampleFirstName" placeholder="No. Aksesi">
+                        <input type="text" class="form-control" id="no_aksesi" name="no_aksesi" placeholder="No. Aksesi">
                     </div>
                     <div class="col-sm-6">
-                        <input type="text" class="form-control" id="exampleLastName" placeholder="No. Aksesi KNPN">
+                        <input type="text" class="form-control" id="no_aksesi_IDN" name="no_aksesi_IDN" placeholder="No. Aksesi KNPN">
                     </div>
                 </div>
                 <div class="form-group">
-                    <input type="text" class="form-control" id="exampleInputEmail" placeholder="Nama Aksesi">
+                    <input type="text" class="form-control" id="nama_aksesi" name="nama_aksesi" placeholder="Nama Aksesi">
                 </div>
                 <hr>
                 <div class="form-group row">
                     <div class="col-sm-6 mb-3 mb-sm-0">
-                        <input type="text" class="form-control" id="exampleInputPassword" placeholder="Negara Asal">
+                        <input type="text" class="form-control" id="Negara" name="Negara" placeholder="Negara Asal">
                     </div>
                     <div class="col-sm-6">
-                        <input type="text" class="form-control" id="exampleRepeatPassword" placeholder="Donor">
+                        <input type="text" class="form-control" id="Donor" name="Domor" placeholder="Donor">
                     </div>
                 </div>
                 <div class="form-group row">
                     <div class="col-sm-6 mb-3 mb-sm-0">
-                        <input type="text" class="form-control" id="exampleInputPassword" placeholder="Desa">
+                        <input type="text" class="form-control" id="Desa" name="Desa" placeholder="Desa">
                     </div>
                     <div class="col-sm-6">
-                        <input type="text" class="form-control" id="exampleRepeatPassword" placeholder="Kecamatan Asal">
+                        <input type="text" class="form-control" id="Kecamatan" name="Kecamatan" placeholder="Kecamatan Asal">
                     </div>
                 </div>
                 <div class="form-group row">
                     <div class="col-sm-6 mb-3 mb-sm-0">
-                        <input type="text" class="form-control" id="exampleInputPassword" placeholder="Kabupaten">
+                        <input type="text" class="form-control" id="Kabupaten" name="Kabupaten" placeholder="Kabupaten">
                     </div>
                     <div class="col-sm-6">
-                        <input type="text" class="form-control" id="exampleRepeatPassword" placeholder="Provinsi Asal">
+                        <input type="text" class="form-control" id="Propinsi" name="Propinsi" placeholder="Provinsi Asal">
                     </div>
                 </div>
                 <div class="form-group row">
                     <div class="col-sm-6 mb-3 mb-sm-0">
-                        <input type="text" class="form-control" id="exampleInputPassword" placeholder="Posisi Lintang">
+                        <input type="text" class="form-control" id="Lattitude" name="Lattitude" placeholder="Posisi Lintang">
                     </div>
                     <div class="col-sm-6">
-                        <input type="text" class="form-control" id="exampleRepeatPassword" placeholder="Bujur">
+                        <input type="text" class="form-control" id="Longitude" name="Longitude" placeholder="Bujur">
                     </div>
                 </div>
                 <hr>
                 <div class="form-group row">
                     <div class="col-sm">
-                        <select class="form-control form-select-user" id="autoSizingSelect">
+                        <select class="form-control form-select-user" id="kar_01" name="kar_01">
                             <option selected>Hipokotil Perwarnaan Antosianin</option>
                             <option value="1">1. Tidak Ada</option>
                             <option value="9">9. Ada</option>
                         </select>
                     </div>
                     <div class="col-sm">
-                        <select class="form-control form-select-user" id="autoSizingSelect">
+                        <select class="form-control form-select-user" id="kar_15" name="kar_15">
                             <option selected>Waktu Pembungaan</option>
                             <option value="1">1. Sangat Genjah</option>
                             <option value="3">3. Genjah</option>
@@ -80,7 +80,7 @@
                         </select>
                     </div>
                     <div class="col-sm">
-                        <select class="form-control form-select-user" id="autoSizingSelect">
+                        <select class="form-control form-select-user" id="kar_21" name="kar_21">
                             <option selected>Tinggi Alami Tanaman</option>
                             <option value="1">1. Sangat Pendek</option>
                             <option value="3">3. Pendek</option>
@@ -91,7 +91,7 @@
                 </div>
                 <div class="form-group row">
                     <div class="col-sm">
-                        <select class="form-control form-select-user" id="autoSizingSelect">
+                        <select class="form-control form-select-user" id="kar_02" name="kar_02">
                             <option selected>Intensitas Warna Antosianin</option>
                             <option value="3">3. Lemah</option>
                             <option value="5">5. Sedang</option>
@@ -99,7 +99,7 @@
                         </select>
                     </div>
                     <div class="col-sm">
-                        <select class="form-control form-select-user" id="autoSizingSelect">
+                        <select class="form-control form-select-user" id="kar_16" name="kar_16">
                             <option selected>Kerapatan Ray Floret</option>
                             <option value="3">3. Jarang</option>
                             <option value="5">5. Sedang</option>
@@ -107,7 +107,7 @@
                         </select>
                     </div>
                     <div class="col-sm">
-                        <select class="form-control form-select-user" id="autoSizingSelect">
+                        <select class="form-control form-select-user" id="kar_30" name="kar_30">
                             <option selected>Percabangan Tanaman</option>
                             <option value="1">1. Tidak Ada</option>
                             <option value="9">9. Ada</option>
@@ -116,7 +116,7 @@
                 </div>
                 <div class="form-group row">
                     <div class="col-sm">
-                        <select class="form-control form-select-user" id="autoSizingSelect">
+                        <select class="form-control form-select-user" id="kar_03" name="kar_03">
                             <option selected>Ukuran Daun</option>
                             <option value="3">3. Kecil</option>
                             <option value="5">5. Sedang</option>
@@ -124,7 +124,7 @@
                         </select>
                     </div>
                     <div class="col-sm">
-                        <select class="form-control form-select-user" id="autoSizingSelect">
+                        <select class="form-control form-select-user" id="kar_17" name="kar_17">
                             <option selected>Bentuk Ray Floret</option>
                             <option value="1">1. Fusiform</option>
                             <option value="2">2. Bulat Telur Sempit</option>
@@ -133,7 +133,7 @@
                         </select>
                     </div>
                     <div class="col-sm">
-                        <select class="form-control form-select-user" id="autoSizingSelect">
+                        <select class="form-control form-select-user" id="kar_31" name="kar_31">
                             <option selected>Tipe Percabangan Tanaman</option>
                             <option value="1">1. Hanya Basal</option>
                             <option value="2">2. Terutama Basal</option>
@@ -146,7 +146,7 @@
                 </div>
                 <div class="form-group row">
                     <div class="col-sm">
-                        <select class="form-control form-select-user" id="autoSizingSelect">
+                        <select class="form-control form-select-user" id="kar_04" name="kar_04">
                             <option selected>Warna Hijau Daun</option>
                             <option value="3">3. Terang</option>
                             <option value="5">5. Sedang</option>
@@ -154,7 +154,7 @@
                         </select>
                     </div>
                     <div class="col-sm">
-                        <select class="form-control form-select-user" id="autoSizingSelect">
+                        <select class="form-control form-select-user" id="kar_18" name="kar_18">
                             <option selected>Letak Ray Floret</option>
                             <option value="1">1. Dasar</option>
                             <option value="2">2. Melengkung Membujur</option>
@@ -163,7 +163,7 @@
                         </select>
                     </div>
                     <div class="col-sm">
-                        <select class="form-control form-select-user" id="autoSizingSelect">
+                        <select class="form-control form-select-user" id="kar_32" name="kar_32">
                             <option selected>Posisi Kepala Lateral</option>
                             <option value="1">1. Dibawah</option>
                             <option value="2">2. Selevel</option>
@@ -173,7 +173,7 @@
                 </div>
                 <div class="form-group row">
                     <div class="col-sm">
-                        <select class="form-control form-select-user" id="autoSizingSelect">
+                        <select class="form-control form-select-user" id="kar_05" name="kar_05">
                             <option selected>Lepuhan Daun</option>
                             <option value="1">1. Tidak Ada</option>
                             <option value="3">3. Lemah</option>
@@ -182,7 +182,7 @@
                         </select>
                     </div>
                     <div class="col-sm">
-                        <select class="form-control form-select-user" id="autoSizingSelect">
+                        <select class="form-control form-select-user" id="kar_19" name="kar_19">
                             <option selected>Panjang Ray Floret</option>
                             <option value="3">3. Pendek</option>
                             <option value="5">5. Sedang</option>
@@ -190,7 +190,7 @@
                         </select>
                     </div>
                     <div class="col-sm">
-                        <select class="form-control form-select-user" id="autoSizingSelect">
+                        <select class="form-control form-select-user" id="kar_33" name="kar_33">
                             <option selected>Orientasi Kepala</option>
                             <option value="1">1. Horisontal</option>
                             <option value="2">2. Cenderung</option>
@@ -207,7 +207,7 @@
                 </div>
                 <div class="form-group row">
                     <div class="col-sm">
-                        <select class="form-control form-select-user" id="autoSizingSelect">
+                        <select class="form-control form-select-user" id="kar_06" name="kar_06">
                             <option selected>Gerigi Daun</option>
                             <option value="1">1. Terisolasi atau Sangat Halus</option>
                             <option value="3">3. Halus</option>
@@ -217,7 +217,7 @@
                         </select>
                     </div>
                     <div class="col-sm">
-                        <select class="form-control form-select-user" id="autoSizingSelect">
+                        <select class="form-control form-select-user" id="kar_22" name="kar_22">
                             <option selected>Warna Ray Floret</option>
                             <option value="1">1. Pusat Kekuningan</option>
                             <option value="2">2. Kuning Terang</option>
@@ -231,7 +231,7 @@
                         </select>
                     </div>
                     <div class="col-sm">
-                        <select class="form-control form-select-user" id="autoSizingSelect">
+                        <select class="form-control form-select-user" id="kar_34" name="kar_34">
                             <option selected>Ukuran Kepala</option>
                             <option value="3">3. Kecil</option>
                             <option value="5">5. Sedang</option>
@@ -241,7 +241,7 @@
                 </div>
                 <div class="form-group row">
                     <div class="col-sm">
-                        <select class="form-control form-select-user" id="autoSizingSelect">
+                        <select class="form-control form-select-user" id="kar_07" name="kar_07">
                             <option selected>Penampang Melintang Daun</option>
                             <option value="1">1. Sangat Cekung</option>
                             <option value="2">2. Agak Cekung</option>
@@ -252,7 +252,7 @@
                         </select>
                     </div>
                     <div class="col-sm">
-                        <select class="form-control form-select-user" id="autoSizingSelect">
+                        <select class="form-control form-select-user" id="kar_23" name="kar_23">
                             <option selected>Warna Bunga Cakram</option>
                             <option value="1">1. Kuning</option>
                             <option value="2">2. Oranye</option>
@@ -261,7 +261,7 @@
                         </select>
                     </div>
                     <div class="col-sm">
-                        <select class="form-control form-select-user" id="autoSizingSelect">
+                        <select class="form-control form-select-user" id="kar_35" name="kar_35">
                             <option selected>Bentuk Sisi Butir</option>
                             <option value="1">1. Sangat Cekung</option>
                             <option value="2">2. Agak Cekung</option>
@@ -275,7 +275,7 @@
                 </div>
                 <div class="form-group row">
                     <div class="col-sm">
-                        <select class="form-control form-select-user" id="autoSizingSelect">
+                        <select class="form-control form-select-user" id="kar_08" name="kar_08">
                             <option selected>Bentuk Distal Daun</option>
                             <option value="1">1. Lanset</option>
                             <option value="2">2. Lanset Segitiga Sempit</option>
@@ -290,14 +290,14 @@
                         </select>
                     </div>
                     <div class="col-sm">
-                        <select class="form-control form-select-user" id="autoSizingSelect">
+                        <select class="form-control form-select-user" id="kar_24" name="kar_24">
                             <option selected>Warna Antosianin Stigma</option>
                             <option value="1">1. Tidak Ada</option>
                             <option value="9">9. Ada</option>
                         </select>
                     </div>
                     <div class="col-sm">
-                        <select class="form-control form-select-user" id="autoSizingSelect">
+                        <select class="form-control form-select-user" id="kar_36" name="kar_36">
                             <option selected>Ukuran Biji</option>
                             <option value="3">3. Kecil</option>
                             <option value="5">5. Sedang</option>
@@ -308,7 +308,7 @@
                 </div>
                 <div class="form-group row">
                     <div class="col-sm">
-                        <select class="form-control form-select-user" id="autoSizingSelect">
+                        <select class="form-control form-select-user" id="kar_09" name="kar_09">
                             <option selected>Telinga Daun</option>
                             <option value="1">1. Tidak Ada atau Sangat Kecil</option>
                             <option value="3">3. Kecil</option>
@@ -318,7 +318,7 @@
                         </select>
                     </div>
                     <div class="col-sm">
-                        <select class="form-control form-select-user" id="autoSizingSelect">
+                        <select class="form-control form-select-user" id="kar_25" name="kar_25">
                             <option selected>Intensitas Warna Antosianin</option>
                             <option value="3">3. Lemah</option>
                             <option value="5">5. Sedang</option>
@@ -326,7 +326,7 @@
                         </select>
                     </div>
                     <div class="col-sm">
-                        <select class="form-control form-select-user" id="autoSizingSelect">
+                        <select class="form-control form-select-user" id="kar_37" name="kar_37">
                             <option selected>Bentuk Biji</option>
                             <option value="1">1. Memanjang</option>
                             <option value="2">2. Bujur Telur Sempit</option>
@@ -338,7 +338,7 @@
                 </div>
                 <div class="form-group row">
                     <div class="col-sm">
-                        <select class="form-control form-select-user" id="autoSizingSelect">
+                        <select class="form-control form-select-user" id="kar_10" name="kar_10">
                             <option selected>Sayap Daun</option>
                             <option value="1">1. Tidak Ada atau Sangat Sedikit</option>
                             <option value="2">2. Agak Terekspresi</option>
@@ -346,14 +346,14 @@
                         </select>
                     </div>
                     <div class="col-sm">
-                        <select class="form-control form-select-user" id="autoSizingSelect">
+                        <select class="form-control form-select-user" id="kar_26" name="kar_26">
                             <option selected>Produksi Polen</option>
                             <option value="1">1. Tidak Ada</option>
                             <option value="9">9. Ada</option>
                         </select>
                     </div>
                     <div class="col-sm">
-                        <select class="form-control form-select-user" id="autoSizingSelect">
+                        <select class="form-control form-select-user" id="kar_38" name="kar_38">
                             <option selected>Ketebalan Biji</option>
                             <option value="3">3. Tipis</option>
                             <option value="5">5. Sedang</option>
@@ -363,7 +363,7 @@
                 </div>
                 <div class="form-group row">
                     <div class="col-sm">
-                        <select class="form-control form-select-user" id="autoSizingSelect">
+                        <select class="form-control form-select-user" id="kar_11" name="kar_11">
                             <option selected>Sudut Terendah Daun</option>
                             <option value="1">1. Runcing</option>
                             <option value="2">2. Sudut ke Kanan atau Mendekat</option>
@@ -371,7 +371,7 @@
                         </select>
                     </div>
                     <div class="col-sm">
-                        <select class="form-control form-select-user" id="autoSizingSelect">
+                        <select class="form-control form-select-user" id="kar_27" name="kar_27">
                             <option selected>Bentuk Braktea</option>
                             <option value="1">1. Jelas Memanjang</option>
                             <option value="2">2. Tidak Jelas Memanjang atau Bulat</option>
@@ -381,7 +381,7 @@
                         </select>
                     </div>
                     <div class="col-sm">
-                        <select class="form-control form-select-user" id="autoSizingSelect">
+                        <select class="form-control form-select-user" id="kar_39" name="kar_39">
                             <option selected>Warna Utama Biji</option>
                             <option value="1">1. Putiht</option>
                             <option value="2">2. Abu Keputihan</option>
@@ -397,7 +397,7 @@
                 </div>
                 <div class="form-group row">
                     <div class="col-sm">
-                        <select class="form-control form-select-user" id="autoSizingSelect">
+                        <select class="form-control form-select-user" id="kar_12" name="kar_12">
                             <option selected>Tinggi Ujung Helai</option>
                             <option value="3">3. Rendah</option>
                             <option value="5">5. Sedang</option>
@@ -405,7 +405,7 @@
                         </select>
                     </div>
                     <div class="col-sm">
-                        <select class="form-control form-select-user" id="autoSizingSelect">
+                        <select class="form-control form-select-user" id="kar_28" name="kar_28">
                             <option selected>Panjang Ujung Braktea</option>
                             <option value="3">3. Pendek</option>
                             <option value="5">5. Sedang</option>
@@ -414,7 +414,7 @@
                         </select>
                     </div>
                     <div class="col-sm">
-                        <select class="form-control form-select-user" id="autoSizingSelect">
+                        <select class="form-control form-select-user" id="kar_40" name="kar_40">
                             <option selected>Garis Garis Tepi Biji</option>
                             <option value="1">1. Tidak Ada atau Sangat Lemah</option>
                             <option value="2">2. Diungkapkan Lemah</option>
@@ -424,7 +424,7 @@
                 </div>
                 <div class="form-group row">
                     <div class="col-sm">
-                        <select class="form-control form-select-user" id="autoSizingSelect">
+                        <select class="form-control form-select-user" id="kar_13" name="kar_13">
                             <option selected>Rambut Batang</option>
                             <option value="1">1. Tidak Ada atau Sangat Lemah</option>
                             <option value="3">3. Lemah</option>
@@ -434,7 +434,7 @@
                         </select>
                     </div>
                     <div class="col-sm">
-                        <select class="form-control form-select-user" id="autoSizingSelect">
+                        <select class="form-control form-select-user" id="kar_29" name="kar_29">
                             <option selected>Warna Hijau Braktea</option>
                             <option value="3">3. Terang</option>
                             <option value="5">5. Sedang</option>
@@ -442,7 +442,7 @@
                         </select>
                     </div>
                     <div class="col-sm">
-                        <select class="form-control form-select-user" id="autoSizingSelect">
+                        <select class="form-control form-select-user" id="kar_41" name="kar_41">
                             <option selected>Garis Garis Tepi Biji</option>
                             <option value="1">1. Tidak Ada atau Sangat Lemah</option>
                             <option value="2">2. Lemah Diungkapkan</option>
@@ -452,14 +452,14 @@
                 </div>
                 <div class="form-group row">
                     <div class="col-sm">
-                        <select class="form-control form-select-user" id="autoSizingSelect">
+                        <select class="form-control form-select-user" id="kar_14" name="kar_14">
                             <option selected>Bintik Perikap Biji</option>
                             <option value="1">1. Tidak Ada</option>
                             <option value="9">9. Ada</option>
                         </select>
                     </div>
                     <div class="col-sm">
-                        <select class="form-control form-select-user" id="autoSizingSelect">
+                        <select class="form-control form-select-user" id="kar_20" name="kar_20">
                             <option selected>Orientasi Kepala Braktea</option>
                             <option value="1">1. Tidak Merangkul atau Sangat Sedikit</option>
                             <option value="2">2. Sedikit Merangkul</option>
@@ -467,7 +467,7 @@
                         </select>
                     </div>
                     <div class="col-sm">
-                        <select class="form-control form-select-user" id="autoSizingSelect">
+                        <select class="form-control form-select-user" id="kar_42" name="kar_42">
                             <option selected>Warna Garis Biji</option>
                             <option value="1">1. Putih</option>
                             <option value="2">2. Abu-Abu</option>

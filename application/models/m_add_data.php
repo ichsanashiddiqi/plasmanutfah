@@ -29,10 +29,20 @@ class M_add_data extends CI_Model
         return $this->db->get_where($where, $table)->row_array();
     }
 
-    function last_data()
+    function last_data_abaka()
     {
         $this->db->select('*');
         $this->db->from('dat_abaka');
+        $this->db->order_by('no', 'desc');
+        $this->db->limit(1);
+        $query = $this->db->get();
+        return $query->result();
+    }
+
+    function last_data_bm()
+    {
+        $this->db->select('*');
+        $this->db->from('dat_bunga_matahari');
         $this->db->order_by('no', 'desc');
         $this->db->limit(1);
         $query = $this->db->get();
