@@ -211,7 +211,7 @@
                             <option selected>Warna Batang</option>
                             <option value="1">1. Hijau</option>
                             <option value="2">2. Merah</option>
-                            <option value="2">3. Coklat</option>
+                            <option value="3">3. Coklat</option>
                         </select>
                     </div>
                     <div class="col-sm">
@@ -227,7 +227,7 @@
                             <option selected>Warna Helai Daun</option>
                             <option value="1">1. Hijau</option>
                             <option value="2">2. Merah</option>
-                            <option value="2">3. Coklat</option>
+                            <option value="3">3. Coklat</option>
                         </select>
                     </div>
                     <div class="col-sm">
@@ -243,7 +243,7 @@
                             <option selected>Warna Tangkai Daun</option>
                             <option value="1">1. Hijau</option>
                             <option value="2">2. Merah</option>
-                            <option value="2">3. Coklat</option>
+                            <option value="3">3. Coklat</option>
                         </select>
                     </div>
                     <div class="col-sm">

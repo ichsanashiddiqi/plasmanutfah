@@ -376,7 +376,7 @@
                             <option value="1">1. Jelas Memanjang</option>
                             <option value="2">2. Tidak Jelas Memanjang atau Bulat</option>
                             <option value="3">3. Jelas</option>
-                            <option value="3">3. Jelas Bulat</option>
+                            <option value="4">4. Jelas Bulat</option>
 
                         </select>
                     </div>

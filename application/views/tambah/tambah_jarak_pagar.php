@@ -338,7 +338,7 @@
                     <div class="col-sm">
                         <select class="form-control form-select-user" id="kar_11" name="kar_11">
                             <option selected>Rasio Panjang/Lebar Daun</option>
-                            <option value="3">1. Membulat Lemah</option>
+                            <option value="1">1. Membulat Lemah</option>
                             <option value="2">2. Membulat Sedang</option>
                             <option value="3">3. Membulat Kuat</option>
                         </select>
