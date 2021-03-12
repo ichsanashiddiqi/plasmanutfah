@@ -1,3 +1,12 @@
+<script type="text/javascript">
+    $(document).ready(function() {
+        $('#example').DataTable({
+            "order": [
+                [3, "desc"]
+            ]
+        });
+    });
+</script>
 <!-- Begin Page Content -->
 <div class="container-fluid">
 
@@ -21,6 +30,7 @@
 
                             <tr>
                                 <th>No</th>
+                                <th>Action</th>
                                 <th>No. Aksesi</th>
                                 <th>Nama Aksesi</th>
                                 <th>Gambar</th>
@@ -73,6 +83,9 @@
                             ?>
                                 <tr>
                                     <td><?php echo $abk->no ?></td>
+                                    <td><a href="edit_abaka/<?= $abk->no_aksesi; ?>"><i class="fas fa-edit" style="color: chartreuse;"></i></a>
+                                        <a href=""><i class="fas fa-trash-alt" style="color: red;"></i></a>
+                                    </td>
                                     <td><?php echo $abk->no_aksesi ?></td>
                                     <td><?php echo $abk->nama_aksesi ?></td>
                                     <td><img src="<?php echo base_url('assets/data/' . $abk->Image) ?>" width="64" /></td>

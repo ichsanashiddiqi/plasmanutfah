@@ -9,6 +9,7 @@ class Tanaman extends CI_Controller
 		$this->load->library('form_validation');
 		$this->load->helper('url');
 		$this->load->model('m_view_tabel');
+		$this->load->model('m_edit_data');
 		$this->load->library('session');
 	}
 	public function abaka()
@@ -142,6 +143,23 @@ class Tanaman extends CI_Controller
 		$this->load->view('templates/sidebar.php', $data);
 		$this->load->view('templates/topbar.php', $data);
 		$this->load->view('db_tanaman/wijen.php', $data);
+		$this->load->view('templates/footer.php', $data);
+	}
+
+	//BATAS EDIT BOSSQUE
+	function edit_abaka($no_aksesi)
+	{
+		$where = array('no_aksesi' => $no_aksesi);
+		$data['user'] = $this->db->get_where('user', ['email' => $this->session->userdata('email')])->row_array();
+		$data['dat_abaka'] = $this->m_edit_data->edit_data($where, 'dat_abaka')->result();
+		// $data['benih_abaka'] = $this->m_edit_data->edit_data($where, 'benih_abaka')->result();
+		// $data['pas_abaka'] = $this->m_edit_data->edit_data($where, 'pas_abaka')->result();
+		$data['foto_abaka'] = $this->m_edit_data->edit_data($where, 'foto_abaka')->result();
+
+		$this->load->view('templates/header', $data);
+		$this->load->view('templates/sidebar.php', $data);
+		$this->load->view('templates/topbar.php', $data);
+		$this->load->view('edit/edit_abaka.php', $data);
 		$this->load->view('templates/footer.php', $data);
 	}
 }

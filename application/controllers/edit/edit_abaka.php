@@ -1,7 +1,5 @@
 <?php
-defined('BASEPATH') or exit('No direct script access allowed');
-
-class Edit extends CI_Controller
+class edit_abaka extends CI_Controller
 {
     function __construct()
     {
@@ -10,9 +8,11 @@ class Edit extends CI_Controller
         $this->load->helper('url');
     }
 
-    function edit_abaka()
+    function update()
     {
+
         $no_aksesi = $this->input->post('no_aksesi');
+        $no = $this->input->post('no');
         $no_aksesi_IDN = $this->input->post('no_aksesi_IDN');
         $nama_aksesi = $this->input->post('nama_aksesi');
         $Propinsi = $this->input->post('Propinsi');
@@ -63,6 +63,7 @@ class Edit extends CI_Controller
         $kar_38 = $this->input->post('kar_38');
 
         $data = array(
+            'no_aksesi' =>  $no_aksesi,
             'no_aksesi_IDN' => $no_aksesi_IDN,
             'nama_aksesi' => $nama_aksesi,
             'Propinsi' => $Propinsi,
@@ -114,10 +115,10 @@ class Edit extends CI_Controller
         );
 
         $where = array(
-            'no_aksesi' => $no_aksesi
+            'no' => $no
         );
 
-        $this->m_edit_data->update_data($where, $data, 'dat_abaka');
+        $this->m_edit_data->edit_data($where, $data, 'dat_abaka');
         redirect('tanaman/abaka');
     }
 }
