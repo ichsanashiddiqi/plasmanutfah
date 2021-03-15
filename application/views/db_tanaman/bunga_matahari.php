@@ -24,52 +24,50 @@
                                 <th>No. Aksesi</th>
                                 <th>Nama Aksesi</th>
                                 <th>Gambar</th>
-                                <th>Helai Daun</th>
-                                <th>Warna daun</th>
-                                <th>Warna sendi</th>
+                                <th>Hipokotil perwanaan antosianin</th>
+                                <th>Intesitas warna antosianin</th>
+                                <th>Ukuran daun</th>
+                                <th>Warna hijau daun</th>
+                                <th>Lepuhan daun</th>
+                                <th>Gerigi daun</th>
+                                <th>Penampang melintang daun</th>
+                                <th>Bentuk distal daun</th>
                                 <th>Telinga daun</th>
-                                <th>Warna sendi</th>
-                                <th>Sifat lepas pelepah</th>
-                                <th>Lapisan lilin</th>
-                                <th>Warna pelepah</th>
-                                <th>Warna batang</th>
-                                <th>Lapisan lilin batang</th>
-                                <th>Bentuk ruas</th>
-                                <th>Susunan ruas</th>
-                                <th>Noda gabus</th>
-                                <th>Retak gabuk</th>
-                                <th>Retakan tumbuh</th>
-                                <th>Retakan tumbuh</th>
-                                <th>Penampang melintang</th>
-                                <th>Teras</th>
-                                <th>Teras</th>
-                                <th>Bentuk</th>
-                                <th>Bagian terlebar</th>
-                                <th>Ukuran sayap</th>
-                                <th>Tepi sayap</th>
-                                <th>Pusat tumbuh</th>
-                                <th>Berat serat kering</th>
-                                <th>Rambut tepi basal</th>
-                                <th>Rambut jambul</th>
-                                <th>Ukuran rambut jambul</th>
-                                <th>kar_20</th>
-                                <th>kar_21</th>
-                                <th>kar_30</th>
-                                <th>kar_31</th>
-                                <th>kar_32</th>
-                                <th>kar_33</th>
-                                <th>kar_34</th>
-                                <th>kar_35</th>
-                                <th>kar_36</th>
-                                <th>kar_37</th>
-                                <th>kar_38</th>
-                                <th>kar_39</th>
-                                <th>kar_40</th>
-                                <th>kar_41</th>
-                                <th>kar_42</th>
-                                <th>p1</th>
-                                <th>p2</th>
-                                <th>p3</th>
+                                <th>Sayap daun</th>
+                                <th>Sudut terendah daun</th>
+                                <th>Tinggi ujung helai</th>
+                                <th>Rambut batang</th>
+                                <th>Bintik perikap biji</th>
+
+                                <th>Waktu pembungaan</th>
+                                <th>Kerapatan ray floret</th>
+                                <th>Bentuk ray floret</th>
+                                <th>Letak ray floret</th>
+                                <th>Panjang ray floret</th>
+                                <th>Warna ray floret</th>
+                                <th>Warna bunga cakram</th>
+                                <th>Warna antosianin stigma</th>
+                                <th>Intesitas warna antosianin</th>
+                                <th>Produksi polen</th>
+                                <th>Bentuk braktea</th>
+                                <th>Panjang ujung braktea</th>
+                                <th>Warna hijau braktea</th>
+                                <th>Orientasi kepala braktea</th>
+
+                                <th>Tinggi alami tanaman</th>
+                                <th>Percabangan tanaman</th>
+                                <th>Tipe percabangan tanaman</th>
+                                <th>Posisi kepala lateral</th>
+                                <th>Orientasi kepala</th>
+                                <th>Ukuran kepala</th>
+                                <th>Bentuk sisi butir</th>
+                                <th>Ukuran biji</th>
+                                <th>Bentuk biji</th>
+                                <th>Ketebalan biji</th>
+                                <th>Warna utama biji</th>
+                                <th>Garis-garis tepi biji</th>
+                                <th>Garis antara tepi biji</th>
+                                <th>Warna garis biji</th>
 
                             </tr>
                         </thead>
@@ -84,10 +82,32 @@
                                     <td><?php echo $bm->no_aksesi ?></td>
                                     <td><?php echo $bm->nama_aksesi ?></td>
                                     <td><img src="<?php echo base_url('assets/data/' . $bm->Image) ?>" width="64" /></td>
-                                    <td><?php echo $bm->kar_01 ?></td>
-                                    <td><?php echo $bm->kar_02 ?></td>
-                                    <td><?php echo $bm->kar_03 ?></td>
-                                    <td><?php echo $bm->kar_04 ?></td>
+                                    <td><?php if ($bm->kar_01 == 1) {
+                                            echo 'Tidak ada';
+                                        } else if ($bm->kar_01 == 9) {
+                                            echo 'ada';
+                                        } ?></td>
+                                    <td><?php if ($bm->kar_02 == 3) {
+                                            echo 'Lemah';
+                                        } else if ($bm->kar_02 == 5) {
+                                            echo 'Sedang';
+                                        } else if ($bm->kar_02 == 7) {
+                                            echo 'Kuat';
+                                        } ?></td>
+                                    <td><?php if ($bm->kar_03 == 3) {
+                                            echo 'Kecil';
+                                        } else if ($bm->kar_03 == 5) {
+                                            echo 'Sedang';
+                                        } else if ($bm->kar_03 == 7) {
+                                            echo 'Besar';
+                                        } ?></td>
+                                    <td><?php if ($bm->kar_04 == 3) {
+                                            echo 'Kecil';
+                                        } else if ($bm->kar_04 == 5) {
+                                            echo 'Sedang';
+                                        } else if ($bm->kar_04 == 7) {
+                                            echo 'Besar';
+                                        } ?></td>
                                     <td><?php echo $bm->kar_05 ?></td>
                                     <td><?php echo $bm->kar_06 ?></td>
                                     <td><?php echo $bm->kar_07 ?></td>

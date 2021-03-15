@@ -92,20 +92,94 @@
                                     <td><?php echo $abk->kar_01 ?></td>
                                     <td><?php echo $abk->kar_02 ?></td>
                                     <td><?php echo $abk->kar_03 ?></td>
-                                    <td><?php echo $abk->kar_04 ?></td>
+                                    <td><?php if ($abk->kar_04 == 1) {
+                                            echo 'Ovate';
+                                        } else if ($abk->kar_04 == 2) {
+                                            echo 'Cordate';
+                                        } else if ($abk->kar_04 == 3) {
+                                            echo 'Lanceolate';
+                                        } else if ($abk->kar_04 == 3) {
+                                            echo 'Cord-lanceolate';
+                                        } ?></td>
                                     <td><?php echo $abk->kar_05 ?></td>
                                     <td><?php echo $abk->kar_06 ?></td>
                                     <td><?php echo $abk->kar_07 ?></td>
-                                    <td><?php echo $abk->kar_08 ?></td>
-                                    <td><?php echo $abk->kar_09 ?></td>
-                                    <td><?php echo $abk->kar_10 ?></td>
-                                    <td><?php echo $abk->kar_11 ?></td>
-                                    <td><?php echo $abk->kar_12 ?></td>
-                                    <td><?php echo $abk->kar_13 ?></td>
-                                    <td><?php echo $abk->kar_14 ?></td>
-                                    <td><?php echo $abk->kar_15 ?></td>
-                                    <td><?php echo $abk->kar_16 ?></td>
-                                    <td><?php echo $abk->kar_17 ?></td>
+                                    <td><?php if ($abk->kar_08 == 1) {
+                                            echo 'Erect (2-20 derajat)';
+                                        } else if ($abk->kar_08 == 2) {
+                                            echo 'Intermediate (21-60 derajat)';
+                                        } else if ($abk->kar_08 == 3) {
+                                            echo 'Horisontal (61-100 derajat)';
+                                        } else if ($abk->kar_08 == 4) {
+                                            echo 'Descending (101-140 derajat)';
+                                        } ?></td>
+                                    <td><?php if ($abk->kar_09 == 1) {
+                                            echo 'Cilinder';
+                                        } else if ($abk->kar_09 == 2) {
+                                            echo 'Cone';
+                                        } ?></td>
+                                    <td><?php if ($abk->kar_10 == 1) {
+                                            echo 'Hijau';
+                                        } else if ($abk->kar_10 == 2) {
+                                            echo 'Merah';
+                                        } else if ($abk->kar_10 == 3) {
+                                            echo 'Cokelat';
+                                        } ?></td>
+                                    <td><?php if ($abk->kar_11 == 1) {
+                                            echo 'Hijau';
+                                        } else if ($abk->kar_11 == 2) {
+                                            echo 'Merah';
+                                        } else if ($abk->kar_11 == 3) {
+                                            echo 'Cokelat';
+                                        } ?></td>
+                                    <td><?php if ($abk->kar_12 == 1) {
+                                            echo 'Hijau';
+                                        } else if ($abk->kar_12 == 2) {
+                                            echo 'Merah';
+                                        } else if ($abk->kar_12 == 3) {
+                                            echo 'Cokelat';
+                                        } ?></td>
+                                    <td><?php if ($abk->kar_13 == 1) {
+                                            echo 'Merah';
+                                        } else if ($abk->kar_13 == 2) {
+                                            echo 'Pink pucat';
+                                        } else if ($abk->kar_13 == 3) {
+                                            echo 'Biru';
+                                        } else if ($abk->kar_13 == 4) {
+                                            echo 'Biru pucat';
+                                        } else if ($abk->kar_13 == 5) {
+                                            echo 'Putih';
+                                        } ?></td>
+                                    <td><?php if ($abk->kar_14 == 1) {
+                                            echo 'Merah';
+                                        } else if ($abk->kar_14 == 2) {
+                                            echo 'Merah Gelap';
+                                        } else if ($abk->kar_14 == 3) {
+                                            echo 'Coklat';
+                                        } ?></td>
+                                    <td><?php if ($abk->kar_15 == 1) {
+                                            echo 'Hijau';
+                                        } else if ($abk->kar_15 == 2) {
+                                            echo 'Merah';
+                                        } else if ($abk->kar_15 == 3) {
+                                            echo 'Coklat';
+                                        } ?></td>
+                                    <td><?php if ($abk->kar_16 == 1) {
+                                            echo 'Hijau';
+                                        } else if ($abk->kar_16 == 2) {
+                                            echo 'Merah';
+                                        } else if ($abk->kar_16 == 3) {
+                                            echo 'Coklat';
+                                        } else if ($abk->kar_16 == 4) {
+                                            echo 'Kuning';
+                                        } ?></td>
+                                    <td><?php if ($abk->kar_17 == 1) {
+                                            echo 'Hitam';
+                                        } else if ($abk->kar_17 == 2) {
+                                            echo 'Coklat';
+                                        } else if ($abk->kar_17 == 3) {
+                                            echo 'Abu-abu';
+                                        } ?></td>
                                     <td><?php echo $abk->kar_18 ?></td>
                                     <td><?php echo $abk->kar_19 ?></td>
                                     <td><?php echo $abk->kar_20 ?></td>

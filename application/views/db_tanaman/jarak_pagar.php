@@ -24,35 +24,42 @@
                                 <th>No. Aksesi</th>
                                 <th>Nama Aksesi</th>
                                 <th>Gambar</th>
-                                <th>Helai Daun</th>
-                                <th>Warna daun</th>
-                                <th>Warna sendi</th>
-                                <th>Bentuk daun</th>
-                                <th>Telinga daun</th>
+                                <th>Tinggi tanaman</th>
+                                <th>Lingkar batang</th>
+                                <th>Keberadaan torehan daun</th>
+                                <th>Derajat torehan daun</th>
+                                <th>Bentuk ujung daun</th>
+                                <th>Bentuk pangkal daun</th>
+                                <th>Warna daun muda</th>
+                                <th>Intensitas hijau daun</th>
+                                <th>panjang daun</th>
                                 <th>Lebar daun</th>
-                                <th>Warna sendi</th>
-                                <th>Sifat lepas pelepah</th>
-                                <th>Lapisan lilin</th>
-                                <th>Warna pelepah</th>
-                                <th>Warna batang</th>
-                                <th>Lapisan lilin batang</th>
-                                <th>Bentuk ruas</th>
-                                <th>Susunan ruas</th>
-                                <th>Noda gabus</th>
-                                <th>Retak gabuk</th>
-                                <th>Retakan tumbuh</th>
-                                <th>Retakan tumbuh</th>
-                                <th>Penampang melintang</th>
-                                <th>Teras</th>
-                                <th>Teras</th>
-                                <th>Bentuk</th>
-                                <th>Bagian terlebar</th>
-                                <th>Ukuran sayap</th>
-                                <th>Tepi sayap</th>
-                                <th>Pusat tumbuh</th>
-                                <th>Rambut tepi basal</th>
-                                <th>kar_20</th>
-                                <th>kar_21</th>
+                                <th>Rasio panjang/lebar daun</th>
+                                <th>Bentuk daun</th>
+                                <th>Panjang petiol</th>
+                                <th>Intensitas pewarnaan antosianin</th>
+                                <th>Warna kelopak bunga</th>
+                                <th>Warna mahkota bunga</th>
+                                <th>Rasion bunga jantan/betina</th>
+                                <th>Pewarnaan antosianin bunga</th>
+                                <th>Bentuk kapsul</th>
+                                <th>Panjang kapsul</th>
+                                <th>Lebar kapsul</th>
+                                <th>Rasio panjang/lebar kapsul</th>
+                                <th>Bentuk biji</th>
+                                <th>Lebar biji</th>
+                                <th>Ketebalan biji</th>
+                                <th>Warna kulit biji</th>
+                                <th>Perumbuhan tanaman</th>
+                                <th>Intensitas warna coklat endokarp</th>
+                                <th>Kecerahan warna endokarp</th>
+                                <th>Kekerutan endokarp</th>
+                                <th>Intensitas warna hijau buah mentah</th>
+                                <th>Ketebalan perikap buah</th>
+                                <th>Panjang buah</th>
+                                <th>Lebar buah</th>
+                                <th>Rasio panjang/lebar buah</th>
+                                <th>Panjang gagang buah</th>
 
                             </tr>
                         </thead>
@@ -87,7 +94,7 @@
                                     <td><?php echo $jp->kar_18 ?></td>
                                     <td><?php echo $jp->kar_19 ?></td>
                                     <td><?php echo $jp->kar_20 ?></td>
-                                    <td><?php echo $abk->kar_21 ?></td>
+                                    <td><?php echo $jp->kar_21 ?></td>
                                     <td><?php echo $jp->kar_22 ?></td>
                                     <td><?php echo $jp->kar_23 ?></td>
                                     <td><?php echo $jp->kar_24 ?></td>
@@ -105,9 +112,9 @@
                                     <td><?php echo $jp->kar_36 ?></td>
                                     <td><?php echo $jp->kar_37 ?></td>
                                     <td><?php echo $jp->kar_38 ?></td>
-                                    <td><?php echo $abk->p1 ?></td>
-                                    <td><?php echo $abk->p2 ?></td>
-                                    <td><?php echo $abk->p3 ?></td>
+                                    <td><?php echo $jp->p1 ?></td>
+                                    <td><?php echo $jp->p2 ?></td>
+                                    <td><?php echo $jp->p3 ?></td>
 
                                 </tr>
                             <?php } ?>
