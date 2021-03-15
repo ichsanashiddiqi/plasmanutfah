@@ -37,7 +37,7 @@
 
             <!-- Nav - Profil Pengelolaan -->
             <li class="nav-item">
-                <a class="nav-link" href="index.html">
+                <a class="nav-link" href="<?= base_url('auth/profile'); ?>">
                     <i class="fas fa-users"></i>
                     <span>Profil Pengelolaan</span></a>
             </li>
@@ -72,17 +72,94 @@
                 </a>
                 <div id="collapsePages" class="collapse" aria-labelledby="headingPages" data-parent="#accordionSidebar">
                     <div class="bg-white py-2 collapse-inner rounded">
-                        <a class="collapse-item" href="<?= base_url('tanaman/abaka'); ?>">Abaka</a>
-                        <a class="collapse-item" href="<?= base_url('tanaman/bunga_matahari'); ?>">Bunga Matahari</a>
-                        <a class="collapse-item" href="<?= base_url('tanaman/jarak_pagar'); ?>">Jarak Pagar</a>
-                        <a class="collapse-item" href="<?= base_url('tanaman/kapas'); ?>">Kapas</a>
-                        <a class="collapse-item" href="<?= base_url('tanaman/kapuk'); ?>">Kapuk</a>
-                        <a class="collapse-item" href="<?= base_url('tanaman/kemiri'); ?>">Kemiri</a>
-                        <a class="collapse-item" href="<?= base_url('tanaman/kenaf'); ?>">Kenaf</a>
-                        <a class="collapse-item" href="<?= base_url('tanaman/rami'); ?>">Rami</a>
-                        <a class="collapse-item" href="<?= base_url('tanaman/tebu'); ?>">Tebu</a>
-                        <a class="collapse-item" href="<?= base_url('tanaman/tembakau'); ?>">Tembakau</a>
-                        <a class="collapse-item" href="<?= base_url('tanaman/wijen'); ?>">Wijen</a>
+                        <?php
+                        $role = $this->session->userdata("role_id");
+                        if ($role == 1 || $role == 2) {
+                        ?>
+                            <a class="collapse-item" href="<?= base_url('tanaman/abaka'); ?>">Abaka</a>
+                        <?php
+                        }
+                        ?>
+                        <?php
+                        $role = $this->session->userdata("role_id");
+                        if ($role == 1 || $role == 3) {
+                        ?>
+                            <a class="collapse-item" href="<?= base_url('tanaman/bunga_matahari'); ?>">Bunga Matahari</a>
+                        <?php
+                        }
+                        ?>
+                        <?php
+                        $role = $this->session->userdata("role_id");
+                        if ($role == 1 || $role == 4) {
+                        ?>
+                            <a class="collapse-item" href="<?= base_url('tanaman/jarak_pagar'); ?>">Jarak Pagar</a>
+                        <?php
+                        }
+                        ?>
+                        <?php
+                        $role = $this->session->userdata("role_id");
+                        if ($role == 1 || $role == 5) {
+                        ?>
+                            <a class="collapse-item" href="<?= base_url('tanaman/kapas'); ?>">Kapas</a>
+                        <?php
+                        }
+                        ?>
+                        <?php
+                        $role = $this->session->userdata("role_id");
+                        if ($role == 1 || $role == 6) {
+                        ?>
+                            <a class="collapse-item" href="<?= base_url('tanaman/kapuk'); ?>">Kapuk</a>
+                        <?php
+                        }
+                        ?>
+                        <?php
+                        $role = $this->session->userdata("role_id");
+                        if ($role == 1 || $role == 7) {
+                        ?>
+                            <a class="collapse-item" href="<?= base_url('tanaman/kemiri'); ?>">Kemiri</a>
+                        <?php
+                        }
+                        ?>
+                        <?php
+                        $role = $this->session->userdata("role_id");
+                        if ($role == 1 || $role == 8) {
+                        ?>
+                            <a class="collapse-item" href="<?= base_url('tanaman/kenaf'); ?>">Kenaf</a>
+                        <?php
+                        }
+                        ?>
+                        <?php
+                        $role = $this->session->userdata("role_id");
+                        if ($role == 1 || $role == 9) {
+                        ?>
+                            <a class="collapse-item" href="<?= base_url('tanaman/rami'); ?>">Rami</a>
+                        <?php
+                        }
+                        ?>
+                        <?php
+                        $role = $this->session->userdata("role_id");
+                        if ($role == 1 || $role == 10) {
+                        ?>
+                            <a class="collapse-item" href="<?= base_url('tanaman/tebu'); ?>">Tebu</a>
+                        <?php
+                        }
+                        ?>
+                        <?php
+                        $role = $this->session->userdata("role_id");
+                        if ($role == 1 || $role == 11) {
+                        ?>
+                            <a class="collapse-item" href="<?= base_url('tanaman/tembakau'); ?>">Tembakau</a>
+                        <?php
+                        }
+                        ?>
+                        <?php
+                        $role = $this->session->userdata("role_id");
+                        if ($role == 1 || $role == 12) {
+                        ?>
+                            <a class="collapse-item" href="<?= base_url('tanaman/wijen'); ?>">Wijen</a>
+                        <?php
+                        }
+                        ?>
                     </div>
                 </div>
             </li>

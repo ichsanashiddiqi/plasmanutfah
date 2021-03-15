@@ -152,8 +152,6 @@ class Tanaman extends CI_Controller
 		$where = array('no_aksesi' => $no_aksesi);
 		$data['user'] = $this->db->get_where('user', ['email' => $this->session->userdata('email')])->row_array();
 		$data['dat_abaka'] = $this->m_edit_data->edit_data($where, 'dat_abaka')->result();
-		// $data['benih_abaka'] = $this->m_edit_data->edit_data($where, 'benih_abaka')->result();
-		// $data['pas_abaka'] = $this->m_edit_data->edit_data($where, 'pas_abaka')->result();
 		$data['foto_abaka'] = $this->m_edit_data->edit_data($where, 'foto_abaka')->result();
 
 		$this->load->view('templates/header', $data);
@@ -161,5 +159,117 @@ class Tanaman extends CI_Controller
 		$this->load->view('templates/topbar.php', $data);
 		$this->load->view('edit/edit_abaka.php', $data);
 		$this->load->view('templates/footer.php', $data);
+	}
+
+	//BATAS HAPUS BOSQUEE
+
+	function hapus_abaka($no_aksesi)
+	{
+		$where = array('no_aksesi' => $no_aksesi);
+		$this->m_edit_data->hapus_data($where, 'dat_abaka');
+		$this->m_edit_data->hapus_data($where, 'foto_abaka');
+		$this->m_edit_data->hapus_data($where, 'benih_abaka');
+		$this->m_edit_data->hapus_data($where, 'pas_abaka');
+		redirect('tanaman/abaka');
+	}
+
+	function hapus_bm($no_aksesi)
+	{
+		$where = array('no_aksesi' => $no_aksesi);
+		$this->m_edit_data->hapus_data($where, 'dat_bunga_matahari');
+		$this->m_edit_data->hapus_data($where, 'foto_bunga_matahari');
+		$this->m_edit_data->hapus_data($where, 'benih_bunga_matahari');
+		$this->m_edit_data->hapus_data($where, 'pas_bunga_matahari');
+		redirect('tanaman/bunga_matahari');
+	}
+
+	function hapus_jp($no_aksesi)
+	{
+		$where = array('no_aksesi' => $no_aksesi);
+		$this->m_edit_data->hapus_data($where, 'dat_jarak_pagar');
+		$this->m_edit_data->hapus_data($where, 'foto_jarak_pagar');
+		$this->m_edit_data->hapus_data($where, 'benih_jarak_pagar');
+		$this->m_edit_data->hapus_data($where, 'pas_jarak_pagar');
+		redirect('tanaman/jarak_pagar');
+	}
+
+	function hapus_kapas($no_aksesi)
+	{
+		$where = array('no_aksesi' => $no_aksesi);
+		$this->m_edit_data->hapus_data($where, 'dat_kapas');
+		$this->m_edit_data->hapus_data($where, 'foto_kapas');
+		$this->m_edit_data->hapus_data($where, 'benih_kapas');
+		$this->m_edit_data->hapus_data($where, 'pas_kapas');
+		redirect('tanaman/kapas');
+	}
+
+	function hapus_kapuk($no_aksesi)
+	{
+		$where = array('no_aksesi' => $no_aksesi);
+		$this->m_edit_data->hapus_data($where, 'dat_kapuk');
+		$this->m_edit_data->hapus_data($where, 'foto_kapuk');
+		$this->m_edit_data->hapus_data($where, 'benih_kapuk');
+		$this->m_edit_data->hapus_data($where, 'pas_kapuk');
+		redirect('tanaman/kapuk');
+	}
+
+	function hapus_kemiri($no_aksesi)
+	{
+		$where = array('no_aksesi' => $no_aksesi);
+		$this->m_edit_data->hapus_data($where, 'dat_kemiri');
+		$this->m_edit_data->hapus_data($where, 'foto_kemiri');
+		$this->m_edit_data->hapus_data($where, 'benih_kemiri');
+		$this->m_edit_data->hapus_data($where, 'pas_kemiri');
+		redirect('tanaman/kemiri');
+	}
+
+	function hapus_kenaf($no_aksesi)
+	{
+		$where = array('no_aksesi' => $no_aksesi);
+		$this->m_edit_data->hapus_data($where, 'dat_kenaf');
+		$this->m_edit_data->hapus_data($where, 'foto_kenaf');
+		$this->m_edit_data->hapus_data($where, 'benih_kenaf');
+		$this->m_edit_data->hapus_data($where, 'pas_kenaf');
+		redirect('tanaman/kenaf');
+	}
+
+	function hapus_rami($no_aksesi)
+	{
+		$where = array('no_aksesi' => $no_aksesi);
+		$this->m_edit_data->hapus_data($where, 'dat_rami');
+		$this->m_edit_data->hapus_data($where, 'foto_rami');
+		$this->m_edit_data->hapus_data($where, 'benih_rami');
+		$this->m_edit_data->hapus_data($where, 'pas_rami');
+		redirect('tanaman/rami');
+	}
+
+	function hapus_tebu($no_aksesi)
+	{
+		$where = array('no_aksesi' => $no_aksesi);
+		$this->m_edit_data->hapus_data($where, 'dat_tebu');
+		$this->m_edit_data->hapus_data($where, 'foto_tebu');
+		$this->m_edit_data->hapus_data($where, 'benih_tebu');
+		$this->m_edit_data->hapus_data($where, 'pas_tebu');
+		redirect('tanaman/tebu');
+	}
+
+	function hapus_tembakau($no_aksesi)
+	{
+		$where = array('no_aksesi' => $no_aksesi);
+		$this->m_edit_data->hapus_data($where, 'dat_tembakau');
+		$this->m_edit_data->hapus_data($where, 'foto_tembakau');
+		$this->m_edit_data->hapus_data($where, 'benih_tembakau');
+		$this->m_edit_data->hapus_data($where, 'pas_tembakau');
+		redirect('tanaman/tembakau');
+	}
+
+	function hapus_wijen($no_aksesi)
+	{
+		$where = array('no_aksesi' => $no_aksesi);
+		$this->m_edit_data->hapus_data($where, 'dat_wijen');
+		$this->m_edit_data->hapus_data($where, 'foto_wijen');
+		$this->m_edit_data->hapus_data($where, 'benih_wijen');
+		$this->m_edit_data->hapus_data($where, 'pas_wijen');
+		redirect('tanaman/wijen');
 	}
 }
