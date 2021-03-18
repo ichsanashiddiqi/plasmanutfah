@@ -161,6 +161,34 @@ class Tanaman extends CI_Controller
 		$this->load->view('templates/footer.php', $data);
 	}
 
+	function edit_bm($no_aksesi)
+	{
+		$where = array('no_aksesi' => $no_aksesi);
+		$data['user'] = $this->db->get_where('user', ['email' => $this->session->userdata('email')])->row_array();
+		$data['dat_bunga_matahari'] = $this->m_edit_data->edit_data($where, 'dat_bunga_matahari')->result();
+		$data['foto_bunga_matahari'] = $this->m_edit_data->edit_data($where, 'foto_bunga_matahari')->result();
+
+		$this->load->view('templates/header', $data);
+		$this->load->view('templates/sidebar.php', $data);
+		$this->load->view('templates/topbar.php', $data);
+		$this->load->view('edit/edit_bm.php', $data);
+		$this->load->view('templates/footer.php', $data);
+	}
+
+	function edit_kapas($no_aksesi)
+	{
+		$where = array('no_aksesi' => $no_aksesi);
+		$data['user'] = $this->db->get_where('user', ['email' => $this->session->userdata('email')])->row_array();
+		$data['dat_kapas'] = $this->m_edit_data->edit_data($where, 'dat_kapas')->result();
+		$data['foto_kapas'] = $this->m_edit_data->edit_data($where, 'foto_kapas')->result();
+
+		$this->load->view('templates/header', $data);
+		$this->load->view('templates/sidebar.php', $data);
+		$this->load->view('templates/topbar.php', $data);
+		$this->load->view('edit/edit_kapas.php', $data);
+		$this->load->view('templates/footer.php', $data);
+	}
+
 	//BATAS HAPUS BOSQUEE
 
 	function hapus_abaka($no_aksesi)

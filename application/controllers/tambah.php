@@ -102,7 +102,7 @@ class Tambah extends CI_Controller
     public function kapas2()
     {
         $data['user'] = $this->db->get_where('user', ['email' => $this->session->userdata('email')])->row_array();
-
+        $data['aksesi'] = $this->m_add_data->last_data_abaka();
 
         $this->load->view('templates/header.php', $data);
         $this->load->view('templates/sidebar.php', $data);

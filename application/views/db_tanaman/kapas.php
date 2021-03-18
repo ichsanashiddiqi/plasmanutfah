@@ -81,8 +81,8 @@
                             ?>
                                 <tr>
                                     <td><?php echo $kps->no ?></td>
-                                    <td><a href=""><i class="fas fa-edit" style="color: chartreuse;"></i></a>
-                                        <a href=""><i class="fas fa-trash-alt" style="color: red;"></i></a>
+                                    <td><a href="edit_kapas/<?= $kps->no_aksesi; ?>"><i class="fas fa-edit" style="color: chartreuse;"></i></a>
+                                        <a href="hapus_kapas/<?= $kps->no_aksesi; ?>"><i class="fas fa-trash-alt" style="color: red;"></i></a>
                                     </td>
                                     <td><?php echo $kps->no_aksesi ?></td>
                                     <td><?php echo $kps->nama_aksesi ?></td>
