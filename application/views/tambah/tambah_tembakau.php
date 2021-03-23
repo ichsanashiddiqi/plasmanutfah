@@ -256,207 +256,325 @@
                     <form class="user">
                         <div class="form-group row">
                             <div class="col-sm">
-                                <input type="text" class="form-control" id="exampleFirstName" placeholder="Umur Berbunga">
-                            </div>
-                            <div class="col-sm">
                                 <select class="form-control form-select-user" id="autoSizingSelect">
-                                    <option selected>Warna Jantung</option>
-                                    <option value="1">1. Merah</option>
-                                    <option value="2">2. Merah Gelap</option>
-                                    <option value="3">3. Coklat</option>
+                                    <option selected>Tipe</option>
+                                    <option value="1">1. Kosong</option>
                                 </select>
                             </div>
-
                             <div class="col-sm">
-                                <input type="text" class="form-control" id="exampleLastName" placeholder="Produksi Serat Kering">
+                                <select class="form-control form-select-user" id="autoSizingSelect">
+                                    <option selected>Tangkai daun</option>
+                                    <option value="1">1. Duduk</option>
+                                    <option value="2">2. Bertangkai</option>
+                                </select>
+                            </div>
+                            <div class="col-sm">
+                                <input type="text" class="form-control" id="exampleFirstName" placeholder="Hasil kering">
                             </div>
                         </div>
+                        <!-- xxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxx -->
                         <div class="form-group row">
                             <div class="col-sm">
-                                <input type="text" class="form-control" id="exampleFirstName" placeholder="Umur Panen Serat">
+                                <select class="form-control form-select-user" id="autoSizingSelect">
+                                    <option selected>Habitus</option>
+                                    <option value="1">1. Silindris</option>
+                                    <option value="2">2. Piramid</option>
+                                </select>
+                            </div>
+                            <div class="col-sm">
+                                <input type="text" class="form-control" id="exampleLastName" placeholder="Indeks daun">
+                            </div>
+                            <div class="col-sm">
+                                <input type="text" class="form-control" id="exampleLastName" placeholder="Indeks mutu">
+                            </div>
+                        </div>
+                        <!-- xxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxx -->
+                        <div class="form-group row">
+                            <div class="col-sm">
+                                <select class="form-control form-select-user" id="autoSizingSelect">
+                                    <option selected>Kerapatan</option>
+                                    <option value="1">1. Rapat</option>
+                                    <option value="2">2. Jarang</option>
+                                </select>
                             </div>
                             <div class="col-sm">
                                 <select class="form-control form-select-user" id="autoSizingSelect">
-                                    <option selected>Warna Buah Muda</option>
+                                    <option selected>Sirung</option>
+                                    <option value="1">1. Tidak ada</option>
+                                    <option value="2">2. Ada kecil (< 1cm)</option>
+                                    <option value="3">3. Ada sedang (1-6cm)</option>
+                                    <option value="4">4. Ada besar (> 6cm)</option>
+                                </select>
+                            </div>
+                            <div class="col-sm">
+                                <input type="text" class="form-control" id="exampleLastName" placeholder="Indeks tanaman">
+                            </div>
+                        </div>
+                        <!-- xxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxx -->
+                        <div class="form-group row">
+                            <div class="col-sm">
+                                <input type="text" class="form-control" id="exampleLastName" placeholder="Panjang ruas">
+                            </div>
+                            <div class="col-sm">
+                                <select class="form-control form-select-user" id="autoSizingSelect">
+                                    <option selected>Sayap daun</option>
+                                    <option value="1">1. Lebar licin (> 2,57cm)</option>
+                                    <option value="2">2. Lebar berploi (> 2,57cm)</option>
+                                    <option value="3">3. Sempit licin (< 2,57cm)</option>
+                                    <option value="4">4. Ada besar (> 6cm)</option>
+                                </select>
+                            </div>
+                            <div class="col-sm">
+                                <input type="text" class="form-control" id="exampleLastName" placeholder="Kadar nikotin">
+                            </div>
+                        </div>
+                        <!-- xxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxx -->
+                        <div class="form-group row">
+                            <div class="col-sm">
+                                <input type="text" class="form-control" id="exampleFirstName" placeholder="Indeks ruas">
+                            </div>
+                            <div class="col-sm">
+                                <select class="form-control form-select-user" id="autoSizingSelect">
+                                    <option selected>Telinga daun</option>
+                                    <option value="1">1. Sempit (< 2,57cm)</option>
+                                    <option value="2">2. Lebar (2,57-5,14cm)</option>
+                                    <option value="3">3. Sangat lebar (> 5,14cm)</option>
+                                </select>
+                            </div>
+                            <div class="col-sm">
+                                <input type="text" class="form-control" id="exampleFirstName" placeholder="Kadar gula">
+                            </div>
+                        </div>
+                        <!-- xxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxx -->
+                        <div class="form-group row">
+                            <div class="col-sm">
+                                <select class="form-control form-select-user" id="autoSizingSelect">
+                                    <option selected>Warna batang</option>
                                     <option value="1">1. Hijau</option>
-                                    <option value="2">2. Merah</option>
-                                    <option value="3">3. Coklat</option>
-                                </select>
-                            </div>
-
-                            <div class="col-sm">
-                                <input type="text" class="form-control" id="exampleLastName" placeholder="Jumlah Buah">
-                            </div>
-                        </div>
-                        <div class="form-group row">
-                            <div class="col-sm">
-                                <input type="text" class="form-control" id="exampleFirstName" placeholder="Umur Panen Benih">
-                            </div>
-                            <div class="col-sm">
-                                <select class="form-control form-select-user" id="autoSizingSelect">
-                                    <option selected>Warna Buah Matang</option>
-                                    <option value="1">1. Hijau</option>
-                                    <option value="2">2. Merah</option>
-                                    <option value="3">3. Coklat</option>
-                                    <option value="4">4. Kuning</option>
-                                </select>
-                            </div>
-
-                            <div class="col-sm">
-                                <input type="text" class="form-control" id="exampleLastName" placeholder="Panjang Buah">
-                            </div>
-                        </div>
-                        <div class="form-group row">
-                            <div class="col-sm">
-                                <select class="form-control form-select-user" id="autoSizingSelect">
-                                    <option selected>Bentuk Daun</option>
-                                    <option value="1">1. Ovate</option>
-                                    <option value="2">2. Cordate</option>
-                                    <option value="3">3. Lanceolate</option>
-                                    <option value="4">4. Cord - Lanceolate</option>
+                                    <option value="2">2. Hijau kekuningan</option>
+                                    <option value="3">3. Hijau keputihan</option>
                                 </select>
                             </div>
                             <div class="col-sm">
                                 <select class="form-control form-select-user" id="autoSizingSelect">
-                                    <option selected>Warna Biji</option>
-                                    <option value="1">1. Hitam</option>
-                                    <option value="2">2. Coklat</option>
-                                    <option value="3">3. Abu-Abu</option>
+                                    <option selected>Getah</option>
+                                    <option value="1">1. Tidak bergetah</option>
+                                    <option value="2">2. Bergetah</option>
+                                    <option value="3">3. Hijau keputihan</option>
                                 </select>
                             </div>
-
                             <div class="col-sm">
-                                <input type="text" class="form-control" id="exampleLastName" placeholder="Diameter Buah">
+                                <input type="text" class="form-control" id="exampleFirstName" placeholder="Kadar tar">
                             </div>
                         </div>
-                        <div class="form-group row">
-                            <div class="col-sm">
-                                <input type="text" class="form-control" id="exampleFirstName" placeholder="Panjang Daun">
-                            </div>
-                            <div class="col-sm">
-                                <input type="text" class="form-control" id="exampleFirstName" placeholder="Diameter Batang Bawah">
-                            </div>
-                            <div class="col-sm">
-                                <input type="text" class="form-control" id="exampleLastName" placeholder="Jumlah Biji">
-                            </div>
-                        </div>
-                        <div class="form-group row">
-                            <div class="col-sm">
-                                <input type="text" class="form-control" id="exampleFirstName" placeholder="Lebar Daun">
-                            </div>
-                            <div class="col-sm">
-                                <input type="text" class="form-control" id="exampleFirstName" placeholder="Diameter Batang Tengah">
-                            </div>
-                            <div class="col-sm">
-                                <input type="text" class="form-control" id="exampleLastName" placeholder="Berat Biji">
-                            </div>
-                        </div>
-                        <div class="form-group row">
-                            <div class="col-sm">
-                                <input type="text" class="form-control" id="exampleFirstName" placeholder="Luas Daun">
-                            </div>
-                            <div class="col-sm">
-                                <input type="text" class="form-control" id="exampleFirstName" placeholder="Diameter Batang Atas">
-                            </div>
-                            <div class="col-sm">
-                                <input type="text" class="form-control" id="exampleLastName" placeholder="Berat 1000 Biji">
-                            </div>
-                        </div>
+                        <!-- xxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxx -->
                         <div class="form-group row">
                             <div class="col-sm">
                                 <select class="form-control form-select-user" id="autoSizingSelect">
-                                    <option selected>Sudut Daun</option>
-                                    <option value="1">1. Erect (2-20 derajat)</option>
-                                    <option value="2">2. Intermediate (21-60 derajat)</option>
-                                    <option value="3">3. Horisontal (61-100 derajat)</option>
-                                    <option value="4">4. Decending (101-140 derajat)</option>
+                                    <option selected>Bulu batang</option>
+                                    <option value="1">1. Berbulu</option>
+                                    <option value="2">2. Tidak berbulu</option>
                                 </select>
                             </div>
                             <div class="col-sm">
-                                <input type="text" class="form-control" id="exampleFirstName" placeholder="Tinggi Tanaman">
+                                <select class="form-control form-select-user" id="autoSizingSelect">
+                                    <option selected>Bentuk daun</option>
+                                    <option value="1">1. Lonjong</option>
+                                    <option value="2">2. Jantung</option>
+                                    <option value="3">3. Bulat</option>
+                                </select>
                             </div>
                             <div class="col-sm">
-                                <input type="text" class="form-control" id="exampleLastName" placeholder="Produksi Biji">
+                                <input type="text" class="form-control" id="exampleFirstName" placeholder="Berat 1000 benih">
                             </div>
                         </div>
+                        <!-- xxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxx -->
                         <div class="form-group row">
                             <div class="col-sm">
                                 <select class="form-control form-select-user" id="autoSizingSelect">
-                                    <option selected>Bentuk Jantung</option>
-                                    <option value="1">1. Cilinder</option>
-                                    <option value="2">2. Conr</option>
+                                    <option selected>Sudut Batang</option>
+                                    <option value="1">1. Tegak (< 60)</option>
+                                    <option value="2">2. Horisontal (60-120)</option>
+                                    <option value="3">3. Menggantung (> 120)</option>
                                 </select>
                             </div>
                             <div class="col-sm">
-                                <input type="text" class="form-control" id="exampleFirstName" placeholder="Jumlah Batang">
+                                <select class="form-control form-select-user" id="autoSizingSelect">
+                                    <option selected>Warna bunga</option>
+                                    <option value="1">1. Putih</option>
+                                    <option value="2">2. Merah muda</option>
+                                    <option value="3">3. Merah</option>
+                                </select>
                             </div>
                             <div class="col-sm">
-                                <input type="text" class="form-control" id="exampleLastName" placeholder="Ketahanan Hama/Penyakit">
+                                <select class="form-control form-select-user" id="autoSizingSelect">
+                                    <option selected>Toleransi TEV</option>
+                                    <option value="1">1. Tahan</option>
+                                    <option value="2">2. Agak tahan</option>
+                                    <option value="3">3. Moderat</option>
+                                    <option value="4">4. Rentan</option>
+                                </select>
                             </div>
                         </div>
+                        <!-- xxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxx -->
                         <div class="form-group row">
                             <div class="col-sm">
                                 <select class="form-control form-select-user" id="autoSizingSelect">
-                                    <option selected>Warna Batang</option>
-                                    <option value="1">1. Hijau</option>
-                                    <option value="2">2. Merah</option>
-                                    <option value="2">3. Coklat</option>
+                                    <option selected>Jumlah daun</option>
+                                    <option value="1">1. Sedikit (< 19 lembar per pohon)</option>
+                                    <option value="2">2. Sedang (19-30 lembar per pohon)</option>
+                                    <option value="3">3. Banyak (> 30 lembar per pohon)</option>
                                 </select>
                             </div>
                             <div class="col-sm">
-                                <input type="text" class="form-control" id="exampleFirstName" placeholder="Jumlah Pohon">
+                                <input type="text" class="form-control" id="exampleFirstName" placeholder="Jumlah calyx">
                             </div>
                             <div class="col-sm">
-                                <input type="text" class="form-control" id="exampleLastName" placeholder="Ketahanan Kekeringan">
+                                <select class="form-control form-select-user" id="autoSizingSelect">
+                                    <option selected>Toleransi CMV</option>
+                                    <option value="1">1. Tahan</option>
+                                    <option value="2">2. Agak tahan</option>
+                                    <option value="3">3. Moderat</option>
+                                    <option value="4">4. Rentan</option>
+                                </select>
                             </div>
                         </div>
+                        <!-- xxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxx -->
                         <div class="form-group row">
                             <div class="col-sm">
                                 <select class="form-control form-select-user" id="autoSizingSelect">
-                                    <option selected>Warna Helai Daun</option>
-                                    <option value="1">1. Hijau</option>
-                                    <option value="2">2. Merah</option>
-                                    <option value="2">3. Coklat</option>
+                                    <option selected>Ujung daun</option>
+                                    <option value="1">1. Runcing</option>
+                                    <option value="2">2. Meruncing</option>
+                                    <option value="3">3. Tumpul</option>
                                 </select>
                             </div>
                             <div class="col-sm">
-                                <input type="text" class="form-control" id="exampleFirstName" placeholder="Berat Batang Segar">
+                                <input type="text" class="form-control" id="exampleFirstName" placeholder="Jumlah corolla">
                             </div>
                             <div class="col-sm">
-                                <input type="text" class="form-control" id="exampleLastName" placeholder="Kekuatan Serat">
+                                <select class="form-control form-select-user" id="autoSizingSelect">
+                                    <option selected>Toleransi TMV</option>
+                                    <option value="1">1. Tahan</option>
+                                    <option value="2">2. Agak tahan</option>
+                                    <option value="3">3. Moderat</option>
+                                    <option value="4">4. Rentan</option>
+                                </select>
                             </div>
                         </div>
+                        <!-- xxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxx -->
                         <div class="form-group row">
                             <div class="col-sm">
                                 <select class="form-control form-select-user" id="autoSizingSelect">
-                                    <option selected>Warna Tangkai Daun</option>
-                                    <option value="1">1. Hijau</option>
-                                    <option value="2">2. Merah</option>
-                                    <option value="2">3. Coklat</option>
+                                    <option selected>Tepi Daun</option>
+                                    <option value="1">1. Licin</option>
+                                    <option value="2">2. Berombak</option>
+                                    <option value="3">3. Bergerigi</option>
                                 </select>
                             </div>
                             <div class="col-sm">
-                                <input type="text" class="form-control" id="exampleFirstName" placeholder="Berat Serat Kering">
+                                <select class="form-control form-select-user" id="autoSizingSelect">
+                                    <option selected>Warna putik</option>
+                                    <option value="1">1. Kosong</option>
+                                </select>
                             </div>
                             <div class="col-sm">
-                                <input type="text" class="form-control" id="exampleLastName" placeholder="Kehalusan Serat">
+                                <select class="form-control form-select-user" id="autoSizingSelect">
+                                    <option selected>Toleransi TLCV</option>
+                                    <option value="1">1. Tahan</option>
+                                    <option value="2">2. Agak tahan</option>
+                                    <option value="3">3. Moderat</option>
+                                    <option value="4">4. Rentan</option>
+                                </select>
                             </div>
                         </div>
+                        <!-- xxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxx -->
+                        <div class="form-group row">
+                            <div class="col-sm">
+                                <select class="form-control form-select-user" id="autoSizingSelect">
+                                    <option selected>Permukaan Daun</option>
+                                    <option value="1">1. Rata</option>
+                                    <option value="2">2. Berbendol</option>
+                                    <option value="3">3. Berploi</option>
+                                </select>
+                            </div>
+                            <div class="col-sm">
+                                <input type="text" class="form-control" id="exampleFirstName" placeholder="Tinggi tanaman">
+                            </div>
+                            <div class="col-sm">
+                                <select class="form-control form-select-user" id="autoSizingSelect">
+                                    <option selected>Toleransi NPA</option>
+                                    <option value="1">1. Tahan</option>
+                                    <option value="2">2. Agak tahan</option>
+                                    <option value="3">3. Moderat</option>
+                                    <option value="4">4. Rentan</option>
+                                </select>
+                            </div>
+                        </div>
+                        <!-- xxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxx -->
                         <div class="form-group row">
                             <div class="col-md-4">
                                 <select class="form-control form-select-user" id="autoSizingSelect">
-                                    <option selected>Warna Bunga</option>
-                                    <option value="1">1. Merah</option>
-                                    <option value="2">2. Pink Coklat</option>
-                                    <option value="3">3. Biru</option>
-                                    <option value="4">4. Biru Pucat</option>
-                                    <option value="5">5. Putih</option>
+                                    <option selected>Tebal daun</option>
+                                    <option value="1">1. Tipis</option>
+                                    <option value="2">2. Tebal</option>
                                 </select>
                             </div>
-                            <div class="col-md-4">
-                                <input type="text" class="form-control" id="exampleFirstName" placeholder="Rendemen Serat">
+                            <div class="col-sm">
+                                <input type="text" class="form-control" id="exampleFirstName" placeholder="Panjang daun">
+                            </div>
+                            <div class="col-sm">
+                                <select class="form-control form-select-user" id="autoSizingSelect">
+                                    <option selected>Toleransi BLSH</option>
+                                    <option value="1">1. Tahan</option>
+                                    <option value="2">2. Agak tahan</option>
+                                    <option value="3">3. Moderat</option>
+                                    <option value="4">4. Rentan</option>
+                                </select>
                             </div>
                         </div>
+                        <!-- xxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxx -->
+                        <div class="form-group row">
+                            <div class="col-md-4">
+                                <select class="form-control form-select-user" id="autoSizingSelect">
+                                    <option selected>Warna daun</option>
+                                    <option value="1">1. Hijau</option>
+                                    <option value="2">2. Hijau kekuningan</option>
+                                    <option value="3">3. Kuning</option>
+                                    <option value="4">4. Putih kehijauan</option>
+                                </select>
+                            </div>
+                            <div class="col-sm">
+                                <input type="text" class="form-control" id="exampleFirstName" placeholder="Lebar daun">
+                            </div>
+                            <div class="col-sm">
+                                <select class="form-control form-select-user" id="autoSizingSelect">
+                                    <option selected>Toleransi BWLT</option>
+                                    <option value="1">1. Tahan</option>
+                                    <option value="2">2. Agak tahan</option>
+                                    <option value="3">3. Moderat</option>
+                                    <option value="4">4. Rentan</option>
+                                </select>
+                            </div>
+                        </div>
+                        <!-- xxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxx -->
+                        <div class="form-group row">
+                            <div class="col-md-4">
+                                <select class="form-control form-select-user" id="autoSizingSelect">
+                                    <option selected>Phylotaksi</option>
+                                    <option value="1">1. 3/8 kanan</option>
+                                    <option value="2">2. 3/8 kiri</option>
+                                    <option value="3">3. 2/5 kanan</option>
+                                    <option value="4">4. 2/5 kiri</option>
+                                    <option value="5">5. 5/13 kanan</option>
+                                    <option value="6">6. 5/13 kiri</option>
+                                </select>
+                            </div>
+                            <div class="col-sm">
+                                <input type="text" class="form-control" id="exampleFirstName" placeholder="Umur berbunga">
+                            </div>
+                        </div>
+                        <!-- xxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxx -->
                     </form>
                 </div>
                 <div role="tabpanel" class="tab-pane" id="foto">
