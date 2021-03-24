@@ -137,4 +137,14 @@ class Auth extends CI_Controller
 		$this->load->view('landing/profile.php', $data);
 		$this->load->view('templates/footer.php', $data);
 	}
+	public function status_data()
+	{
+		$data['user'] = $this->db->get_where('user', ['email' => $this->session->userdata('email')])->row_array();
+
+		$this->load->view('templates/header.php', $data);
+		$this->load->view('templates/sidebar.php', $data);
+		$this->load->view('templates/topbar.php', $data);
+		$this->load->view('landing/status_data.php', $data);
+		$this->load->view('templates/footer.php', $data);
+	}
 }

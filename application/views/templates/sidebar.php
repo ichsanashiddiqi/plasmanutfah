@@ -44,7 +44,7 @@
 
             <!-- Nav - Status  -->
             <li class="nav-item">
-                <a class="nav-link" href="index.html">
+                <a class="nav-link" href="<?= base_url('auth/status_data'); ?>">
                     <i class="fas fa-table"></i>
                     <span>Status Komputerisasi Data</span></a>
             </li>

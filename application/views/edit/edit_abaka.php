@@ -341,42 +341,52 @@
                     <form class="user">
                         <div class="form-group row">
                             <div class="col-sm">
+                                <label>No Aksesi.</label>
                                 <input class="form-control" type="text" id="no_aksesi" name="no_aksesi">
                             </div>
                         </div>
                         <div class="form-group row">
                             <div class="col-sm">
+                                <label>Nama koleksi</label>
                                 <input type="text" class="form-control" id="exampleFirstName" placeholder="Nama Koleksi">
                             </div>
                             <div class="col-sm">
+                                <label>Nama petani</label>
                                 <input type="text" class="form-control" id="exampleLastName" placeholder="Nama Petani">
                             </div>
 
                             <div class="col-sm">
+                                <label>Spesies</label>
                                 <input type="text" class="form-control" id="exampleLastName" placeholder="Spesies">
                             </div>
                         </div>
                         <div class="form-group row">
                             <div class="col-sm">
+                                <label>Nama kolektor</label>
                                 <input type="text" class="form-control" id="exampleFirstName" placeholder="Nama Kolektor">
                             </div>
                             <div class="col-sm">
+                                <label>Nama kultivar</label>
                                 <input type="text" class="form-control" id="exampleLastName" placeholder="Nama Kultivar">
                             </div>
 
                             <div class="col-sm">
+                                <label>Sinonim</label>
                                 <input type="text" class="form-control" id="exampleLastName" placeholder="Sinonim">
                             </div>
                         </div>
                         <div class="form-group row">
                             <div class="col-sm">
+                                <label>Tanggal koleksi</label>
                                 <input type="text" class="form-control" id="exampleFirstName" placeholder="Tanggal Koleksi">
                             </div>
                             <div class="col-sm">
+                                <label>Bahasa</label>
                                 <input type="text" class="form-control" id="exampleLastName" placeholder="Bahasa">
                             </div>
 
                             <div class="col-sm">
+                                <label>Distribusi</label>
                                 <select class="form-control form-select-user" id="autoSizingSelect">
                                     <option selected>Distribusi</option>
                                     <option value="Sangat Banyak">Sangat Banyak</option>
@@ -389,24 +399,29 @@
                         </div>
                         <div class="form-group row">
                             <div class="col-sm">
+                                <label>Ekspedisi</label>
                                 <input type="text" class="form-control" id="exampleFirstName" placeholder="Ekspedisi">
                             </div>
                             <div class="col-sm">
+                                <label>Arti</label>
                                 <input type="text" class="form-control" id="exampleLastName" placeholder="Arti">
                             </div>
 
                             <div class="col-sm">
+                                <label>Tgl registrasi</label>
                                 <input type="text" class="form-control" id="exampleLastName" placeholder="Tgl Registrasi">
                             </div>
                         </div>
                         <div class="form-group row">
                             <div class="col-md-3">
+                                <label>Altitude</label>
                                 <input type="number" class="form-control" id="exampleFirstName" placeholder="Altitude">
                             </div>
                         </div>
                         <hr>
                         <div class="form-group row">
                             <div class="col-md-4">
+                                <label>Sumber benih</label>
                                 <select class="form-control form-select-user" id="autoSizingSelect">
                                     <option selected>Sumber Benih</option>
                                     <option value="Lapang">Lapang</option>
@@ -419,11 +434,13 @@
                                 </select>
                             </div>
                             <div class="col-sm">
+                                <label>Areal penyeberan</label>
                                 <input type="text" class="form-control" id="exampleLastName" placeholder="Areal Penyebaran">
                             </div>
                         </div>
                         <div class="form-group row">
                             <div class="col-md-4">
+                                <label>Topografi</label>
                                 <select class="form-control form-select-user" id="autoSizingSelect">
                                     <option selected>Topografi</option>
                                     <option value="Rawa">Rawa</option>
@@ -435,11 +452,13 @@
                                 </select>
                             </div>
                             <div class="col-sm">
+                                <label>Kegunaan</label>
                                 <input type="text" class="form-control" id="exampleLastName" placeholder="Kegunaan">
                             </div>
                         </div>
                         <div class="form-group row">
                             <div class="col-md-4">
+                                <label>Tekstur tanah</label>
                                 <select class="form-control form-select-user" id="autoSizingSelect">
                                     <option selected>Tekstur Tanah</option>
                                     <option value="Pasir">Pasir</option>
@@ -449,11 +468,13 @@
                                 </select>
                             </div>
                             <div class="col-sm">
+                                <label>Sifat penting</label>
                                 <input type="areatext" class="form-control" id="exampleLastName" placeholder="Sifat Penting">
                             </div>
                         </div>
                         <div class="form-group row">
                             <div class="col-md-4">
+                                <label>Irigasi</label>
                                 <select class="form-control form-select-user" id="autoSizingSelect">
                                     <option selected>Irigasi</option>
                                     <option value="Jelek">Jelek</option>
@@ -463,11 +484,13 @@
                                 </select>
                             </div>
                             <div class="col-sm">
+                                <label>Catatan iklim</label>
                                 <input type="areatext" class="form-control" id="exampleLastName" placeholder="Catatan Iklim">
                             </div>
                         </div>
                         <div class="form-group row">
                             <div class="col-md-4">
+                                <label>Metode Sampling</label>
                                 <select class="form-control form-select-user" id="autoSizingSelect">
                                     <option selected>Metode Sampling</option>
                                     <option value="Acak">Acak</option>
@@ -475,6 +498,7 @@
                                 </select>
                             </div>
                             <div class="col-md-4">
+                                <label>Status contoh</label>
                                 <select class="form-control form-select-user" id="autoSizingSelect">
                                     <option selected>Status Contoh</option>
                                     <option value="Varietas Lokal">Varietas Lokal</option>
@@ -483,6 +507,7 @@
                                 </select>
                             </div>
                             <div class="col-md-4">
+                                <label>Tipe contoh</label>
                                 <select class="form-control form-select-user" id="autoSizingSelect">
                                     <option selected>Tipe Contoh</option>
                                     <option value="Acak">Biji</option>

@@ -30,7 +30,7 @@
 
                     <h5 class="card-title">Data Paspor</h5>
                     <!-- <p class="card-text">With supporting text below as a natural lead-in to additional content.</p> -->
-                    <form class="user">
+                    <form class="user" method="post" action="<?php echo base_url('add/add_abaka/tambah_pas'); ?>">
                         <div class="form-group row">
                             <div class="col-sm">
                                 <input class="form-control" type="text" id="no_aksesi" name="no_aksesi" value="<?php foreach ($aksesi as $aks) {
@@ -41,39 +41,39 @@
                         </div>
                         <div class="form-group row">
                             <div class="col-sm">
-                                <input type="text" class="form-control" id="exampleFirstName" placeholder="Nama Koleksi">
+                                <input type="text" class="form-control" name="pas_01" placeholder="Nama Koleksi">
                             </div>
                             <div class="col-sm">
-                                <input type="text" class="form-control" id="exampleLastName" placeholder="Nama Petani">
+                                <input type="text" class="form-control" name="pas_02" placeholder="Nama Petani">
                             </div>
 
                             <div class="col-sm">
-                                <input type="text" class="form-control" id="exampleLastName" placeholder="Spesies">
+                                <input type="text" class="form-control" name="pas_03" placeholder="Spesies">
                             </div>
                         </div>
                         <div class="form-group row">
                             <div class="col-sm">
-                                <input type="text" class="form-control" id="exampleFirstName" placeholder="Nama Kolektor">
+                                <input type="text" class="form-control" name="pas_04" placeholder="Nama Kolektor">
                             </div>
                             <div class="col-sm">
-                                <input type="text" class="form-control" id="exampleLastName" placeholder="Nama Kultivar">
+                                <input type="text" class="form-control" name="pas_13" placeholder="Nama Kultivar">
                             </div>
 
                             <div class="col-sm">
-                                <input type="text" class="form-control" id="exampleLastName" placeholder="Sinonim">
+                                <input type="text" class="form-control" name="pas_14" placeholder="Sinonim">
                             </div>
                         </div>
                         <div class="form-group row">
                             <div class="col-sm">
-                                <input type="text" class="form-control" id="exampleFirstName" placeholder="Tanggal Koleksi">
+                                <input type="text" class="form-control" name="pas_15" placeholder="Tanggal Koleksi">
                             </div>
                             <div class="col-sm">
-                                <input type="text" class="form-control" id="exampleLastName" placeholder="Bahasa">
+                                <input type="text" class="form-control" name="pas_16" placeholder="Bahasa">
                             </div>
 
                             <div class="col-sm">
-                                <select class="form-control form-select-user" id="autoSizingSelect">
-                                    <option selected>Distribusi</option>
+                                <select class="form-control form-select-user" name="pas_17">
+                                    <option selected value="">Distribusi</option>
                                     <option value="Sangat Banyak">Sangat Banyak</option>
                                     <option value="Banyak">Banyak</option>
                                     <option value="Agak Jarang">Agak Jarang</option>
@@ -84,26 +84,26 @@
                         </div>
                         <div class="form-group row">
                             <div class="col-sm">
-                                <input type="text" class="form-control" id="exampleFirstName" placeholder="Ekspedisi">
+                                <input type="text" class="form-control" name="pas_18" placeholder="Ekspedisi">
                             </div>
                             <div class="col-sm">
-                                <input type="text" class="form-control" id="exampleLastName" placeholder="Arti">
+                                <input type="text" class="form-control" name="pas_19" placeholder="Arti">
                             </div>
 
                             <div class="col-sm">
-                                <input type="text" class="form-control" id="exampleLastName" placeholder="Tgl Registrasi">
+                                <input type="text" class="form-control" name="pas_20" placeholder="Tgl Registrasi">
                             </div>
                         </div>
                         <div class="form-group row">
                             <div class="col-md-3">
-                                <input type="number" class="form-control" id="exampleFirstName" placeholder="Altitude">
+                                <input type="number" class="form-control" name="pas_21" placeholder="Altitude">
                             </div>
                         </div>
                         <hr>
                         <div class="form-group row">
                             <div class="col-md-4">
-                                <select class="form-control form-select-user" id="autoSizingSelect">
-                                    <option selected>Sumber Benih</option>
+                                <select class="form-control form-select-user" name="pas_22">
+                                    <option selected value="">Sumber Benih</option>
                                     <option value="Lapang">Lapang</option>
                                     <option value="Petani">Petani</option>
                                     <option value="Lumbung">Lumbung</option>
@@ -114,13 +114,13 @@
                                 </select>
                             </div>
                             <div class="col-sm">
-                                <input type="text" class="form-control" id="exampleLastName" placeholder="Areal Penyebaran">
+                                <input type="text" class="form-control" name="pas_23" placeholder="Areal Penyebaran">
                             </div>
                         </div>
                         <div class="form-group row">
                             <div class="col-md-4">
-                                <select class="form-control form-select-user" id="autoSizingSelect">
-                                    <option selected>Topografi</option>
+                                <select class="form-control form-select-user" name="pas_24">
+                                    <option selected value="">Topografi</option>
                                     <option value="Rawa">Rawa</option>
                                     <option value="Datar">Datar</option>
                                     <option value="Bergelombang">Bergelombang</option>
@@ -130,13 +130,13 @@
                                 </select>
                             </div>
                             <div class="col-sm">
-                                <input type="text" class="form-control" id="exampleLastName" placeholder="Kegunaan">
+                                <input type="text" class="form-control" name="pas_25" placeholder="Kegunaan">
                             </div>
                         </div>
                         <div class="form-group row">
                             <div class="col-md-4">
-                                <select class="form-control form-select-user" id="autoSizingSelect">
-                                    <option selected>Tekstur Tanah</option>
+                                <select class="form-control form-select-user" name="pas_26">
+                                    <option selected value="">Tekstur Tanah</option>
                                     <option value="Pasir">Pasir</option>
                                     <option value="Lempung">Lempung</option>
                                     <option value="Liat">Liat</option>
@@ -144,13 +144,13 @@
                                 </select>
                             </div>
                             <div class="col-sm">
-                                <input type="areatext" class="form-control" id="exampleLastName" placeholder="Sifat Penting">
+                                <input type="areatext" class="form-control" name="pas_27" placeholder="Sifat Penting">
                             </div>
                         </div>
                         <div class="form-group row">
                             <div class="col-md-4">
-                                <select class="form-control form-select-user" id="autoSizingSelect">
-                                    <option selected>Irigasi</option>
+                                <select class="form-control form-select-user" name="pas_28">
+                                    <option selected value="">Irigasi</option>
                                     <option value="Jelek">Jelek</option>
                                     <option value="Sedang">Sedang</option>
                                     <option value="Baik">Baik</option>
@@ -158,28 +158,28 @@
                                 </select>
                             </div>
                             <div class="col-sm">
-                                <input type="areatext" class="form-control" id="exampleLastName" placeholder="Catatan Iklim">
+                                <input type="areatext" class="form-control" name="pas_29" placeholder="Catatan Iklim">
                             </div>
                         </div>
                         <div class="form-group row">
                             <div class="col-md-4">
-                                <select class="form-control form-select-user" id="autoSizingSelect">
-                                    <option selected>Metode Sampling</option>
+                                <select class="form-control form-select-user" name="pas_30">
+                                    <option selected value="">Metode Sampling</option>
                                     <option value="Acak">Acak</option>
                                     <option value="Tanpa Acak">Tanpa Acak</option>
                                 </select>
                             </div>
                             <div class="col-md-4">
-                                <select class="form-control form-select-user" id="autoSizingSelect">
-                                    <option selected>Status Contoh</option>
+                                <select class="form-control form-select-user" name="pas_31">
+                                    <option selected value="">Status Contoh</option>
                                     <option value="Varietas Lokal">Varietas Lokal</option>
                                     <option value="Liar">Liar</option>
                                     <option value="Varietas Unggul Nasional">Varietas Unggul Nasional</option>
                                 </select>
                             </div>
                             <div class="col-md-4">
-                                <select class="form-control form-select-user" id="autoSizingSelect">
-                                    <option selected>Tipe Contoh</option>
+                                <select class="form-control form-select-user" name="pas_32">
+                                    <option selected value="">Tipe Contoh</option>
                                     <option value="Acak">Biji</option>
                                     <option value="Tanpa Acak">Tanaman</option>
                                     <option value="Acak">Organ Vegetatif</option>
@@ -191,6 +191,8 @@
                         <!-- <a href="login.html" class="btn btn-primary btn-user btn-block">
                     Register Account
                 </a> -->
+                        <input class="btn btn-success btn-user btn-block" type="submit" value="Tambah Data Paspor">
+
                     </form>
                 </div>
                 <!-- <div role="tabpanel" class="tab-pane" id="karakter">

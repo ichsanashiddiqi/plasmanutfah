@@ -10,7 +10,7 @@
 
     <div class="card">
         <div class="card-header">
-            Featured
+            Jarak Pagar
         </div>
         <div class="card-body">
             <h5 class="card-title">Tambah tanaman jarak pagar</h5>

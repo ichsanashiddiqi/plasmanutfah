@@ -10,7 +10,7 @@
 
     <div class="card">
         <div class="card-header">
-            Featured
+            Bunga Matahari
         </div>
         <div class="card-body">
             <h5 class="card-title">Tambah tanaman bunga matahari</h5>
