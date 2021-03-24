@@ -21,6 +21,7 @@
 
                             <tr>
                                 <th>No</th>
+                                <th>Action</th>
                                 <th>No. Aksesi</th>
                                 <th>Nama Aksesi</th>
                                 <th>Gambar</th>
@@ -76,6 +77,9 @@
                             ?>
                                 <tr>
                                     <td><?php echo $rami->no ?></td>
+                                    <td><a href="edit_rami/<?= $rami->no_aksesi; ?>"><i class="fas fa-edit" style="color: chartreuse;"></i></a>
+                                        <a href="hapus_rami/<?= $rami->no_aksesi; ?>"><i class="fas fa-trash-alt" style="color: red;"></i></a>
+                                    </td>
                                     <td><?php echo $rami->no_aksesi ?></td>
                                     <td><?php echo $rami->nama_aksesi ?></td>
                                     <td><img src="<?php echo base_url('assets/data/' . $rami->Image) ?>" width="64" /></td>

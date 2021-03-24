@@ -3,7 +3,7 @@
 
     <!-- Page Heading -->
     <div class="d-sm-flex align-items-center justify-content-between mb-4">
-        <h1 class="h3 mb-0 text-gray-800">Tanaman Jarak Pagar</h1>
+        <h1 class="h3 mb-0 text-gray-800">Tanaman Jarak Pagar (JATROPHA CURCAS)</h1>
     </div>
 
     <!-- Content Row -->
@@ -15,7 +15,7 @@
         <div class="card-body">
             <h5 class="card-title">Tambah tanaman jarak pagar</h5>
             <!-- <p class="card-text">With supporting text below as a natural lead-in to additional content.</p> -->
-            <form class="user" method="post" action="<?php echo base_url('add/add_bm/tambah_aksi'); ?>">
+            <form class="user" method="post" action="<?php echo base_url('add/add_jp/tambah_aksi'); ?>">
                 <div class="form-group row">
                     <div class="col-sm-6 mb-3 mb-sm-0">
                         <input type="text" class="form-control" id="no_aksesi" name="no_aksesi" placeholder="No. Aksesi">

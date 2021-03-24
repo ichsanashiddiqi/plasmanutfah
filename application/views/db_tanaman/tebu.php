@@ -21,29 +21,37 @@
 
                             <tr>
                                 <th>No</th>
+                                <th>Action</th>
                                 <th>No. Aksesi</th>
                                 <th>Nama Aksesi</th>
                                 <th>Gambar</th>
                                 <th>Helai Daun</th>
+                                <th>Lebar helai daun</th>
                                 <th>Warna daun</th>
-                                <th>Warna sendi</th>
+                                <th>Warna sendi segitiga</th>
                                 <th>Telinga daun</th>
-                                <th>Warna sendi</th>
+                                <th>Bulu bidang punggung</th>
+                                <th>Sebaran bulu bidang</th>
+                                <th>Posisi bulu bidang</th>
+                                <th>Kuantitas bulu bidang</th>
+                                <th>Lebar pelepah bulu</th>
                                 <th>Sifat lepas pelepah</th>
-                                <th>Lapisan lilin</th>
-                                <th>Warna pelepah</th>
+                                <th>Lapisan lilin pada pelepah</th>
+                                <th>Warna pelepah daun</th>
                                 <th>Warna batang</th>
                                 <th>Lapisan lilin batang</th>
                                 <th>Bentuk ruas</th>
                                 <th>Susunan ruas</th>
                                 <th>Noda gabus</th>
-                                <th>Retak gabuk</th>
+                                <th>Retak gabus</th>
                                 <th>Retakan tumbuh</th>
-                                <th>Retakan tumbuh</th>
+                                <th>Alur mata</th>
                                 <th>Penampang melintang</th>
-                                <th>Teras</th>
-                                <th>Teras</th>
-                                <th>Bentuk</th>
+                                <th>Teras batang</th>
+                                <th>Cincin tumbuh</th>
+                                <th>Mata akar</th>
+                                <th>Kedudukan mata</th>
+                                <th>Bentuk mata</th>
                                 <th>Bagian terlebar</th>
                                 <th>Ukuran sayap</th>
                                 <th>Tepi sayap</th>
@@ -51,13 +59,6 @@
                                 <th>Rambut tepi basal</th>
                                 <th>Rambut jambul</th>
                                 <th>Ukuran rambut jambul</th>
-                                <th>kar_20</th>
-                                <th>kar_21</th>
-                                <th>kar_30</th>
-                                <th>kar_31</th>
-                                <th>kar_32</th>
-                                <th>kar_33</th>
-                                <th>kar_34</th>
 
                             </tr>
                         </thead>
@@ -69,6 +70,9 @@
                             ?>
                                 <tr>
                                     <td><?php echo $tebu->no ?></td>
+                                    <td><a href="edit_tebu/<?= $tebu->no_aksesi; ?>"><i class="fas fa-edit" style="color: chartreuse;"></i></a>
+                                        <a href="hapus_tebu/<?= $tebu->no_aksesi; ?>"><i class="fas fa-trash-alt" style="color: red;"></i></a>
+                                    </td>
                                     <td><?php echo $tebu->no_aksesi ?></td>
                                     <td><?php echo $tebu->nama_aksesi ?></td>
                                     <td><img src="<?php echo base_url('assets/data/' . $tebu->Image) ?>" width="64" /></td>

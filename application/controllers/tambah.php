@@ -251,7 +251,7 @@ class Tambah extends CI_Controller
         $this->load->view('templates/header.php', $data);
         $this->load->view('templates/sidebar.php', $data);
         $this->load->view('templates/topbar.php', $data);
-        $this->load->view('tambah/tambah_temmbakau2.php', $data);
+        $this->load->view('tambah/tambah_tembakau2.php', $data);
         $this->load->view('templates/footer.php', $data);
     }
 

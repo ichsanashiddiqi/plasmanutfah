@@ -15,7 +15,7 @@
         <div class="card-body">
             <h5 class="card-title">Tambah tanaman kapas</h5>
             <!-- <p class="card-text">With supporting text below as a natural lead-in to additional content.</p> -->
-            <form class="user" method="post" action="<?php echo base_url('add/add_bm/tambah_aksi'); ?>">
+            <form class="user" method="post" action="<?php echo base_url('add/add_kapuk/tambah_aksi'); ?>">
                 <div class="form-group row">
                     <div class="col-sm-6 mb-3 mb-sm-0">
                         <input type="text" class="form-control" id="no_aksesi" name="no_aksesi" placeholder="No. Aksesi">

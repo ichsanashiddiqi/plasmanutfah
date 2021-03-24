@@ -21,6 +21,7 @@
 
                             <tr>
                                 <th>No</th>
+                                <th>Action</th>
                                 <th>No. Aksesi</th>
                                 <th>Nama Aksesi</th>
                                 <th>Gambar</th>
@@ -68,6 +69,9 @@
                             ?>
                                 <tr>
                                     <td><?php echo $kapuk->no ?></td>
+                                    <td><a href="edit_kapuk/<?= $kapuk->no_aksesi; ?>"><i class="fas fa-edit" style="color: chartreuse;"></i></a>
+                                        <a href="hapus_kapuk/<?= $kapuk->no_aksesi; ?>"><i class="fas fa-trash-alt" style="color: red;"></i></a>
+                                    </td>
                                     <td><?php echo $kapuk->no_aksesi ?></td>
                                     <td><?php echo $kapuk->nama_aksesi ?></td>
                                     <td><img src="<?php echo base_url('assets/data/' . $kapuk->Image) ?>" width="64" /></td>

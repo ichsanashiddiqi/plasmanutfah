@@ -21,6 +21,7 @@
 
                             <tr>
                                 <th>No</th>
+                                <th>Action</th>
                                 <th>No. Aksesi</th>
                                 <th>Nama Aksesi</th>
                                 <th>Gambar</th>
@@ -79,6 +80,9 @@
                             ?>
                                 <tr>
                                     <td><?php echo $tembakau->no ?></td>
+                                    <td><a href="edit_tembakau/<?= $tembakau->no_aksesi; ?>"><i class="fas fa-edit" style="color: chartreuse;"></i></a>
+                                        <a href="hapus_tembakau/<?= $tembakau->no_aksesi; ?>"><i class="fas fa-trash-alt" style="color: red;"></i></a>
+                                    </td>
                                     <td><?php echo $tembakau->no_aksesi ?></td>
                                     <td><?php echo $tembakau->nama_aksesi ?></td>
                                     <td><img src="<?php echo base_url('assets/data/' . $tembakau->Image) ?>" width="64" /></td>

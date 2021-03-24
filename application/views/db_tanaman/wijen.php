@@ -21,6 +21,7 @@
 
                             <tr>
                                 <th>No</th>
+                                <th>Action</th>
                                 <th>No. Aksesi</th>
                                 <th>Nama Aksesi</th>
                                 <th>Gambar</th>
@@ -66,6 +67,9 @@
                             ?>
                                 <tr>
                                     <td><?php echo $wijen->no ?></td>
+                                    <td><a href="edit_wijen/<?= $wijen->no_aksesi; ?>"><i class="fas fa-edit" style="color: chartreuse;"></i></a>
+                                        <a href="hapus_wijen/<?= $wijen->no_aksesi; ?>"><i class="fas fa-trash-alt" style="color: red;"></i></a>
+                                    </td>
                                     <td><?php echo $wijen->no_aksesi ?></td>
                                     <td><?php echo $wijen->nama_aksesi ?></td>
                                     <td><img src="<?php echo base_url('assets/data/' . $wijen->Image) ?>" width="64" /></td>

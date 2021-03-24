@@ -21,6 +21,7 @@
 
                             <tr>
                                 <th>No</th>
+                                <th>Action</th>
                                 <th>No. Aksesi</th>
                                 <th>Nama Aksesi</th>
                                 <th>Gambar</th>
@@ -47,6 +48,7 @@
                                 <th>Lebar kapsul</th>
                                 <th>Rasio panjang/lebar kapsul</th>
                                 <th>Bentuk biji</th>
+                                <th>Panjang biji</th>
                                 <th>Lebar biji</th>
                                 <th>Ketebalan biji</th>
                                 <th>Warna kulit biji</th>
@@ -71,6 +73,9 @@
                             ?>
                                 <tr>
                                     <td><?php echo $jp->no ?></td>
+                                    <td><a href="edit_jp/<?= $jp->no_aksesi; ?>"><i class="fas fa-edit" style="color: chartreuse;"></i></a>
+                                        <a href="hapus_jp/<?= $jp->no_aksesi; ?>"><i class="fas fa-trash-alt" style="color: red;"></i></a>
+                                    </td>
                                     <td><?php echo $jp->no_aksesi ?></td>
                                     <td><?php echo $jp->nama_aksesi ?></td>
                                     <td><img src="<?php echo base_url('assets/data/' . $jp->Image) ?>" width="64" /></td>
@@ -111,10 +116,7 @@
                                     <td><?php echo $jp->kar_35 ?></td>
                                     <td><?php echo $jp->kar_36 ?></td>
                                     <td><?php echo $jp->kar_37 ?></td>
-                                    <td><?php echo $jp->kar_38 ?></td>
-                                    <td><?php echo $jp->p1 ?></td>
-                                    <td><?php echo $jp->p2 ?></td>
-                                    <td><?php echo $jp->p3 ?></td>
+
 
                                 </tr>
                             <?php } ?>
