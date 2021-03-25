@@ -10,6 +10,8 @@ class Edit extends CI_Controller
         $this->load->helper('url');
     }
 
+    // BATAS ABAKA
+
     function edit_abaka()
     {
         $no_aksesi = $this->input->post('no_aksesi');
@@ -118,7 +120,107 @@ class Edit extends CI_Controller
         );
 
         $this->m_edit_data->update_data($where, $data, 'dat_abaka');
-        redirect('tanaman/abaka');
+        redirect('tanaman/edit_abaka');
+    }
+
+    function pas_abaka()
+    {
+        $no_aksesi = $this->input->post('no_aksesi');
+        $pas_01 = $this->input->post('pas_01');
+        $pas_02 = $this->input->post('pas_02');
+        $pas_03 = $this->input->post('pas_03');
+        $pas_04 = $this->input->post('pas_04');
+        $pas_13 = $this->input->post('pas_13');
+        $pas_14 = $this->input->post('pas_14');
+        $pas_15 = $this->input->post('pas_15');
+        $pas_16 = $this->input->post('pas_16');
+        $pas_17 = $this->input->post('pas_17');
+        $pas_18 = $this->input->post('pas_18');
+        $pas_19 = $this->input->post('pas_19');
+        $pas_20 = $this->input->post('pas_20');
+        $pas_21 = $this->input->post('pas_21');
+        $pas_22 = $this->input->post('pas_22');
+        $pas_23 = $this->input->post('pas_23');
+        $pas_24 = $this->input->post('pas_24');
+        $pas_25 = $this->input->post('pas_25');
+        $pas_26 = $this->input->post('pas_26');
+        $pas_27 = $this->input->post('pas_27');
+        $pas_28 = $this->input->post('pas_28');
+        $pas_29 = $this->input->post('pas_29');
+        $pas_30 = $this->input->post('pas_30');
+        $pas_31 = $this->input->post('pas_31');
+        $pas_32 = $this->input->post('pas_32');
+
+        $data = array(
+            'no_aksesi' =>  $no_aksesi,
+            'pas_01' => $pas_01,
+            'pas_02' => $pas_02,
+            'pas_03' => $pas_03,
+            'pas_04' => $pas_04,
+            'pas_13' => $pas_13,
+            'pas_14' => $pas_14,
+            'pas_15' => $pas_15,
+            'pas_16' => $pas_16,
+            'pas_17' => $pas_17,
+            'pas_18' => $pas_18,
+            'pas_19' => $pas_19,
+            'pas_20' => $pas_20,
+            'pas_21' => $pas_21,
+            'pas_22' => $pas_22,
+            'pas_23' => $pas_23,
+            'pas_24' => $pas_24,
+            'pas_25' => $pas_25,
+            'pas_26' => $pas_26,
+            'pas_27' => $pas_27,
+            'pas_28' => $pas_28,
+            'pas_29' => $pas_29,
+            'pas_30' => $pas_30,
+            'pas_31' => $pas_31,
+            'pas_32' => $pas_32,
+
+        );
+
+        $where = array(
+            'no_aksesi' => $no_aksesi
+        );
+
+        $this->m_edit_data->update_data($where, $data, 'pas_abaka');
+        redirect('tanaman/edit_abaka');
+    }
+
+    function tambah_foto()
+    {
+        $no_aksesi = $this->input->post('no_aksesi');
+        $image_nama = $this->input->post('image_nama');
+        $Image_keterangan = $this->input->post('Image_keterangan');
+        $Image = isset($_FILES['Image']);
+        if ($Image = '') {
+        } else {
+            $config['upload_path'] = './assets/data/';
+            $config['allowed_types'] = 'jpg|png|gif';
+
+            $this->load->library('upload', $config);
+            if (!$this->upload->do_upload('Image')) {
+                echo "Upload Gagal";
+                die();
+            } else {
+                $Image = $this->upload->data('file_name');
+            }
+        }
+
+        $data = array(
+            'no_aksesi' => $no_aksesi,
+            'Image' => $Image,
+            'image_nama' => $image_nama,
+            'Image_keterangan' => $Image_keterangan
+
+        );
+        $where = array(
+            'no_aksesi' => $no_aksesi
+        );
+
+        $this->m_edit_data->update_data($where, $data, 'pas_abaka');
+        redirect('tanaman/edit_abaka');
     }
 
     function edit_bm()

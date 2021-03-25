@@ -558,43 +558,53 @@
                     <form class="user">
                         <div class="form-group row">
                             <div class="col-sm">
+                                <label>No Aksesi.</label>
                                 <input class="form-control" type="text" id="no_aksesi" name="no_aksesi">
                             </div>
                         </div>
                         <div class="form-group row">
                             <div class="col-sm">
-                                <input type="text" class="form-control" id="exampleFirstName" placeholder="Nama Koleksi">
+                                <label>Nama koleksi</label>
+                                <input type="text" class="form-control" name="pas_01" placeholder="Nama Koleksi">
                             </div>
                             <div class="col-sm">
-                                <input type="text" class="form-control" id="exampleLastName" placeholder="Nama Petani">
+                                <label>Nama petani</label>
+                                <input type="text" class="form-control" name="pas_02" placeholder="Nama Petani">
                             </div>
 
                             <div class="col-sm">
-                                <input type="text" class="form-control" id="exampleLastName" placeholder="Spesies">
+                                <label>Spesies</label>
+                                <input type="text" class="form-control" name="pas_03" placeholder="Spesies">
                             </div>
                         </div>
                         <div class="form-group row">
                             <div class="col-sm">
-                                <input type="text" class="form-control" id="exampleFirstName" placeholder="Nama Kolektor">
+                                <label>Nama kolektor</label>
+                                <input type="text" class="form-control" name="pas_04" placeholder="Nama Kolektor">
                             </div>
                             <div class="col-sm">
-                                <input type="text" class="form-control" id="exampleLastName" placeholder="Nama Kultivar">
+                                <label>Nama kultivar</label>
+                                <input type="text" class="form-control" name="pas_13" placeholder="Nama Kultivar">
                             </div>
 
                             <div class="col-sm">
-                                <input type="text" class="form-control" id="exampleLastName" placeholder="Sinonim">
+                                <label>Sinonim</label>
+                                <input type="text" class="form-control" name="pas_14" placeholder="Sinonim">
                             </div>
                         </div>
                         <div class="form-group row">
                             <div class="col-sm">
-                                <input type="text" class="form-control" id="exampleFirstName" placeholder="Tanggal Koleksi">
+                                <label>Tanggal koleksi</label>
+                                <input type="text" class="form-control" name="pas_15" placeholder="Tanggal Koleksi">
                             </div>
                             <div class="col-sm">
-                                <input type="text" class="form-control" id="exampleLastName" placeholder="Bahasa">
+                                <label>Bahasa</label>
+                                <input type="text" class="form-control" name="pas_16" placeholder="Bahasa">
                             </div>
 
                             <div class="col-sm">
-                                <select class="form-control form-select-user" id="autoSizingSelect">
+                                <label>Distribusi</label>
+                                <select class="form-control form-select-user" name="pas_17">
                                     <option selected>Distribusi</option>
                                     <option value="Sangat Banyak">Sangat Banyak</option>
                                     <option value="Banyak">Banyak</option>
@@ -606,25 +616,30 @@
                         </div>
                         <div class="form-group row">
                             <div class="col-sm">
-                                <input type="text" class="form-control" id="exampleFirstName" placeholder="Ekspedisi">
+                                <label>Ekspedisi</label>
+                                <input type="text" class="form-control" name="pas_18" placeholder="Ekspedisi">
                             </div>
                             <div class="col-sm">
-                                <input type="text" class="form-control" id="exampleLastName" placeholder="Arti">
+                                <label>Arti</label>
+                                <input type="text" class="form-control" name="pas_19" placeholder="Arti">
                             </div>
 
                             <div class="col-sm">
-                                <input type="text" class="form-control" id="exampleLastName" placeholder="Tgl Registrasi">
+                                <label>Tgl registrasi</label>
+                                <input type="text" class="form-control" name="pas_20" placeholder="Tgl Registrasi">
                             </div>
                         </div>
                         <div class="form-group row">
                             <div class="col-md-3">
-                                <input type="number" class="form-control" id="exampleFirstName" placeholder="Altitude">
+                                <label>Altitude</label>
+                                <input type="number" class="form-control" name="pas_21" placeholder="Altitude">
                             </div>
                         </div>
                         <hr>
                         <div class="form-group row">
                             <div class="col-md-4">
-                                <select class="form-control form-select-user" id="autoSizingSelect">
+                                <label>Sumber benih</label>
+                                <select class="form-control form-select-user" name="pas_22">
                                     <option selected>Sumber Benih</option>
                                     <option value="Lapang">Lapang</option>
                                     <option value="Petani">Petani</option>
@@ -636,12 +651,14 @@
                                 </select>
                             </div>
                             <div class="col-sm">
-                                <input type="text" class="form-control" id="exampleLastName" placeholder="Areal Penyebaran">
+                                <label>Areal penyeberan</label>
+                                <input type="text" class="form-control" name="pas_23" placeholder="Areal Penyebaran">
                             </div>
                         </div>
                         <div class="form-group row">
                             <div class="col-md-4">
-                                <select class="form-control form-select-user" id="autoSizingSelect">
+                                <label>Topografi</label>
+                                <select class="form-control form-select-user" name="pas_24">
                                     <option selected>Topografi</option>
                                     <option value="Rawa">Rawa</option>
                                     <option value="Datar">Datar</option>
@@ -652,12 +669,14 @@
                                 </select>
                             </div>
                             <div class="col-sm">
-                                <input type="text" class="form-control" id="exampleLastName" placeholder="Kegunaan">
+                                <label>Kegunaan</label>
+                                <input type="text" class="form-control" name="pas_25" placeholder="Kegunaan">
                             </div>
                         </div>
                         <div class="form-group row">
                             <div class="col-md-4">
-                                <select class="form-control form-select-user" id="autoSizingSelect">
+                                <label>Tekstur tanah</label>
+                                <select class="form-control form-select-user" name="pas_26">
                                     <option selected>Tekstur Tanah</option>
                                     <option value="Pasir">Pasir</option>
                                     <option value="Lempung">Lempung</option>
@@ -666,12 +685,14 @@
                                 </select>
                             </div>
                             <div class="col-sm">
-                                <input type="areatext" class="form-control" id="exampleLastName" placeholder="Sifat Penting">
+                                <label>Sifat penting</label>
+                                <input type="areatext" class="form-control" name="pas_27" placeholder="Sifat Penting">
                             </div>
                         </div>
                         <div class="form-group row">
                             <div class="col-md-4">
-                                <select class="form-control form-select-user" id="autoSizingSelect">
+                                <label>Irigasi</label>
+                                <select class="form-control form-select-user" name="pas_28">
                                     <option selected>Irigasi</option>
                                     <option value="Jelek">Jelek</option>
                                     <option value="Sedang">Sedang</option>
@@ -680,19 +701,22 @@
                                 </select>
                             </div>
                             <div class="col-sm">
-                                <input type="areatext" class="form-control" id="exampleLastName" placeholder="Catatan Iklim">
+                                <label>Catatan iklim</label>
+                                <input type="areatext" class="form-control" name="pas_29" placeholder="Catatan Iklim">
                             </div>
                         </div>
                         <div class="form-group row">
                             <div class="col-md-4">
-                                <select class="form-control form-select-user" id="autoSizingSelect">
+                                <label>Metode Sampling</label>
+                                <select class="form-control form-select-user" name="pas_30">
                                     <option selected>Metode Sampling</option>
                                     <option value="Acak">Acak</option>
                                     <option value="Tanpa Acak">Tanpa Acak</option>
                                 </select>
                             </div>
                             <div class="col-md-4">
-                                <select class="form-control form-select-user" id="autoSizingSelect">
+                                <label>Status contoh</label>
+                                <select class="form-control form-select-user" name="pas_31">
                                     <option selected>Status Contoh</option>
                                     <option value="Varietas Lokal">Varietas Lokal</option>
                                     <option value="Liar">Liar</option>
@@ -700,7 +724,8 @@
                                 </select>
                             </div>
                             <div class="col-md-4">
-                                <select class="form-control form-select-user" id="autoSizingSelect">
+                                <label>Tipe contoh</label>
+                                <select class="form-control form-select-user" name="pas_32">
                                     <option selected>Tipe Contoh</option>
                                     <option value="Acak">Biji</option>
                                     <option value="Tanpa Acak">Tanaman</option>
