@@ -30,7 +30,7 @@
                 <hr>
                 <div class="form-group row">
                     <div class="col-sm-6 mb-3 mb-sm-0">
-                        <input type="text" class="form-control" id="Negara_asal" name="Negara_asal" placeholder="Negara Asal">
+                        <input type="text" class="form-control" id="Negara" name="Negara" placeholder="Negara Asal">
                     </div>
                     <div class="col-sm-6">
                         <input type="text" class="form-control" id="Donor" name="Donor" placeholder="Donor">

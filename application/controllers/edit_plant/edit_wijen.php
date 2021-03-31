@@ -1,5 +1,5 @@
 <?php
-class edit_abaka extends CI_Controller
+class edit_wijen extends CI_Controller
 {
     function __construct()
     {
@@ -10,7 +10,7 @@ class edit_abaka extends CI_Controller
 
     // BATAS ABAKA
 
-    function kar_abaka()
+    function kar_wijen()
     {
         $no_aksesi = $this->input->post('no_aksesi');
         $no_aksesi_IDN = $this->input->post('no_aksesi_IDN');
@@ -21,8 +21,8 @@ class edit_abaka extends CI_Controller
         $Desa = $this->input->post('Desa');
         $Negara = $this->input->post('Negara');
         $Donor = $this->input->post('Donor');
-        $longitude = $this->input->post('longitude');
-        $lattitude = $this->input->post('lattitude');
+        $Longitude = $this->input->post('Longitude');
+        $Lattitude = $this->input->post('Lattitude');
         $kar_01 = $this->input->post('kar_01');
         $kar_02 = $this->input->post('kar_02');
         $kar_03 = $this->input->post('kar_03');
@@ -54,13 +54,6 @@ class edit_abaka extends CI_Controller
         $kar_29 = $this->input->post('kar_29');
         $kar_30 = $this->input->post('kar_30');
         $kar_31 = $this->input->post('kar_31');
-        $kar_32 = $this->input->post('kar_32');
-        $kar_33 = $this->input->post('kar_33');
-        $kar_34 = $this->input->post('kar_34');
-        $kar_35 = $this->input->post('kar_35');
-        $kar_36 = $this->input->post('kar_36');
-        $kar_37 = $this->input->post('kar_37');
-        $kar_38 = $this->input->post('kar_38');
 
         $data = array(
             'no_aksesi_IDN' => $no_aksesi_IDN,
@@ -71,8 +64,8 @@ class edit_abaka extends CI_Controller
             'Desa' => $Desa,
             'Negara' => $Negara,
             'Donor' => $Donor,
-            'longitude' => $longitude,
-            'lattitude' => $lattitude,
+            'Longitude' => $Longitude,
+            'Lattitude' => $Lattitude,
             'kar_01' => $kar_01,
             'kar_02' => $kar_02,
             'kar_03' => $kar_03,
@@ -104,24 +97,19 @@ class edit_abaka extends CI_Controller
             'kar_29' => $kar_29,
             'kar_30' => $kar_30,
             'kar_31' => $kar_31,
-            'kar_32' => $kar_32,
-            'kar_33' => $kar_33,
-            'kar_34' => $kar_34,
-            'kar_35' => $kar_35,
-            'kar_36' => $kar_36,
-            'kar_37' => $kar_37,
-            'kar_38' => $kar_38,
+
+
         );
 
         $where = array(
             'no_aksesi' => $no_aksesi
         );
 
-        $this->m_edit_data->update_data($where, $data, 'dat_abaka');
-        redirect('tanaman/edit_abaka/' . $no_aksesi);
+        $this->m_edit_data->update_data($where, $data, 'dat_wijen');
+        redirect('tanaman/edit_wijen');
     }
 
-    function pas_abaka()
+    function pas_wijen()
     {
         $no_aksesi = $this->input->post('no_aksesi');
         $pas_01 = $this->input->post('pas_01');
@@ -182,8 +170,8 @@ class edit_abaka extends CI_Controller
             'no_aksesi' => $no_aksesi
         );
 
-        $this->m_edit_data->update_data($where, $data, 'pas_abaka');
-        redirect('tanaman/edit_abaka' . $no_aksesi);
+        $this->m_edit_data->update_data($where, $data, 'pas_wijen');
+        redirect('tanaman/edit_wijen' . $no_aksesi);
     }
 
     function tambah_foto()
@@ -217,7 +205,7 @@ class edit_abaka extends CI_Controller
             'no_aksesi' => $no_aksesi
         );
 
-        $this->m_edit_data->update_data($where, $data, 'pas_abaka');
-        redirect('tanaman/edit_abaka');
+        $this->m_edit_data->update_data($where, $data, 'foto_wijen');
+        redirect('tanaman/edit_wijen');
     }
 }

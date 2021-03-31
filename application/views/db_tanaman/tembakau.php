@@ -87,27 +87,135 @@
                                     <td><?php echo $tembakau->nama_aksesi ?></td>
                                     <td><img src="<?php echo base_url('assets/data/' . $tembakau->Image) ?>" width="64" /></td>
                                     <td><?php echo $tembakau->kar_01 ?></td>
-                                    <td><?php echo $tembakau->kar_02 ?></td>
-                                    <td><?php echo $tembakau->kar_03 ?></td>
+                                    <td><?php if ($tembakau->kar_02 == 1) {
+                                            echo 'Silindris';
+                                        } else if ($tembakau->kar_02 == 2) {
+                                            echo 'Piramid';
+                                        } ?></td>
+                                    <td><?php if ($tembakau->kar_03 == 1) {
+                                            echo 'Rapat';
+                                        } else if ($tembakau->kar_03 == 2) {
+                                            echo 'Jarang';
+                                        } ?></td>
                                     <td><?php echo $tembakau->kar_04 ?></td>
                                     <td><?php echo $tembakau->kar_05 ?></td>
-                                    <td><?php echo $tembakau->kar_06 ?></td>
-                                    <td><?php echo $tembakau->kar_07 ?></td>
-                                    <td><?php echo $tembakau->kar_08 ?></td>
-                                    <td><?php echo $tembakau->kar_09 ?></td>
-                                    <td><?php echo $tembakau->kar_10 ?></td>
-                                    <td><?php echo $tembakau->kar_11 ?></td>
-                                    <td><?php echo $tembakau->kar_12 ?></td>
-                                    <td><?php echo $tembakau->kar_13 ?></td>
-                                    <td><?php echo $tembakau->kar_14 ?></td>
-                                    <td><?php echo $tembakau->kar_15 ?></td>
+                                    <td><?php if ($tembakau->kar_06 == 1) {
+                                            echo 'Hijau';
+                                        } else if ($tembakau->kar_06 == 2) {
+                                            echo 'Hijau kekuningan';
+                                        } else if ($tembakau->kar_06 == 3) {
+                                            echo 'Hijau keputihan';
+                                        } ?></td>
+                                    <td><?php if ($tembakau->kar_07 == 1) {
+                                            echo 'Berbulu';
+                                        } else if ($tembakau->kar_07 == 2) {
+                                            echo 'Tidak berbulu';
+                                        }  ?></td>
+                                    <td><?php if ($tembakau->kar_08 == 1) {
+                                            echo 'Tegak (< 60)';
+                                        } else if ($tembakau->kar_08 == 2) {
+                                            echo 'Horisontal (60 - 120)';
+                                        } else if ($tembakau->kar_08 == 3) {
+                                            echo 'Menggantung (> 120)';
+                                        }  ?></td>
+                                    <td><?php if ($tembakau->kar_09 == 1) {
+                                            echo 'Sedikit (< 19 lembar perpohon)';
+                                        } else if ($tembakau->kar_09 == 2) {
+                                            echo 'Sedang (19 - 3 lembar perpohon)';
+                                        } else if ($tembakau->kar_09 == 3) {
+                                            echo 'Banyak (< 30 lembar perpohon)';
+                                        } ?></td>
+                                    <td><?php if ($tembakau->kar_10 == 1) {
+                                            echo 'Runcing';
+                                        } else if ($tembakau->kar_10 == 2) {
+                                            echo 'Meruncing';
+                                        } else if ($tembakau->kar_10 == 3) {
+                                            echo 'Tumpul';
+                                        } ?></td>
+                                    <td><?php if ($tembakau->kar_11 == 1) {
+                                            echo 'Licin';
+                                        } else if ($tembakau->kar_11 == 2) {
+                                            echo 'Berombak';
+                                        } else if ($tembakau->kar_11 == 3) {
+                                            echo 'Bergerigi';
+                                        } ?></td>
+                                    <td><?php if ($tembakau->kar_12 == 1) {
+                                            echo 'Tipis';
+                                        } else if ($tembakau->kar_12 == 2) {
+                                            echo 'Tebal';
+                                        } ?></td>
+                                    <td><?php if ($tembakau->kar_13 == 1) {
+                                            echo 'Hijau';
+                                        } else if ($tembakau->kar_13 == 2) {
+                                            echo 'Hijau kekuningan';
+                                        } else if ($tembakau->kar_13 == 3) {
+                                            echo 'Kuning';
+                                        } else if ($tembakau->kar_13 == 4) {
+                                            echo 'Putih kehijauan';
+                                        } ?></td>
+                                    <td><?php if ($tembakau->kar_14 == 1) {
+                                            echo '3/8 Kanan';
+                                        } else if ($tembakau->kar_14 == 2) {
+                                            echo '3/8 Kiri';
+                                        } else if ($tembakau->kar_14 == 3) {
+                                            echo '2/5 Kanan';
+                                        } else if ($tembakau->kar_14 == 4) {
+                                            echo '2/5 Kiri';
+                                        } else if ($tembakau->kar_14 == 5) {
+                                            echo '5/13 Kanan';
+                                        } else if ($tembakau->kar_14 == 6) {
+                                            echo '5/13 Kiri';
+                                        }  ?></td>
+                                    <td><?php if ($tembakau->kar_15 == 1) {
+                                            echo 'Duduk';
+                                        } else if ($tembakau->kar_15 == 2) {
+                                            echo 'Bertangkai';
+                                        }  ?></td>
                                     <td><?php echo $tembakau->kar_16 ?></td>
-                                    <td><?php echo $tembakau->kar_17 ?></td>
-                                    <td><?php echo $tembakau->kar_18 ?></td>
-                                    <td><?php echo $tembakau->kar_19 ?></td>
-                                    <td><?php echo $tembakau->kar_20 ?></td>
-                                    <td><?php echo $tembakau->kar_21 ?></td>
-                                    <td><?php echo $tembakau->kar_22 ?></td>
+                                    <td><?php if ($tembakau->kar_17 == 1) {
+                                            echo 'Tidak ada';
+                                        } else if ($tembakau->kar_17 == 2) {
+                                            echo 'Ada kecil (< 1cm)';
+                                        } else if ($tembakau->kar_17 == 3) {
+                                            echo 'Ada sedang (1-6cm)';
+                                        } else if ($tembakau->kar_17 == 4) {
+                                            echo 'Ada besar (> 6cm)';
+                                        } ?></td>
+                                    <td><?php if ($tembakau->kar_18 == 1) {
+                                            echo 'Lebar licin (> 2,57cm)';
+                                        } else if ($tembakau->kar_18 == 2) {
+                                            echo 'Lebar berploi (> 2,57cm)';
+                                        } else if ($tembakau->kar_18 == 3) {
+                                            echo 'Sempit licin (< 2,57cm)';
+                                        } else if ($tembakau->kar_18 == 4) {
+                                            echo 'Ada besar (> 6cm)';
+                                        } ?></td>
+                                    <td><?php if ($tembakau->kar_19 == 1) {
+                                            echo 'Sempit (< 2,57cm)';
+                                        } else if ($tembakau->kar_19 == 2) {
+                                            echo 'Sempit licin (2,57-5,14cm)';
+                                        } else if ($tembakau->kar_19 == 3) {
+                                            echo 'Sangat lebar (> 5,14cm)';
+                                        } ?></td>
+                                    <td><?php if ($tembakau->kar_20 == 1) {
+                                            echo 'Tidak bergetah';
+                                        } else if ($tembakau->kar_20 == 2) {
+                                            echo 'Bergetah';
+                                        } ?></td>
+                                    <td><?php if ($tembakau->kar_21 == 1) {
+                                            echo 'Lonjong';
+                                        } else if ($tembakau->kar_21 == 2) {
+                                            echo 'Jantung';
+                                        } else if ($tembakau->kar_21 == 3) {
+                                            echo 'Bulat';
+                                        } ?></td>
+                                    <td><?php if ($tembakau->kar_21 == 1) {
+                                            echo 'Putih';
+                                        } else if ($tembakau->kar_21 == 2) {
+                                            echo 'Merah muda';
+                                        } else if ($tembakau->kar_21 == 3) {
+                                            echo 'Merah';
+                                        } ?></td>
                                     <td><?php echo $tembakau->kar_23 ?></td>
                                     <td><?php echo $tembakau->kar_24 ?></td>
                                     <td><?php echo $tembakau->kar_25 ?></td>
@@ -122,14 +230,78 @@
                                     <td><?php echo $tembakau->kar_34 ?></td>
                                     <td><?php echo $tembakau->kar_35 ?></td>
                                     <td><?php echo $tembakau->kar_36 ?></td>
-                                    <td><?php echo $tembakau->kar_37 ?></td>
-                                    <td><?php echo $tembakau->kar_38 ?></td>
-                                    <td><?php echo $tembakau->kar_39 ?></td>
-                                    <td><?php echo $tembakau->kar_40 ?></td>
-                                    <td><?php echo $tembakau->kar_41 ?></td>
-                                    <td><?php echo $tembakau->kar_42 ?></td>
-                                    <td><?php echo $tembakau->kar_43 ?></td>
-                                    <td><?php echo $tembakau->kar_44 ?></td>
+                                    <td><?php if ($tembakau->kar_37 == 1) {
+                                            echo 'Tahan';
+                                        } else if ($tembakau->kar_37 == 2) {
+                                            echo 'Agak tahan';
+                                        } else if ($tembakau->kar_37 == 3) {
+                                            echo 'Moderat';
+                                        } else if ($tembakau->kar_37 == 4) {
+                                            echo 'Rentan';
+                                        } ?></td>
+                                    <td><?php if ($tembakau->kar_38 == 1) {
+                                            echo 'Tahan';
+                                        } else if ($tembakau->kar_38 == 2) {
+                                            echo 'Agak tahan';
+                                        } else if ($tembakau->kar_38 == 3) {
+                                            echo 'Moderat';
+                                        } else if ($tembakau->kar_38 == 4) {
+                                            echo 'Rentan';
+                                        } ?></td>
+                                    <td><?php if ($tembakau->kar_39 == 1) {
+                                            echo 'Tahan';
+                                        } else if ($tembakau->kar_39 == 2) {
+                                            echo 'Agak tahan';
+                                        } else if ($tembakau->kar_39 == 3) {
+                                            echo 'Moderat';
+                                        } else if ($tembakau->kar_39 == 4) {
+                                            echo 'Rentan';
+                                        } ?></td>
+                                    <td><?php if ($tembakau->kar_40 == 1) {
+                                            echo 'Tahan';
+                                        } else if ($tembakau->kar_40 == 2) {
+                                            echo 'Agak tahan';
+                                        } else if ($tembakau->kar_40 == 3) {
+                                            echo 'Moderat';
+                                        } else if ($tembakau->kar_40 == 4) {
+                                            echo 'Rentan';
+                                        } ?></td>
+                                    <td><?php if ($tembakau->kar_41 == 1) {
+                                            echo 'Tahan';
+                                        } else if ($tembakau->kar_41 == 2) {
+                                            echo 'Agak tahan';
+                                        } else if ($tembakau->kar_41 == 3) {
+                                            echo 'Moderat';
+                                        } else if ($tembakau->kar_41 == 4) {
+                                            echo 'Rentan';
+                                        } ?></td>
+                                    <td><?php if ($tembakau->kar_42 == 1) {
+                                            echo 'Tahan';
+                                        } else if ($tembakau->kar_42 == 2) {
+                                            echo 'Agak tahan';
+                                        } else if ($tembakau->kar_42 == 3) {
+                                            echo 'Moderat';
+                                        } else if ($tembakau->kar_42 == 4) {
+                                            echo 'Rentan';
+                                        } ?></td>
+                                    <td><?php if ($tembakau->kar_43 == 1) {
+                                            echo 'Tahan';
+                                        } else if ($tembakau->kar_43 == 2) {
+                                            echo 'Agak tahan';
+                                        } else if ($tembakau->kar_43 == 3) {
+                                            echo 'Moderat';
+                                        } else if ($tembakau->kar_43 == 4) {
+                                            echo 'Rentan';
+                                        } ?></td>
+                                    <td><?php if ($tembakau->kar_44 == 1) {
+                                            echo 'Tahan';
+                                        } else if ($tembakau->kar_44 == 2) {
+                                            echo 'Agak tahan';
+                                        } else if ($tembakau->kar_44 == 3) {
+                                            echo 'Moderat';
+                                        } else if ($tembakau->kar_44 == 4) {
+                                            echo 'Rentan';
+                                        } ?></td>
 
 
                                 </tr>

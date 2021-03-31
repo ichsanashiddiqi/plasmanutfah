@@ -86,28 +86,150 @@
                                     <td><?php echo $rami->kar_01 ?></td>
                                     <td><?php echo $rami->kar_02 ?></td>
                                     <td><?php echo $rami->kar_03 ?></td>
-                                    <td><?php echo $rami->kar_04 ?></td>
-                                    <td><?php echo $rami->kar_05 ?></td>
+                                    <td><?php if ($rami->kar_04 == 1) {
+                                            echo 'Ovate';
+                                        } else if ($rami->kar_04 == 2) {
+                                            echo 'Cordate';
+                                        } else if ($rami->kar_04 == 3) {
+                                            echo 'Lanceolate';
+                                        } else if ($rami->kar_04 == 4) {
+                                            echo 'Cord-lanceolate';
+                                        } ?></td>
+                                    <td><?php if ($rami->kar_05 == 1) {
+                                            echo 'Besar tumpul';
+                                        } else if ($rami->kar_05 == 2) {
+                                            echo 'Besar lancip';
+                                        } else if ($rami->kar_05 == 3) {
+                                            echo 'Kecil tumpul';
+                                        } else if ($rami->kar_05 == 4) {
+                                            echo 'Kecil lancip';
+                                        }  ?></td>
                                     <td><?php echo $rami->kar_06 ?></td>
                                     <td><?php echo $rami->kar_07 ?></td>
                                     <td><?php echo $rami->kar_08 ?></td>
-                                    <td><?php echo $rami->kar_09 ?></td>
+                                    <td><?php if ($rami->kar_09 == 1) {
+                                            echo 'Erevt (0-20 derahat)';
+                                        } else if ($rami->kar_09 == 2) {
+                                            echo 'Intermidate (21-60 derajat)';
+                                        } else if ($rami->kar_09 == 3) {
+                                            echo 'Horisontal (61-100 derajat)';
+                                        } else if ($rami->kar_09 == 4) {
+                                            echo 'Descending (101-140 derajat)';
+                                        }  ?></td>
                                     <td><?php echo $rami->kar_10 ?></td>
-                                    <td><?php echo $rami->kar_11 ?></td>
-                                    <td><?php echo $rami->kar_12 ?></td>
-                                    <td><?php echo $rami->kar_13 ?></td>
-                                    <td><?php echo $rami->kar_14 ?></td>
-                                    <td><?php echo $rami->kar_15 ?></td>
-                                    <td><?php echo $rami->kar_16 ?></td>
-                                    <td><?php echo $rami->kar_17 ?></td>
-                                    <td><?php echo $rami->kar_18 ?></td>
-                                    <td><?php echo $rami->kar_19 ?></td>
-                                    <td><?php echo $rami->kar_20 ?></td>
+                                    <td><?php if ($rami->kar_11 == 1) {
+                                            echo 'Bergelombang kasar';
+                                        } else if ($rami->kar_11 == 2) {
+                                            echo 'Bergelombang sedang';
+                                        } else if ($rami->kar_11 == 3) {
+                                            echo 'Rata';
+                                        } ?></td>
+                                    <td><?php if ($rami->kar_12 == 1) {
+                                            echo 'Berbulu kasar';
+                                        } else if ($rami->kar_12 == 2) {
+                                            echo 'Berbulu sedang';
+                                        } else if ($rami->kar_12 == 3) {
+                                            echo 'Berbulu halus';
+                                        } ?></td>
+                                    <td><?php if ($rami->kar_13 == 1) {
+                                            echo 'Kasar lebat';
+                                        } else if ($rami->kar_13 == 2) {
+                                            echo 'Kasar sedang';
+                                        } else if ($rami->kar_13 == 3) {
+                                            echo 'Kasar jarang';
+                                        } else if ($rami->kar_13 == 4) {
+                                            echo 'Halus lebat';
+                                        } else if ($rami->kar_13 == 5) {
+                                            echo 'Halus sedang';
+                                        } else if ($rami->kar_13 == 6) {
+                                            echo 'Halus jarang';
+                                        } ?></td>
+                                    <td><?php if ($rami->kar_14 == 1) {
+                                            echo 'Hijau';
+                                        } else if ($rami->kar_14 == 2) {
+                                            echo 'Merah';
+                                        } else if ($rami->kar_14 == 3) {
+                                            echo 'Coklat';
+                                        } ?></td>
+                                    <td><?php if ($rami->kar_15 == 1) {
+                                            echo 'Hijau';
+                                        } else if ($rami->kar_15 == 2) {
+                                            echo 'Merah';
+                                        } else if ($rami->kar_15 == 3) {
+                                            echo 'Coklat';
+                                        } ?></td>
+                                    <td><?php if ($rami->kar_16 == 1) {
+                                            echo 'Hijau';
+                                        } else if ($rami->kar_16 == 2) {
+                                            echo 'Merah';
+                                        } else if ($rami->kar_16 == 3) {
+                                            echo 'Coklat';
+                                        } ?></td>
+                                    <td><?php if ($rami->kar_17 == 1) {
+                                            echo 'Hijau';
+                                        } else if ($rami->kar_17 == 2) {
+                                            echo 'Merah';
+                                        } else if ($rami->kar_17 == 3) {
+                                            echo 'Coklat';
+                                        } else if ($rami->kar_17 == 4) {
+                                            echo 'Kuning';
+                                        } ?></td>
+                                    <td><?php if ($rami->kar_18 == 1) {
+                                            echo 'Hijau';
+                                        } else if ($rami->kar_18 == 2) {
+                                            echo 'Merah';
+                                        } else if ($rami->kar_18 == 3) {
+                                            echo 'Coklat';
+                                        } ?></td>
+                                    <td><?php if ($rami->kar_19 == 0) {
+                                            echo 'Tipe tidak berbunga';
+                                        } else if ($rami->kar_19 == 1) {
+                                            echo 'Hijau';
+                                        } else if ($rami->kar_19 == 2) {
+                                            echo 'Merah';
+                                        } else if ($rami->kar_19 == 3) {
+                                            echo 'Coklat';
+                                        } ?></td>
+                                    <td><?php if ($rami->kar_20 == 0) {
+                                            echo 'Tipe tidak berbunga';
+                                        } else if ($rami->kar_20 == 1) {
+                                            echo 'Hijau';
+                                        } else if ($rami->kar_20 == 2) {
+                                            echo 'Merah';
+                                        } else if ($rami->kar_20 == 3) {
+                                            echo 'Coklat';
+                                        } ?></td>
                                     <td><?php echo $rami->kar_21 ?></td>
-                                    <td><?php echo $rami->kar_22 ?></td>
-                                    <td><?php echo $rami->kar_23 ?></td>
-                                    <td><?php echo $rami->kar_24 ?></td>
-                                    <td><?php echo $rami->kar_25 ?></td>
+                                    <td><?php if ($rami->kar_22 == 0) {
+                                            echo 'Tipe tidak berbunga';
+                                        } else if ($rami->kar_22 == 1) {
+                                            echo 'Strong (lebat)';
+                                        } else if ($rami->kar_22 == 2) {
+                                            echo 'Intermediate (sedang)';
+                                        } else if ($rami->kar_22 == 3) {
+                                            echo 'Weak (Sedikit)';
+                                        } ?></td>
+                                    <td><?php if ($rami->kar_23 == 0) {
+                                            echo 'No';
+                                        } else if ($rami->kar_23 == 1) {
+                                            echo 'Male';
+                                        } else if ($rami->kar_23 == 2) {
+                                            echo 'Female';
+                                        } ?></td>
+                                    <td><?php if ($rami->kar_24 == 0) {
+                                            echo 'No';
+                                        } else if ($rami->kar_24 == 1) {
+                                            echo 'Large';
+                                        } else if ($rami->kar_24 == 2) {
+                                            echo 'Intermediate';
+                                        } else if ($rami->kar_24 == 3) {
+                                            echo 'Small';
+                                        } ?></td>
+                                    <td><?php if ($rami->kar_25 == 1) {
+                                            echo 'Determinate';
+                                        } else if ($rami->kar_25 == 2) {
+                                            echo 'Intermediate';
+                                        } ?></td>
                                     <td><?php echo $rami->kar_26 ?></td>
                                     <td><?php echo $rami->kar_27 ?></td>
                                     <td><?php echo $rami->kar_28 ?></td>
