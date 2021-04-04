@@ -17,7 +17,7 @@ class add_abaka extends CI_Controller
         $Kabupaten = $this->input->post('Kabupaten');
         $Kecamatan = $this->input->post('Kecamatan');
         $Desa = $this->input->post('Desa');
-        $Negara_asal = $this->input->post('Negara_asal');
+        $Negara = $this->input->post('Negara');
         $Donor = $this->input->post('Donor');
         $longitude = $this->input->post('longitude');
         $lattitude = $this->input->post('lattitude');
@@ -68,7 +68,7 @@ class add_abaka extends CI_Controller
             'Kabupaten' => $Kabupaten,
             'Kecamatan' => $Kecamatan,
             'Desa' => $Desa,
-            'Negara_asal' => $Negara_asal,
+            'Negara' => $Negara,
             'Donor' => $Donor,
             'longitude' => $longitude,
             'lattitude' => $lattitude,

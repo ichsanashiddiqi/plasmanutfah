@@ -167,6 +167,7 @@ class Tanaman extends CI_Controller
 		$where = array('no_aksesi' => $no_aksesi);
 		$data['user'] = $this->db->get_where('user', ['email' => $this->session->userdata('email')])->row_array();
 		$data['dat_bunga_matahari'] = $this->m_edit_data->edit_data($where, 'dat_bunga_matahari')->result();
+		$data['pas_bunga_matahari'] = $this->m_edit_data->edit_data($where, 'pas_bunga_matahari')->result();
 		$data['foto_bunga_matahari'] = $this->m_edit_data->edit_data($where, 'foto_bunga_matahari')->result();
 
 		$this->load->view('templates/header', $data);
@@ -176,17 +177,142 @@ class Tanaman extends CI_Controller
 		$this->load->view('templates/footer.php', $data);
 	}
 
+	function edit_jp($no_aksesi)
+	{
+		$where = array('no_aksesi' => $no_aksesi);
+		$data['user'] = $this->db->get_where('user', ['email' => $this->session->userdata('email')])->row_array();
+		$data['dat_jarak_pagar'] = $this->m_edit_data->edit_data($where, 'dat_jarak_pagar')->result();
+		$data['pas_jarak_pagar'] = $this->m_edit_data->edit_data($where, 'pas_jarak_pagar')->result();
+		$data['foto_jarak_pagar'] = $this->m_edit_data->edit_data($where, 'foto_jarak_pagar')->result();
+
+		$this->load->view('templates/header', $data);
+		$this->load->view('templates/sidebar.php', $data);
+		$this->load->view('templates/topbar.php', $data);
+		$this->load->view('edit/edit_jp.php', $data);
+		$this->load->view('templates/footer.php', $data);
+	}
+
 	function edit_kapas($no_aksesi)
 	{
 		$where = array('no_aksesi' => $no_aksesi);
 		$data['user'] = $this->db->get_where('user', ['email' => $this->session->userdata('email')])->row_array();
 		$data['dat_kapas'] = $this->m_edit_data->edit_data($where, 'dat_kapas')->result();
+		$data['pas_kapas'] = $this->m_edit_data->edit_data($where, 'pas_kapas')->result();
 		$data['foto_kapas'] = $this->m_edit_data->edit_data($where, 'foto_kapas')->result();
 
 		$this->load->view('templates/header', $data);
 		$this->load->view('templates/sidebar.php', $data);
 		$this->load->view('templates/topbar.php', $data);
 		$this->load->view('edit/edit_kapas.php', $data);
+		$this->load->view('templates/footer.php', $data);
+	}
+
+	function edit_kapuk($no_aksesi)
+	{
+		$where = array('no_aksesi' => $no_aksesi);
+		$data['user'] = $this->db->get_where('user', ['email' => $this->session->userdata('email')])->row_array();
+		$data['dat_kapuk'] = $this->m_edit_data->edit_data($where, 'dat_kapuk')->result();
+		$data['pas_kapuk'] = $this->m_edit_data->edit_data($where, 'pas_kapuk')->result();
+		$data['foto_kapuk'] = $this->m_edit_data->edit_data($where, 'foto_kapuk')->result();
+
+		$this->load->view('templates/header', $data);
+		$this->load->view('templates/sidebar.php', $data);
+		$this->load->view('templates/topbar.php', $data);
+		$this->load->view('edit/edit_kapuk.php', $data);
+		$this->load->view('templates/footer.php', $data);
+	}
+
+	function edit_kemiri($no_aksesi)
+	{
+		$where = array('no_aksesi' => $no_aksesi);
+		$data['user'] = $this->db->get_where('user', ['email' => $this->session->userdata('email')])->row_array();
+		$data['dat_kemiri'] = $this->m_edit_data->edit_data($where, 'dat_kemiri')->result();
+		$data['pas_kemiri'] = $this->m_edit_data->edit_data($where, 'pas_kemiri')->result();
+		$data['foto_kemiri'] = $this->m_edit_data->edit_data($where, 'foto_kemiri')->result();
+
+		$this->load->view('templates/header', $data);
+		$this->load->view('templates/sidebar.php', $data);
+		$this->load->view('templates/topbar.php', $data);
+		$this->load->view('edit/edit_kemiri.php', $data);
+		$this->load->view('templates/footer.php', $data);
+	}
+
+	function edit_kenaf($no_aksesi)
+	{
+		$where = array('no_aksesi' => $no_aksesi);
+		$data['user'] = $this->db->get_where('user', ['email' => $this->session->userdata('email')])->row_array();
+		$data['dat_kenaf'] = $this->m_edit_data->edit_data($where, 'dat_kenaf')->result();
+		$data['pas_kenaf'] = $this->m_edit_data->edit_data($where, 'pas_kenaf')->result();
+		$data['foto_kenaf'] = $this->m_edit_data->edit_data($where, 'foto_kenaf')->result();
+
+		$this->load->view('templates/header', $data);
+		$this->load->view('templates/sidebar.php', $data);
+		$this->load->view('templates/topbar.php', $data);
+		$this->load->view('edit/edit_kenaf.php', $data);
+		$this->load->view('templates/footer.php', $data);
+	}
+
+
+	function edit_rami($no_aksesi)
+	{
+		$where = array('no_aksesi' => $no_aksesi);
+		$data['user'] = $this->db->get_where('user', ['email' => $this->session->userdata('email')])->row_array();
+		$data['dat_rami'] = $this->m_edit_data->edit_data($where, 'dat_rami')->result();
+		$data['pas_rami'] = $this->m_edit_data->edit_data($where, 'pas_rami')->result();
+		$data['foto_rami'] = $this->m_edit_data->edit_data($where, 'foto_rami')->result();
+
+		$this->load->view('templates/header', $data);
+		$this->load->view('templates/sidebar.php', $data);
+		$this->load->view('templates/topbar.php', $data);
+		$this->load->view('edit/edit_rami.php', $data);
+		$this->load->view('templates/footer.php', $data);
+	}
+
+
+	function edit_tebu($no_aksesi)
+	{
+		$where = array('no_aksesi' => $no_aksesi);
+		$data['user'] = $this->db->get_where('user', ['email' => $this->session->userdata('email')])->row_array();
+		$data['dat_tebu'] = $this->m_edit_data->edit_data($where, 'dat_tebu')->result();
+		$data['pas_tebu'] = $this->m_edit_data->edit_data($where, 'pas_tebu')->result();
+		$data['foto_tebu'] = $this->m_edit_data->edit_data($where, 'foto_tebu')->result();
+
+		$this->load->view('templates/header', $data);
+		$this->load->view('templates/sidebar.php', $data);
+		$this->load->view('templates/topbar.php', $data);
+		$this->load->view('edit/edit_tebu.php', $data);
+		$this->load->view('templates/footer.php', $data);
+	}
+
+
+	function edit_tembakau($no_aksesi)
+	{
+		$where = array('no_aksesi' => $no_aksesi);
+		$data['user'] = $this->db->get_where('user', ['email' => $this->session->userdata('email')])->row_array();
+		$data['dat_tembakau'] = $this->m_edit_data->edit_data($where, 'dat_tembakau')->result();
+		$data['pas_tembakau'] = $this->m_edit_data->edit_data($where, 'pas_tembakau')->result();
+		$data['foto_tembakau'] = $this->m_edit_data->edit_data($where, 'foto_tembakau')->result();
+
+		$this->load->view('templates/header', $data);
+		$this->load->view('templates/sidebar.php', $data);
+		$this->load->view('templates/topbar.php', $data);
+		$this->load->view('edit/edit_tembakau.php', $data);
+		$this->load->view('templates/footer.php', $data);
+	}
+
+
+	function edit_wijen($no_aksesi)
+	{
+		$where = array('no_aksesi' => $no_aksesi);
+		$data['user'] = $this->db->get_where('user', ['email' => $this->session->userdata('email')])->row_array();
+		$data['dat_wijen'] = $this->m_edit_data->edit_data($where, 'dat_wijen')->result();
+		$data['pas_wijen'] = $this->m_edit_data->edit_data($where, 'pas_wijen')->result();
+		$data['foto_wijen'] = $this->m_edit_data->edit_data($where, 'foto_wijen')->result();
+
+		$this->load->view('templates/header', $data);
+		$this->load->view('templates/sidebar.php', $data);
+		$this->load->view('templates/topbar.php', $data);
+		$this->load->view('edit/edit_wijen.php', $data);
 		$this->load->view('templates/footer.php', $data);
 	}
 

@@ -335,6 +335,8 @@
                         </form>
                     <?php } ?>
                 </div>
+
+                <!-- TAB PANEL PASPOR -->
                 <div role="tabpanel" class="tab-pane" id="paspor">
 
                     <!-- form pertama -->
@@ -349,13 +351,11 @@
                         <?php if ($pas->no_aksesi > 1) {
 
                         ?>
-                            <form class="user" action="<?php echo base_url('edit/pas_abaka'); ?>">
+                            <form class="user" action="<?php echo base_url('edit_plant/edit_abaka/pas_abaka'); ?>">
 
-                                <div class="form-group row">
-                                    <div class="col-sm">
-                                        <label>No Aksesi.</label>
-                                        <input class="form-control" type="text" value="<?= $pas->no_aksesi; ?>" readonly>
-                                    </div>
+                                <div class="form-group row" class="col-sm">
+                                    <label>No Aksesi.</label>
+                                    <input class="form-control" type="text" value="<?= $pas->no_aksesi; ?>" readonly>
                                 </div>
                                 <div class="form-group row">
                                     <div class="col-sm">
