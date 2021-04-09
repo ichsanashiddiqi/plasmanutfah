@@ -244,9 +244,27 @@
                     </form>
                 </div>
                 <div role="tabpanel" class="tab-pane" id="stok">
-                    <h5 class="card-title">Stock Panen</h5>
-                    <p class="card-text">With supporting text below as a natural lead-in to additional content.</p>
-                    <a href="#" class="btn btn-primary">Go somewhere</a>
+                    <form class="user" method="post" action="<?php echo base_url('add/add_abaka/tambah_benih'); ?>">
+                        <div class="col-sm">
+                            <input class="form-control" type="text" name="no_aksesi" id="no_aksesi" value="<?php foreach ($aksesi as $aks) {
+                                                                                                                # code...
+                                                                                                                echo $aks->no_aksesi;
+                                                                                                            } ?>" readonly>
+                        </div>
+                        <div class="form-group row">
+                            <div class="col-sm">
+                                <input type="text" class="form-control" name="tahun" placeholder="Tahun">
+                            </div>
+                            <div class="col-sm">
+                                <input type="text" class="form-control" name="daya_percambahan" placeholder="Daya percambahan">
+                            </div>
+
+                            <div class="col-sm">
+                                <input type="text" class="form-control" name="jumlah" placeholder="Jumlah">
+                            </div>
+                        </div>
+                        <input class="btn btn-success btn-user btn-block" type="submit" value="Tambah Data Stock Panen">
+                    </form>
                 </div>
             </div>
 

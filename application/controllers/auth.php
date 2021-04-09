@@ -10,6 +10,7 @@ class Auth extends CI_Controller
 		parent::__construct();
 		$this->load->library('form_validation');
 		$this->load->library('session');
+		$this->load->model('m_view_tabel');
 	}
 	public function index()
 	{
@@ -66,6 +67,19 @@ class Auth extends CI_Controller
 			$this->session->set_flashdata('message', '<div class="alert alert-danger" role="alert">Email is not registered!</div>');
 			redirect('auth');
 		}
+	}
+
+	public function daftar_user()
+	{
+
+		$data['tamu'] = $this->m_view_tabel->v_tabel_user()->result();
+		$data['user'] = $this->db->get_where('user', ['email' => $this->session->userdata('email')])->row_array();
+
+		$this->load->view('templates/header.php', $data);
+		$this->load->view('templates/sidebar.php', $data);
+		$this->load->view('templates/topbar.php', $data);
+		$this->load->view('landing/daftar_user.php', $data);
+		$this->load->view('templates/footer.php', $data);
 	}
 
 	public function landing()
@@ -139,6 +153,18 @@ class Auth extends CI_Controller
 	}
 	public function status_data()
 	{
+		$data['abk'] = $this->m_view_tabel->jml_abaka()->result();
+		$data['bm'] = $this->m_view_tabel->jml_bm()->result();
+		$data['jp'] = $this->m_view_tabel->jml_jp()->result();
+		$data['kps'] = $this->m_view_tabel->jml_kapas()->result();
+		$data['kpk'] = $this->m_view_tabel->jml_kapuk()->result();
+		$data['kmr'] = $this->m_view_tabel->jml_kemiri()->result();
+		$data['knf'] = $this->m_view_tabel->jml_kenaf()->result();
+		$data['rm'] = $this->m_view_tabel->jml_rami()->result();
+		$data['tebu'] = $this->m_view_tabel->jml_tebu()->result();
+		$data['bako'] = $this->m_view_tabel->jml_tembakau()->result();
+		$data['wijen'] = $this->m_view_tabel->jml_wijen()->result();
+
 		$data['user'] = $this->db->get_where('user', ['email' => $this->session->userdata('email')])->row_array();
 
 		$this->load->view('templates/header.php', $data);

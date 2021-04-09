@@ -111,4 +111,122 @@ class M_view_tabel extends CI_Model
         $query = $this->db->get();
         return $query;
     }
+
+    function v_tabel_user()
+    {
+
+        return $this->db->get('user');
+    }
+
+    // BATASS BUAT AMBIL DATA TERAKHIR XXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXX
+
+    function jml_abaka()
+    {
+        $this->db->select('*');
+        $this->db->from('dat_abaka');
+        $this->db->order_by('no', 'desc');
+        $this->db->limit(1);
+        $query = $this->db->get();
+        return $query;
+    }
+
+    function jml_bm()
+    {
+        $this->db->select('*');
+        $this->db->from('dat_bunga_matahari');
+        $this->db->order_by('no', 'desc');
+        $this->db->limit(1);
+        $query = $this->db->get();
+        return $query;
+    }
+
+    function jml_jp()
+    {
+        $this->db->select('*');
+        $this->db->from('dat_jarak_pagar');
+        $this->db->order_by('no', 'desc');
+        $this->db->limit(1);
+        $query = $this->db->get();
+        return $query;
+    }
+
+    function jml_kapas()
+    {
+        $this->db->select('*');
+        $this->db->from('dat_kapas');
+        $this->db->order_by('no', 'desc');
+        $this->db->limit(1);
+        $query = $this->db->get();
+        return $query;
+    }
+
+    function jml_kapuk()
+    {
+        $this->db->select('*');
+        $this->db->from('dat_kapuk');
+        $this->db->order_by('no', 'desc');
+        $this->db->limit(1);
+        $query = $this->db->get();
+        return $query;
+    }
+
+    function jml_kemiri()
+    {
+        $this->db->select('*');
+        $this->db->from('dat_kemiri');
+        $this->db->order_by('no', 'desc');
+        $this->db->limit(1);
+        $query = $this->db->get();
+        return $query;
+    }
+
+    function jml_kenaf()
+    {
+        $this->db->select('*');
+        $this->db->from('dat_kenaf');
+        $this->db->order_by('no', 'desc');
+        $this->db->limit(1);
+        $query = $this->db->get();
+        return $query;
+    }
+
+    function jml_rami()
+    {
+        $this->db->select('*');
+        $this->db->from('dat_rami');
+        $this->db->order_by('no', 'desc');
+        $this->db->limit(1);
+        $query = $this->db->get();
+        return $query;
+    }
+
+    function jml_tebu()
+    {
+        $this->db->select('*');
+        $this->db->from('dat_tebu');
+        $this->db->order_by('no', 'desc');
+        $this->db->limit(1);
+        $query = $this->db->get();
+        return $query;
+    }
+
+    function jml_tembakau()
+    {
+        $this->db->select('*');
+        $this->db->from('dat_tembakau');
+        $this->db->order_by('no', 'desc');
+        $this->db->limit(1);
+        $query = $this->db->get();
+        return $query;
+    }
+
+    function jml_wijen()
+    {
+        $this->db->select('*');
+        $this->db->from('dat_wijen');
+        $this->db->order_by('no', 'desc');
+        $this->db->limit(1);
+        $query = $this->db->get();
+        return $query;
+    }
 }

@@ -224,7 +224,7 @@
                                             echo 'Kuat';
                                         } else if ($bm->kar_15 == 9) {
                                             echo 'Sangat kuat';
-                                        } ?>/td>
+                                        } ?></td>
                                     <td><?php if ($bm->kar_16 == 3) {
                                             echo 'Jarang';
                                         } else if ($bm->kar_16 == 5) {
@@ -316,157 +316,157 @@
                                         } else if ($bm->kar_28 == 9) {
                                             echo 'Sangat Panjang';
                                         } ?></td>
-                                    <><?php if ($bm->kar_29 == 3) {
+                                    <td><?php if ($bm->kar_29 == 3) {
                                             echo 'Terang';
                                         } else if ($bm->kar_29 == 5) {
                                             echo 'Sedang';
                                         } else if ($bm->kar_29 == 7) {
                                             echo 'Gelap';
                                         } ?></td>
-                                        <td><?php if ($bm->kar_20 == 1) {
-                                                echo 'Tidak merangkul/sangat sedikit';
-                                            } else if ($bm->kar_20 == 2) {
-                                                echo 'Sedikit merangkul';
-                                            } else if ($bm->kar_20 == 3) {
-                                                echo 'Sangat merangkul';
-                                            }  ?></td>
+                                    <td><?php if ($bm->kar_20 == 1) {
+                                            echo 'Tidak merangkul/sangat sedikit';
+                                        } else if ($bm->kar_20 == 2) {
+                                            echo 'Sedikit merangkul';
+                                        } else if ($bm->kar_20 == 3) {
+                                            echo 'Sangat merangkul';
+                                        }  ?></td>
 
-                                        <td><?php if ($bm->kar_21 == 1) {
-                                                echo 'Sangat pendek';
-                                            } else if ($bm->kar_21 == 3) {
-                                                echo 'Pendek';
-                                            } else if ($bm->kar_21 == 5) {
-                                                echo 'Sedang';
-                                            } else if ($bm->kar_21 == 7) {
-                                                echo 'Tinggi';
-                                            } ?></td>
-                                        <td><?php if ($bm->kar_30 == 1) {
-                                                echo 'Tidak ada';
-                                            } else if ($bm->kar_30 == 9) {
-                                                echo 'ada';
-                                            } ?></td>
-                                        <td><?php if ($bm->kar_31 == 1) {
-                                                echo 'Hanya basal';
-                                            } else if ($bm->kar_31 == 2) {
-                                                echo 'Terutama basal';
-                                            } else if ($bm->kar_31 == 3) {
-                                                echo 'Secara keseluruhan';
-                                            } else if ($bm->kar_31 == 4) {
-                                                echo 'Terutama apical';
-                                            } else if ($bm->kar_31 == 5) {
-                                                echo 'Hanya apical';
-                                            }  ?></td>
-                                        <td><?php if ($bm->kar_32 == 1) {
-                                                echo 'Dibawah';
-                                            } else if ($bm->kar_32 == 2) {
-                                                echo 'Selevel';
-                                            } else if ($bm->kar_32 == 3) {
-                                                echo 'Diatas';
-                                            }  ?></td>
-                                        <td><?php if ($bm->kar_33 == 1) {
-                                                echo 'Horisontal';
-                                            } else if ($bm->kar_33 == 2) {
-                                                echo 'Cenderung';
-                                            } else if ($bm->kar_33 == 3) {
-                                                echo 'Vertikal';
-                                            } else if ($bm->kar_33 == 4) {
-                                                echo 'Setengah menolak dengan batang';
-                                            } else if ($bm->kar_33 == 5) {
-                                                echo 'Setengah menolak dengan batang';
-                                            } else if ($bm->kar_33 == 6) {
-                                                echo 'Menolak dengan batang lurus';
-                                            } else if ($bm->kar_33 == 7) {
-                                                echo 'Ditolak dengan batang sedikit';
-                                            } else if ($bm->kar_33 == 8) {
-                                                echo 'Ditolak dengan batang sangat';
-                                            } else if ($bm->kar_33 == 9) {
-                                                echo 'Lebih berbalik';
-                                            } ?></td>
-                                        <td><?php if ($bm->kar_34 == 3) {
-                                                echo 'Kecol';
-                                            } else if ($bm->kar_34 == 5) {
-                                                echo 'Sedang';
-                                            } else if ($bm->kar_34 == 7) {
-                                                echo 'Besar';
-                                            } ?></td>
-                                        <td><?php if ($bm->kar_35 == 1) {
-                                                echo 'Sangat cekung';
-                                            } else if ($bm->kar_35 == 2) {
-                                                echo 'Lemah cekung';
-                                            } else if ($bm->kar_35 == 3) {
-                                                echo 'Datar';
-                                            } else if ($bm->kar_35 == 4) {
-                                                echo 'Lemah Cembung';
-                                            } else if ($bm->kar_35 == 5) {
-                                                echo 'Sangat Cembung';
-                                            } else if ($bm->kar_35 == 6) {
-                                                echo 'Cacat';
-                                            } ?></td>
-                                        <td><?php if ($bm->kar_36 == 3) {
-                                                echo 'Kecil';
-                                            } else if ($bm->kar_36 == 5) {
-                                                echo 'Sedang';
-                                            } else if ($bm->kar_36 == 7) {
-                                                echo 'Besar';
-                                            } else if ($bm->kar_36 == 9) {
-                                                echo 'Sangat Besar';
-                                            } ?></td>
-                                        <td><?php if ($bm->kar_37 == 1) {
-                                                echo 'Memanjang';
-                                            } else if ($bm->kar_37 == 2) {
-                                                echo 'Bujur telur sepit';
-                                            } else if ($bm->kar_37 == 3) {
-                                                echo 'Bujur telur lebar';
-                                            } else if ($bm->kar_37 == 4) {
-                                                echo 'Bulat';
-                                            } ?></td>
-                                        <td><?php if ($bm->kar_38 == 3) {
-                                                echo 'Tipis';
-                                            } else if ($bm->kar_38 == 5) {
-                                                echo 'Sedang';
-                                            } else if ($bm->kar_38 == 7) {
-                                                echo 'Tebal';
-                                            } ?></td>
-                                        <td><?php if ($bm->kar_39 == 1) {
-                                                echo 'Putih';
-                                            } else if ($bm->kar_39 == 2) {
-                                                echo 'Abu keputihan';
-                                            } else if ($bm->kar_39 == 3) {
-                                                echo 'Abu - abu';
-                                            } else if ($bm->kar_39 == 4) {
-                                                echo 'Coklat terang';
-                                            } else if ($bm->kar_39 == 5) {
-                                                echo 'Coklat sedang';
-                                            } else if ($bm->kar_39 == 6) {
-                                                echo 'Coklat gelap';
-                                            } else if ($bm->kar_39 == 7) {
-                                                echo 'Hitam';
-                                            } else if ($bm->kar_39 == 8) {
-                                                echo 'Ungu';
-                                            } ?></td>
-                                        <td><?php if ($bm->kar_40 == 1) {
-                                                echo 'Tidak ada /sangat lemah';
-                                            } else if ($bm->kar_40 == 2) {
-                                                echo 'Diungkapkan lemah';
-                                            } else if ($bm->kar_40 == 3) {
-                                                echo 'Sangat jelas';
-                                            }  ?></td>
-                                        <td><?php if ($bm->kar_41 == 1) {
-                                                echo 'Tidak ada /sangat lemah';
-                                            } else if ($bm->kar_41 == 2) {
-                                                echo 'Diungkapkan lemah';
-                                            } else if ($bm->kar_41 == 3) {
-                                                echo 'Sangat jelas';
-                                            }  ?></td>
-                                        <td><?php if ($bm->kar_42 == 1) {
-                                                echo 'Putih';
-                                            } else if ($bm->kar_42 == 2) {
-                                                echo 'Abu - abu';
-                                            } else if ($bm->kar_42 == 3) {
-                                                echo 'Coklat';
-                                            } else if ($bm->kar_42 == 4) {
-                                                echo 'Hitam';
-                                            } ?></td>
+                                    <td><?php if ($bm->kar_21 == 1) {
+                                            echo 'Sangat pendek';
+                                        } else if ($bm->kar_21 == 3) {
+                                            echo 'Pendek';
+                                        } else if ($bm->kar_21 == 5) {
+                                            echo 'Sedang';
+                                        } else if ($bm->kar_21 == 7) {
+                                            echo 'Tinggi';
+                                        } ?></td>
+                                    <td><?php if ($bm->kar_30 == 1) {
+                                            echo 'Tidak ada';
+                                        } else if ($bm->kar_30 == 9) {
+                                            echo 'ada';
+                                        } ?></td>
+                                    <td><?php if ($bm->kar_31 == 1) {
+                                            echo 'Hanya basal';
+                                        } else if ($bm->kar_31 == 2) {
+                                            echo 'Terutama basal';
+                                        } else if ($bm->kar_31 == 3) {
+                                            echo 'Secara keseluruhan';
+                                        } else if ($bm->kar_31 == 4) {
+                                            echo 'Terutama apical';
+                                        } else if ($bm->kar_31 == 5) {
+                                            echo 'Hanya apical';
+                                        }  ?></td>
+                                    <td><?php if ($bm->kar_32 == 1) {
+                                            echo 'Dibawah';
+                                        } else if ($bm->kar_32 == 2) {
+                                            echo 'Selevel';
+                                        } else if ($bm->kar_32 == 3) {
+                                            echo 'Diatas';
+                                        }  ?></td>
+                                    <td><?php if ($bm->kar_33 == 1) {
+                                            echo 'Horisontal';
+                                        } else if ($bm->kar_33 == 2) {
+                                            echo 'Cenderung';
+                                        } else if ($bm->kar_33 == 3) {
+                                            echo 'Vertikal';
+                                        } else if ($bm->kar_33 == 4) {
+                                            echo 'Setengah menolak dengan batang';
+                                        } else if ($bm->kar_33 == 5) {
+                                            echo 'Setengah menolak dengan batang';
+                                        } else if ($bm->kar_33 == 6) {
+                                            echo 'Menolak dengan batang lurus';
+                                        } else if ($bm->kar_33 == 7) {
+                                            echo 'Ditolak dengan batang sedikit';
+                                        } else if ($bm->kar_33 == 8) {
+                                            echo 'Ditolak dengan batang sangat';
+                                        } else if ($bm->kar_33 == 9) {
+                                            echo 'Lebih berbalik';
+                                        } ?></td>
+                                    <td><?php if ($bm->kar_34 == 3) {
+                                            echo 'Kecol';
+                                        } else if ($bm->kar_34 == 5) {
+                                            echo 'Sedang';
+                                        } else if ($bm->kar_34 == 7) {
+                                            echo 'Besar';
+                                        } ?></td>
+                                    <td><?php if ($bm->kar_35 == 1) {
+                                            echo 'Sangat cekung';
+                                        } else if ($bm->kar_35 == 2) {
+                                            echo 'Lemah cekung';
+                                        } else if ($bm->kar_35 == 3) {
+                                            echo 'Datar';
+                                        } else if ($bm->kar_35 == 4) {
+                                            echo 'Lemah Cembung';
+                                        } else if ($bm->kar_35 == 5) {
+                                            echo 'Sangat Cembung';
+                                        } else if ($bm->kar_35 == 6) {
+                                            echo 'Cacat';
+                                        } ?></td>
+                                    <td><?php if ($bm->kar_36 == 3) {
+                                            echo 'Kecil';
+                                        } else if ($bm->kar_36 == 5) {
+                                            echo 'Sedang';
+                                        } else if ($bm->kar_36 == 7) {
+                                            echo 'Besar';
+                                        } else if ($bm->kar_36 == 9) {
+                                            echo 'Sangat Besar';
+                                        } ?></td>
+                                    <td><?php if ($bm->kar_37 == 1) {
+                                            echo 'Memanjang';
+                                        } else if ($bm->kar_37 == 2) {
+                                            echo 'Bujur telur sepit';
+                                        } else if ($bm->kar_37 == 3) {
+                                            echo 'Bujur telur lebar';
+                                        } else if ($bm->kar_37 == 4) {
+                                            echo 'Bulat';
+                                        } ?></td>
+                                    <td><?php if ($bm->kar_38 == 3) {
+                                            echo 'Tipis';
+                                        } else if ($bm->kar_38 == 5) {
+                                            echo 'Sedang';
+                                        } else if ($bm->kar_38 == 7) {
+                                            echo 'Tebal';
+                                        } ?></td>
+                                    <td><?php if ($bm->kar_39 == 1) {
+                                            echo 'Putih';
+                                        } else if ($bm->kar_39 == 2) {
+                                            echo 'Abu keputihan';
+                                        } else if ($bm->kar_39 == 3) {
+                                            echo 'Abu - abu';
+                                        } else if ($bm->kar_39 == 4) {
+                                            echo 'Coklat terang';
+                                        } else if ($bm->kar_39 == 5) {
+                                            echo 'Coklat sedang';
+                                        } else if ($bm->kar_39 == 6) {
+                                            echo 'Coklat gelap';
+                                        } else if ($bm->kar_39 == 7) {
+                                            echo 'Hitam';
+                                        } else if ($bm->kar_39 == 8) {
+                                            echo 'Ungu';
+                                        } ?></td>
+                                    <td><?php if ($bm->kar_40 == 1) {
+                                            echo 'Tidak ada /sangat lemah';
+                                        } else if ($bm->kar_40 == 2) {
+                                            echo 'Diungkapkan lemah';
+                                        } else if ($bm->kar_40 == 3) {
+                                            echo 'Sangat jelas';
+                                        }  ?></td>
+                                    <td><?php if ($bm->kar_41 == 1) {
+                                            echo 'Tidak ada /sangat lemah';
+                                        } else if ($bm->kar_41 == 2) {
+                                            echo 'Diungkapkan lemah';
+                                        } else if ($bm->kar_41 == 3) {
+                                            echo 'Sangat jelas';
+                                        }  ?></td>
+                                    <td><?php if ($bm->kar_42 == 1) {
+                                            echo 'Putih';
+                                        } else if ($bm->kar_42 == 2) {
+                                            echo 'Abu - abu';
+                                        } else if ($bm->kar_42 == 3) {
+                                            echo 'Coklat';
+                                        } else if ($bm->kar_42 == 4) {
+                                            echo 'Hitam';
+                                        } ?></td>
                                 </tr>
                             <?php } ?>
                         </tbody>

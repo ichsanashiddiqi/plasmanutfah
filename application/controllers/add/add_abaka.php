@@ -206,4 +206,21 @@ class add_abaka extends CI_Controller
         $this->m_add_data->input_data($data, 'foto_abaka');
         redirect('tambah/abaka2');
     }
+
+    function tambah_benih()
+    {
+        $no_aksesi = $this->input->post('no_aksesi');
+        $tahun = $this->input->post('tahun');
+        $daya_percambahan = $this->input->post('daya_percambahan');
+        $jumlah = $this->input->post('jumlah');
+
+        $data = array(
+            'no_aksesi' =>  $no_aksesi,
+            'tahun' =>  $tahun,
+            'daya_percambahan' =>  $daya_percambahan,
+            'jumlah' =>  $jumlah,
+        );
+        $this->m_add_data->input_data($data, 'benih_abaka');
+        redirect('tambah/abaka2');
+    }
 }
