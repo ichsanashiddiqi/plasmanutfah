@@ -43,11 +43,8 @@
                     <p class="card-text">With supporting text below as a natural lead-in to additional content.</p>
                     <a href="#" class="btn btn-primary">Go somewhere</a>
                 </div>
-                <div role="tabpanel" class="tab-pane" id="stok">
-                    <h5 class="card-title">Stock Panen</h5>
-                    <p class="card-text">With supporting text below as a natural lead-in to additional content.</p>
-                    <a href="#" class="btn btn-primary">Go somewhere</a>
-                </div>
+                <span class="mr-2 d-none d-lg-inline text-gray-600 small"><?= $user['name']; ?></span>
+
             </div>
 
         </div>

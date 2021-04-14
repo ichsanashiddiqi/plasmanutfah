@@ -41,18 +41,12 @@
                                         <div class="col-sm">
                                             <select class="form-control form-select-user" id="role_id" name="role_id">
                                                 <option selected>Role Pengguna</option>
-                                                <option value="2">1. Abaka</option>
-                                                <option value="3">2. Bunga Matahari</option>
-                                                <option value="4">3. Jarak Pagar</option>
-                                                <option value="5">4. Kapas</option>
-                                                <option value="6">5. Kapuk</option>
-                                                <option value="7">6. Kemiri</option>
-                                                <option value="8">7. Kenaf</option>
-                                                <option value="9">8. Rami</option>
-                                                <option value="10">9. Tebu</option>
-                                                <option value="11">10. Tembakau</option>
-                                                <option value="12">11. Wijen</option>
-                                            </select>
+                                                <option value="1">1. Super Admin</option>
+                                                <option value="2">2. Abaka</option>
+                                                <option value="3">3. Bunga Matahari</option>
+                                                <option value="4">4. Jarak Pagar</option>
+                                                <option value="5">5. Kapas</option>
+
                                         </div>
                                     </div>
 

@@ -4,6 +4,10 @@ class add_bm extends CI_Controller
     function __construct()
     {
         parent::__construct();
+
+        if ($this->session->userdata('email') == null) {
+            redirect("auth");
+        }
         $this->load->model('m_add_data');
         $this->load->helper('url');
     }

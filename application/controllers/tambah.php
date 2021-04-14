@@ -6,6 +6,9 @@ class Tambah extends CI_Controller
     public function __construct()
     {
         parent::__construct();
+        if ($this->session->userdata('email') == null) {
+            redirect("auth");
+        }
         $this->load->library('form_validation');
         $this->load->library('session');
         $this->load->helper('url');
