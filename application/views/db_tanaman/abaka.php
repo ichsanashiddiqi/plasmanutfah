@@ -79,10 +79,11 @@
                             <i class="fa fa-file-excel-o"></i> Export to Excel</a> -->
                         <tbody>
                             <?php
+                            $no = 1;
                             foreach ($dat_abaka as $abk) {
                             ?>
                                 <tr>
-                                    <td><?php echo $abk->no ?></td>
+                                    <td><?php echo $no++ ?></td>
                                     <td><a href="edit_abaka/<?= $abk->no_aksesi; ?>"><i class="fas fa-edit" style="color: chartreuse;"></i></a>
                                         <a href="hapus_abaka/<?= $abk->no_aksesi; ?>"><i class="fas fa-trash-alt" style="color: red;"></i></a>
                                     </td>

@@ -20,9 +20,12 @@
                                 <div class="text-center">
                                     <h1 class="h4 text-gray-900 mb-4">Buat Akun!</h1>
                                 </div>
-                                <form class="user" method="post" action="<?= base_url('auth/registration'); ?>">
+                                <form class="user" method="post" action="<?= base_url('user/registration'); ?>">
                                     <div class="form-group">
-                                        <input type="text" class="form-control form-control" id="email" name="email" placeholder="Masukan Alamat E-mail Anda." value="<?= set_value('email'); ?>">
+                                        <button type="submit" class="btn btn-success btn-user btn-block">
+                                            Tambah
+                                        </button>
+                                        <input type="text" class="form-control form-control" id="email" name="email" placeholder="Masukan Username Anda." value="<?= set_value('email'); ?>">
                                         <?= form_error('email', '<small class="text-danger pl-3">', '</small>'); ?>
                                     </div>
                                     <div class="form-group">
@@ -42,17 +45,15 @@
                                             <select class="form-control form-select-user" id="role_id" name="role_id">
                                                 <option selected>Role Pengguna</option>
                                                 <option value="1">1. Super Admin</option>
-                                                <option value="2">2. Abaka</option>
-                                                <option value="3">3. Bunga Matahari</option>
-                                                <option value="4">4. Jarak Pagar</option>
-                                                <option value="5">5. Kapas</option>
+                                                <option value="2">2. Tanaman Pemanis</option>
+                                                <option value="3">3. Tanaman Serat</option>
+                                                <option value="4">4. Tanaman Tembakau</option>
+                                                <option value="5">5. Tanaman Minyak</option>
 
                                         </div>
                                     </div>
 
-                                    <button type="submit" class="btn btn-success btn-user btn-block">
-                                        Tambah
-                                    </button>
+
 
                                 </form>
                                 <hr>
