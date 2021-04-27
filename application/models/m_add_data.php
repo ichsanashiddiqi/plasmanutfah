@@ -49,6 +49,101 @@ class M_add_data extends CI_Model
         return $query->result();
     }
 
+    function last_data_jp()
+    {
+        $this->db->select('*');
+        $this->db->from('dat_jarak_pagar');
+        $this->db->order_by('no', 'desc');
+        $this->db->limit(1);
+        $query = $this->db->get();
+        return $query->result();
+    }
+
+    function last_data_kapas()
+    {
+        $this->db->select('*');
+        $this->db->from('dat_kapas');
+        $this->db->order_by('no', 'desc');
+        $this->db->limit(1);
+        $query = $this->db->get();
+        return $query->result();
+    }
+
+    function last_data_kapuk()
+    {
+        $this->db->select('*');
+        $this->db->from('dat_kapuk');
+        $this->db->order_by('no', 'desc');
+        $this->db->limit(1);
+        $query = $this->db->get();
+        return $query->result();
+    }
+
+    function last_data_kemiri()
+    {
+        $this->db->select('*');
+        $this->db->from('dat_kemiri');
+        $this->db->order_by('no', 'desc');
+        $this->db->limit(1);
+        $query = $this->db->get();
+        return $query->result();
+    }
+
+    function last_data_kenaf()
+    {
+        $this->db->select('*');
+        $this->db->from('dat_kenaf');
+        $this->db->order_by('no', 'desc');
+        $this->db->limit(1);
+        $query = $this->db->get();
+        return $query->result();
+    }
+
+
+    function last_data_rami()
+    {
+        $this->db->select('*');
+        $this->db->from('dat_rami');
+        $this->db->order_by('no', 'desc');
+        $this->db->limit(1);
+        $query = $this->db->get();
+        return $query->result();
+    }
+
+    function last_data_tebu()
+    {
+        $this->db->select('*');
+        $this->db->from('dat_tebu');
+        $this->db->order_by('no', 'desc');
+        $this->db->limit(1);
+        $query = $this->db->get();
+        return $query->result();
+    }
+
+    function last_data_tembakau()
+    {
+        $this->db->select('*');
+        $this->db->from('dat_tembakau');
+        $this->db->order_by('no', 'desc');
+        $this->db->limit(1);
+        $query = $this->db->get();
+        return $query->result();
+    }
+
+    function last_data_wijen()
+    {
+        $this->db->select('*');
+        $this->db->from('dat_wijen');
+        $this->db->order_by('no', 'desc');
+        $this->db->limit(1);
+        $query = $this->db->get();
+        return $query->result();
+    }
+    function add_tabel()
+    {
+        $this->dbforge->add_column();
+    }
+
     // private function _uploadImage()
     // {
     // 	$config['upload_path']          = './upload/product/';

@@ -16,11 +16,11 @@ class M_view_data extends CI_Model
     {
         $this->db->select('*');
         $this->db->from('deskriptor-bltstab');
-        $this->db->where('kmditi', 'abaka');
+        $this->db->where('kmditi', 'abaca');
         $query = $this->db->get();
 
         if ($query->num_rows() > 0) {
-            return $query->row()->stok;
+            return $query->num_rows();
         } else {
             return 0;
         }
@@ -30,7 +30,7 @@ class M_view_data extends CI_Model
     {
         $this->db->select('*');
         $this->db->from('deskriptor-bltstab');
-        $this->db->where('kmditi', 'abaka');
+        $this->db->where('kmditi', 'abaca');
         $query = $this->db->get();
         return $query;
     }

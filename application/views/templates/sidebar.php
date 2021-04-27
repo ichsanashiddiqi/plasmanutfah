@@ -88,6 +88,23 @@
                         <?php
                         }
                         ?>
+                        <?php
+                        $role = $this->session->userdata("role_id");
+                        if ($role == 1 || $role == 2) {
+                        ?>
+                            <a class="collapse-item" href="<?= base_url('tanaman/stevia'); ?>">Stevia</a>
+                        <?php
+                        }
+                        ?>
+
+                        <?php
+                        $role = $this->session->userdata("role_id");
+                        if ($role == 1 || $role == 2) {
+                        ?>
+                            <a class="collapse-item" href="<?= base_url('tanaman/gulabit'); ?>">Gulabit</a>
+                        <?php
+                        }
+                        ?>
 
                         <h6 class="collapse-header">Tanaman Serat</h6>
                         <!-- ====================BATAS================================================================   -->
@@ -100,6 +117,16 @@
                         <?php
                         }
                         ?>
+
+                        <?php
+                        $role = $this->session->userdata("role_id");
+                        if ($role == 1 || $role == 3) {
+                        ?>
+                            <a class="collapse-item" href="<?= base_url('tanaman/kapuk'); ?>">Kapuk</a>
+                        <?php
+                        }
+                        ?>
+
                         <?php
                         $role = $this->session->userdata("role_id");
                         if ($role == 1 || $role == 3) {
@@ -108,6 +135,7 @@
                         <?php
                         }
                         ?>
+
                         <?php
                         $role = $this->session->userdata("role_id");
                         if ($role == 1 || $role == 3) {
@@ -116,19 +144,30 @@
                         <?php
                         }
                         ?>
+
+                        <?php
+                        $role = $this->session->userdata("role_id");
+                        if ($role == 1 || $role == 3) {
+                        ?>
+                            <a class="collapse-item" href="<?= base_url('tanaman/rosela'); ?>">Rosela</a>
+                        <?php
+                        }
+                        ?>
+
+                        <?php
+                        $role = $this->session->userdata("role_id");
+                        if ($role == 1 || $role == 3) {
+                        ?>
+                            <a class="collapse-item" href="<?= base_url('tanaman/agave'); ?>">Agave</a>
+                        <?php
+                        }
+                        ?>
+
                         <?php
                         $role = $this->session->userdata("role_id");
                         if ($role == 1 || $role == 3) {
                         ?>
                             <a class="collapse-item" href="<?= base_url('tanaman/abaka'); ?>">Abaka</a>
-                        <?php
-                        }
-                        ?>
-                        <?php
-                        $role = $this->session->userdata("role_id");
-                        if ($role == 1 || $role == 3) {
-                        ?>
-                            <a class="collapse-item" href="<?= base_url('tanaman/kapuk'); ?>">Kapuk</a>
                         <?php
                         }
                         ?>
@@ -177,6 +216,14 @@
                         if ($role == 1 || $role == 5) {
                         ?>
                             <a class="collapse-item" href="<?= base_url('tanaman/kemiri'); ?>">Kemiri</a>
+                        <?php
+                        }
+                        ?>
+                        <?php
+                        $role = $this->session->userdata("role_id");
+                        if ($role == 1 || $role == 5) {
+                        ?>
+                            <a class="collapse-item" href="<?= base_url('tanaman/jarak_kepyar'); ?>">Jarak Kepyar</a>
                         <?php
                         }
                         ?>

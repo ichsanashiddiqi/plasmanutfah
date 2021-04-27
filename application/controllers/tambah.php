@@ -81,7 +81,7 @@ class Tambah extends CI_Controller
     public function jarak_pagar2()
     {
         $data['user'] = $this->db->get_where('user', ['email' => $this->session->userdata('email')])->row_array();
-
+        $data['aksesi'] = $this->m_add_data->last_data_jp();
 
         $this->load->view('templates/header.php', $data);
         $this->load->view('templates/sidebar.php', $data);
@@ -129,7 +129,7 @@ class Tambah extends CI_Controller
     public function kapuk2()
     {
         $data['user'] = $this->db->get_where('user', ['email' => $this->session->userdata('email')])->row_array();
-
+        $data['aksesi'] = $this->m_add_data->last_data_kapuk();
 
         $this->load->view('templates/header.php', $data);
         $this->load->view('templates/sidebar.php', $data);
@@ -153,7 +153,7 @@ class Tambah extends CI_Controller
     public function kemiri2()
     {
         $data['user'] = $this->db->get_where('user', ['email' => $this->session->userdata('email')])->row_array();
-
+        $data['aksesi'] = $this->m_add_data->last_data_kemiri();
 
         $this->load->view('templates/header.php', $data);
         $this->load->view('templates/sidebar.php', $data);
@@ -177,7 +177,7 @@ class Tambah extends CI_Controller
     public function kenaf2()
     {
         $data['user'] = $this->db->get_where('user', ['email' => $this->session->userdata('email')])->row_array();
-
+        $data['aksesi'] = $this->m_add_data->last_data_kenaf();
 
         $this->load->view('templates/header.php', $data);
         $this->load->view('templates/sidebar.php', $data);
@@ -201,7 +201,7 @@ class Tambah extends CI_Controller
     public function rami2()
     {
         $data['user'] = $this->db->get_where('user', ['email' => $this->session->userdata('email')])->row_array();
-
+        $data['aksesi'] = $this->m_add_data->last_data_rami();
 
         $this->load->view('templates/header.php', $data);
         $this->load->view('templates/sidebar.php', $data);
@@ -225,7 +225,7 @@ class Tambah extends CI_Controller
     public function tebu2()
     {
         $data['user'] = $this->db->get_where('user', ['email' => $this->session->userdata('email')])->row_array();
-
+        $data['aksesi'] = $this->m_add_data->last_data_tebu();
 
         $this->load->view('templates/header.php', $data);
         $this->load->view('templates/sidebar.php', $data);
@@ -249,7 +249,7 @@ class Tambah extends CI_Controller
     public function tembakau2()
     {
         $data['user'] = $this->db->get_where('user', ['email' => $this->session->userdata('email')])->row_array();
-
+        $data['aksesi'] = $this->m_add_data->last_data_tembakau();
 
         $this->load->view('templates/header.php', $data);
         $this->load->view('templates/sidebar.php', $data);
@@ -273,7 +273,7 @@ class Tambah extends CI_Controller
     public function wijen2()
     {
         $data['user'] = $this->db->get_where('user', ['email' => $this->session->userdata('email')])->row_array();
-
+        $data['aksesi'] = $this->m_add_data->last_data_wijen();
 
         $this->load->view('templates/header.php', $data);
         $this->load->view('templates/sidebar.php', $data);

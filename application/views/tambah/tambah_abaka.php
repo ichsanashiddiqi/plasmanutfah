@@ -71,7 +71,7 @@
                     </div>
                     <div class="col-sm">
                         <select class="form-control form-select-user" id="kar_14" name="kar_14">
-                            <option selected>Warna Jantung</option>
+                            <option value="0" selected>Warna Jantung</option>
                             <option value="1">1. Merah</option>
                             <option value="2">2. Merah Gelap</option>
                             <option value="3">3. Coklat</option>
@@ -88,7 +88,7 @@
                     </div>
                     <div class="col-sm">
                         <select class="form-control form-select-user" id="kar_15" name="kar_15">
-                            <option selected>Warna Buah Muda</option>
+                            <option value="0" selected>Warna Buah Muda</option>
                             <option value="1">1. Hijau</option>
                             <option value="2">2. Merah</option>
                             <option value="3">3. Coklat</option>
@@ -105,7 +105,7 @@
                     </div>
                     <div class="col-sm">
                         <select class="form-control form-select-user" id="kar_16" name="kar_16">
-                            <option selected>Warna Buah Matang</option>
+                            <option value="0" selected>Warna Buah Matang</option>
                             <option value="1">1. Hijau</option>
                             <option value="2">2. Merah</option>
                             <option value="3">3. Coklat</option>
@@ -120,7 +120,7 @@
                 <div class="form-group row">
                     <div class="col-sm">
                         <select class="form-control form-select-user" id="kar_04" name="kar_04">
-                            <option selected>Bentuk Daun</option>
+                            <option value="0" selected>Bentuk Daun</option>
                             <option value="1">1. Ovate</option>
                             <option value="2">2. Cordate</option>
                             <option value="3">3. Lanceolate</option>
@@ -129,7 +129,7 @@
                     </div>
                     <div class="col-sm">
                         <select class="form-control form-select-user" id="kar_17" name="kar_17">
-                            <option selected>Warna Biji</option>
+                            <option value="0" selected>Warna Biji</option>
                             <option value="1">1. Hitam</option>
                             <option value="2">2. Coklat</option>
                             <option value="3">3. Abu-Abu</option>
@@ -176,7 +176,7 @@
                 <div class="form-group row">
                     <div class="col-sm">
                         <select class="form-control form-select-user" id="kar_08" name="kar_08">
-                            <option selected>Sudut Daun</option>
+                            <option value="0" selected>Sudut Daun</option>
                             <option value="1">1. Erect (2-20 derajat)</option>
                             <option value="2">2. Intermediate (21-60 derajat)</option>
                             <option value="3">3. Horisontal (61-100 derajat)</option>
@@ -193,7 +193,7 @@
                 <div class="form-group row">
                     <div class="col-sm">
                         <select class="form-control form-select-user" id="kar_09" name="kar_09">
-                            <option selected>Bentuk Jantung</option>
+                            <option value="0" selected>Bentuk Jantung</option>
                             <option value="1">1. Cilinder</option>
                             <option value="2">2. Conr</option>
                         </select>
@@ -208,7 +208,7 @@
                 <div class="form-group row">
                     <div class="col-sm">
                         <select class="form-control form-select-user" id="kar_10" name="kar_10">
-                            <option selected>Warna Batang</option>
+                            <option value="0" selected>Warna Batang</option>
                             <option value="1">1. Hijau</option>
                             <option value="2">2. Merah</option>
                             <option value="3">3. Coklat</option>
@@ -224,7 +224,7 @@
                 <div class="form-group row">
                     <div class="col-sm">
                         <select class="form-control form-select-user" id="kar_11" name="kar_11">
-                            <option selected>Warna Helai Daun</option>
+                            <option value="0" selected>Warna Helai Daun</option>
                             <option value="1">1. Hijau</option>
                             <option value="2">2. Merah</option>
                             <option value="3">3. Coklat</option>
@@ -240,7 +240,7 @@
                 <div class="form-group row">
                     <div class="col-sm">
                         <select class="form-control form-select-user" id="kar_12" name="kar_12">
-                            <option selected>Warna Tangkai Daun</option>
+                            <option value="0" selected>Warna Tangkai Daun</option>
                             <option value="1">1. Hijau</option>
                             <option value="2">2. Merah</option>
                             <option value="3">3. Coklat</option>
@@ -256,7 +256,7 @@
                 <div class="form-group row">
                     <div class="col-md-4">
                         <select class="form-control form-select-user" id="kar_13" name="kar_13">
-                            <option selected>Warna Bunga</option>
+                            <option value="0" selected>Warna Bunga</option>
                             <option value="1">1. Merah</option>
                             <option value="2">2. Pink Coklat</option>
                             <option value="3">3. Biru</option>
