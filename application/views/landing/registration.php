@@ -5,69 +5,49 @@
     <div class="d-sm-flex align-items-center justify-content-between mb-4">
         <h1 class="h3 mb-0 text-gray-800">Tambah Pengguna</h1>
     </div>
+    <div class="card shadow mb-4">
+        <div class="card-header py-3">
+            <h6 class="m-0 font-weight-bold text-primary">Tambah Akun</h6>
+        </div>
+        <div class="card-body">
 
-    <!-- Content Row -->
-    <div class="row justify-content-center">
-
-        <div class="col-lg-7">
-
-            <div class="card o-hidden border-0 shadow-lg my-5">
-                <div class="card-body p-0">
-                    <!-- Nested Row within Card Body -->
-                    <div class="row">
-                        <div class="col-lg">
-                            <div class="p-5">
-                                <div class="text-center">
-                                    <h1 class="h4 text-gray-900 mb-4">Buat Akun!</h1>
-                                </div>
-                                <form class="user" method="post" action="<?= base_url('user/registration'); ?>">
-                                    <div class="form-group">
-                                        <button type="submit" class="btn btn-success btn-user btn-block">
-                                            Tambah
-                                        </button>
-                                        <input type="text" class="form-control form-control" id="email" name="email" placeholder="Masukan Username Anda." value="<?= set_value('email'); ?>">
-                                        <?= form_error('email', '<small class="text-danger pl-3">', '</small>'); ?>
-                                    </div>
-                                    <div class="form-group">
-                                        <input type="text" class="form-control form-control" id="name" name="name" placeholder="Masukan Nama Lengkap Anda." value="<?= set_value('name'); ?>">
-                                        <?= form_error('name', '<small class="text-danger pl-3">', '</small>'); ?>
-                                    </div>
-                                    <div class="form-group row">
-                                        <div class="col-sm-6 mb-3 mb-sm-0">
-                                            <input type="password" class="form-control form-control" id="password1" name="password1" placeholder="Password">
-                                        </div>
-                                        <div class="col-sm-6">
-                                            <input type="password" class="form-control form-control" id="password2" name="password2" placeholder="Ulangi Password">
-                                        </div>
-                                    </div>
-                                    <div class="form-group row">
-                                        <div class="col-sm">
-                                            <select class="form-control form-select-user" id="role_id" name="role_id">
-                                                <option selected>Role Pengguna</option>
-                                                <option value="1">1. Super Admin</option>
-                                                <option value="2">2. Tanaman Pemanis</option>
-                                                <option value="3">3. Tanaman Serat</option>
-                                                <option value="4">4. Tanaman Tembakau</option>
-                                                <option value="5">5. Tanaman Minyak</option>
-
-                                        </div>
-                                    </div>
-
-
-
-                                </form>
-                                <hr>
-
-                            </div>
-                        </div>
+            <form class="user" method="post" action="<?= base_url('user/registration'); ?>">
+                <div class="form-group">
+                    <input type="text" class="form-control form-control" id="email" name="email" placeholder="Masukan Username Anda." value="<?= set_value('email'); ?>">
+                    <?= form_error('email', '<small class="text-danger pl-3">', '</small>'); ?>
+                </div>
+                <div class="form-group">
+                    <input type="text" class="form-control form-control" id="name" name="name" placeholder="Masukan Nama Lengkap Anda." value="<?= set_value('name'); ?>">
+                    <?= form_error('name', '<small class="text-danger pl-3">', '</small>'); ?>
+                </div>
+                <div class="form-group row">
+                    <div class="col-sm-6 mb-3 mb-sm-0">
+                        <input type="password" class="form-control form-control" id="password1" name="password1" placeholder="Password">
+                    </div>
+                    <div class="col-sm-6">
+                        <input type="password" class="form-control form-control" id="password2" name="password2" placeholder="Ulangi Password">
                     </div>
                 </div>
-            </div>
-
+                <div class="form-group row">
+                    <div class="col-sm">
+                        <select class="form-control form-select-user" id="role_id" name="role_id">
+                            <option selected>Role Pengguna</option>
+                            <option value="1">1. Super Admin</option>
+                            <option value="2">2. Tanaman Pemanis</option>
+                            <option value="3">3. Tanaman Serat</option>
+                            <option value="4">4. Tanaman Tembakau</option>
+                            <option value="5">5. Tanaman Minyak</option>
+                    </div>
+                </div>
+                <div class="form-group">
+                    <input class="btn btn-success btn-user btn-block" type="submit" value="Tambah Akun">
+                </div>
+            </form>
         </div>
-
     </div>
+
     <!-- /.container-fluid -->
+
 
 </div>
 <!-- End of Main Content -->
@@ -84,10 +64,6 @@
 
 </div>
 <!-- End of Content Wrapper -->
-
-</div>
-<!-- End of Page Wrapper -->
-
 <!-- Scroll to Top Button-->
 <a class="scroll-to-top rounded" href="#page-top">
     <i class="fas fa-angle-up"></i>

@@ -30,8 +30,8 @@
             <div class="collapse navbar-collapse" id="navbarResponsive">
                 <ul class="navbar-nav text-uppercase ml-auto">
                     <!-- <li class="nav-item"><a class="nav-link js-scroll-trigger" href="#services">Services</a></li> -->
-                    <li class="nav-item"><a class="nav-link js-scroll-trigger" href="#portfolio">Portfolio</a></li>
-                    <li class="nav-item"><a class="nav-link js-scroll-trigger" href="#about">About</a></li>
+                    <li class="nav-item"><a class="nav-link js-scroll-trigger" href="#portfolio">Komoditas</a></li>
+                    <li class="nav-item"><a class="nav-link js-scroll-trigger" href="#about">Status Komputerisasi Data</a></li>
                     <li class="nav-item"><a class="nav-link js-scroll-trigger" href="#team">Team</a></li>
                     <li class="nav-item"><a class="nav-link js-scroll-trigger" href="#contact">Contact</a></li>
                 </ul>
@@ -115,7 +115,7 @@
         </div>
     </section>
     <!-- About-->
-    <section class="page-section" id="about">
+    <!-- <section class="page-section" id="about">
         <div class="container">
             <div class="text-center">
                 <h2 class="section-heading text-uppercase">Status Komputerisasi Data</h2>
@@ -182,6 +182,118 @@
                 </li>
             </ul>
         </div>
+    </section> -->
+
+    <section class="page-section" id="about">
+        <div class="container">
+            <div class="text-center">
+                <h2 class="section-heading text-uppercase">Status Komputerisasi Data</h2>
+                <h3 class="section-subheading text-muted">Status komputerisasi data plasmanutfah
+                    <p class="font-weight-normal text-dark" id="date" name="tgl"></p>
+                    <table class="table table-hover">
+                        <thead class="thead-dark">
+                            <tr>
+                                <th scope="col">No</th>
+                                <th scope="col">Komoditas</th>
+                                <th scope="col">Total jumlah aksesi dalam database</th>
+                                <th scope="col">Jumlah deskriptor yang telah dikarakterisasi</th>
+                                <th scope="col">Lihat deskriptor</th>
+                            </tr>
+                        </thead>
+                        <tbody>
+                            <tr>
+                                <th scope="row">1</th>
+                                <td>Abaka</td>
+                                <td><?= ($abaka); ?> </td>
+                                <td><?= ($des_abaka); ?></td>
+                                <td><button type="button" data-toggle="modal" href="#abaka" class="btn btn-success btn-sm">Deskriptor</button></td>
+                            </tr>
+
+                            <tr>
+                                <th scope="row">2</th>
+                                <td>Bunga Matahari</td>
+                                <td><?= ($bm); ?> </td>
+                                <td><?= ($des_bm); ?></td>
+                                <td><button type="button" data-toggle="modal" href="#abaka" class="btn btn-success btn-sm">Deskriptor</button></td>
+                            </tr>
+
+                            <tr>
+                                <th scope="row">3</th>
+                                <td>Jarak Pagar</td>
+                                <td><?= ($jp); ?> </td>
+                                <td><?= ($des_jp); ?></td>
+                                <td><button type="button" data-toggle="modal" href="#abaka" class="btn btn-success btn-sm">Deskriptor</button></td>
+                            </tr>
+
+                            <tr>
+                                <th scope="row">4</th>
+                                <td>Kapas</td>
+                                <td><?= ($kapas); ?> </td>
+                                <td><?= ($des_kapas); ?></td>
+                                <td><button type="button" data-toggle="modal" href="#abaka" class="btn btn-success btn-sm">Deskriptor</button></td>
+                            </tr>
+
+                            <tr>
+                                <th scope="row">5</th>
+                                <td>Kapuk</td>
+                                <td><?= ($kapuk); ?> </td>
+                                <td><?= ($des_kapuk); ?></td>
+                                <td><button type="button" data-toggle="modal" href="#abaka" class="btn btn-success btn-sm">Deskriptor</button></td>
+                            </tr>
+
+                            <tr>
+                                <th scope="row">6</th>
+                                <td>Kemiri</td>
+                                <td><?= ($kemiri); ?> </td>
+                                <td><?= ($des_kemiri); ?></td>
+                                <td><button type="button" data-toggle="modal" href="#abaka" class="btn btn-success btn-sm">Deskriptor</button></td>
+                            </tr>
+
+                            <tr>
+                                <th scope="row">7</th>
+                                <td>Kenaf</td>
+                                <td><?= ($kenaf); ?> </td>
+                                <td><?= ($des_kenaf); ?></td>
+                                <td><button type="button" data-toggle="modal" href="#abaka" class="btn btn-success btn-sm">Deskriptor</button></td>
+                            </tr>
+
+
+                            <tr>
+                                <th scope="row">8</th>
+                                <td>Rami</td>
+                                <td><?= ($rami); ?> </td>
+                                <td><?= ($des_rami); ?></td>
+                                <td><button type="button" data-toggle="modal" href="#abaka" class="btn btn-success btn-sm">Deskriptor</button></td>
+                            </tr>
+
+                            <tr>
+                                <th scope="row">9</th>
+                                <td>Tebu</td>
+                                <td><?= ($tebu); ?> </td>
+                                <td><?= ($des_tebu); ?></td>
+                                <td><button type="button" data-toggle="modal" href="#abaka" class="btn btn-success btn-sm">Deskriptor</button></td>
+                            </tr>
+
+                            <tr>
+                                <th scope="row">10</th>
+                                <td>Tembakau</td>
+                                <td><?= ($tembakau); ?> </td>
+                                <td><?= ($des_tembakau); ?></td>
+                                <td><button type="button" data-toggle="modal" href="#abaka" class="btn btn-success btn-sm">Deskriptor</button></td>
+                            </tr>
+
+                            <tr>
+                                <th scope="row">11</th>
+                                <td>Wijen</td>
+                                <td><?= ($wijen); ?> </td>
+                                <td><?= ($des_wijen); ?></td>
+                                <td><button type="button" data-toggle="modal" href="#abaka" class="btn btn-success btn-sm">Deskriptor</button></td>
+                            </tr>
+                        </tbody>
+                    </table>
+                </h3>
+            </div>
+        </div>
     </section>
     <!-- Team-->
     <section class="page-section bg-light" id="team">
@@ -221,6 +333,19 @@
                         <a class="btn btn-dark btn-social mx-2" href="#!"><i class="fab fa-linkedin-in"></i></a>
                     </div>
                 </div>
+
+
+                <div class="col-lg-4">
+                    <div class="team-member">
+                        <img class="mx-auto rounded-circle" src="vendor/startbootstrap-agency-gh-pages/assets/img/team/2.jpg" alt="" />
+                        <h4>Larry Parker</h4>
+                        <p class="text-muted">Lead Marketer</p>
+                        <a class="btn btn-dark btn-social mx-2" href="#!"><i class="fab fa-twitter"></i></a>
+                        <a class="btn btn-dark btn-social mx-2" href="#!"><i class="fab fa-facebook-f"></i></a>
+                        <a class="btn btn-dark btn-social mx-2" href="#!"><i class="fab fa-linkedin-in"></i></a>
+                    </div>
+                </div>
+
             </div>
             <div class="row">
                 <div class="col-lg-8 mx-auto text-center">
