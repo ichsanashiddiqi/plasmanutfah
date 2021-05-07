@@ -18,5 +18,10 @@ class M_edit_data extends CI_Model
         $this->db->where($where);
         $this->db->delete($table);
     }
-    
+
+
+    public function v_nama_tabel()
+    {
+        $this->db->list_fields('abaka');
+    }
 }
