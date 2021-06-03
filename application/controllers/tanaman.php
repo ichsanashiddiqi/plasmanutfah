@@ -19,6 +19,7 @@ class Tanaman extends CI_Controller
 	{
 
 		$data['dat_abaka'] = $this->m_view_tabel->v_tabel_abaka()->result();
+		$data['tabel'] = $this->m_view_tabel->get_abaka()->result();
 		$data['user'] = $this->db->get_where('user', ['email' => $this->session->userdata('email')])->row_array();
 
 		$this->load->view('templates/header.php', $data);
@@ -31,6 +32,7 @@ class Tanaman extends CI_Controller
 	public function kapas()
 	{
 		$data['dat_kapas'] = $this->m_view_tabel->v_tabel_kapas()->result();
+		$data['tabel'] = $this->m_view_tabel->get_kapas()->result();
 		$data['user'] = $this->db->get_where('user', ['email' => $this->session->userdata('email')])->row_array();
 
 		$this->load->view('templates/header.php', $data);
@@ -43,6 +45,7 @@ class Tanaman extends CI_Controller
 	public function bunga_matahari()
 	{
 		$data['dat_bunga_matahari'] = $this->m_view_tabel->v_tabel_bungamatahari()->result();
+		$data['tabel'] = $this->m_view_tabel->get_bunga_matahari()->result();
 		$data['user'] = $this->db->get_where('user', ['email' => $this->session->userdata('email')])->row_array();
 
 		$this->load->view('templates/header.php', $data);
@@ -56,6 +59,7 @@ class Tanaman extends CI_Controller
 	public function jarak_pagar()
 	{
 		$data['dat_jarak_pagar'] = $this->m_view_tabel->v_tabel_jarakpagar()->result();
+		$data['tabel'] = $this->m_view_tabel->get_jarak_pagar()->result();
 		$data['user'] = $this->db->get_where('user', ['email' => $this->session->userdata('email')])->row_array();
 
 		$this->load->view('templates/header.php', $data);
@@ -68,6 +72,7 @@ class Tanaman extends CI_Controller
 	public function kapuk()
 	{
 		$data['dat_kapuk'] = $this->m_view_tabel->v_tabel_kapuk()->result();
+		$data['tabel'] = $this->m_view_tabel->get_kapuk()->result();
 		$data['user'] = $this->db->get_where('user', ['email' => $this->session->userdata('email')])->row_array();
 
 		$this->load->view('templates/header.php', $data);
@@ -80,6 +85,7 @@ class Tanaman extends CI_Controller
 	public function kemiri()
 	{
 		$data['dat_kemiri'] = $this->m_view_tabel->v_tabel_kemiri()->result();
+		$data['tabel'] = $this->m_view_tabel->get_kemiri()->result();
 		$data['user'] = $this->db->get_where('user', ['email' => $this->session->userdata('email')])->row_array();
 
 		$this->load->view('templates/header.php', $data);
@@ -92,6 +98,7 @@ class Tanaman extends CI_Controller
 	public function kenaf()
 	{
 		$data['dat_kenaf'] = $this->m_view_tabel->v_tabel_kenaf()->result();
+		$data['tabel'] = $this->m_view_tabel->get_kenaf()->result();
 		$data['user'] = $this->db->get_where('user', ['email' => $this->session->userdata('email')])->row_array();
 
 		$this->load->view('templates/header.php', $data);
@@ -104,6 +111,7 @@ class Tanaman extends CI_Controller
 	public function rami()
 	{
 		$data['dat_rami'] = $this->m_view_tabel->v_tabel_rami()->result();
+		$data['tabel'] = $this->m_view_tabel->get_rami()->result();
 		$data['user'] = $this->db->get_where('user', ['email' => $this->session->userdata('email')])->row_array();
 
 		$this->load->view('templates/header.php', $data);
@@ -116,6 +124,7 @@ class Tanaman extends CI_Controller
 	public function tebu()
 	{
 		$data['dat_tebu'] = $this->m_view_tabel->v_tabel_tebu()->result();
+		$data['tabel'] = $this->m_view_tabel->get_tebu()->result();
 		$data['user'] = $this->db->get_where('user', ['email' => $this->session->userdata('email')])->row_array();
 
 		$this->load->view('templates/header.php', $data);
@@ -128,6 +137,7 @@ class Tanaman extends CI_Controller
 	public function tembakau()
 	{
 		$data['dat_tembakau'] = $this->m_view_tabel->v_tabel_tembakau()->result();
+		$data['tabel'] = $this->m_view_tabel->get_tembakau()->result();
 		$data['user'] = $this->db->get_where('user', ['email' => $this->session->userdata('email')])->row_array();
 
 		$this->load->view('templates/header.php', $data);
@@ -140,6 +150,7 @@ class Tanaman extends CI_Controller
 	public function wijen()
 	{
 		$data['dat_wijen'] = $this->m_view_tabel->v_tabel_wijen()->result();
+		$data['tabel'] = $this->m_view_tabel->get_wijen()->result();
 		$data['user'] = $this->db->get_where('user', ['email' => $this->session->userdata('email')])->row_array();
 
 		$this->load->view('templates/header.php', $data);
@@ -152,6 +163,7 @@ class Tanaman extends CI_Controller
 	public function stevia()
 	{
 		$data['dat_stevia'] = $this->m_view_tabel->v_tabel_stevia()->result();
+		$data['tabel'] = $this->m_view_tabel->get_stevia()->result();
 		$data['user'] = $this->db->get_where('user', ['email' => $this->session->userdata('email')])->row_array();
 
 		$this->load->view('templates/header.php', $data);
@@ -163,7 +175,8 @@ class Tanaman extends CI_Controller
 
 	public function gulabit()
 	{
-		$data['dat_stevia'] = $this->m_view_tabel->v_tabel_gulabit()->result();
+		$data['dat_gulabit'] = $this->m_view_tabel->v_tabel_gulabit()->result();
+		$data['tabel'] = $this->m_view_tabel->get_gulabit()->result();
 		$data['user'] = $this->db->get_where('user', ['email' => $this->session->userdata('email')])->row_array();
 
 		$this->load->view('templates/header.php', $data);
@@ -175,7 +188,8 @@ class Tanaman extends CI_Controller
 
 	public function rosela()
 	{
-		$data['dat_stevia'] = $this->m_view_tabel->v_tabel_rosela()->result();
+		$data['dat_rosela'] = $this->m_view_tabel->v_tabel_rosela()->result();
+		$data['tabel'] = $this->m_view_tabel->get_rosela()->result();
 		$data['user'] = $this->db->get_where('user', ['email' => $this->session->userdata('email')])->row_array();
 
 		$this->load->view('templates/header.php', $data);
@@ -187,7 +201,8 @@ class Tanaman extends CI_Controller
 
 	public function agave()
 	{
-		$data['dat_stevia'] = $this->m_view_tabel->v_tabel_agave()->result();
+		$data['dat_agave'] = $this->m_view_tabel->v_tabel_agave()->result();
+		$data['tabel'] = $this->m_view_tabel->get_agave()->result();
 		$data['user'] = $this->db->get_where('user', ['email' => $this->session->userdata('email')])->row_array();
 
 		$this->load->view('templates/header.php', $data);
@@ -199,7 +214,8 @@ class Tanaman extends CI_Controller
 
 	public function jarak_kepyar()
 	{
-		$data['dat_stevia'] = $this->m_view_tabel->v_tabel_jarak_kepyar()->result();
+		$data['dat_jarak_kepyar'] = $this->m_view_tabel->v_tabel_jarak_kepyar()->result();
+		$data['tabel'] = $this->m_view_tabel->get_jarak_kepyar()->result();
 		$data['user'] = $this->db->get_where('user', ['email' => $this->session->userdata('email')])->row_array();
 
 		$this->load->view('templates/header.php', $data);

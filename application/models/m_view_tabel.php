@@ -12,6 +12,11 @@ class M_view_tabel extends CI_Model
         return $query;
     }
 
+    function get_kapas()
+    {
+        return $this->db->get('tab_kapas');
+    }
+
     function v_tabel_abaka()
     {
         $this->db->select('*');
@@ -20,6 +25,11 @@ class M_view_tabel extends CI_Model
         $this->db->order_by('no', 'desc');
         $query = $this->db->get();
         return $query;
+    }
+
+    function get_abaka()
+    {
+        return $this->db->get('tab_abaka');
     }
 
     function v_tabel_bungamatahari()
@@ -32,6 +42,11 @@ class M_view_tabel extends CI_Model
         return $query;
     }
 
+    function get_bunga_matahari()
+    {
+        return $this->db->get('tab_bunga_matahari');
+    }
+
     function v_tabel_jarakpagar()
     {
         $this->db->select('*');
@@ -40,6 +55,11 @@ class M_view_tabel extends CI_Model
         $this->db->order_by('no', 'desc');
         $query = $this->db->get();
         return $query;
+    }
+
+    function get_jarak_pagar()
+    {
+        return $this->db->get('tab_jarak_pagar');
     }
 
     function v_tabel_kapuk()
@@ -52,6 +72,11 @@ class M_view_tabel extends CI_Model
         return $query;
     }
 
+    function get_kapuk()
+    {
+        return $this->db->get('tab_kapuk');
+    }
+
     function v_tabel_kemiri()
     {
         $this->db->select('*');
@@ -60,6 +85,11 @@ class M_view_tabel extends CI_Model
         $this->db->order_by('no', 'desc');
         $query = $this->db->get();
         return $query;
+    }
+
+    function get_kemiri()
+    {
+        return $this->db->get('tab_kemiri');
     }
 
     function v_tabel_kenaf()
@@ -72,6 +102,11 @@ class M_view_tabel extends CI_Model
         return $query;
     }
 
+    function get_kenaf()
+    {
+        return $this->db->get('tab_kenaf');
+    }
+
     function v_tabel_rami()
     {
         $this->db->select('*');
@@ -80,6 +115,11 @@ class M_view_tabel extends CI_Model
         $this->db->order_by('no', 'desc');
         $query = $this->db->get();
         return $query;
+    }
+
+    function get_rami()
+    {
+        return $this->db->get('tab_rami');
     }
 
     function v_tabel_tebu()
@@ -92,6 +132,11 @@ class M_view_tabel extends CI_Model
         return $query;
     }
 
+    function get_tebu()
+    {
+        return $this->db->get('tab_tebu');
+    }
+
     function v_tabel_tembakau()
     {
         $this->db->select('*');
@@ -100,6 +145,11 @@ class M_view_tabel extends CI_Model
         $this->db->order_by('no', 'desc');
         $query = $this->db->get();
         return $query;
+    }
+
+    function get_tembakau()
+    {
+        return $this->db->get('tab_tembakau');
     }
 
     function v_tabel_wijen()
@@ -112,6 +162,11 @@ class M_view_tabel extends CI_Model
         return $query;
     }
 
+    function get_wijen()
+    {
+        return $this->db->get('tab_wijen');
+    }
+
     function v_tabel_stevia()
     {
         $this->db->select('*');
@@ -120,6 +175,11 @@ class M_view_tabel extends CI_Model
         $this->db->order_by('no', 'desc');
         $query = $this->db->get();
         return $query;
+    }
+
+    function get_stevia()
+    {
+        return $this->db->get('tab_stevia');
     }
 
 
@@ -133,6 +193,11 @@ class M_view_tabel extends CI_Model
         return $query;
     }
 
+    function get_gulabit()
+    {
+        return $this->db->get('tab_gulabit');
+    }
+
 
     function v_tabel_rosela()
     {
@@ -142,6 +207,11 @@ class M_view_tabel extends CI_Model
         $this->db->order_by('no', 'desc');
         $query = $this->db->get();
         return $query;
+    }
+
+    function get_rosela()
+    {
+        return $this->db->get('tab_rosela');
     }
 
 
@@ -155,6 +225,11 @@ class M_view_tabel extends CI_Model
         return $query;
     }
 
+    function get_agave()
+    {
+        return $this->db->get('tab_agave');
+    }
+
 
     function v_tabel_jarak_kepyar()
     {
@@ -164,6 +239,11 @@ class M_view_tabel extends CI_Model
         $this->db->order_by('no', 'desc');
         $query = $this->db->get();
         return $query;
+    }
+
+    function get_jarak_kepyar()
+    {
+        return $this->db->get('tab_jarak_kepyar');
     }
 
     function v_tabel_user()
