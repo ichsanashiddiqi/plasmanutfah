@@ -192,7 +192,7 @@
                                 <div class="col-sm">
                                     <label>Bentuk daun</label>
                                     <select class="form-control form-select-user" id="kar_06" name="kar_06">
-                                        <option selected>value="<?= $kps->kar_06; ?>"</option>
+                                        <option selected><?= $kps->kar_06; ?></option>
                                         <option value="1">1. Entire</option>
                                         <option value="2">2. Normal</option>
                                         <option value="2k">2k. Normal Kecil</option>

@@ -149,17 +149,65 @@ class Tanaman extends CI_Controller
 		$this->load->view('templates/footer.php', $data);
 	}
 
-	// public function stevia()
-	// {
-	// 	$data['dat_stevia'] = $this->m_view_tabel->v_tabel_stevia()->result();
-	// 	$data['user'] = $this->db->get_where('user', ['email' => $this->session->userdata('email')])->row_array();
+	public function stevia()
+	{
+		$data['dat_stevia'] = $this->m_view_tabel->v_tabel_stevia()->result();
+		$data['user'] = $this->db->get_where('user', ['email' => $this->session->userdata('email')])->row_array();
 
-	// 	$this->load->view('templates/header.php', $data);
-	// 	$this->load->view('templates/sidebar.php', $data);
-	// 	$this->load->view('templates/topbar.php', $data);
-	// 	$this->load->view('db_tanaman/stevia.php', $data);
-	// 	$this->load->view('templates/footer.php', $data);
-	// }
+		$this->load->view('templates/header.php', $data);
+		$this->load->view('templates/sidebar.php', $data);
+		$this->load->view('templates/topbar.php', $data);
+		$this->load->view('db_tanaman/stevia.php', $data);
+		$this->load->view('templates/footer.php', $data);
+	}
+
+	public function gulabit()
+	{
+		$data['dat_stevia'] = $this->m_view_tabel->v_tabel_gulabit()->result();
+		$data['user'] = $this->db->get_where('user', ['email' => $this->session->userdata('email')])->row_array();
+
+		$this->load->view('templates/header.php', $data);
+		$this->load->view('templates/sidebar.php', $data);
+		$this->load->view('templates/topbar.php', $data);
+		$this->load->view('db_tanaman/gulabit.php', $data);
+		$this->load->view('templates/footer.php', $data);
+	}
+
+	public function rosela()
+	{
+		$data['dat_stevia'] = $this->m_view_tabel->v_tabel_rosela()->result();
+		$data['user'] = $this->db->get_where('user', ['email' => $this->session->userdata('email')])->row_array();
+
+		$this->load->view('templates/header.php', $data);
+		$this->load->view('templates/sidebar.php', $data);
+		$this->load->view('templates/topbar.php', $data);
+		$this->load->view('db_tanaman/rosela.php', $data);
+		$this->load->view('templates/footer.php', $data);
+	}
+
+	public function agave()
+	{
+		$data['dat_stevia'] = $this->m_view_tabel->v_tabel_agave()->result();
+		$data['user'] = $this->db->get_where('user', ['email' => $this->session->userdata('email')])->row_array();
+
+		$this->load->view('templates/header.php', $data);
+		$this->load->view('templates/sidebar.php', $data);
+		$this->load->view('templates/topbar.php', $data);
+		$this->load->view('db_tanaman/agave.php', $data);
+		$this->load->view('templates/footer.php', $data);
+	}
+
+	public function jarak_kepyar()
+	{
+		$data['dat_stevia'] = $this->m_view_tabel->v_tabel_jarak_kepyar()->result();
+		$data['user'] = $this->db->get_where('user', ['email' => $this->session->userdata('email')])->row_array();
+
+		$this->load->view('templates/header.php', $data);
+		$this->load->view('templates/sidebar.php', $data);
+		$this->load->view('templates/topbar.php', $data);
+		$this->load->view('db_tanaman/jarak_kepyar.php', $data);
+		$this->load->view('templates/footer.php', $data);
+	}
 
 	//BATAS EDIT BOSSQUE
 	function edit_abaka($no_aksesi)

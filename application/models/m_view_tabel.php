@@ -112,6 +112,60 @@ class M_view_tabel extends CI_Model
         return $query;
     }
 
+    function v_tabel_stevia()
+    {
+        $this->db->select('*');
+        $this->db->join('dat_stevia', 'foto_stevia.No_aksesi = dat_stevia.no_aksesi', 'right');
+        $this->db->from('foto_stevia');
+        $this->db->order_by('no', 'desc');
+        $query = $this->db->get();
+        return $query;
+    }
+
+
+    function v_tabel_gulabit()
+    {
+        $this->db->select('*');
+        $this->db->join('dat_gulabit', 'foto_gulabit.No_aksesi = dat_gulabit.no_aksesi', 'right');
+        $this->db->from('foto_gulabit');
+        $this->db->order_by('no', 'desc');
+        $query = $this->db->get();
+        return $query;
+    }
+
+
+    function v_tabel_rosela()
+    {
+        $this->db->select('*');
+        $this->db->join('dat_rosela', 'foto_rosela.No_aksesi = dat_rosela.no_aksesi', 'right');
+        $this->db->from('foto_rosela');
+        $this->db->order_by('no', 'desc');
+        $query = $this->db->get();
+        return $query;
+    }
+
+
+    function v_tabel_agave()
+    {
+        $this->db->select('*');
+        $this->db->join('dat_agave', 'foto_agave.No_aksesi = dat_agave.no_aksesi', 'right');
+        $this->db->from('foto_agave');
+        $this->db->order_by('no', 'desc');
+        $query = $this->db->get();
+        return $query;
+    }
+
+
+    function v_tabel_jarak_kepyar()
+    {
+        $this->db->select('*');
+        $this->db->join('dat_jarak_kepyar', 'foto_jarak_kepyar.No_aksesi = dat_jarak_kepyar.no_aksesi', 'right');
+        $this->db->from('foto_jarak_kepyar');
+        $this->db->order_by('no', 'desc');
+        $query = $this->db->get();
+        return $query;
+    }
+
     function v_tabel_user()
     {
 

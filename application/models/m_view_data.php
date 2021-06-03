@@ -275,4 +275,124 @@ class M_view_data extends CI_Model
             return 0;
         }
     }
+
+    public function jumlah_stevia()
+    {
+        $query = $this->db->get('dat_stevia');
+        if ($query->num_rows() > 0) {
+            return $query->num_rows();
+        } else {
+            return 0;
+        }
+    }
+
+    public function deskriptor_stevia()
+    {
+        $this->db->select('*');
+        $this->db->from('deskriptor-bltstab');
+        $this->db->where('kmditi', 'stevia');
+        $query = $this->db->get();
+
+        if ($query->num_rows() > 0) {
+            return $query->num_rows();
+        } else {
+            return 0;
+        }
+    }
+
+    public function jumlah_gulabit()
+    {
+        $query = $this->db->get('dat_gulabit');
+        if ($query->num_rows() > 0) {
+            return $query->num_rows();
+        } else {
+            return 0;
+        }
+    }
+
+    public function deskriptor_gulabit()
+    {
+        $this->db->select('*');
+        $this->db->from('deskriptor-bltstab');
+        $this->db->where('kmditi', 'gulabit');
+        $query = $this->db->get();
+
+        if ($query->num_rows() > 0) {
+            return $query->num_rows();
+        } else {
+            return 0;
+        }
+    }
+
+    public function jumlah_agave()
+    {
+        $query = $this->db->get('dat_agave');
+        if ($query->num_rows() > 0) {
+            return $query->num_rows();
+        } else {
+            return 0;
+        }
+    }
+
+    public function deskriptor_agave()
+    {
+        $this->db->select('*');
+        $this->db->from('deskriptor-bltstab');
+        $this->db->where('kmditi', 'agave');
+        $query = $this->db->get();
+
+        if ($query->num_rows() > 0) {
+            return $query->num_rows();
+        } else {
+            return 0;
+        }
+    }
+
+    public function jumlah_rosela()
+    {
+        $query = $this->db->get('dat_rosela');
+        if ($query->num_rows() > 0) {
+            return $query->num_rows();
+        } else {
+            return 0;
+        }
+    }
+
+    public function deskriptor_rosela()
+    {
+        $this->db->select('*');
+        $this->db->from('deskriptor-bltstab');
+        $this->db->where('kmditi', 'rosela');
+        $query = $this->db->get();
+
+        if ($query->num_rows() > 0) {
+            return $query->num_rows();
+        } else {
+            return 0;
+        }
+    }
+
+    public function jumlah_jk()
+    {
+        $query = $this->db->get('dat_jarak_kepyar');
+        if ($query->num_rows() > 0) {
+            return $query->num_rows();
+        } else {
+            return 0;
+        }
+    }
+
+    public function deskriptor_jk()
+    {
+        $this->db->select('*');
+        $this->db->from('deskriptor-bltstab');
+        $this->db->where('kmditi', 'jarak_kepyar');
+        $query = $this->db->get();
+
+        if ($query->num_rows() > 0) {
+            return $query->num_rows();
+        } else {
+            return 0;
+        }
+    }
 }
