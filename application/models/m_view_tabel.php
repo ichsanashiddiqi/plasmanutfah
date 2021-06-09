@@ -44,7 +44,7 @@ class M_view_tabel extends CI_Model
 
     function get_bunga_matahari()
     {
-        return $this->db->get('tab_bunga_matahari');
+        return $this->db->get('tab_bm');
     }
 
     function v_tabel_jarakpagar()

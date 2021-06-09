@@ -12,7 +12,7 @@
 
     <!-- Page Heading -->
     <div class="d-sm-flex align-items-center justify-content-between mb-4">
-        <h1 class="h3 mb-0 text-gray-800">Abaka</h1>
+        <h1 class="h3 mb-0 text-gray-800">Tanaman Abaka (Musa Textilis)</h1>
     </div>
 
     <!-- Content Row -->
@@ -34,439 +34,15 @@
                                 <th>No. Aksesi</th>
                                 <th>Nama Aksesi</th>
                                 <th>Gambar</th>
-                                <?php foreach ($tabel as $tab) { ?>
-                                    <?php if ($tab->kar == 'kar_01') { ?>
-
-                                        <th>
-                                            <?php echo $tab->question; ?>
-                                        </th>
+                                <?php foreach ($tabel as $tab) {
+                                    for ($i = 0; $i < 99; $i++) { ?>
+                                        <?php if ($tab->kar == "kar_$i") { ?>
+                                            <th>
+                                                <?php echo $tab->question; ?>
+                                            </th>
+                                        <?php } ?>
                                     <?php } ?>
-
                                 <?php } ?>
-                                <?php foreach ($tabel as $tab) { ?>
-                                    <?php if ($tab->kar == 'kar_02') { ?>
-
-                                        <th>
-                                            <?php echo $tab->question; ?>
-                                        </th>
-                                    <?php } ?>
-
-                                <?php } ?>
-                                <?php foreach ($tabel as $tab) { ?>
-                                    <?php if ($tab->kar == 'kar_03') { ?>
-
-                                        <th>
-                                            <?php echo $tab->question; ?>
-                                        </th>
-                                    <?php } ?>
-
-                                <?php } ?>
-                                <?php foreach ($tabel as $tab) { ?>
-                                    <?php if ($tab->kar == 'kar_04') { ?>
-
-                                        <th>
-                                            <?php echo $tab->question; ?>
-                                        </th>
-                                    <?php } ?>
-
-                                <?php } ?>
-                                <?php foreach ($tabel as $tab) { ?>
-                                    <?php if ($tab->kar == 'kar_05') { ?>
-
-                                        <th>
-                                            <?php echo $tab->question; ?>
-                                        </th>
-                                    <?php } ?>
-
-                                <?php } ?>
-                                <?php foreach ($tabel as $tab) { ?>
-                                    <?php if ($tab->kar == 'kar_06') { ?>
-
-                                        <th>
-                                            <?php echo $tab->question; ?>
-                                        </th>
-                                    <?php } ?>
-
-                                <?php } ?>
-                                <?php foreach ($tabel as $tab) { ?>
-                                    <?php if ($tab->kar == 'kar_07') { ?>
-
-                                        <th>
-                                            <?php echo $tab->question; ?>
-                                        </th>
-                                    <?php } ?>
-
-                                <?php } ?>
-                                <?php foreach ($tabel as $tab) { ?>
-                                    <?php if ($tab->kar == 'kar_08') { ?>
-
-                                        <th>
-                                            <?php echo $tab->question; ?>
-                                        </th>
-                                    <?php } ?>
-
-                                <?php } ?>
-                                <?php foreach ($tabel as $tab) { ?>
-                                    <?php if ($tab->kar == 'kar_09') { ?>
-
-                                        <th>
-                                            <?php echo $tab->question; ?>
-                                        </th>
-                                    <?php } ?>
-
-                                <?php } ?>
-                                <?php foreach ($tabel as $tab) { ?>
-                                    <?php if ($tab->kar == 'kar_10') { ?>
-
-                                        <th>
-                                            <?php echo $tab->question; ?>
-                                        </th>
-                                    <?php } ?>
-
-                                <?php } ?>
-                                <?php foreach ($tabel as $tab) { ?>
-                                    <?php if ($tab->kar == 'kar_11') { ?>
-
-                                        <th>
-                                            <?php echo $tab->question; ?>
-                                        </th>
-                                    <?php } ?>
-
-                                <?php } ?>
-                                <?php foreach ($tabel as $tab) { ?>
-                                    <?php if ($tab->kar == 'kar_12') { ?>
-
-                                        <th>
-                                            <?php echo $tab->question; ?>
-                                        </th>
-                                    <?php } ?>
-
-                                <?php } ?>
-                                <?php foreach ($tabel as $tab) { ?>
-                                    <?php if ($tab->kar == 'kar_13') { ?>
-
-                                        <th>
-                                            <?php echo $tab->question; ?>
-                                        </th>
-                                    <?php } ?>
-
-                                <?php } ?>
-                                <?php foreach ($tabel as $tab) { ?>
-                                    <?php if ($tab->kar == 'kar_14') { ?>
-
-                                        <th>
-                                            <?php echo $tab->question; ?>
-                                        </th>
-                                    <?php } ?>
-
-                                <?php } ?>
-                                <?php foreach ($tabel as $tab) { ?>
-                                    <?php if ($tab->kar == 'kar_15') { ?>
-
-                                        <th>
-                                            <?php echo $tab->question; ?>
-                                        </th>
-                                    <?php } ?>
-
-                                <?php } ?>
-                                <?php foreach ($tabel as $tab) { ?>
-                                    <?php if ($tab->kar == 'kar_16') { ?>
-
-                                        <th>
-                                            <?php echo $tab->question; ?>
-                                        </th>
-                                    <?php } ?>
-
-                                <?php } ?>
-                                <?php foreach ($tabel as $tab) { ?>
-                                    <?php if ($tab->kar == 'kar_17') { ?>
-
-                                        <th>
-                                            <?php echo $tab->question; ?>
-                                        </th>
-                                    <?php } ?>
-
-                                <?php } ?>
-                                <?php foreach ($tabel as $tab) { ?>
-                                    <?php if ($tab->kar == 'kar_18') { ?>
-
-                                        <th>
-                                            <?php echo $tab->question; ?>
-                                        </th>
-                                    <?php } ?>
-
-                                <?php } ?>
-                                <?php foreach ($tabel as $tab) { ?>
-                                    <?php if ($tab->kar == 'kar_19') { ?>
-
-                                        <th>
-                                            <?php echo $tab->question; ?>
-                                        </th>
-                                    <?php } ?>
-
-                                <?php } ?>
-                                <?php foreach ($tabel as $tab) { ?>
-                                    <?php if ($tab->kar == 'kar_20') { ?>
-
-                                        <th>
-                                            <?php echo $tab->question; ?>
-                                        </th>
-                                    <?php } ?>
-
-                                <?php } ?>
-                                <?php foreach ($tabel as $tab) { ?>
-                                    <?php if ($tab->kar == 'kar_21') { ?>
-
-                                        <th>
-                                            <?php echo $tab->question; ?>
-                                        </th>
-                                    <?php } ?>
-
-                                <?php } ?>
-                                <?php foreach ($tabel as $tab) { ?>
-                                    <?php if ($tab->kar == 'kar_22') { ?>
-
-                                        <th>
-                                            <?php echo $tab->question; ?>
-                                        </th>
-                                    <?php } ?>
-
-                                <?php } ?>
-                                <?php foreach ($tabel as $tab) { ?>
-                                    <?php if ($tab->kar == 'kar_23') { ?>
-
-                                        <th>
-                                            <?php echo $tab->question; ?>
-                                        </th>
-                                    <?php } ?>
-
-                                <?php } ?>
-                                <?php foreach ($tabel as $tab) { ?>
-                                    <?php if ($tab->kar == 'kar_24') { ?>
-
-                                        <th>
-                                            <?php echo $tab->question; ?>
-                                        </th>
-                                    <?php } ?>
-
-                                <?php } ?>
-                                <?php foreach ($tabel as $tab) { ?>
-                                    <?php if ($tab->kar == 'kar_25') { ?>
-
-                                        <th>
-                                            <?php echo $tab->question; ?>
-                                        </th>
-                                    <?php } ?>
-
-                                <?php } ?>
-                                <?php foreach ($tabel as $tab) { ?>
-                                    <?php if ($tab->kar == 'kar_26') { ?>
-
-                                        <th>
-                                            <?php echo $tab->question; ?>
-                                        </th>
-                                    <?php } ?>
-
-                                <?php } ?>
-                                <?php foreach ($tabel as $tab) { ?>
-                                    <?php if ($tab->kar == 'kar_27') { ?>
-
-                                        <th>
-                                            <?php echo $tab->question; ?>
-                                        </th>
-                                    <?php } ?>
-
-                                <?php } ?>
-                                <?php foreach ($tabel as $tab) { ?>
-                                    <?php if ($tab->kar == 'kar_28') { ?>
-
-                                        <th>
-                                            <?php echo $tab->question; ?>
-                                        </th>
-                                    <?php } ?>
-
-                                <?php } ?>
-                                <?php foreach ($tabel as $tab) { ?>
-                                    <?php if ($tab->kar == 'kar_29') { ?>
-
-                                        <th>
-                                            <?php echo $tab->question; ?>
-                                        </th>
-                                    <?php } ?>
-
-                                <?php } ?>
-                                <?php foreach ($tabel as $tab) { ?>
-                                    <?php if ($tab->kar == 'kar_30') { ?>
-
-                                        <th>
-                                            <?php echo $tab->question; ?>
-                                        </th>
-                                    <?php } ?>
-
-                                <?php } ?>
-                                <?php foreach ($tabel as $tab) { ?>
-                                    <?php if ($tab->kar == 'kar_31') { ?>
-
-                                        <th>
-                                            <?php echo $tab->question; ?>
-                                        </th>
-                                    <?php } ?>
-
-                                <?php } ?>
-                                <?php foreach ($tabel as $tab) { ?>
-                                    <?php if ($tab->kar == 'kar_32') { ?>
-
-                                        <th>
-                                            <?php echo $tab->question; ?>
-                                        </th>
-                                    <?php } ?>
-
-                                <?php } ?>
-                                <?php foreach ($tabel as $tab) { ?>
-                                    <?php if ($tab->kar == 'kar_33') { ?>
-
-                                        <th>
-                                            <?php echo $tab->question; ?>
-                                        </th>
-                                    <?php } ?>
-
-                                <?php } ?>
-                                <?php foreach ($tabel as $tab) { ?>
-                                    <?php if ($tab->kar == 'kar_34') { ?>
-
-                                        <th>
-                                            <?php echo $tab->question; ?>
-                                        </th>
-                                    <?php } ?>
-
-                                <?php } ?>
-                                <?php foreach ($tabel as $tab) { ?>
-                                    <?php if ($tab->kar == 'kar_35') { ?>
-
-                                        <th>
-                                            <?php echo $tab->question; ?>
-                                        </th>
-                                    <?php } ?>
-
-                                <?php } ?>
-                                <?php foreach ($tabel as $tab) { ?>
-                                    <?php if ($tab->kar == 'kar_36') { ?>
-
-                                        <th>
-                                            <?php echo $tab->question; ?>
-                                        </th>
-                                    <?php } ?>
-
-                                <?php } ?>
-                                <?php foreach ($tabel as $tab) { ?>
-                                    <?php if ($tab->kar == 'kar_37') { ?>
-
-                                        <th>
-                                            <?php echo $tab->question; ?>
-                                        </th>
-                                    <?php } ?>
-
-                                <?php } ?>
-                                <?php foreach ($tabel as $tab) { ?>
-                                    <?php if ($tab->kar == 'kar_38') { ?>
-
-                                        <th>
-                                            <?php echo $tab->question; ?>
-                                        </th>
-                                    <?php } ?>
-
-                                <?php } ?>
-                                <?php foreach ($tabel as $tab) { ?>
-                                    <?php if ($tab->kar == 'kar_39') { ?>
-
-                                        <th>
-                                            <?php echo $tab->question; ?>
-                                        </th>
-                                    <?php } ?>
-
-                                <?php } ?>
-                                <?php foreach ($tabel as $tab) { ?>
-                                    <?php if ($tab->kar == 'kar_40') { ?>
-
-                                        <th>
-                                            <?php echo $tab->question; ?>
-                                        </th>
-                                    <?php } ?>
-
-                                <?php } ?>
-                                <?php foreach ($tabel as $tab) { ?>
-                                    <?php if ($tab->kar == 'kar_41') { ?>
-
-                                        <th>
-                                            <?php echo $tab->question; ?>
-                                        </th>
-                                    <?php } ?>
-
-                                <?php } ?>
-                                <?php foreach ($tabel as $tab) { ?>
-                                    <?php if ($tab->kar == 'kar_42') { ?>
-
-                                        <th>
-                                            <?php echo $tab->question; ?>
-                                        </th>
-                                    <?php } ?>
-
-                                <?php } ?>
-                                <?php foreach ($tabel as $tab) { ?>
-                                    <?php if ($tab->kar == 'kar_43') { ?>
-
-                                        <th>
-                                            <?php echo $tab->question; ?>
-                                        </th>
-                                    <?php } ?>
-
-                                <?php } ?>
-                                <?php foreach ($tabel as $tab) { ?>
-                                    <?php if ($tab->kar == 'kar_44') { ?>
-
-                                        <th>
-                                            <?php echo $tab->question; ?>
-                                        </th>
-                                    <?php } ?>
-
-                                <?php } ?>
-                                <?php foreach ($tabel as $tab) { ?>
-                                    <?php if ($tab->kar == 'kar_45') { ?>
-
-                                        <th>
-                                            <?php echo $tab->question; ?>
-                                        </th>
-                                    <?php } ?>
-
-                                <?php } ?>
-                                <?php foreach ($tabel as $tab) { ?>
-                                    <?php if ($tab->kar == 'kar_46') { ?>
-
-                                        <th>
-                                            <?php echo $tab->question; ?>
-                                        </th>
-                                    <?php } ?>
-
-                                <?php } ?>
-                                <?php foreach ($tabel as $tab) { ?>
-                                    <?php if ($tab->kar == 'kar_47') { ?>
-
-                                        <th>
-                                            <?php echo $tab->question; ?>
-                                        </th>
-                                    <?php } ?>
-
-                                <?php } ?>
-                                <?php foreach ($tabel as $tab) { ?>
-                                    <?php if ($tab->kar == 'kar_48') { ?>
-
-                                        <th>
-                                            <?php echo $tab->question; ?>
-                                        </th>
-                                    <?php } ?>
-
-                                <?php } ?>
-
                             </tr>
                         </thead>
                         <!-- <a class="pull-right btn btn-warning btn-large" style="margin-right:40px" href="<?= base_url('export/exportBro'); ?>">
@@ -484,14 +60,275 @@
                                     <td><?php echo $agv->no_aksesi ?></td>
                                     <td><?php echo $agv->nama_aksesi ?></td>
                                     <td><img src="<?php echo base_url('assets/data/' . $agv->Image) ?>" width="64" /></td>
-                                    <?php if ($agv->kar_01 != null) { ?>
-                                        <td><?php if ($agv->kar_01 > 0) {
-                                                echo $agv->kar_01;
+                                    <?php if ($agv->kar_1 != null) { ?>
+                                        <td><?php if ($agv->kar_1 > 0) {
+                                                echo $agv->kar_1;
                                             ?></td>
-                                    <?php } else if ($agv->kar_01 == null) { ?>
+                                    <?php } else if ($agv->kar_1 == null) { ?>
                                         <td><?php echo null;
                                             } ?></td>
                                     <?php } ?>
+                                    <?php if ($agv->kar_2 != null) { ?>
+                                        <td><?php if ($agv->kar_2 > 0) {
+                                                echo $agv->kar_2;
+                                            ?></td>
+                                    <?php } else if ($agv->kar_2 == null) { ?>
+                                        <td><?php echo null;
+                                            } ?></td>
+                                        <?php } ?><?php if ($agv->kar_3 != null) { ?>
+                                        <td><?php if ($agv->kar_3 > 0) {
+                                                            echo $agv->kar_3;
+                                            ?></td>
+                                    <?php } else if ($agv->kar_3 == null) { ?>
+                                        <td><?php echo null;
+                                                        } ?></td>
+                                        <?php } ?><?php if ($agv->kar_4 != null) { ?>
+                                        <td><?php if ($agv->kar_4 > 0) {
+                                                            echo $agv->kar_4;
+                                            ?></td>
+                                    <?php } else if ($agv->kar_4 == null) { ?>
+                                        <td><?php echo null;
+                                                        } ?></td>
+                                        <?php } ?><?php if ($agv->kar_5 != null) { ?>
+                                        <td><?php if ($agv->kar_5 > 0) {
+                                                            echo $agv->kar_5;
+                                            ?></td>
+                                    <?php } else if ($agv->kar_5 == null) { ?>
+                                        <td><?php echo null;
+                                                        } ?></td>
+                                        <?php } ?><?php if ($agv->kar_6 != null) { ?>
+                                        <td><?php if ($agv->kar_6 > 0) {
+                                                            echo $agv->kar_6;
+                                            ?></td>
+                                    <?php } else if ($agv->kar_6 == null) { ?>
+                                        <td><?php echo null;
+                                                        } ?></td>
+                                        <?php } ?><?php if ($agv->kar_7 != null) { ?>
+                                        <td><?php if ($agv->kar_7 > 0) {
+                                                            echo $agv->kar_7;
+                                            ?></td>
+                                    <?php } else if ($agv->kar_7 == null) { ?>
+                                        <td><?php echo null;
+                                                        } ?></td>
+                                        <?php } ?><?php if ($agv->kar_8 != null) { ?>
+                                        <td><?php if ($agv->kar_8 > 0) {
+                                                            echo $agv->kar_8;
+                                            ?></td>
+                                    <?php } else if ($agv->kar_8 == null) { ?>
+                                        <td><?php echo null;
+                                                        } ?></td>
+                                        <?php } ?><?php if ($agv->kar_9 != null) { ?>
+                                        <td><?php if ($agv->kar_9 > 0) {
+                                                            echo $agv->kar_9;
+                                            ?></td>
+                                    <?php } else if ($agv->kar_9 == null) { ?>
+                                        <td><?php echo null;
+                                                        } ?></td>
+                                        <?php } ?><?php if ($agv->kar_10 != null) { ?>
+                                        <td><?php if ($agv->kar_10 > 0) {
+                                                            echo $agv->kar_10;
+                                            ?></td>
+                                    <?php } else if ($agv->kar_10 == null) { ?>
+                                        <td><?php echo null;
+                                                        } ?></td>
+                                        <?php } ?><?php if ($agv->kar_11 != null) { ?>
+                                        <td><?php if ($agv->kar_11 > 0) {
+                                                            echo $agv->kar_11;
+                                            ?></td>
+                                    <?php } else if ($agv->kar_11 == null) { ?>
+                                        <td><?php echo null;
+                                                        } ?></td>
+                                        <?php } ?><?php if ($agv->kar_12 != null) { ?>
+                                        <td><?php if ($agv->kar_12 > 0) {
+                                                            echo $agv->kar_12;
+                                            ?></td>
+                                    <?php } else if ($agv->kar_12 == null) { ?>
+                                        <td><?php echo null;
+                                                        } ?></td>
+                                        <?php } ?><?php if ($agv->kar_13 != null) { ?>
+                                        <td><?php if ($agv->kar_13 > 0) {
+                                                            echo $agv->kar_13;
+                                            ?></td>
+                                    <?php } else if ($agv->kar_13 == null) { ?>
+                                        <td><?php echo null;
+                                                        } ?></td>
+                                        <?php } ?><?php if ($agv->kar_14 != null) { ?>
+                                        <td><?php if ($agv->kar_14 > 0) {
+                                                            echo $agv->kar_14;
+                                            ?></td>
+                                    <?php } else if ($agv->kar_14 == null) { ?>
+                                        <td><?php echo null;
+                                                        } ?></td>
+                                        <?php } ?><?php if ($agv->kar_15 != null) { ?>
+                                        <td><?php if ($agv->kar_15 > 0) {
+                                                            echo $agv->kar_15;
+                                            ?></td>
+                                    <?php } else if ($agv->kar_15 == null) { ?>
+                                        <td><?php echo null;
+                                                        } ?></td>
+                                        <?php } ?><?php if ($agv->kar_16 != null) { ?>
+                                        <td><?php if ($agv->kar_16 > 0) {
+                                                            echo $agv->kar_16;
+                                            ?></td>
+                                    <?php } else if ($agv->kar_16 == null) { ?>
+                                        <td><?php echo null;
+                                                        } ?></td>
+                                        <?php } ?><?php if ($agv->kar_17 != null) { ?>
+                                        <td><?php if ($agv->kar_17 > 0) {
+                                                            echo $agv->kar_17;
+                                            ?></td>
+                                    <?php } else if ($agv->kar_17 == null) { ?>
+                                        <td><?php echo null;
+                                                        } ?></td>
+                                        <?php } ?><?php if ($agv->kar_18 != null) { ?>
+                                        <td><?php if ($agv->kar_18 > 0) {
+                                                            echo $agv->kar_18;
+                                            ?></td>
+                                    <?php } else if ($agv->kar_18 == null) { ?>
+                                        <td><?php echo null;
+                                                        } ?></td>
+                                        <?php } ?><?php if ($agv->kar_19 != null) { ?>
+                                        <td><?php if ($agv->kar_19 > 0) {
+                                                            echo $agv->kar_19;
+                                            ?></td>
+                                    <?php } else if ($agv->kar_19 == null) { ?>
+                                        <td><?php echo null;
+                                                        } ?></td>
+                                        <?php } ?><?php if ($agv->kar_20 != null) { ?>
+                                        <td><?php if ($agv->kar_20 > 0) {
+                                                            echo $agv->kar_20;
+                                            ?></td>
+                                    <?php } else if ($agv->kar_20 == null) { ?>
+                                        <td><?php echo null;
+                                                        } ?></td>
+                                        <?php } ?><?php if ($agv->kar_21 != null) { ?>
+                                        <td><?php if ($agv->kar_21 > 0) {
+                                                            echo $agv->kar_21;
+                                            ?></td>
+                                    <?php } else if ($agv->kar_21 == null) { ?>
+                                        <td><?php echo null;
+                                                        } ?></td>
+                                        <?php } ?><?php if ($agv->kar_22 != null) { ?>
+                                        <td><?php if ($agv->kar_22 > 0) {
+                                                            echo $agv->kar_22;
+                                            ?></td>
+                                    <?php } else if ($agv->kar_22 == null) { ?>
+                                        <td><?php echo null;
+                                                        } ?></td>
+                                        <?php } ?><?php if ($agv->kar_23 != null) { ?>
+                                        <td><?php if ($agv->kar_23 > 0) {
+                                                            echo $agv->kar_23;
+                                            ?></td>
+                                    <?php } else if ($agv->kar_23 == null) { ?>
+                                        <td><?php echo null;
+                                                        } ?></td>
+                                        <?php } ?><?php if ($agv->kar_24 != null) { ?>
+                                        <td><?php if ($agv->kar_24 > 0) {
+                                                            echo $agv->kar_24;
+                                            ?></td>
+                                    <?php } else if ($agv->kar_24 == null) { ?>
+                                        <td><?php echo null;
+                                                        } ?></td>
+                                        <?php } ?><?php if ($agv->kar_25 != null) { ?>
+                                        <td><?php if ($agv->kar_25 > 0) {
+                                                            echo $agv->kar_25;
+                                            ?></td>
+                                    <?php } else if ($agv->kar_25 == null) { ?>
+                                        <td><?php echo null;
+                                                        } ?></td>
+                                        <?php } ?><?php if ($agv->kar_26 != null) { ?>
+                                        <td><?php if ($agv->kar_26 > 0) {
+                                                            echo $agv->kar_26;
+                                            ?></td>
+                                    <?php } else if ($agv->kar_26 == null) { ?>
+                                        <td><?php echo null;
+                                                        } ?></td>
+                                        <?php } ?><?php if ($agv->kar_27 != null) { ?>
+                                        <td><?php if ($agv->kar_27 > 0) {
+                                                            echo $agv->kar_27;
+                                            ?></td>
+                                    <?php } else if ($agv->kar_27 == null) { ?>
+                                        <td><?php echo null;
+                                                        } ?></td>
+                                        <?php } ?><?php if ($agv->kar_28 != null) { ?>
+                                        <td><?php if ($agv->kar_28 > 0) {
+                                                            echo $agv->kar_28;
+                                            ?></td>
+                                    <?php } else if ($agv->kar_28 == null) { ?>
+                                        <td><?php echo null;
+                                                        } ?></td>
+                                        <?php } ?><?php if ($agv->kar_29 != null) { ?>
+                                        <td><?php if ($agv->kar_29 > 0) {
+                                                            echo $agv->kar_29;
+                                            ?></td>
+                                    <?php } else if ($agv->kar_29 == null) { ?>
+                                        <td><?php echo null;
+                                                        } ?></td>
+                                        <?php } ?><?php if ($agv->kar_30 != null) { ?>
+                                        <td><?php if ($agv->kar_30 > 0) {
+                                                            echo $agv->kar_30;
+                                            ?></td>
+                                    <?php } else if ($agv->kar_30 == null) { ?>
+                                        <td><?php echo null;
+                                                        } ?></td>
+                                        <?php } ?><?php if ($agv->kar_31 != null) { ?>
+                                        <td><?php if ($agv->kar_31 > 0) {
+                                                            echo $agv->kar_31;
+                                            ?></td>
+                                    <?php } else if ($agv->kar_31 == null) { ?>
+                                        <td><?php echo null;
+                                                        } ?></td>
+                                        <?php } ?><?php if ($agv->kar_32 != null) { ?>
+                                        <td><?php if ($agv->kar_32 > 0) {
+                                                            echo $agv->kar_32;
+                                            ?></td>
+                                    <?php } else if ($agv->kar_32 == null) { ?>
+                                        <td><?php echo null;
+                                                        } ?></td>
+                                        <?php } ?><?php if ($agv->kar_33 != null) { ?>
+                                        <td><?php if ($agv->kar_33 > 0) {
+                                                            echo $agv->kar_33;
+                                            ?></td>
+                                    <?php } else if ($agv->kar_33 == null) { ?>
+                                        <td><?php echo null;
+                                                        } ?></td>
+                                        <?php } ?><?php if ($agv->kar_34 != null) { ?>
+                                        <td><?php if ($agv->kar_34 > 0) {
+                                                            echo $agv->kar_34;
+                                            ?></td>
+                                    <?php } else if ($agv->kar_34 == null) { ?>
+                                        <td><?php echo null;
+                                                        } ?></td>
+                                        <?php } ?><?php if ($agv->kar_35 != null) { ?>
+                                        <td><?php if ($agv->kar_35 > 0) {
+                                                            echo $agv->kar_35;
+                                            ?></td>
+                                    <?php } else if ($agv->kar_35 == null) { ?>
+                                        <td><?php echo null;
+                                                        } ?></td>
+                                        <?php } ?><?php if ($agv->kar_36 != null) { ?>
+                                        <td><?php if ($agv->kar_36 > 0) {
+                                                            echo $agv->kar_36;
+                                            ?></td>
+                                    <?php } else if ($agv->kar_36 == null) { ?>
+                                        <td><?php echo null;
+                                                        } ?></td>
+                                        <?php } ?><?php if ($agv->kar_37 != null) { ?>
+                                        <td><?php if ($agv->kar_37 > 0) {
+                                                            echo $agv->kar_37;
+                                            ?></td>
+                                    <?php } else if ($agv->kar_37 == null) { ?>
+                                        <td><?php echo null;
+                                                        } ?></td>
+                                        <?php } ?><?php if ($agv->kar_38 != null) { ?>
+                                        <td><?php if ($agv->kar_38 > 0) {
+                                                            echo $agv->kar_38;
+                                            ?></td>
+                                    <?php } else if ($agv->kar_38 == null) { ?>
+                                        <td><?php echo null;
+                                                        } ?></td>
+                                    <?php } ?>
+
                                 </tr>
                             <?php } ?>
                         </tbody>
