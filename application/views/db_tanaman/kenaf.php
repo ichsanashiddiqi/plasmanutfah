@@ -61,6 +61,15 @@
                                 <th>Berat 1000 biji</th>
                                 <th>Berat serat kering</th>
                                 <th>Berat kayu kering</th>
+                                <?php foreach ($tabel as $tab) {
+                                    for ($i = 36; $i < 99; $i++) { ?>
+                                        <?php if ($tab->kar == "kar_$i") { ?>
+                                            <th>
+                                                <?php echo $tab->question; ?>
+                                            </th>
+                                        <?php } ?>
+                                    <?php } ?>
+                                <?php } ?>
 
                             </tr>
                         </thead>

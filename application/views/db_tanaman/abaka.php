@@ -72,6 +72,15 @@
                                 <th>Ketahanan kekeringan</th>
                                 <th>Kekuatan serat</th>
                                 <th>Kehalusan serat</th>
+                                <?php foreach ($tabel as $tab) {
+                                    for ($i = 38; $i < 99; $i++) { ?>
+                                        <?php if ($tab->kar == "kar_$i") { ?>
+                                            <th>
+                                                <?php echo $tab->question; ?>
+                                            </th>
+                                        <?php } ?>
+                                    <?php } ?>
+                                <?php } ?>
 
                             </tr>
                         </thead>
@@ -202,6 +211,53 @@
                                     <td><?php echo $abk->kar_36 ?></td>
                                     <td><?php echo $abk->kar_37 ?></td>
                                     <td><?php echo $abk->kar_38 ?></td>
+                                    <?php if ($agv->kar_39 != null) { ?>
+                                        <td><?php if ($agv->kar_39 > 0) {
+                                                echo $agv->kar_39;
+                                            ?></td>
+                                    <?php } else if ($agv->kar_39 == null) { ?>
+                                        <td><?php echo null;
+                                            } ?></td>
+                                        <?php } ?><?php if ($agv->kar_40 != null) { ?>
+                                        <td><?php if ($agv->kar_40 > 0) {
+                                                            echo $agv->kar_40;
+                                            ?></td>
+                                    <?php } else if ($agv->kar_40 == null) { ?>
+                                        <td><?php echo null;
+                                                        } ?></td>
+                                        <?php } ?><?php if ($agv->kar_41 != null) { ?>
+                                        <td><?php if ($agv->kar_41 > 0) {
+                                                            echo $agv->kar_41;
+                                            ?></td>
+                                    <?php } else if ($agv->kar_41 == null) { ?>
+                                        <td><?php echo null;
+                                                        } ?></td>
+                                        <?php } ?><?php if ($agv->kar_42 != null) { ?>
+                                        <td><?php if ($agv->kar_42 > 0) {
+                                                            echo $agv->kar_42;
+                                            ?></td>
+                                    <?php } else if ($agv->kar_42 == null) { ?>
+                                        <td><?php echo null;
+                                                        } ?></td>
+                                        <?php } ?><?php if ($agv->kar_43 != null) { ?>
+                                        <td><?php if ($agv->kar_43 > 0) {
+                                                            echo $agv->kar_37;
+                                            ?></td>
+                                    <?php } else if ($agv->kar_43 == null) { ?>
+                                        <td><?php echo null;
+                                                        } ?></td>
+                                        <?php } ?><?php if ($agv->kar_44 != null) { ?>
+                                        <td><?php if ($agv->kar_44 > 0) {
+                                                            echo $agv->kar_44;
+                                            ?></td>
+                                    <?php } else if ($agv->kar_44 == null) { ?>
+                                        <td><?php echo null;
+                                                        } ?></td>
+                                    <?php } ?>
+
+
+
+
 
                                 </tr>
                             <?php } ?>

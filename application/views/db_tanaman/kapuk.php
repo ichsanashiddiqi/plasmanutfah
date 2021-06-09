@@ -3,7 +3,7 @@
 
     <!-- Page Heading -->
     <div class="d-sm-flex align-items-center justify-content-between mb-4">
-        <h1 class="h3 mb-0 text-gray-800">Tanaman Kapuk (Ceiba pentandra)</h1>
+        <h1 class="h3 mb-0 text-gray-800">Tanaman Kapuk (Ceiba Pentandra)</h1>
     </div>
 
     <!-- Content Row -->
@@ -58,7 +58,15 @@
                                 <th>Diameter kanopi BT</th>
                                 <th>Panjang daun(cm)</th>
                                 <th>Lebar daun(cm)</th>
-
+                                <?php foreach ($tabel as $tab) {
+                                    for ($i = 33; $i < 99; $i++) { ?>
+                                        <?php if ($tab->kar == "kar_$i") { ?>
+                                            <th>
+                                                <?php echo $tab->question; ?>
+                                            </th>
+                                        <?php } ?>
+                                    <?php } ?>
+                                <?php } ?>
                             </tr>
                         </thead>
                         <!-- <a class="pull-right btn btn-warning btn-large" style="margin-right:40px" href="<?= base_url('export/exportBro'); ?>">

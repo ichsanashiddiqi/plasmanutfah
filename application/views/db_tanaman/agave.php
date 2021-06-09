@@ -67,14 +67,13 @@
                                     <?php } else if ($agv->kar_1 == null) { ?>
                                         <td><?php echo null;
                                             } ?></td>
-                                    <?php } ?>
-                                    <?php if ($agv->kar_2 != null) { ?>
+                                        <?php } ?><?php if ($agv->kar_2 != null) { ?>
                                         <td><?php if ($agv->kar_2 > 0) {
-                                                echo $agv->kar_2;
+                                                            echo $agv->kar_2;
                                             ?></td>
                                     <?php } else if ($agv->kar_2 == null) { ?>
                                         <td><?php echo null;
-                                            } ?></td>
+                                                        } ?></td>
                                         <?php } ?><?php if ($agv->kar_3 != null) { ?>
                                         <td><?php if ($agv->kar_3 > 0) {
                                                             echo $agv->kar_3;

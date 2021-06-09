@@ -56,6 +56,15 @@
                                 <th>Panjang polong</th>
                                 <th>Jumlah biji per polong</th>
                                 <th>Hasil biji per 15 m persegi</th>
+                                <?php foreach ($tabel as $tab) {
+                                    for ($i = 31; $i < 99; $i++) { ?>
+                                        <?php if ($tab->kar == "kar_$i") { ?>
+                                            <th>
+                                                <?php echo $tab->question; ?>
+                                            </th>
+                                        <?php } ?>
+                                    <?php } ?>
+                                <?php } ?>
 
                             </tr>
                         </thead>

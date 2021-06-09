@@ -63,6 +63,15 @@
                                 <th>Ketahanan kekeringan</th>
                                 <th>Kekuatan serat</th>
                                 <th>Kehalusan serat</th>
+                                <?php foreach ($tabel as $tab) {
+                                    for ($i = 38; $i < 99; $i++) { ?>
+                                        <?php if ($tab->kar == "kar_$i") { ?>
+                                            <th>
+                                                <?php echo $tab->question; ?>
+                                            </th>
+                                        <?php } ?>
+                                    <?php } ?>
+                                <?php } ?>
                                 <th>p1</th>
                                 <th>p2</th>
                                 <th>p3</th>

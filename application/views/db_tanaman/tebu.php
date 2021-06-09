@@ -59,7 +59,15 @@
                                 <th>Rambut tepi basal</th>
                                 <th>Rambut jambul</th>
                                 <th>Ukuran rambut jambul</th>
-
+                                <?php foreach ($tabel as $tab) {
+                                    for ($i = 34; $i < 99; $i++) { ?>
+                                        <?php if ($tab->kar == "kar_$i") { ?>
+                                            <th>
+                                                <?php echo $tab->question; ?>
+                                            </th>
+                                        <?php } ?>
+                                    <?php } ?>
+                                <?php } ?>
                             </tr>
                         </thead>
                         <!-- <a class="pull-right btn btn-warning btn-large" style="margin-right:40px" href="<?= base_url('export/exportBro'); ?>">

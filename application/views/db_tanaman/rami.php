@@ -65,6 +65,15 @@
                                 <th>Uji adaptasi pada lahan bermasalah</th>
                                 <th>Kekuatan serat</th>
                                 <th>Kehalusan serat</th>
+                                <?php foreach ($tabel as $tab) {
+                                    for ($i = 40; $i < 99; $i++) { ?>
+                                        <?php if ($tab->kar == "kar_$i") { ?>
+                                            <th>
+                                                <?php echo $tab->question; ?>
+                                            </th>
+                                        <?php } ?>
+                                    <?php } ?>
+                                <?php } ?>
 
 
                             </tr>

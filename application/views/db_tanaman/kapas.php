@@ -70,6 +70,15 @@
                                 <th>Rentan busuk biji</th>
                                 <th>Rentan penyakit layu</th>
                                 <th>Rentan penyakit bakteri</th>
+                                <?php foreach ($tabel as $tab) {
+                                    for ($i = 44; $i < 99; $i++) { ?>
+                                        <?php if ($tab->kar == "kar_$i") { ?>
+                                            <th>
+                                                <?php echo $tab->question; ?>
+                                            </th>
+                                        <?php } ?>
+                                    <?php } ?>
+                                <?php } ?>
 
                             </tr>
                         </thead>

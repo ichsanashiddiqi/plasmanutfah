@@ -69,7 +69,15 @@
                                 <th>Garis-garis tepi biji</th>
                                 <th>Garis antara tepi biji</th>
                                 <th>Warna garis biji</th>
-
+                                <?php foreach ($tabel as $tab) {
+                                    for ($i = 42; $i < 99; $i++) { ?>
+                                        <?php if ($tab->kar == "kar_$i") { ?>
+                                            <th>
+                                                <?php echo $tab->question; ?>
+                                            </th>
+                                        <?php } ?>
+                                    <?php } ?>
+                                <?php } ?>
                             </tr>
                         </thead>
                         <!-- <a class="pull-right btn btn-warning btn-large" style="margin-right:40px" href="<?= base_url('export/exportBro'); ?>">
