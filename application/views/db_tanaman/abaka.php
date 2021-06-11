@@ -12,7 +12,7 @@
 
     <!-- Page Heading -->
     <div class="d-sm-flex align-items-center justify-content-between mb-4">
-        <h1 class="h3 mb-0 text-gray-800">Tanaman Tebu (Saccharum Officinarum L)</h1>
+        <h1 class="h3 mb-0 text-gray-800">Tanaman Abaka (Musa Textilis)</h1>
     </div>
 
     <!-- Content Row -->
@@ -211,46 +211,46 @@
                                     <td><?php echo $abk->kar_36 ?></td>
                                     <td><?php echo $abk->kar_37 ?></td>
                                     <td><?php echo $abk->kar_38 ?></td>
-                                    <?php if ($agv->kar_39 != null) { ?>
-                                        <td><?php if ($agv->kar_39 > 0) {
-                                                echo $agv->kar_39;
+                                    <?php if ($abk->kar_39 != null) { ?>
+                                        <td><?php if ($abk->kar_39 > 0) {
+                                                echo $abk->kar_39;
                                             ?></td>
-                                    <?php } else if ($agv->kar_39 == null) { ?>
+                                    <?php } else if ($abk->kar_39 == null) { ?>
                                         <td><?php echo null;
                                             } ?></td>
-                                        <?php } ?><?php if ($agv->kar_40 != null) { ?>
-                                        <td><?php if ($agv->kar_40 > 0) {
-                                                            echo $agv->kar_40;
+                                        <?php } ?><?php if ($abk->kar_40 != null) { ?>
+                                        <td><?php if ($abk->kar_40 > 0) {
+                                                            echo $abk->kar_40;
                                             ?></td>
-                                    <?php } else if ($agv->kar_40 == null) { ?>
+                                    <?php } else if ($abk->kar_40 == null) { ?>
                                         <td><?php echo null;
                                                         } ?></td>
-                                        <?php } ?><?php if ($agv->kar_41 != null) { ?>
-                                        <td><?php if ($agv->kar_41 > 0) {
-                                                            echo $agv->kar_41;
+                                        <?php } ?><?php if ($abk->kar_41 != null) { ?>
+                                        <td><?php if ($abk->kar_41 > 0) {
+                                                            echo $abk->kar_41;
                                             ?></td>
-                                    <?php } else if ($agv->kar_41 == null) { ?>
+                                    <?php } else if ($abk->kar_41 == null) { ?>
                                         <td><?php echo null;
                                                         } ?></td>
-                                        <?php } ?><?php if ($agv->kar_42 != null) { ?>
-                                        <td><?php if ($agv->kar_42 > 0) {
-                                                            echo $agv->kar_42;
+                                        <?php } ?><?php if ($abk->kar_42 != null) { ?>
+                                        <td><?php if ($abk->kar_42 > 0) {
+                                                            echo $abk->kar_42;
                                             ?></td>
-                                    <?php } else if ($agv->kar_42 == null) { ?>
+                                    <?php } else if ($abk->kar_42 == null) { ?>
                                         <td><?php echo null;
                                                         } ?></td>
-                                        <?php } ?><?php if ($agv->kar_43 != null) { ?>
-                                        <td><?php if ($agv->kar_43 > 0) {
-                                                            echo $agv->kar_37;
+                                        <?php } ?><?php if ($abk->kar_43 != null) { ?>
+                                        <td><?php if ($abk->kar_43 > 0) {
+                                                            echo $abk->kar_37;
                                             ?></td>
-                                    <?php } else if ($agv->kar_43 == null) { ?>
+                                    <?php } else if ($abk->kar_43 == null) { ?>
                                         <td><?php echo null;
                                                         } ?></td>
-                                        <?php } ?><?php if ($agv->kar_44 != null) { ?>
-                                        <td><?php if ($agv->kar_44 > 0) {
-                                                            echo $agv->kar_44;
+                                        <?php } ?><?php if ($abk->kar_44 != null) { ?>
+                                        <td><?php if ($abk->kar_44 > 0) {
+                                                            echo $abk->kar_44;
                                             ?></td>
-                                    <?php } else if ($agv->kar_44 == null) { ?>
+                                    <?php } else if ($abk->kar_44 == null) { ?>
                                         <td><?php echo null;
                                                         } ?></td>
                                     <?php } ?>

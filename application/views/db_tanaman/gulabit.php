@@ -50,7 +50,7 @@
                         <tbody>
                             <?php
                             $no = 1;
-                            foreach ($dat_agave as $agv) {
+                            foreach ($dat_gulabit as $agv) {
                             ?>
                                 <tr>
                                     <td><?php echo $no++ ?></td>
