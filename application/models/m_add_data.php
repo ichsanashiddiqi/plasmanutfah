@@ -139,6 +139,56 @@ class M_add_data extends CI_Model
         $query = $this->db->get();
         return $query->result();
     }
+
+    function last_data_stevia()
+    {
+        $this->db->select('*');
+        $this->db->from('dat_stevia');
+        $this->db->order_by('no', 'desc');
+        $this->db->limit(1);
+        $query = $this->db->get();
+        return $query->result();
+    }
+
+    function last_data_gulabit()
+    {
+        $this->db->select('*');
+        $this->db->from('dat_gulabit');
+        $this->db->order_by('no', 'desc');
+        $this->db->limit(1);
+        $query = $this->db->get();
+        return $query->result();
+    }
+
+    function last_data_rosela()
+    {
+        $this->db->select('*');
+        $this->db->from('dat_rosela');
+        $this->db->order_by('no', 'desc');
+        $this->db->limit(1);
+        $query = $this->db->get();
+        return $query->result();
+    }
+
+    function last_data_agave()
+    {
+        $this->db->select('*');
+        $this->db->from('dat_agave');
+        $this->db->order_by('no', 'desc');
+        $this->db->limit(1);
+        $query = $this->db->get();
+        return $query->result();
+    }
+
+    function last_data_jarak_kepyar()
+    {
+        $this->db->select('*');
+        $this->db->from('dat_jarak_kepyar');
+        $this->db->order_by('no', 'desc');
+        $this->db->limit(1);
+        $query = $this->db->get();
+        return $query->result();
+    }
     function add_tabel()
     {
         $this->dbforge->add_column();

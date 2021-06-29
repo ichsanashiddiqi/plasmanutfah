@@ -330,6 +330,30 @@
                                     <input type="text" class="form-control" id="kar_26" name="kar_26" value="<?= $k->kar_26; ?>">
                                 </div>
                             </div>
+                            <?php foreach ($idkar as $das) : ?>
+                                <?php if ($k->kar_39 != null) { ?>
+                                    <div class="form-group row">
+                                        <?php if ($k->kar_39 != null) { ?>
+                                            <div class="col-md-4">
+                                                <label><?= $das['question']; ?></label>
+                                                <input type="text" class="form-control" id="kar_26" name="kar_26" value="<?= $k->kar_39; ?>">
+                                            </div>
+                                        <?php } ?>
+                                        <?php if ($k->kar_40 != null) { ?>
+                                            <div class="col-md-4">
+                                                <label><?= $das['question']; ?></label>
+                                                <input type="text" class="form-control" id="kar_26" name="kar_26" value="<?= $k->kar_40; ?>">
+                                            </div>
+                                        <?php } ?>
+                                        <?php if ($k->kar_41 != null) { ?>
+                                            <div class="col-md-4">
+                                                <label><?= $das['question']; ?></label>
+                                                <input type="text" class="form-control" id="kar_26" name="kar_26" value="<?= $k->kar_41; ?>">
+                                            </div>
+                                        <?php } ?>
+                                    </div>
+                                <?php } ?>
+                            <?php endforeach; ?>
                             <!-- <a href="#" class="btn btn-primary">Go somewhere</a> -->
                             <input class="btn btn-success btn-user btn-block" type="submit" value="Edit Data Karakterisasi">
                         </form>

@@ -14,6 +14,7 @@ class Tanaman extends CI_Controller
 		$this->load->model('m_view_tabel');
 		$this->load->model('m_edit_data');
 		$this->load->library('session');
+		$this->load->model('m_view_idkar');
 	}
 	public function abaka()
 	{
@@ -233,6 +234,7 @@ class Tanaman extends CI_Controller
 		$data['dat_abaka'] = $this->m_edit_data->edit_data($where, 'dat_abaka')->result();
 		$data['pas_abaka'] = $this->m_edit_data->edit_data($where, 'pas_abaka')->result();
 		$data['foto_abaka'] = $this->m_edit_data->edit_data($where, 'foto_abaka')->result();
+		$data['idkar'] = $this->db->get('tab_abaka')->result_array();
 
 		$this->load->view('templates/header', $data);
 		$this->load->view('templates/sidebar.php', $data);

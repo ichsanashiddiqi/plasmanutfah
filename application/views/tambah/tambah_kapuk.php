@@ -1,3 +1,86 @@
+<div class="modal fade" id="kar" tabindex="-1" role="dialog" aria-labelledby="exampleModalCenterTitle" aria-hidden="true">
+    <div class="modal-dialog modal-dialog-centered" role="document">
+        <div class="modal-content">
+            <div class="modal-header">
+                <h5 class="modal-title" id="exampleModalLongTitle">Modal title</h5>
+                <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+                    <span aria-hidden="true">&times;</span>
+                </button>
+            </div>
+            <div class="modal-body">
+
+
+                <form class="user" method="post" action="<?php echo base_url('add_kar/kolom_kapuk'); ?>">
+                    <div class="form-group row">
+                        <div class="col-sm">
+                            <input type="text" class="form-control" id="kar" name="kar" placeholder="ID_Kolom">
+                        </div>
+                        <div class="col-sm">
+                            <input type="text" class="form-control" id="question" name="question" placeholder="Pertanyaan Untuk Form">
+                        </div>
+                    </div>
+            </div>
+            <div class="modal-footer">
+                <button type="button" class="btn btn-secondary" data-dismiss="modal">Close</button>
+                <button type="submit" class="btn btn-primary">Save changes</button>
+            </div>
+            </form>
+        </div>
+    </div>
+</div>
+
+
+<div class="modal fade" id="idkar" tabindex="-1" role="dialog" aria-labelledby="exampleModalCenterTitle" aria-hidden="true">
+    <div class="modal-dialog modal-dialog-centered" role="document">
+        <div class="modal-content">
+            <div class="modal-header">
+                <h5 class="modal-title" id="exampleModalLongTitle">Modal title</h5>
+                <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+                    <span aria-hidden="true">&times;</span>
+                </button>
+            </div>
+            <div class="modal-body">
+
+                <div class="table-responsive">
+                    <table class="table table-bordered" id="dataTable" width="100%" cellspacing="0">
+                        <thead>
+
+                            <tr>
+                                <th>No</th>
+                                <th>Aksi</th>
+                                <th>ID karakterisasi</th>
+                                <th>Pertanyaan Form</th>
+
+                            </tr>
+                        </thead>
+                        <!-- <a class="pull-right btn btn-warning btn-large" style="margin-right:40px" href="<?= base_url('export/exportBro'); ?>">
+                            <i class="fa fa-file-excel-o"></i> Export to Excel</a> -->
+                        <tbody>
+                            <?php
+                            $no = 1;
+                            foreach ($tabel as $das) {
+                            ?>
+                                <tr>
+                                    <td><?php echo $no++ ?></td>
+                                    <td><a href=""><i class="fas fa-edit" style="color: chartreuse;"></i></a>
+                                        <a href=""><i class="fas fa-trash-alt" style="color: red;"></i></a>
+                                    </td>
+                                    <td><?php echo $das->kar ?></td>
+                                    <td><?php echo $das->question ?></td>
+                                </tr>
+                            <?php } ?>
+                        </tbody>
+                    </table>
+                </div>
+                <div class="modal-footer">
+                    <button type="button" class="btn btn-secondary" data-dismiss="modal">Close</button>
+                    <button type="submit" class="btn btn-primary">Save changes</button>
+                </div>
+                </form>
+            </div>
+        </div>
+    </div>
+</div>
 <!-- Begin Page Content -->
 <div class="container-fluid">
 
@@ -8,6 +91,8 @@
 
     <!-- Content Row -->
 
+    <button type="button" data-toggle="modal" class="btn btn-outline-success btn-sm" href="#kar">Tambah Data Karakterisasi</button>
+    <button type="button" data-toggle="modal" class="btn btn-outline-success btn-sm" href="#idkar">Lihat Data ID Karakterisasi</button>
     <div class="card">
         <div class="card-header">
             Featured
@@ -285,6 +370,16 @@
                         <input type="text" class="form-control" id="kar_26" name="kar_26" placeholder="Rendemen kulit (%)">
                     </div>
                 </div>
+
+                <div class="form-group row">
+                    <?php foreach ($idkar as $das) : ?>
+                        <div class="col-md-4 top-buffer">
+                            <input type="text" class="form-control" id="<?= $das['kar']; ?>" name="<?= $das['kar']; ?>" placeholder="<?= $das['question']; ?>">
+                        </div>
+
+                    <?php endforeach; ?>
+
+                </div>
                 <!-- xxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxx -->
 
 
@@ -315,7 +410,11 @@
 
 </div>
 <!-- End of Content Wrapper -->
-
+<style>
+    .top-buffer {
+        margin-top: 20px;
+    }
+</style>
 </div>
 <!-- End of Page Wrapper -->
 
