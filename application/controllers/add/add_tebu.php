@@ -1,5 +1,5 @@
 <?php
-class add_tebu extends CI_Controller
+class Add_tebu extends CI_Controller
 {
     function __construct()
     {
@@ -24,15 +24,15 @@ class add_tebu extends CI_Controller
         $Donor = $this->input->post('Donor');
         $longitude = $this->input->post('longitude');
         $lattitude = $this->input->post('lattitude');
-        $kar_01 = $this->input->post('kar_01');
-        $kar_02 = $this->input->post('kar_02');
-        $kar_03 = $this->input->post('kar_03');
-        $kar_04 = $this->input->post('kar_04');
-        $kar_05 = $this->input->post('kar_05');
-        $kar_06 = $this->input->post('kar_06');
-        $kar_07 = $this->input->post('kar_07');
-        $kar_08 = $this->input->post('kar_08');
-        $kar_09 = $this->input->post('kar_09');
+        $kar_1 = $this->input->post('kar_1');
+        $kar_2 = $this->input->post('kar_2');
+        $kar_3 = $this->input->post('kar_3');
+        $kar_4 = $this->input->post('kar_4');
+        $kar_5 = $this->input->post('kar_5');
+        $kar_6 = $this->input->post('kar_6');
+        $kar_7 = $this->input->post('kar_7');
+        $kar_8 = $this->input->post('kar_8');
+        $kar_9 = $this->input->post('kar_9');
         $kar_10 = $this->input->post('kar_10');
         $kar_11 = $this->input->post('kar_11');
         $kar_12 = $this->input->post('kar_12');
@@ -58,8 +58,32 @@ class add_tebu extends CI_Controller
         $kar_32 = $this->input->post('kar_32');
         $kar_33 = $this->input->post('kar_33');
         $kar_34 = $this->input->post('kar_34');
-
-
+        $kar_35 = $this->input->post('kar_35');
+        $kar_36 = $this->input->post('kar_36');
+        $kar_37 = $this->input->post('kar_37');
+        $kar_38 = $this->input->post('kar_38');
+        $kar_39 = $this->input->post('kar_39');
+        $kar_40 = $this->input->post('kar_40');
+        $kar_41 = $this->input->post('kar_41');
+        $kar_42 = $this->input->post('kar_42');
+        $kar_43 = $this->input->post('kar_43');
+        $kar_44 = $this->input->post('kar_44');
+        $kar_45 = $this->input->post('kar_45');
+        $kar_46 = $this->input->post('kar_46');
+        $kar_47 = $this->input->post('kar_47');
+        $kar_48 = $this->input->post('kar_48');
+        $kar_49 = $this->input->post('kar_49');
+        $kar_50 = $this->input->post('kar_50');
+        $kar_51 = $this->input->post('kar_51');
+        $kar_52 = $this->input->post('kar_52');
+        $kar_53 = $this->input->post('kar_53');
+        $kar_54 = $this->input->post('kar_54');
+        $kar_55 = $this->input->post('kar_55');
+        $kar_56 = $this->input->post('kar_56');
+        $kar_57 = $this->input->post('kar_57');
+        $kar_58 = $this->input->post('kar_58');
+        $kar_59 = $this->input->post('kar_59');
+        $kar_60 = $this->input->post('kar_60');
 
         $data = array(
             'no_aksesi' =>  $no_aksesi,
@@ -73,15 +97,15 @@ class add_tebu extends CI_Controller
             'Donor' => $Donor,
             'longitude' => $longitude,
             'lattitude' => $lattitude,
-            'kar_01' => $kar_01,
-            'kar_02' => $kar_02,
-            'kar_03' => $kar_03,
-            'kar_04' => $kar_04,
-            'kar_05' => $kar_05,
-            'kar_06' => $kar_06,
-            'kar_07' => $kar_07,
-            'kar_08' => $kar_08,
-            'kar_09' => $kar_09,
+            'kar_1' => $kar_1,
+            'kar_2' => $kar_2,
+            'kar_3' => $kar_3,
+            'kar_4' => $kar_4,
+            'kar_5' => $kar_5,
+            'kar_6' => $kar_6,
+            'kar_7' => $kar_7,
+            'kar_8' => $kar_8,
+            'kar_9' => $kar_9,
             'kar_10' => $kar_10,
             'kar_11' => $kar_11,
             'kar_12' => $kar_12,
@@ -107,6 +131,32 @@ class add_tebu extends CI_Controller
             'kar_32' => $kar_32,
             'kar_33' => $kar_33,
             'kar_34' => $kar_34,
+            'kar_35' => $kar_35,
+            'kar_36' => $kar_36,
+            'kar_37' => $kar_37,
+            'kar_38' => $kar_38,
+            'kar_39' => $kar_39,
+            'kar_40' => $kar_40,
+            'kar_41' => $kar_41,
+            'kar_42' => $kar_42,
+            'kar_43' => $kar_43,
+            'kar_44' => $kar_44,
+            'kar_45' => $kar_45,
+            'kar_46' => $kar_46,
+            'kar_47' => $kar_47,
+            'kar_48' => $kar_48,
+            'kar_49' => $kar_49,
+            'kar_50' => $kar_50,
+            'kar_51' => $kar_51,
+            'kar_52' => $kar_52,
+            'kar_53' => $kar_53,
+            'kar_54' => $kar_54,
+            'kar_55' => $kar_55,
+            'kar_56' => $kar_56,
+            'kar_57' => $kar_57,
+            'kar_58' => $kar_58,
+            'kar_59' => $kar_59,
+            'kar_60' => $kar_60,
 
         );
         $this->m_add_data->input_data($data, 'dat_tebu');
@@ -171,7 +221,7 @@ class add_tebu extends CI_Controller
             'pas_33' => $pas_33,
 
         );
-        $this->m_add_data->input_data($data, 'dat_tebu');
+        $this->m_add_data->input_data($data, 'pas_tebu');
         redirect('tambah/tebu2');
     }
 
@@ -180,27 +230,27 @@ class add_tebu extends CI_Controller
     {
         $no_aksesi = $this->input->post('no_aksesi');
         $image_nama = $this->input->post('image_nama');
-        $Image_keterangan = $this->input->post('Image_keterangan');
-        $Image = isset($_FILES['Image']);
-        if ($Image = '') {
+        $image_keterangan = $this->input->post('image_keterangan');
+        $image = isset($_FILES['image']);
+        if ($image = '') {
         } else {
             $config['upload_path'] = './assets/data/';
             $config['allowed_types'] = 'jpg|png|gif';
 
             $this->load->library('upload', $config);
-            if (!$this->upload->do_upload('Image')) {
+            if (!$this->upload->do_upload('image')) {
                 echo "Upload Gagal";
                 die();
             } else {
-                $Image = $this->upload->data('file_name');
+                $image = $this->upload->data('file_name');
             }
         }
 
         $data = array(
             'no_aksesi' => $no_aksesi,
-            'Image' => $Image,
+            'image' => $image,
             'image_nama' => $image_nama,
-            'Image_keterangan' => $Image_keterangan
+            'image_keterangan' => $image_keterangan
 
         );
         $this->m_add_data->input_data($data, 'foto_tebu');

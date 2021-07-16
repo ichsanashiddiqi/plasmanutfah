@@ -1,5 +1,5 @@
 <?php
-class edit_wijen extends CI_Controller
+class Edit_wijen extends CI_Controller
 {
     function __construct()
     {
@@ -181,27 +181,27 @@ class edit_wijen extends CI_Controller
     {
         $no_aksesi = $this->input->post('no_aksesi');
         $image_nama = $this->input->post('image_nama');
-        $Image_keterangan = $this->input->post('Image_keterangan');
-        $Image = isset($_FILES['Image']);
-        if ($Image = '') {
+        $image_keterangan = $this->input->post('image_keterangan');
+        $image = isset($_FILES['image']);
+        if ($image = '') {
         } else {
             $config['upload_path'] = './assets/data/';
             $config['allowed_types'] = 'jpg|png|gif';
 
             $this->load->library('upload', $config);
-            if (!$this->upload->do_upload('Image')) {
+            if (!$this->upload->do_upload('image')) {
                 echo "Upload Gagal";
                 die();
             } else {
-                $Image = $this->upload->data('file_name');
+                $image = $this->upload->data('file_name');
             }
         }
 
         $data = array(
             'no_aksesi' => $no_aksesi,
-            'Image' => $Image,
+            'image' => $image,
             'image_nama' => $image_nama,
-            'Image_keterangan' => $Image_keterangan
+            'image_keterangan' => $image_keterangan
 
         );
         $where = array(

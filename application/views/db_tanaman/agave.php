@@ -16,7 +16,9 @@
     </div>
 
     <!-- Content Row -->
-    <a type="button" class="btn btn-outline-success" href="<?= base_url('tambah/abaka'); ?>">Tambah Data Abaka</a>
+    <a type="button" class="btn btn-outline-success" href="<?= base_url('tambah/agave'); ?>">Tambah Data Agave</a>
+    <a type="button" class="btn btn-outline-success" href="<?= base_url('export/agave'); ?>">Export Data Agave ke Excel</a>
+
     <hr>
     <div class="row">
         <div class="card shadow mb-4">
@@ -46,35 +48,16 @@
                             ?>
                                 <tr>
                                     <td><?php echo $no++ ?></td>
-                                    <td><a href="edit_abaka/<?= $agv->no_aksesi; ?>"><i class="fas fa-edit" style="color: chartreuse;"></i></a>
-                                        <a href="hapus_abaka/<?= $agv->no_aksesi; ?>"><i class="fas fa-trash-alt" style="color: red;"></i></a>
+                                    <td><a href="edit_agave/<?= $agv->no_aksesi; ?>"><i class="fas fa-edit" style="color: chartreuse;"></i></a>
+                                        <a href="hapus_agave/<?= $agv->no_aksesi; ?>"><i class="fas fa-trash-alt" style="color: red;"></i></a>
                                     </td>
                                     <td><?php echo $agv->no_aksesi ?></td>
                                     <td><?php echo $agv->nama_aksesi ?></td>
-                                    <td><img src="<?php echo base_url('assets/data/' . $agv->Image) ?>" width="64" /></td>
+                                    <td><img src="<?php echo base_url('assets/data/' . $agv->image) ?>" width="64" /></td>
                                     <td>
                                         <center><input type="button" class="btn btn-info btn-sm view_data" value="Data Krakterisasi" id="<?php echo $agv->no_aksesi; ?>"></center>
                                     </td>
-                                    <!-- <script>
-                                        $(document).ready(function() {
 
-                                            $('.userinfo').click(function() {
-
-                                                var userid = $(this).data('id');
-
-                                                // AJAX request
-                                                $.ajax({
-                                                    success: function(response) {
-                                                        // Add response in Modal body
-                                                        $('.modal-body').html(response);
-
-                                                        // Display Modal
-                                                        $('#empModal').modal('show');
-                                                    }
-                                                });
-                                            });
-                                        });
-                                    </script> -->
                                 </tr>
                             <?php } ?>
                         </tbody>
@@ -93,7 +76,6 @@
         <div class="modal-content">
             <div class="modal-header">
                 <button type="button" class="close" data-dismiss="modal" aria-hidden="true">&times;</button>
-                <h4 class="modal-title" id="myModalLabel">Phone Details</h4>
             </div>
             <div class="modal-body">
                 <!-- Place to print the fetched phone -->
@@ -111,7 +93,7 @@
 <footer class="sticky-footer bg-white">
     <div class="container my-auto">
         <div class="copyright text-center my-auto">
-            <span>Copyright &copy; Your Website 2020</span>
+            <span>Copyright &copy; Balittas Website 2021</span>
         </div>
     </div>
 </footer>

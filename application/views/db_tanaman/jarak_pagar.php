@@ -8,6 +8,7 @@
 
     <!-- Content Row -->
     <a type="button" class="btn btn-outline-success" href="<?= base_url('tambah/jarak_pagar'); ?>">Tambah Data Jarak Pagar</a>
+    <a type="button" class="btn btn-outline-success" href="<?= base_url('export/jarak_pagar'); ?>">Export Data Jarak Pagar ke Excel</a>
     <hr>
     <div class="row">
         <div class="card shadow mb-4">
@@ -25,108 +26,27 @@
                                 <th>No. Aksesi</th>
                                 <th>Nama Aksesi</th>
                                 <th>Gambar</th>
-                                <th>Tinggi tanaman</th>
-                                <th>Lingkar batang</th>
-                                <th>Keberadaan torehan daun</th>
-                                <th>Derajat torehan daun</th>
-                                <th>Bentuk ujung daun</th>
-                                <th>Bentuk pangkal daun</th>
-                                <th>Warna daun muda</th>
-                                <th>Intensitas hijau daun</th>
-                                <th>panjang daun</th>
-                                <th>Lebar daun</th>
-                                <th>Rasio panjang/lebar daun</th>
-                                <th>Bentuk daun</th>
-                                <th>Panjang petiol</th>
-                                <th>Intensitas pewarnaan antosianin</th>
-                                <th>Warna kelopak bunga</th>
-                                <th>Warna mahkota bunga</th>
-                                <th>Rasion bunga jantan/betina</th>
-                                <th>Pewarnaan antosianin bunga</th>
-                                <th>Bentuk kapsul</th>
-                                <th>Panjang kapsul</th>
-                                <th>Lebar kapsul</th>
-                                <th>Rasio panjang/lebar kapsul</th>
-                                <th>Bentuk biji</th>
-                                <th>Panjang biji</th>
-                                <th>Lebar biji</th>
-                                <th>Ketebalan biji</th>
-                                <th>Warna kulit biji</th>
-                                <th>Perumbuhan tanaman</th>
-                                <th>Intensitas warna coklat endokarp</th>
-                                <th>Kecerahan warna endokarp</th>
-                                <th>Kekerutan endokarp</th>
-                                <th>Intensitas warna hijau buah mentah</th>
-                                <th>Ketebalan perikap buah</th>
-                                <th>Panjang buah</th>
-                                <th>Lebar buah</th>
-                                <th>Rasio panjang/lebar buah</th>
-                                <th>Panjang gagang buah</th>
-                                <?php foreach ($tabel as $tab) {
-                                    for ($i = 37; $i < 99; $i++) { ?>
-                                        <?php if ($tab->kar == "kar_$i") { ?>
-                                            <th>
-                                                <?php echo $tab->question; ?>
-                                            </th>
-                                        <?php } ?>
-                                    <?php } ?>
-                                <?php } ?>
-
+                                <th>Karakterisasi</th>
                             </tr>
                         </thead>
                         <!-- <a class="pull-right btn btn-warning btn-large" style="margin-right:40px" href="<?= base_url('export/exportBro'); ?>">
                             <i class="fa fa-file-excel-o"></i> Export to Excel</a> -->
                         <tbody>
                             <?php
-                            foreach ($dat_jarak_pagar as $jp) {
+                            $no = 1;
+                            foreach ($dat_jarak_pagar as $agv) {
                             ?>
                                 <tr>
-                                    <td><?php echo $jp->no ?></td>
-                                    <td><a href="edit_jp/<?= $jp->no_aksesi; ?>"><i class="fas fa-edit" style="color: chartreuse;"></i></a>
-                                        <a href="hapus_jp/<?= $jp->no_aksesi; ?>"><i class="fas fa-trash-alt" style="color: red;"></i></a>
+                                    <td><?php echo $no++ ?></td>
+                                    <td><a href="edit_jarak_pagar/<?= $agv->no_aksesi; ?>"><i class="fas fa-edit" style="color: chartreuse;"></i></a>
+                                        <a href="hapus_jarak_pagar/<?= $agv->no_aksesi; ?>"><i class="fas fa-trash-alt" style="color: red;"></i></a>
                                     </td>
-                                    <td><?php echo $jp->no_aksesi ?></td>
-                                    <td><?php echo $jp->nama_aksesi ?></td>
-                                    <td><img src="<?php echo base_url('assets/data/' . $jp->Image) ?>" width="64" /></td>
-                                    <td><?php echo $jp->kar_01 ?></td>
-                                    <td><?php echo $jp->kar_02 ?></td>
-                                    <td><?php echo $jp->kar_03 ?></td>
-                                    <td><?php echo $jp->kar_04 ?></td>
-                                    <td><?php echo $jp->kar_05 ?></td>
-                                    <td><?php echo $jp->kar_06 ?></td>
-                                    <td><?php echo $jp->kar_07 ?></td>
-                                    <td><?php echo $jp->kar_08 ?></td>
-                                    <td><?php echo $jp->kar_09 ?></td>
-                                    <td><?php echo $jp->kar_10 ?></td>
-                                    <td><?php echo $jp->kar_11 ?></td>
-                                    <td><?php echo $jp->kar_12 ?></td>
-                                    <td><?php echo $jp->kar_13 ?></td>
-                                    <td><?php echo $jp->kar_14 ?></td>
-                                    <td><?php echo $jp->kar_15 ?></td>
-                                    <td><?php echo $jp->kar_16 ?></td>
-                                    <td><?php echo $jp->kar_17 ?></td>
-                                    <td><?php echo $jp->kar_18 ?></td>
-                                    <td><?php echo $jp->kar_19 ?></td>
-                                    <td><?php echo $jp->kar_20 ?></td>
-                                    <td><?php echo $jp->kar_21 ?></td>
-                                    <td><?php echo $jp->kar_22 ?></td>
-                                    <td><?php echo $jp->kar_23 ?></td>
-                                    <td><?php echo $jp->kar_24 ?></td>
-                                    <td><?php echo $jp->kar_25 ?></td>
-                                    <td><?php echo $jp->kar_26 ?></td>
-                                    <td><?php echo $jp->kar_27 ?></td>
-                                    <td><?php echo $jp->kar_28 ?></td>
-                                    <td><?php echo $jp->kar_29 ?></td>
-                                    <td><?php echo $jp->kar_30 ?></td>
-                                    <td><?php echo $jp->kar_31 ?></td>
-                                    <td><?php echo $jp->kar_32 ?></td>
-                                    <td><?php echo $jp->kar_33 ?></td>
-                                    <td><?php echo $jp->kar_34 ?></td>
-                                    <td><?php echo $jp->kar_35 ?></td>
-                                    <td><?php echo $jp->kar_36 ?></td>
-                                    <td><?php echo $jp->kar_37 ?></td>
-
-
+                                    <td><?php echo $agv->no_aksesi ?></td>
+                                    <td><?php echo $agv->nama_aksesi ?></td>
+                                    <td><img src="<?php echo base_url('assets/data/' . $agv->image) ?>" width="64" /></td>
+                                    <td>
+                                        <center><input type="button" class="btn btn-info btn-sm view_data" value="Data Krakterisasi" id="<?php echo $agv->no_aksesi; ?>"></center>
+                                    </td>
                                 </tr>
                             <?php } ?>
                         </tbody>
@@ -141,22 +61,66 @@
 
 </div>
 <!-- End of Main Content -->
+<!-- Modal Tambah Form -->
+<div class="modal fade" id="modal" tabindex="-1" role="dialog" aria-labelledby="basicModal" aria-hidden="true" style="margin-top: -20px;">
+    <div class="modal-dialog modal-lg">
+        <div class="modal-content">
+            <div class="modal-header">
+                <button type="button" class="close" data-dismiss="modal" aria-hidden="true">&times;</button>
+            </div>
+            <div class="modal-body">
+                <!-- Place to print the fetched phone -->
+                <div id="kar_result"></div>
+            </div>
+            <div class="modal-footer">
+                <button type="button" class="btn btn-default" data-dismiss="modal">Close</button>
+            </div>
+        </div>
+    </div>
+</div>
+<!-- End of Main Content -->
+<!-- Modal 1-->
 
 <!-- Footer -->
 <footer class="sticky-footer bg-white">
     <div class="container my-auto">
         <div class="copyright text-center my-auto">
-            <span>Copyright &copy; Your Website 2020</span>
+            <span>Copyright &copy; Balittas Website 2021</span>
         </div>
     </div>
 </footer>
-<!-- End of Footer -->
-
-</div>
-<!-- End of Content Wrapper -->
-
-</div>
-<!-- End of Page Wrapper -->
+<script type="text/javascript">
+    // Start jQuery function after page is loaded
+    $(document).ready(function() {
+        // Initiate DataTable function comes with plugin
+        $('#dataTable').DataTable();
+        // Start jQuery click function to view Bootstrap modal when view info button is clicked
+        $('#dataTable').on('click', '.view_data', function() {
+            // Get the id of selected phone and assign it in a variable called phoneData
+            var kar_data = $(this).attr('id');
+            // Start AJAX function
+            $.ajax({
+                // Path for controller function which fetches selected phone data
+                url: "<?php echo base_url() ?>Modal/jarak_pagar_result",
+                // Method of getting data
+                method: "POST",
+                // Data is sent to the server
+                data: {
+                    kar_data: kar_data
+                },
+                // Callback function that is executed after data is successfully sent and recieved
+                success: function(data) {
+                    // Print the fetched data of the selected phone in the section called #phone_result 
+                    // within the Bootstrap modal
+                    $('#kar_result').html(data);
+                    // Display the Bootstrap modal
+                    $('#modal').modal('show');
+                },
+            });
+            // End AJAX function
+        });
+    });
+</script>
 
 <!-- Scroll to Top Button-->
 <a class="scroll-to-top rounded" href="#page-top">

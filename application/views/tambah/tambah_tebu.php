@@ -1,3 +1,87 @@
+<div class="modal fade" id="kar" tabindex="-1" role="dialog" aria-labelledby="exampleModalCenterTitle" aria-hidden="true">
+    <div class="modal-dialog modal-dialog-centered" role="document">
+        <div class="modal-content">
+            <div class="modal-header">
+                <h5 class="modal-title" id="exampleModalLongTitle">Modal title</h5>
+                <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+                    <span aria-hidden="true">&times;</span>
+                </button>
+            </div>
+            <div class="modal-body">
+
+
+                <form class="user" method="post" action="<?php echo base_url('add_kar/kolom_tebu'); ?>">
+                    <div class="form-group row">
+                        <div class="col-sm">
+                            <input type="text" class="form-control" id="kar" name="kar" placeholder="ID_Kolom">
+                        </div>
+                        <div class="col-sm">
+                            <input type="text" class="form-control" id="question" name="question" placeholder="Pertanyaan Untuk Form">
+                        </div>
+                    </div>
+            </div>
+            <div class="modal-footer">
+                <button type="button" class="btn btn-secondary" data-dismiss="modal">Close</button>
+                <button type="submit" class="btn btn-primary">Save changes</button>
+            </div>
+            </form>
+        </div>
+    </div>
+</div>
+
+
+<div class="modal fade" id="idkar" tabindex="-1" role="dialog" aria-labelledby="exampleModalCenterTitle" aria-hidden="true">
+    <div class="modal-dialog modal-dialog-centered" role="document">
+        <div class="modal-content">
+            <div class="modal-header">
+                <h5 class="modal-title" id="exampleModalLongTitle">Modal title</h5>
+                <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+                    <span aria-hidden="true">&times;</span>
+                </button>
+            </div>
+            <div class="modal-body">
+
+                <div class="table-responsive">
+                    <table class="table table-bordered" id="dataTable" width="100%" cellspacing="0">
+                        <thead>
+
+                            <tr>
+                                <th>No</th>
+                                <th>Aksi</th>
+                                <th>ID karakterisasi</th>
+                                <th>Pertanyaan Form</th>
+
+                            </tr>
+                        </thead>
+                        <!-- <a class="pull-right btn btn-warning btn-large" style="margin-right:40px" href="<?= base_url('export/exportBro'); ?>">
+                            <i class="fa fa-file-excel-o"></i> Export to Excel</a> -->
+                        <tbody>
+                            <?php
+                            $no = 1;
+                            foreach ($tabel as $abk) {
+                            ?>
+                                <tr>
+                                    <td><?php echo $no++ ?></td>
+                                    <td><a href=""><i class="fas fa-edit" style="color: chartreuse;"></i></a>
+                                        <a href=""><i class="fas fa-trash-alt" style="color: red;"></i></a>
+                                    </td>
+                                    <td><?php echo $abk->kar ?></td>
+                                    <td><?php echo $abk->question ?></td>
+                                </tr>
+                            <?php } ?>
+                        </tbody>
+                    </table>
+                </div>
+                <div class="modal-footer">
+                    <button type="button" class="btn btn-secondary" data-dismiss="modal">Close</button>
+                    <button type="submit" class="btn btn-primary">Save changes</button>
+                </div>
+                </form>
+            </div>
+        </div>
+    </div>
+</div>
+
 <!-- Begin Page Content -->
 <div class="container-fluid">
 
@@ -7,6 +91,11 @@
     </div>
 
     <!-- Content Row -->
+
+    <!-- Content Row -->
+
+    <button type="button" data-toggle="modal" class="btn btn-outline-success btn-sm" href="#kar">Tambah Data Karakterisasi</button>
+    <button type="button" data-toggle="modal" class="btn btn-outline-success btn-sm" href="#idkar">Lihat Data ID Karakterisasi</button>
 
     <div class="card">
         <div class="card-header">
@@ -63,333 +152,15 @@
                 <hr>
 
                 <!-- KARAKTERISASI -->
+                <h5>Data Karakterisasi</h5>
                 <div class="form-group row">
+                    <?php foreach ($idkar as $das) : ?>
+                        <div class="col-md-4 top-buffer">
+                            <input type="text" class="form-control" id="<?= $das['kar']; ?>" name="<?= $das['kar']; ?>" placeholder="<?= $das['question']; ?>">
+                        </div>
 
-                    <div class="col-sm">
-                        <select class="form-control form-select-user" name="kar_01">
-                            <option selected>Helai daun</option>
-                            <option value="1">1. Tegak</option>
-                            <option value="2">2. Melengkung < 1/2</option>
-                            <option value="3">3. Melengkung >= 1/2</option>
-                        </select>
-                    </div>
-                    <div class="col-sm">
-                        <select class="form-control form-select-user" name="kar_14">
-                            <option selected>Warna Batang</option>
-                            <option value="1">1. Kuning kemerahan</option>
-                        </select>
-                    </div>
-                    <div class="col-sm">
-                        <select class="form-control form-select-user" name="kar_27">
-                            <option selected>Bentuk mata</option>
-                            <option value="1">1. Bulat</option>
-                            <option value="2">2. Bulat panjang</option>
-                            <option value="3">3. Bulat telur</option>
-                            <option value="4">4. Bulat telur terbalik</option>
-                            <option value="5">5. Segitiga</option>
-                        </select>
-                    </div>
-                </div>
-                <!-- xxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxx -->
-                <div class="form-group row">
-                    <div class="col-sm">
-                        <select class="form-control form-select-user" name="kar_02">
-                            <option selected>Lebar helai daun</option>
-                            <option value="1">1. Lebar < 4cm</option>
-                            <option value="2">2. Lebar 4-6 cm</option>
-                            <option value="3">3. Lebar > 6</option>
-                        </select>
-                    </div>
-                    <div class="col-sm">
-                        <select class="form-control form-select-user" name="kar_15">
-                            <option selected>Lapisan lilin batang</option>
-                            <option value="1">1. Tidak ada</option>
-                            <option value="2">2. Tipis</option>
-                            <option value="3">3. Sedang</option>
-                            <option value="4">4. Tebal</option>
-                        </select>
-                    </div>
-                    <div class="col-sm">
-                        <select class="form-control form-select-user" name="kar_28">
-                            <option selected>Bagian terlebar</option>
-                            <option value="1">1. Di bawah tengah-tengah mata</option>
-                            <option value="2">2. Pada tengah-tengah mata</option>
-                            <option value="3">3. Di atas tengah-tengah mata</option>
-                        </select>
-                    </div>
-                </div>
-                <!-- xxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxx -->
-                <div class="form-group row">
-                    <div class="col-sm">
-                        <select class="form-control form-select-user" name="kar_03">
-                            <option selected>Warna daun</option>
-                            <option value="1">1. Hijau</option>
-                            <option value="2">2. Hijau tua</option>
-                            <option value="3">3. Kekuningan</option>
-                        </select>
-                    </div>
-                    <div class="col-sm">
-                        <select class="form-control form-select-user" name="kar_16">
-                            <option selected>Bentuk ruas</option>
-                            <option value="1">1. Silindris</option>
-                            <option value="2">2. Konis</option>
-                            <option value="3">3. Konis terbalik</option>
-                            <option value="4">4. Tong</option>
-                            <option value="5">5. Kumparan</option>
-                            <option value="6">6. Cembung-cekung</option>
-                        </select>
-                    </div>
-                    <div class="col-sm">
-                        <select class="form-control form-select-user" name="kar_29">
-                            <option selected>Ukuran sayap</option>
-                            <option value="1">1. Sama lebar</option>
-                            <option value="2">2. Tidak sama lebar</option>
-                        </select>
-                    </div>
-                </div>
-                <!-- xxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxx -->
-                <div class="form-group row">
-                    <div class="col-sm">
-                        <select class="form-control form-select-user" name="kar_04">
-                            <option selected>Warna sendi segitiga</option>
-                            <option value="1">1. Hijau kecoklatan</option>
-                            <option value="2">2. Coklat kehijauan</option>
-                            <option value="3">3. Coklat muda</option>
-                            <option value="4">4. Coklat kekuningan</option>
-                        </select>
-                    </div>
-                    <div class="col-sm">
-                        <select class="form-control form-select-user" name="kar_17">
-                            <option selected>Susunan ruas</option>
-                            <option value="1">1. Lurus</option>
-                            <option value="2">2. Berbiku</option>
-                        </select>
-                    </div>
-                    <div class="col-sm">
-                        <select class="form-control form-select-user" name="kar_30">
-                            <option selected>Tepi sayap</option>
-                            <option value="1">1. Rata</option>
-                            <option value="2">2. Bergerigi</option>
-                            <option value="3">3. Puncak berlekuk</option>
-                        </select>
-                    </div>
-                </div>
-                <!-- xxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxx -->
-                <div class="form-group row">
-                    <div class="col-sm">
-                        <select class="form-control form-select-user" name="kar_05">
-                            <option selected>Telinga daun</option>
-                            <option value="1">1. Tidak ada</option>
-                            <option value="2">2. Tinggi 1 kali lebarnya</option>
-                            <option value="3">3. 1 < tinggi < 3 kali lebarnya</option>
-                            <option value="4">4. Tinggi >= 3 kali lebarnya</option>
-                            <option value="5">5. Tegak / serong</option>
-                        </select>
-                    </div>
-                    <div class="col-sm">
-                        <select class="form-control form-select-user" name="kar_18">
-                            <option selected>Noda gabus</option>
-                            <option value="1">1. Tidak ada</option>
-                            <option value="2">2. Jarang, mencapai ruas</option>
-                            <option value="3">3. Jarang, tidak mencapai ruas</option>
-                            <option value="4">4. Rapat, mencapai ruas</option>
-                            <option value="5">5. Rapat, tidak mencapai ruas</option>
-                        </select>
-                    </div>
-                    <div class="col-sm">
-                        <select class="form-control form-select-user" name="kar_31">
-                            <option selected>Pusat tumbuh</option>
-                            <option value="1">1. Di bawah mata</option>
-                            <option value="2">2. Pada mata</option>
-                            <option value="3">3. Di atas tengah mata</option>
-                            <option value="4">4. Di puncak mata</option>
-                        </select>
-                    </div>
-                </div>
-                <!-- xxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxx -->
-                <div class="form-group row">
-                    <div class="col-sm">
-                        <select class="form-control form-select-user" name="kar_06">
-                            <option selected>Bulu bidang punggung</option>
-                            <option value="1">1. Tidak ada</option>
-                            <option value="2">2. Lebar</option>
-                        </select>
-                    </div>
-                    <div class="col-sm">
-                        <select class="form-control form-select-user" name="kar_19">
-                            <option selected>Retak gabus</option>
-                            <option value="1">1. Tidak ada</option>
-                            <option value="2">2. Jarang, mencapai ruas</option>
-                            <option value="3">3. Jarang, tidak mencapai ruas</option>
-                            <option value="4">4. Rapat, mencapai ruas</option>
-                            <option value="5">5. Rapat, tidak mencapai ruas</option>
-                        </select>
-                    </div>
-                    <div class="col-sm">
-                        <select class="form-control form-select-user" name="kar_32">
-                            <option selected>Rambut tepi basal</option>
-                            <option value="1">1. Ada</option>
-                            <option value="2">2. Tidak ada</option>
-                        </select>
-                    </div>
-                </div>
-                <div class="form-group row">
-                    <div class="col-sm">
-                        <select class="form-control form-select-user" name="kar_07">
-                            <option selected>Sebaran bulu bidang</option>
-                            <option value="1">1. Tidak mencapai puncak</option>
-                            <option value="2">2. Hampir mencapai puncak</option>
-                            <option value="3">3. Mencapai puncak</option>
-                        </select>
-                    </div>
-                    <div class="col-sm">
-                        <select class="form-control form-select-user" name="kar_20">
-                            <option selected>Retakan tumbuh</option>
-                            <option value="1">1. Tidak ada</option>
-                            <option value="2">2. < 1/4 dari jumlah ruas</option>
-                            <option value="3">3. >= 1/4 dari jumlah ruas</option>
-                            <option value="4">4. Semua ruas</option>
-                        </select>
-                    </div>
-                    <div class="col-sm">
-                        <select class="form-control form-select-user" name="kar_33">
-                            <option selected>Rambut jambul</option>
-                            <option value="1">1. Ada</option>
-                            <option value="2">2. Tidak ada</option>
-                        </select>
-                    </div>
-                </div>
-                <!-- xxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxx -->
-                <div class="form-group row">
-                    <div class="col-sm">
-                        <select class="form-control form-select-user" name="kar_08">
-                            <option selected>Posisi bulu bidang</option>
-                            <option value="1">1. Rebah</option>
-                            <option value="2">2. Condong</option>
-                            <option value="3">3. Tegak</option>
-                        </select>
-                    </div>
-                    <div class="col-sm">
-                        <select class="form-control form-select-user" name="kar_21">
-                            <option selected>Alur mata</option>
-                            <option value="1">1. Tidak ada</option>
-                            <option value="2">2. Sempit, mencapai tengah ruas, dangkal</option>
-                            <option value="3">3. Sempit, mencapai tengah ruas, dalam</option>
-                            <option value="4">4. Sempit, tidak mencapai tengah ruas, dangkal</option>
-                            <option value="5">5. Sempit, tidak mencapai tengah ruas, dalam</option>
-                            <option value="6">6. Lebar, mencapai tengah ruas, dangkal</option>
-                            <option value="7">7. Lebar, mencapai tengah ruas, dalam</option>
-                            <option value="8">8. Lebar, tidak mencapai tengah ruas, dangkal</option>
-                            <option value="9">9. Lebar, tidak mencapai tengah ruas, dalam</option>
-                        </select>
-                    </div>
-                    <div class="col-sm">
-                        <select class="form-control form-select-user" name="kar_34">
-                            <option selected>Ukuran rambut jambul</option>
-                            <option value="1">1. Kecil</option>
-                            <option value="2">2. Sedang</option>
-                            <option value="3">3. Besar</option>
-                        </select>
-                    </div>
-                </div>
-                <!-- xxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxx -->
-                <div class="form-group row">
-                    <div class="col-sm">
-                        <select class="form-control form-select-user" name="kar_09">
-                            <option selected>Kuantitas bulu bidang</option>
-                            <option value="1">1. Jarang</option>
-                            <option value="2">2. Lebat</option>
-                        </select>
-                    </div>
-                    <div class="col-sm">
-                        <select class="form-control form-select-user" name="kar_22">
-                            <option selected>Penampang melintang</option>
-                            <option value="1">1. Bulat</option>
-                            <option value="2">2. Pipih</option>
-                        </select>
-                    </div>
-                </div>
-                <!-- xxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxx -->
-                <div class="form-group row">
-                    <div class="col-sm">
-                        <select class="form-control form-select-user" name="kar_10">
-                            <option selected>Lebar pelepah bulu</option>
-                            <option value="1">1. < 1/4 lebar pelepah</option>
-                            <option value="2">2. > 1/4 lebar pelepah</option>
-                        </select>
-                    </div>
-                    <div class="col-sm">
-                        <select class="form-control form-select-user" name="kar_23">
-                            <option selected>Teras batang</option>
-                            <option value="1">1. Masip, voos kecil </option>
-                            <option value="2">2. Masip, voos besar</option>
-                            <option value="3">3. Lubang kecil, voos kecil</option>
-                            <option value="4">4. Lubang kecil, voos besar</option>
-                            <option value="5">5. Sedang, voos kecil</option>
-                            <option value="6">6. Sedang, voos besar</option>
-                            <option value="7">7. Kecil, voos kecil</option>
-                            <option value="8">8. Besar, voos besar</option>
-                        </select>
-                    </div>
-                </div>
-                <!-- xxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxx -->
-                <div class="form-group row">
-                    <div class="col-sm">
-                        <select class="form-control form-select-user" name="kar_11">
-                            <option selected>Sifat lepas pelepah</option>
-                            <option value="1">1. Sukar</option>
-                            <option value="2">2. Agak mudah</option>
-                            <option value="3">3. Mudah</option>
-                        </select>
-                    </div>
-                    <div class="col-sm">
-                        <select class="form-control form-select-user" name="kar_24">
-                            <option selected>Cincin tumbuh</option>
-                            <option value="1">1. Di atas</option>
-                            <option value="2">2. Menyinggung</option>
-                            <option value="3">3. Di belakang</option>
-                            <option value="4">4. Di bawah</option>
-                            <option value="5">5. Puncak mata</option>
-                        </select>
-                    </div>
-                </div>
-                <!-- xxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxx -->
-                <div class="form-group row">
-                    <div class="col-sm">
-                        <select class="form-control form-select-user" name="kar_12">
-                            <option selected>Lapisan lilin pada pelepah</option>
-                            <option value="1">1. Tidak ada</option>
-                            <option value="2">2. Sedikit</option>
-                            <option value="3">3. Sedang</option>
-                        </select>
-                    </div>
-                    <div class="col-sm">
-                        <select class="form-control form-select-user" name="kar_25">
-                            <option selected>Mata akar</option>
-                            <option value="1">1. Kosong</option>
-                        </select>
-                    </div>
-                </div>
-                <!-- xxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxx -->
-                <div class="form-group row">
-                    <div class="col-sm">
-                        <select class="form-control form-select-user" name="kar_13">
-                            <option selected>Warna pelepah daun</option>
-                            <option value="1">1. Hijau tua</option>
-                            <option value="2">2. Hijau muda</option>
-                            <option value="3">3. Hijau kekuningan</option>
-                            <option value="4">4. Ungu muda</option>
-                            <option value="5">5. Ungu tua</option>
-                            <option value="6">6. Hijau kemerahan</option>
-                        </select>
-                    </div>
-                    <div class="col-sm">
-                        <select class="form-control form-select-user" name="kar_26">
-                            <option selected>Kedudukan mata</option>
-                            <option value="1">1. Pada bekas pangkal pelapah daun</option>
-                            <option value="2">2. Di atas bekas pangkal pelapah daun</option>
-                        </select>
-                    </div>
+                    <?php endforeach; ?>
+
                 </div>
                 <!-- <a href="login.html" class="btn btn-primary btn-user btn-block">
                     Register Account

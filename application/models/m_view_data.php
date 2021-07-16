@@ -2,6 +2,13 @@
 
 class M_view_data extends CI_Model
 {
+
+    public function view_all($table)
+    {
+        $query = $this->db->get($table);
+        return $query->result();
+    }
+
     public function jumlah_abaka()
     {
         $query = $this->db->get('dat_abaka');

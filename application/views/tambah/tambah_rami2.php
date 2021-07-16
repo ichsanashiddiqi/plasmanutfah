@@ -245,7 +245,7 @@
                 </div>
                 <div role="tabpanel" class="tab-pane" id="stok">
                     <div role="tabpanel" class="tab-pane" id="stok">
-                        <form class="user" method="post" action="<?php echo base_url('add/add_abaka/tambah_benih'); ?>">
+                        <form class="user" method="post" action="<?php echo base_url('add/add_rami/tambah_benih'); ?>">
                             <div class="col-sm">
                                 <input class="form-control" type="text" name="no_aksesi" id="no_aksesi" value="<?php foreach ($aksesi as $aks) {
                                                                                                                     # code...

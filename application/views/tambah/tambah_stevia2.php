@@ -30,7 +30,7 @@
 
                     <h5 class="card-title">Data Paspor</h5>
                     <!-- <p class="card-text">With supporting text below as a natural lead-in to additional content.</p> -->
-                    <form class="user" method="post" action="<?php echo base_url('add/add_rami/tambah_pas'); ?>">
+                    <form class="user" method="post" action="<?php echo base_url('add/add_stevia/tambah_pas'); ?>">
                         <div class="form-group row">
                             <div class="col-sm">
                                 <input class="form-control" type="text" id="no_aksesi" name="no_aksesi" value="<?php foreach ($aksesi as $aks) {
@@ -204,7 +204,7 @@
 
                 <div role="tabpanel" class="tab-pane" id="foto">
                     <h5 class="card-title">Data Foto</h5>
-                    <?= form_open_multipart('add/add_rami/tambah_foto'); ?>
+                    <?= form_open_multipart('add/add_stevia/tambah_foto'); ?>
                     <div class="form-group row">
                         <label for="nama_file" class="col-sm-2 col-form-label">No. Aksesi</label>
                         <div class="col-sm">
@@ -245,7 +245,7 @@
                 </div>
                 <div role="tabpanel" class="tab-pane" id="stok">
                     <div role="tabpanel" class="tab-pane" id="stok">
-                        <form class="user" method="post" action="<?php echo base_url('add/add_abaka/tambah_benih'); ?>">
+                        <form class="user" method="post" action="<?php echo base_url('add/add_stevia/tambah_benih'); ?>">
                             <div class="col-sm">
                                 <input class="form-control" type="text" name="no_aksesi" id="no_aksesi" value="<?php foreach ($aksesi as $aks) {
                                                                                                                     # code...

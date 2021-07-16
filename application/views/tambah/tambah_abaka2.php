@@ -223,7 +223,7 @@
                     <div class="form-group row">
                         <label for="name" class="col-sm-2 col-form-label">Keterangan</label>
                         <div class="col-sm-10">
-                            <textarea type="text" class="form-control" id="Image_nama" name="Image_nama">
+                            <textarea type="text" class="form-control" id=image_nama" name="image_nama">
                             </textarea>
                         </div>
                     </div>
@@ -231,8 +231,8 @@
                         <label for="name" class="col-sm-2 col-form-label">Image</label>
                         <div class="col-sm-10">
                             <div class="custom-file">
-                                <input type="file" class="custom-file-input" id="Image" name="Image">
-                                <label class="custom-file-label" for="Image">Choose file</label>
+                                <input type="file" class="custom-file-input" id="image" name="Iimage">
+                                <label class="custom-file-label" for="image">Choose file</label>
                             </div>
                         </div>
                     </div>

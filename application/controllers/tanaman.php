@@ -231,7 +231,7 @@ class Tanaman extends CI_Controller
 	{
 		$where = array('no_aksesi' => $no_aksesi);
 		$data['user'] = $this->db->get_where('user', ['email' => $this->session->userdata('email')])->row_array();
-		$data['dat_abaka'] = $this->m_edit_data->edit_data($where, 'dat_abaka')->result();
+		$data['dat_abaka'] = $this->m_edit_data->edit_data($where, 'dat_abaka')->result_array();
 		$data['pas_abaka'] = $this->m_edit_data->edit_data($where, 'pas_abaka')->result();
 		$data['foto_abaka'] = $this->m_edit_data->edit_data($where, 'foto_abaka')->result();
 		$data['idkar'] = $this->db->get('tab_abaka')->result_array();
@@ -400,6 +400,56 @@ class Tanaman extends CI_Controller
 	//BATAS HAPUS BOSQUEE
 
 	function hapus_abaka($no_aksesi)
+	{
+		$where = array('no_aksesi' => $no_aksesi);
+		$this->m_edit_data->hapus_data($where, 'dat_abaka');
+		$this->m_edit_data->hapus_data($where, 'foto_abaka');
+		$this->m_edit_data->hapus_data($where, 'benih_abaka');
+		$this->m_edit_data->hapus_data($where, 'pas_abaka');
+		redirect('tanaman/abaka');
+	}
+
+	function hapus_agave($no_aksesi)
+	{
+		$where = array('no_aksesi' => $no_aksesi);
+		$this->m_edit_data->hapus_data($where, 'dat_agave');
+		$this->m_edit_data->hapus_data($where, 'foto_agave');
+		$this->m_edit_data->hapus_data($where, 'benih_agave');
+		$this->m_edit_data->hapus_data($where, 'pas_agave');
+		redirect('tanaman/agave');
+	}
+
+	function hapus_stevia($no_aksesi)
+	{
+		$where = array('no_aksesi' => $no_aksesi);
+		$this->m_edit_data->hapus_data($where, 'dat_stevia');
+		$this->m_edit_data->hapus_data($where, 'foto_stevia');
+		$this->m_edit_data->hapus_data($where, 'benih_stevia');
+		$this->m_edit_data->hapus_data($where, 'pas_stevia');
+		redirect('tanaman/stevia');
+	}
+
+	function hapus_rosela($no_aksesi)
+	{
+		$where = array('no_aksesi' => $no_aksesi);
+		$this->m_edit_data->hapus_data($where, 'dat_rosela');
+		$this->m_edit_data->hapus_data($where, 'foto_rosela');
+		$this->m_edit_data->hapus_data($where, 'benih_rosela');
+		$this->m_edit_data->hapus_data($where, 'pas_rosela');
+		redirect('tanaman/rosela');
+	}
+
+	function hapus_gulabit($no_aksesi)
+	{
+		$where = array('no_aksesi' => $no_aksesi);
+		$this->m_edit_data->hapus_data($where, 'dat_gulabit');
+		$this->m_edit_data->hapus_data($where, 'foto_gulabit');
+		$this->m_edit_data->hapus_data($where, 'benih_gulabit');
+		$this->m_edit_data->hapus_data($where, 'pas_gulabit');
+		redirect('tanaman/abaka');
+	}
+
+	function hapus_jarak_kepyar($no_aksesi)
 	{
 		$where = array('no_aksesi' => $no_aksesi);
 		$this->m_edit_data->hapus_data($where, 'dat_abaka');
