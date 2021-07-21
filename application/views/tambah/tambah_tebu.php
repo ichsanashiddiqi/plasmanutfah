@@ -108,6 +108,7 @@
                 <div class="form-group row">
                     <div class="col-sm-6 mb-3 mb-sm-0">
                         <input type="text" class="form-control" id="no_aksesi" name="no_aksesi" placeholder="No. Aksesi">
+                        <?= form_error('no_aksesi', '<small class="text-danger pl-3">', '</small>'); ?>
                     </div>
                     <div class="col-sm-6">
                         <input type="text" class="form-control" id="no_aksesi_IDN" name="no_aksesi_IDN" placeholder="No. Aksesi KNPN">
@@ -115,6 +116,7 @@
                 </div>
                 <div class="form-group">
                     <input type="text" class="form-control" id="nama_aksesi" name="nama_aksesi" placeholder="Nama Aksesi">
+                    <?= form_error('nama_aksesi', '<small class="text-danger pl-3">', '</small>'); ?>
                 </div>
                 <hr>
                 <div class="form-group row">

@@ -266,8 +266,11 @@
                             </div>
                             <input class="btn btn-success btn-user btn-block" type="submit" value="Tambah Data Stock Panen">
                         </form>
+
                     </div>
                 </div>
+                <input class="btn btn-danger btn-user btn-block" href="<?= base_url('tanaman/kapas'); ?>" value="Kembali ke Data Kapas">
+
             </div>
 
         </div>

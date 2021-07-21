@@ -197,7 +197,7 @@
                                 <th scope="col">Komoditas</th>
                                 <th scope="col">Total jumlah aksesi dalam database</th>
                                 <th scope="col">Jumlah deskriptor yang telah dikarakterisasi</th>
-                                <th scope="col">Lihat deskriptor</th>
+                                <!-- <th scope="col">Lihat deskriptor</th> -->
                             </tr>
                         </thead>
                         <tbody>
@@ -206,7 +206,7 @@
                                 <td>Abaka</td>
                                 <td><?= ($abaka); ?> </td>
                                 <td><?= ($des_abaka); ?></td>
-                                <td><button type="button" data-toggle="modal" href="#abaka" class="btn btn-success btn-sm">Deskriptor</button></td>
+                                <!-- <td><button type="button" data-toggle="modal" href="#abaka" class="btn btn-success btn-sm">Deskriptor</button></td> -->
                             </tr>
 
                             <tr>
@@ -214,7 +214,7 @@
                                 <td>Bunga Matahari</td>
                                 <td><?= ($bm); ?> </td>
                                 <td><?= ($des_bm); ?></td>
-                                <td><button type="button" data-toggle="modal" href="#abaka" class="btn btn-success btn-sm">Deskriptor</button></td>
+                                <!-- <td><button type="button" data-toggle="modal" href="#abaka" class="btn btn-success btn-sm">Deskriptor</button></td> -->
                             </tr>
 
                             <tr>
@@ -222,7 +222,7 @@
                                 <td>Jarak Pagar</td>
                                 <td><?= ($jp); ?> </td>
                                 <td><?= ($des_jp); ?></td>
-                                <td><button type="button" data-toggle="modal" href="#abaka" class="btn btn-success btn-sm">Deskriptor</button></td>
+                                <!-- <td><button type="button" data-toggle="modal" href="#abaka" class="btn btn-success btn-sm">Deskriptor</button></td> -->
                             </tr>
 
                             <tr>
@@ -230,7 +230,7 @@
                                 <td>Kapas</td>
                                 <td><?= ($kapas); ?> </td>
                                 <td><?= ($des_kapas); ?></td>
-                                <td><button type="button" data-toggle="modal" href="#abaka" class="btn btn-success btn-sm">Deskriptor</button></td>
+                                <!-- <td><button type="button" data-toggle="modal" href="#abaka" class="btn btn-success btn-sm">Deskriptor</button></td> -->
                             </tr>
 
                             <tr>
@@ -238,7 +238,7 @@
                                 <td>Kapuk</td>
                                 <td><?= ($kapuk); ?> </td>
                                 <td><?= ($des_kapuk); ?></td>
-                                <td><button type="button" data-toggle="modal" href="#abaka" class="btn btn-success btn-sm">Deskriptor</button></td>
+                                <!-- <td><button type="button" data-toggle="modal" href="#abaka" class="btn btn-success btn-sm">Deskriptor</button></td> -->
                             </tr>
 
                             <tr>
@@ -246,7 +246,7 @@
                                 <td>Kemiri</td>
                                 <td><?= ($kemiri); ?> </td>
                                 <td><?= ($des_kemiri); ?></td>
-                                <td><button type="button" data-toggle="modal" href="#abaka" class="btn btn-success btn-sm">Deskriptor</button></td>
+                                <!-- <td><button type="button" data-toggle="modal" href="#abaka" class="btn btn-success btn-sm">Deskriptor</button></td> -->
                             </tr>
 
                             <tr>
@@ -254,7 +254,7 @@
                                 <td>Kenaf</td>
                                 <td><?= ($kenaf); ?> </td>
                                 <td><?= ($des_kenaf); ?></td>
-                                <td><button type="button" data-toggle="modal" href="#abaka" class="btn btn-success btn-sm">Deskriptor</button></td>
+                                <!-- <td><button type="button" data-toggle="modal" href="#abaka" class="btn btn-success btn-sm">Deskriptor</button></td> -->
                             </tr>
 
 
@@ -263,7 +263,7 @@
                                 <td>Rami</td>
                                 <td><?= ($rami); ?> </td>
                                 <td><?= ($des_rami); ?></td>
-                                <td><button type="button" data-toggle="modal" href="#abaka" class="btn btn-success btn-sm">Deskriptor</button></td>
+                                <!-- <td><button type="button" data-toggle="modal" href="#abaka" class="btn btn-success btn-sm">Deskriptor</button></td> -->
                             </tr>
 
                             <tr>
@@ -271,7 +271,7 @@
                                 <td>Tebu</td>
                                 <td><?= ($tebu); ?> </td>
                                 <td><?= ($des_tebu); ?></td>
-                                <td><button type="button" data-toggle="modal" href="#abaka" class="btn btn-success btn-sm">Deskriptor</button></td>
+                                <!-- <td><button type="button" data-toggle="modal" href="#abaka" class="btn btn-success btn-sm">Deskriptor</button></td> -->
                             </tr>
 
                             <tr>
@@ -279,7 +279,7 @@
                                 <td>Tembakau</td>
                                 <td><?= ($tembakau); ?> </td>
                                 <td><?= ($des_tembakau); ?></td>
-                                <td><button type="button" data-toggle="modal" href="#abaka" class="btn btn-success btn-sm">Deskriptor</button></td>
+                                <!-- <td><button type="button" data-toggle="modal" href="#abaka" class="btn btn-success btn-sm">Deskriptor</button></td> -->
                             </tr>
 
                             <tr>
@@ -287,7 +287,7 @@
                                 <td>Wijen</td>
                                 <td><?= ($wijen); ?> </td>
                                 <td><?= ($des_wijen); ?></td>
-                                <td><button type="button" data-toggle="modal" href="#abaka" class="btn btn-success btn-sm">Deskriptor</button></td>
+                                <!-- <td><button type="button" data-toggle="modal" href="#abaka" class="btn btn-success btn-sm">Deskriptor</button></td> -->
                             </tr>
                         </tbody>
                     </table>
@@ -321,16 +321,15 @@
     <footer class="footer py-4">
         <div class="container">
             <div class="row align-items-center">
-                <div class="col-lg-4 text-lg-left">Copyright © Your Website 2020</div>
+                <div class="col-lg-4 text-lg-left">Copyright © Balittas 2020</div>
                 <div class="col-lg-4 my-3 my-lg-0">
-                    <a class="btn btn-dark btn-social mx-2" href="#!"><i class="fab fa-twitter"></i></a>
-                    <a class="btn btn-dark btn-social mx-2" href="#!"><i class="fab fa-facebook-f"></i></a>
-                    <a class="btn btn-dark btn-social mx-2" href="#!"><i class="fab fa-linkedin-in"></i></a>
+                    <a class="btn btn-dark btn-social mx-2" href="https://twitter.com/BalittasMalang"><i class="fab fa-twitter"></i></a>
+                    <a class="btn btn-dark btn-social mx-2" href="https://www.facebook.com/balittas.malang"><i class="fab fa-facebook-f"></i></a>
                 </div>
-                <div class="col-lg-4 text-lg-right">
+                <!-- <div class="col-lg-4 text-lg-right">
                     <a class="mr-3" href="#!">Privacy Policy</a>
                     <a href="#!">Terms of Use</a>
-                </div>
+                </div> -->
             </div>
         </div>
     </footer>

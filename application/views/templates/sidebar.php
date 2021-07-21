@@ -10,7 +10,7 @@
         <ul class="navbar-nav bg-gradient-success sidebar sidebar-dark accordion" id="accordionSidebar">
 
             <!-- Sidebar - Brand -->
-            <a class="sidebar-brand d-flex align-items-center justify-content-center" href="index.html">
+            <a class="sidebar-brand d-flex align-items-center justify-content-center" href="<?= base_url('user/profile'); ?>">
                 <div class="sidebar-brand-icon rotate-n-15">
                     <i class="fas fa-seedling"></i>
                 </div>
@@ -20,12 +20,6 @@
             <!-- Divider -->
             <hr class="sidebar-divider my-0">
 
-            <!-- Nav Item - Dashboard -->
-            <li class="nav-item">
-                <a class="nav-link" href="<?= base_url('user/landing'); ?>">
-                    <i class="fas fa-fw fa-seedling"></i>
-                    <span>Menu Utama</span></a>
-            </li>
 
             <!-- Divider -->
             <hr class="sidebar-divider">
@@ -232,12 +226,7 @@
                 </div>
             </li>
 
-            <!-- Nav Item - Tables -->
-            <li class="nav-item">
-                <a class="nav-link" href="tables.html">
-                    <i class="fas fa-fw fa-table"></i>
-                    <span>Daftar Deskriptor</span></a>
-            </li>
+
             <!-- Nav Item daftar pengguna -->
             <?php
             $role = $this->session->userdata("role_id");
