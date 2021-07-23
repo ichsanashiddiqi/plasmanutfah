@@ -111,87 +111,87 @@
                                     </td> -->
                     <td><?php echo $kps->no_aksesi ?></td>
                     <td><?php echo $kps->nama_aksesi ?></td>
-                    <td><?php if ($kps->kar_01 == 3) {
+                    <td><?php if ($kps->kar_1 == 3) {
                             echo 'menyebar';
-                        } else if ($kps->kar_01 == 5) {
+                        } else if ($kps->kar_1 == 5) {
                             echo 'kompak';
-                        } else if ($kps->kar_01 == '5b') {
+                        } else if ($kps->kar_1 == '5b') {
                             echo 'Kompak batang';
-                        } else if ($kps->kar_01 == '5c') {
+                        } else if ($kps->kar_1 == '5c') {
                             echo 'kompak cabang';
-                        } else if ($kps->kar_01 == 7) {
+                        } else if ($kps->kar_1 == 7) {
                             echo 'tegak';
                         } ?></td>
-                    <td><?php if ($kps->kar_02 == 1) {
+                    <td><?php if ($kps->kar_2 == 1) {
                             echo 'Hijau';
-                        } else if ($kps->kar_02 == 2) {
+                        } else if ($kps->kar_2 == 2) {
                             echo 'Hijau Kemerahan';
-                        } else if ($kps->kar_02 == 3) {
+                        } else if ($kps->kar_2 == 3) {
                             echo 'Merah';
                         } ?></td>
-                    <td><?php if ($kps->kar_03 == 0) {
+                    <td><?php if ($kps->kar_3 == 0) {
                             echo 'Glabrous';
-                        } else if ($kps->kar_03 == 3) {
+                        } else if ($kps->kar_3 == 3) {
                             echo 'Jarang Pendek';
-                        } else if ($kps->kar_03 == 6) {
+                        } else if ($kps->kar_3 == 6) {
                             echo 'Tebal Pendek';
-                        } else if ($kps->kar_03 == 4) {
+                        } else if ($kps->kar_3 == 4) {
                             echo 'Jarang Panjang';
-                        } else if ($kps->kar_03 == 7) {
+                        } else if ($kps->kar_3 == 7) {
                             echo 'Tebal Panjang';
                         } ?></td>
-                    <td><?php if ($kps->kar_04 == 0) {
+                    <td><?php if ($kps->kar_4 == 0) {
                             echo 'Tidak Ada';
-                        } else if ($kps->kar_04 == 1) {
+                        } else if ($kps->kar_4 == 1) {
                             echo 'Ada';
                         } ?></td>
-                    <td><?php if ($kps->kar_05 == 0) {
+                    <td><?php if ($kps->kar_5 == 0) {
                             echo 'Tidak Berbulu';
-                        } else if ($kps->kar_05 == 3) {
+                        } else if ($kps->kar_5 == 3) {
                             echo 'Berbulu Sedikit';
-                        } else if ($kps->kar_05 == 4) {
+                        } else if ($kps->kar_5 == 4) {
                             echo 'Berbulu Sedang';
-                        } else if ($kps->kar_05 == 6) {
+                        } else if ($kps->kar_5 == 6) {
                             echo 'Berbulu Banyak';
-                        } else if ($kps->kar_05 == 7) {
+                        } else if ($kps->kar_5 == 7) {
                             echo 'Sangat Banyak';
                         } ?></td>
-                    <td><?php if ($kps->kar_06 == 1) {
+                    <td><?php if ($kps->kar_6 == 1) {
                             echo 'Entire';
-                        } else if ($kps->kar_06 == 2) {
+                        } else if ($kps->kar_6 == 2) {
                             echo 'Normal';
-                        } else if ($kps->kar_06 == '2k') {
+                        } else if ($kps->kar_6 == '2k') {
                             echo 'Normal Kecil';
-                        } else if ($kps->kar_06 == 3) {
+                        } else if ($kps->kar_6 == 3) {
                             echo 'Okra';
-                        } else if ($kps->kar_06 == 5) {
+                        } else if ($kps->kar_6 == 5) {
                             echo 'Twi';
                         } ?></td>
-                    <td><?php if ($kps->kar_07 == 1) {
+                    <td><?php if ($kps->kar_7 == 1) {
                             echo 'Hijau';
-                        } else if ($kps->kar_07 == 2) {
+                        } else if ($kps->kar_7 == 2) {
                             echo 'Hijau Kemerahan';
-                        } else if ($kps->kar_07 == 3) {
+                        } else if ($kps->kar_7 == 3) {
                             echo 'Merah';
                         } ?></td>
-                    <td><?php if ($kps->kar_08 == 0) {
+                    <td><?php if ($kps->kar_8 == 0) {
                             echo 'Nectariless';
-                        } else if ($kps->kar_08 == 1) {
+                        } else if ($kps->kar_8 == 1) {
                             echo 'Nectar';
                         } ?></td>
-                    <td><?php if ($kps->kar_09 == 1) {
+                    <td><?php if ($kps->kar_9 == 1) {
                             echo 'Putih';
-                        } else if ($kps->kar_09 == 2) {
+                        } else if ($kps->kar_9 == 2) {
                             echo 'Krem';
-                        } else if ($kps->kar_09 == 25) {
+                        } else if ($kps->kar_9 == 25) {
                             echo 'Krem Ungu';
-                        } else if ($kps->kar_09 == 3) {
+                        } else if ($kps->kar_9 == 3) {
                             echo 'Kuning Muda';
-                        } else if ($kps->kar_09 == 4) {
+                        } else if ($kps->kar_9 == 4) {
                             echo 'Kuning';
-                        } else if ($kps->kar_09 == 45) {
+                        } else if ($kps->kar_9 == 45) {
                             echo 'Kuning Ungu';
-                        } else if ($kps->kar_09 == 5) {
+                        } else if ($kps->kar_9 == 5) {
                             echo 'Ungu';
                         } ?></td>
                     <td><?php if ($kps->kar_10 == 0) {
