@@ -28,7 +28,7 @@
     </style>
     <?php
     header("Content-type: application/vnd-ms-excel");
-    header("Content-Disposition: attachment; filename=Data tanaman.xls");
+    header("Content-Disposition: attachment; filename=DataAbaka.xls");
     ?>
 
     <table class="table table-bordered" id="dataTable" width="100%" cellspacing="0">
