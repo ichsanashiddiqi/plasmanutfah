@@ -27,7 +27,10 @@
         }
     </style>
 
-
+    <?php
+    header("Content-type: application/vnd-ms-excel");
+    header("Content-Disposition: attachment; filename=DataAgave.xls");
+    ?>
     <table class="table table-bordered" id="dataTable" width="100%" cellspacing="0">
         <thead>
 
