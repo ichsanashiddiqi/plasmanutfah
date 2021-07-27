@@ -356,7 +356,71 @@
                     <?php } else if ($kps->kar_51 == null) { ?>
                         <td><?php echo null;
                                         } ?></td>
+                        <?php } ?><?php if ($kps->kar_52 != null) { ?>
+                        <td><?php if ($kps->kar_52 > 0) {
+                                            echo $kps->kar_52;
+                            ?></td>
+                    <?php } else if ($kps->kar_52 == null) { ?>
+                        <td><?php echo null;
+                                        } ?></td>
+                        <?php } ?><?php if ($kps->kar_53 != null) { ?>
+                        <td><?php if ($kps->kar_53 > 0) {
+                                            echo $kps->kar_53;
+                            ?></td>
+                    <?php } else if ($kps->kar_53 == null) { ?>
+                        <td><?php echo null;
+                                        } ?></td>
+                        <?php } ?><?php if ($kps->kar_54 != null) { ?>
+                        <td><?php if ($kps->kar_54 > 0) {
+                                            echo $kps->kar_54;
+                            ?></td>
+                    <?php } else if ($kps->kar_54 == null) { ?>
+                        <td><?php echo null;
+                                        } ?></td>
+                        <?php } ?><?php if ($kps->kar_55 != null) { ?>
+                        <td><?php if ($kps->kar_55 > 0) {
+                                            echo $kps->kar_55;
+                            ?></td>
+                    <?php } else if ($kps->kar_55 == null) { ?>
+                        <td><?php echo null;
+                                        } ?></td>
+                        <?php } ?><?php if ($kps->kar_56 != null) { ?>
+                        <td><?php if ($kps->kar_56 > 0) {
+                                            echo $kps->kar_56;
+                            ?></td>
+                    <?php } else if ($kps->kar_56 == null) { ?>
+                        <td><?php echo null;
+                                        } ?></td>
+                        <?php } ?><?php if ($kps->kar_57 != null) { ?>
+                        <td><?php if ($kps->kar_57 > 0) {
+                                            echo $kps->kar_57;
+                            ?></td>
+                    <?php } else if ($kps->kar_57 == null) { ?>
+                        <td><?php echo null;
+                                        } ?></td>
+                        <?php } ?><?php if ($kps->kar_58 != null) { ?>
+                        <td><?php if ($kps->kar_58 > 0) {
+                                            echo $kps->kar_58;
+                            ?></td>
+                    <?php } else if ($kps->kar_58 == null) { ?>
+                        <td><?php echo null;
+                                        } ?></td>
+                        <?php } ?><?php if ($kps->kar_59 != null) { ?>
+                        <td><?php if ($kps->kar_59 > 0) {
+                                            echo $kps->kar_59;
+                            ?></td>
+                    <?php } else if ($kps->kar_59 == null) { ?>
+                        <td><?php echo null;
+                                        } ?></td>
+                        <?php } ?><?php if ($kps->kar_60 != null) { ?>
+                        <td><?php if ($kps->kar_60 > 0) {
+                                            echo $kps->kar_60;
+                            ?></td>
+                    <?php } else if ($kps->kar_60 == null) { ?>
+                        <td><?php echo null;
+                                        } ?></td>
                     <?php } ?>
+
 
 
 

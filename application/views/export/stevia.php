@@ -327,6 +327,160 @@
                     <?php } else if ($kps->kar_38 == null) { ?>
                         <td><?php echo null;
                                         } ?></td>
+                        <?php } ?><?php if ($kps->kar_39 != null) { ?>
+                        <td><?php if ($kps->kar_39 > 0) {
+                                            echo $kps->kar_39;
+                            ?></td>
+                    <?php } else if ($kps->kar_39 == null) { ?>
+                        <td><?php echo null;
+                                        } ?></td>
+                        <?php } ?><?php if ($kps->kar_40 != null) { ?>
+                        <td><?php if ($kps->kar_40 > 0) {
+                                            echo $kps->kar_40;
+                            ?></td>
+                    <?php } else if ($kps->kar_40 == null) { ?>
+                        <td><?php echo null;
+                                        } ?></td>
+                        <?php } ?><?php if ($kps->kar_41 != null) { ?>
+                        <td><?php if ($kps->kar_41 > 0) {
+                                            echo $kps->kar_41;
+                            ?></td>
+                    <?php } else if ($kps->kar_41 == null) { ?>
+                        <td><?php echo null;
+                                        } ?></td>
+                        <?php } ?><?php if ($kps->kar_42 != null) { ?>
+                        <td><?php if ($kps->kar_42 > 0) {
+                                            echo $kps->kar_42;
+                            ?></td>
+                    <?php } else if ($kps->kar_42 == null) { ?>
+                        <td><?php echo null;
+                                        } ?></td>
+                        <?php } ?><?php if ($kps->kar_43 != null) { ?>
+                        <td><?php if ($kps->kar_43 > 0) {
+                                            echo $kps->kar_43;
+                            ?></td>
+                    <?php } else if ($kps->kar_43 == null) { ?>
+                        <td><?php echo null;
+                                        } ?></td>
+                        <?php } ?><?php if ($kps->kar_44 != null) { ?>
+                        <td><?php if ($kps->kar_44 > 0) {
+                                            echo $kps->kar_44;
+                            ?></td>
+                    <?php } else if ($kps->kar_44 == null) { ?>
+                        <td><?php echo null;
+                                        } ?></td>
+                        <?php } ?><?php if ($kps->kar_45 != null) { ?>
+                        <td><?php if ($kps->kar_45 > 0) {
+                                            echo $kps->kar_45;
+                            ?></td>
+                    <?php } else if ($kps->kar_45 == null) { ?>
+                        <td><?php echo null;
+                                        } ?></td>
+                        <?php } ?><?php if ($kps->kar_46 != null) { ?>
+                        <td><?php if ($kps->kar_46 > 0) {
+                                            echo $kps->kar_46;
+                            ?></td>
+                    <?php } else if ($kps->kar_46 == null) { ?>
+                        <td><?php echo null;
+                                        } ?></td>
+                        <?php } ?><?php if ($kps->kar_47 != null) { ?>
+                        <td><?php if ($kps->kar_47 > 0) {
+                                            echo $kps->kar_47;
+                            ?></td>
+                    <?php } else if ($kps->kar_47 == null) { ?>
+                        <td><?php echo null;
+                                        } ?></td>
+                        <?php } ?><?php if ($kps->kar_48 != null) { ?>
+                        <td><?php if ($kps->kar_48 > 0) {
+                                            echo $kps->kar_48;
+                            ?></td>
+                    <?php } else if ($kps->kar_48 == null) { ?>
+                        <td><?php echo null;
+                                        } ?></td>
+                        <?php } ?><?php if ($kps->kar_49 != null) { ?>
+                        <td><?php if ($kps->kar_49 > 0) {
+                                            echo $kps->kar_49;
+                            ?></td>
+                    <?php } else if ($kps->kar_49 == null) { ?>
+                        <td><?php echo null;
+                                        } ?></td>
+                        <?php } ?><?php if ($kps->kar_50 != null) { ?>
+                        <td><?php if ($kps->kar_50 > 0) {
+                                            echo $kps->kar_50;
+                            ?></td>
+                    <?php } else if ($kps->kar_50 == null) { ?>
+                        <td><?php echo null;
+                                        } ?></td>
+                        <?php } ?><?php if ($kps->kar_51 != null) { ?>
+                        <td><?php if ($kps->kar_51 > 0) {
+                                            echo $kps->kar_51;
+                            ?></td>
+                    <?php } else if ($kps->kar_51 == null) { ?>
+                        <td><?php echo null;
+                                        } ?></td>
+                        <?php } ?><?php if ($kps->kar_52 != null) { ?>
+                        <td><?php if ($kps->kar_52 > 0) {
+                                            echo $kps->kar_52;
+                            ?></td>
+                    <?php } else if ($kps->kar_52 == null) { ?>
+                        <td><?php echo null;
+                                        } ?></td>
+                        <?php } ?><?php if ($kps->kar_53 != null) { ?>
+                        <td><?php if ($kps->kar_53 > 0) {
+                                            echo $kps->kar_53;
+                            ?></td>
+                    <?php } else if ($kps->kar_53 == null) { ?>
+                        <td><?php echo null;
+                                        } ?></td>
+                        <?php } ?><?php if ($kps->kar_54 != null) { ?>
+                        <td><?php if ($kps->kar_54 > 0) {
+                                            echo $kps->kar_54;
+                            ?></td>
+                    <?php } else if ($kps->kar_54 == null) { ?>
+                        <td><?php echo null;
+                                        } ?></td>
+                        <?php } ?><?php if ($kps->kar_55 != null) { ?>
+                        <td><?php if ($kps->kar_55 > 0) {
+                                            echo $kps->kar_55;
+                            ?></td>
+                    <?php } else if ($kps->kar_55 == null) { ?>
+                        <td><?php echo null;
+                                        } ?></td>
+                        <?php } ?><?php if ($kps->kar_56 != null) { ?>
+                        <td><?php if ($kps->kar_56 > 0) {
+                                            echo $kps->kar_56;
+                            ?></td>
+                    <?php } else if ($kps->kar_56 == null) { ?>
+                        <td><?php echo null;
+                                        } ?></td>
+                        <?php } ?><?php if ($kps->kar_57 != null) { ?>
+                        <td><?php if ($kps->kar_57 > 0) {
+                                            echo $kps->kar_57;
+                            ?></td>
+                    <?php } else if ($kps->kar_57 == null) { ?>
+                        <td><?php echo null;
+                                        } ?></td>
+                        <?php } ?><?php if ($kps->kar_58 != null) { ?>
+                        <td><?php if ($kps->kar_58 > 0) {
+                                            echo $kps->kar_58;
+                            ?></td>
+                    <?php } else if ($kps->kar_58 == null) { ?>
+                        <td><?php echo null;
+                                        } ?></td>
+                        <?php } ?><?php if ($kps->kar_59 != null) { ?>
+                        <td><?php if ($kps->kar_59 > 0) {
+                                            echo $kps->kar_59;
+                            ?></td>
+                    <?php } else if ($kps->kar_59 == null) { ?>
+                        <td><?php echo null;
+                                        } ?></td>
+                        <?php } ?><?php if ($kps->kar_60 != null) { ?>
+                        <td><?php if ($kps->kar_60 > 0) {
+                                            echo $kps->kar_60;
+                            ?></td>
+                    <?php } else if ($kps->kar_60 == null) { ?>
+                        <td><?php echo null;
+                                        } ?></td>
                     <?php } ?>
 
 
