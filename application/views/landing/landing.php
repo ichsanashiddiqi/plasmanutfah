@@ -8,7 +8,7 @@
 
     <!-- Content Row -->
 
-    <div class="card text-center">
+    <!-- <div class="card text-center">
         <div class="card-header">
             <ul class="nav nav-tabs card-header-tabs">
                 <li class="nav-item">
@@ -49,7 +49,7 @@
 
         </div>
 
-    </div>
+    </div> -->
     <li class="nav-item">
     </li>
     <!-- End of Main Content -->

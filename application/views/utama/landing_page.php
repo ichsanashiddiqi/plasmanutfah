@@ -297,7 +297,7 @@
     </section>
 
     <!-- Clients-->
-    <div class="py-5">
+    <!-- <div class="py-5">
         <div class="container">
             <div class="row">
                 <div class="col-md-3 col-sm-6 my-3">
@@ -314,7 +314,7 @@
                 </div>
             </div>
         </div>
-    </div>
+    </div> -->
     <!-- Contact-->
 
     <!-- Footer-->
