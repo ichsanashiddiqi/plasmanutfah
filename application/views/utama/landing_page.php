@@ -114,75 +114,7 @@
             </div>
         </div>
     </section>
-    <!-- About-->
-    <!-- <section class="page-section" id="about">
-        <div class="container">
-            <div class="text-center">
-                <h2 class="section-heading text-uppercase">Status Komputerisasi Data</h2>
-                <h3 class="section-subheading text-muted">Status komputerisasi data plasmanutfah
-                    <p class="font-weight-normal text-dark" id="date" name="tgl"></p>
-
-                </h3>
-            </div>
-            <ul class="timeline">
-                <li>
-                    <div class="timeline-image"><img class="rounded-circle img-fluid" src="vendor/startbootstrap-agency-gh-pages/assets/img/abaka1.jpg" alt="" /></div>
-                    <div class="timeline-panel">
-                        <div class="timeline-heading">
-                            <h4 class="subheading">Tanaman Abaka</h4>
-                        </div>
-                        <div class="timeline-body">
-                            <p class="text-muted">Jumlah Aksesi = <?= $abaka ?> </p>
-                            <p class="text-muted">Jumlah Deskriptor = <?= $des_abaka ?> </p>
-                            <button type="button" data-toggle="modal" class="btn btn-outline-success btn-sm" href="#abaka">Lihat Deskriptor</button>
-                        </div>
-                    </div>
-                </li>
-                <li class="timeline-inverted">
-                    <div class="timeline-image"><img class="rounded-circle img-fluid" src="vendor/startbootstrap-agency-gh-pages/assets/img/about/2.jpg" alt="" /></div>
-                    <div class="timeline-panel">
-                        <div class="timeline-heading">
-                            <h4>March 2011</h4>
-                            <h4 class="subheading">An Agency is Born</h4>
-                        </div>
-                        <div class="timeline-body">
-                            <p class="text-muted">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Sunt ut
-                                voluptatum eius sapiente, totam reiciendis temporibus qui quibusdam, recusandae sit vero
-                                unde, sed, incidunt et ea quo dolore laudantium consectetur!</p>
-                        </div>
-                    </div>
-                </li>
-                <li>
-                    <div class="timeline-image"><img class="rounded-circle img-fluid" src="vendor/startbootstrap-agency-gh-pages/assets/img/about/3.jpg" alt="" /></div>
-                    <div class="timeline-panel">
-                        <div class="timeline-heading">
-                            <h4>December 2012</h4>
-                            <h4 class="subheading">Transition to Full Service</h4>
-                        </div>
-                        <div class="timeline-body">
-                            <p class="text-muted">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Sunt ut
-                                voluptatum eius sapiente, totam reiciendis temporibus qui quibusdam, recusandae sit vero
-                                unde, sed, incidunt et ea quo dolore laudantium consectetur!</p>
-                        </div>
-                    </div>
-                </li>
-                <li class="timeline-inverted">
-                    <div class="timeline-image"><img class="rounded-circle img-fluid" src="vendor/startbootstrap-agency-gh-pages/assets/img/about/4.jpg" alt="" /></div>
-                    <div class="timeline-panel">
-                        <div class="timeline-heading">
-                            <h4>July 2014</h4>
-                            <h4 class="subheading">Phase Two Expansion</h4>
-                        </div>
-                        <div class="timeline-body">
-                            <p class="text-muted">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Sunt ut
-                                voluptatum eius sapiente, totam reiciendis temporibus qui quibusdam, recusandae sit vero
-                                unde, sed, incidunt et ea quo dolore laudantium consectetur!</p>
-                        </div>
-                    </div>
-                </li>
-            </ul>
-        </div>
-    </section> -->
+    
 
     <section class="page-section" id="about">
         <div class="container">
@@ -296,26 +228,7 @@
         </div>
     </section>
 
-    <!-- Clients-->
-    <!-- <div class="py-5">
-        <div class="container">
-            <div class="row">
-                <div class="col-md-3 col-sm-6 my-3">
-                    <a href="#!"><img class="img-fluid d-block mx-auto" src="vendor/startbootstrap-agency-gh-pages/assets/img/logos/envato.jpg" alt="" /></a>
-                </div>
-                <div class="col-md-3 col-sm-6 my-3">
-                    <a href="#!"><img class="img-fluid d-block mx-auto" src="vendor/startbootstrap-agency-gh-pages/assets/img/logos/designmodo.jpg" alt="" /></a>
-                </div>
-                <div class="col-md-3 col-sm-6 my-3">
-                    <a href="#!"><img class="img-fluid d-block mx-auto" src="vendor/startbootstrap-agency-gh-pages/assets/img/logos/themeforest.jpg" alt="" /></a>
-                </div>
-                <div class="col-md-3 col-sm-6 my-3">
-                    <a href="#!"><img class="img-fluid d-block mx-auto" src="vendor/startbootstrap-agency-gh-pages/assets/img/logos/creative-market.jpg" alt="" /></a>
-                </div>
-            </div>
-        </div>
-    </div> -->
-    <!-- Contact-->
+    
 
     <!-- Footer-->
     <footer class="footer py-4">
