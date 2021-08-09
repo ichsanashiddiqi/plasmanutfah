@@ -228,7 +228,73 @@
         </div>
     </section>
 
-    
+    <!-- Portfolio Grid-->
+    <section class="page-section bg-light" id="portfolio">
+        <div class="container">
+            <div class="text-center">
+                <h2 class="section-heading text-uppercase">Komoditas</h2>
+                <h3 class="section-subheading text-muted">Klik untuk masuk ke halaman admin.</h3>
+            </div>
+            <div class="row">
+                <div class="col-lg">
+                    <div class="portfolio-item">
+                        <a class="portfolio-link" href="auth">
+                            <div class="portfolio-hover">
+                                <div class="portfolio-hover-content"><i class="fas fa-plus fa-3x"></i></div>
+                            </div>
+                            <img class="img-fluid" src="vendor/startbootstrap-agency-gh-pages/assets/img/portfolio/tebu1.jpg" alt="" />
+                        </a>
+                        <div class="portfolio-caption">
+                            <div class="portfolio-caption-heading">Tanaman Pemanis</div>
+                            <!-- <div class="portfolio-caption-subheading text-muted">Illustration</div> -->
+                        </div>
+                    </div>
+                </div>
+                <div class="col-lg">
+                    <div class="portfolio-item">
+                        <a class="portfolio-link" href="auth">
+                            <div class="portfolio-hover">
+                                <div class="portfolio-hover-content"><i class="fas fa-plus fa-3x"></i></div>
+                            </div>
+                            <img class="img-fluid" src="vendor/startbootstrap-agency-gh-pages/assets/img/portfolio/serat.jpg" alt="" />
+                        </a>
+                        <div class="portfolio-caption">
+                            <div class="portfolio-caption-heading">Tanaman Serat</div>
+                            <!-- <div class="portfolio-caption-subheading text-muted">Graphic Design</div> -->
+                        </div>
+                    </div>
+                </div>
+                <div class="col-lg">
+                    <div class="portfolio-item">
+                        <a class="portfolio-link" href="auth">
+                            <div class="portfolio-hover">
+                                <div class="portfolio-hover-content"><i class="fas fa-plus fa-3x"></i></div>
+                            </div>
+                            <img class="img-fluid" src="vendor/startbootstrap-agency-gh-pages/assets/img/portfolio/tembakau.jpg" alt="" />
+                        </a>
+                        <div class="portfolio-caption">
+                            <div class="portfolio-caption-heading">Tanaman Tembakau</div>
+                            <!-- <div class="portfolio-caption-subheading text-muted">Identity</div> -->
+                        </div>
+                    </div>
+                </div>
+                <div class="col-lg">
+                    <div class="portfolio-item">
+                        <a class="portfolio-link" href="auth">
+                            <div class="portfolio-hover">
+                                <div class="portfolio-hover-content"><i class="fas fa-plus fa-3x"></i></div>
+                            </div>
+                            <img class="img-fluid" src="vendor/startbootstrap-agency-gh-pages/assets/img/portfolio/bm.jpg" alt="" />
+                        </a>
+                        <div class="portfolio-caption">
+                            <div class="portfolio-caption-heading">Tanaman Minyak</div>
+                            <!-- <div class="portfolio-caption-subheading text-muted">Branding</div> -->
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
 
     <!-- Footer-->
     <footer class="footer py-4">
