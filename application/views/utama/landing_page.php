@@ -52,7 +52,7 @@
         <div class="container">
             <div class="text-center">
                 <h2 class="section-heading text-uppercase">Komoditas</h2>
-                <h3 class="section-subheading text-muted">Klik untuk masuk ke halaman admin.</h3>
+                <!-- <h3 class="section-subheading text-muted">Klik untuk masuk ke halaman admin.</h3> -->
             </div>
             <div class="row">
                 <div class="col-lg">
