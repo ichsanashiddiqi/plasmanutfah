@@ -114,208 +114,75 @@
             </div>
         </div>
     </section>
-    <!-- About-->
-    <!-- <section class="page-section" id="about">
+    
+
+    <!-- Portfolio Grid-->
+    <section class="page-section bg-light" id="portfolio">
         <div class="container">
             <div class="text-center">
-                <h2 class="section-heading text-uppercase">Status Komputerisasi Data</h2>
-                <h3 class="section-subheading text-muted">Status komputerisasi data plasmanutfah
-                    <p class="font-weight-normal text-dark" id="date" name="tgl"></p>
-
-                </h3>
+                <h2 class="section-heading text-uppercase">Komoditas</h2>
+                <h3 class="section-subheading text-muted">Klik untuk masuk ke halaman admin.</h3>
             </div>
-            <ul class="timeline">
-                <li>
-                    <div class="timeline-image"><img class="rounded-circle img-fluid" src="vendor/startbootstrap-agency-gh-pages/assets/img/abaka1.jpg" alt="" /></div>
-                    <div class="timeline-panel">
-                        <div class="timeline-heading">
-                            <h4 class="subheading">Tanaman Abaka</h4>
-                        </div>
-                        <div class="timeline-body">
-                            <p class="text-muted">Jumlah Aksesi = <?= $abaka ?> </p>
-                            <p class="text-muted">Jumlah Deskriptor = <?= $des_abaka ?> </p>
-                            <button type="button" data-toggle="modal" class="btn btn-outline-success btn-sm" href="#abaka">Lihat Deskriptor</button>
-                        </div>
-                    </div>
-                </li>
-                <li class="timeline-inverted">
-                    <div class="timeline-image"><img class="rounded-circle img-fluid" src="vendor/startbootstrap-agency-gh-pages/assets/img/about/2.jpg" alt="" /></div>
-                    <div class="timeline-panel">
-                        <div class="timeline-heading">
-                            <h4>March 2011</h4>
-                            <h4 class="subheading">An Agency is Born</h4>
-                        </div>
-                        <div class="timeline-body">
-                            <p class="text-muted">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Sunt ut
-                                voluptatum eius sapiente, totam reiciendis temporibus qui quibusdam, recusandae sit vero
-                                unde, sed, incidunt et ea quo dolore laudantium consectetur!</p>
+            <div class="row">
+                <div class="col-lg">
+                    <div class="portfolio-item">
+                        <a class="portfolio-link" href="auth">
+                            <div class="portfolio-hover">
+                                <div class="portfolio-hover-content"><i class="fas fa-plus fa-3x"></i></div>
+                            </div>
+                            <img class="img-fluid" src="vendor/startbootstrap-agency-gh-pages/assets/img/portfolio/tebu1.jpg" alt="" />
+                        </a>
+                        <div class="portfolio-caption">
+                            <div class="portfolio-caption-heading">Tanaman Pemanis</div>
+                            <!-- <div class="portfolio-caption-subheading text-muted">Illustration</div> -->
                         </div>
                     </div>
-                </li>
-                <li>
-                    <div class="timeline-image"><img class="rounded-circle img-fluid" src="vendor/startbootstrap-agency-gh-pages/assets/img/about/3.jpg" alt="" /></div>
-                    <div class="timeline-panel">
-                        <div class="timeline-heading">
-                            <h4>December 2012</h4>
-                            <h4 class="subheading">Transition to Full Service</h4>
-                        </div>
-                        <div class="timeline-body">
-                            <p class="text-muted">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Sunt ut
-                                voluptatum eius sapiente, totam reiciendis temporibus qui quibusdam, recusandae sit vero
-                                unde, sed, incidunt et ea quo dolore laudantium consectetur!</p>
-                        </div>
-                    </div>
-                </li>
-                <li class="timeline-inverted">
-                    <div class="timeline-image"><img class="rounded-circle img-fluid" src="vendor/startbootstrap-agency-gh-pages/assets/img/about/4.jpg" alt="" /></div>
-                    <div class="timeline-panel">
-                        <div class="timeline-heading">
-                            <h4>July 2014</h4>
-                            <h4 class="subheading">Phase Two Expansion</h4>
-                        </div>
-                        <div class="timeline-body">
-                            <p class="text-muted">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Sunt ut
-                                voluptatum eius sapiente, totam reiciendis temporibus qui quibusdam, recusandae sit vero
-                                unde, sed, incidunt et ea quo dolore laudantium consectetur!</p>
+                </div>
+                <div class="col-lg">
+                    <div class="portfolio-item">
+                        <a class="portfolio-link" href="auth">
+                            <div class="portfolio-hover">
+                                <div class="portfolio-hover-content"><i class="fas fa-plus fa-3x"></i></div>
+                            </div>
+                            <img class="img-fluid" src="vendor/startbootstrap-agency-gh-pages/assets/img/portfolio/serat.jpg" alt="" />
+                        </a>
+                        <div class="portfolio-caption">
+                            <div class="portfolio-caption-heading">Tanaman Serat</div>
+                            <!-- <div class="portfolio-caption-subheading text-muted">Graphic Design</div> -->
                         </div>
                     </div>
-                </li>
-            </ul>
-        </div>
-    </section> -->
-
-    <section class="page-section" id="about">
-        <div class="container">
-            <div class="text-center">
-                <h2 class="section-heading text-uppercase">Status Komputerisasi Data</h2>
-                <h3 class="section-subheading text-muted">Status komputerisasi data plasmanutfah
-                    <p class="font-weight-normal text-dark" id="date" name="tgl"></p>
-                    <table class="table table-hover">
-                        <thead class="thead-dark">
-                            <tr>
-                                <th scope="col">No</th>
-                                <th scope="col">Komoditas</th>
-                                <th scope="col">Total jumlah aksesi dalam database</th>
-                                <th scope="col">Jumlah deskriptor yang telah dikarakterisasi</th>
-                                <!-- <th scope="col">Lihat deskriptor</th> -->
-                            </tr>
-                        </thead>
-                        <tbody>
-                            <tr>
-                                <th scope="row">1</th>
-                                <td>Abaka</td>
-                                <td><?= ($abaka); ?> </td>
-                                <td><?= ($des_abaka); ?></td>
-                                <!-- <td><button type="button" data-toggle="modal" href="#abaka" class="btn btn-success btn-sm">Deskriptor</button></td> -->
-                            </tr>
-
-                            <tr>
-                                <th scope="row">2</th>
-                                <td>Bunga Matahari</td>
-                                <td><?= ($bm); ?> </td>
-                                <td><?= ($des_bm); ?></td>
-                                <!-- <td><button type="button" data-toggle="modal" href="#abaka" class="btn btn-success btn-sm">Deskriptor</button></td> -->
-                            </tr>
-
-                            <tr>
-                                <th scope="row">3</th>
-                                <td>Jarak Pagar</td>
-                                <td><?= ($jp); ?> </td>
-                                <td><?= ($des_jp); ?></td>
-                                <!-- <td><button type="button" data-toggle="modal" href="#abaka" class="btn btn-success btn-sm">Deskriptor</button></td> -->
-                            </tr>
-
-                            <tr>
-                                <th scope="row">4</th>
-                                <td>Kapas</td>
-                                <td><?= ($kapas); ?> </td>
-                                <td><?= ($des_kapas); ?></td>
-                                <!-- <td><button type="button" data-toggle="modal" href="#abaka" class="btn btn-success btn-sm">Deskriptor</button></td> -->
-                            </tr>
-
-                            <tr>
-                                <th scope="row">5</th>
-                                <td>Kapuk</td>
-                                <td><?= ($kapuk); ?> </td>
-                                <td><?= ($des_kapuk); ?></td>
-                                <!-- <td><button type="button" data-toggle="modal" href="#abaka" class="btn btn-success btn-sm">Deskriptor</button></td> -->
-                            </tr>
-
-                            <tr>
-                                <th scope="row">6</th>
-                                <td>Kemiri</td>
-                                <td><?= ($kemiri); ?> </td>
-                                <td><?= ($des_kemiri); ?></td>
-                                <!-- <td><button type="button" data-toggle="modal" href="#abaka" class="btn btn-success btn-sm">Deskriptor</button></td> -->
-                            </tr>
-
-                            <tr>
-                                <th scope="row">7</th>
-                                <td>Kenaf</td>
-                                <td><?= ($kenaf); ?> </td>
-                                <td><?= ($des_kenaf); ?></td>
-                                <!-- <td><button type="button" data-toggle="modal" href="#abaka" class="btn btn-success btn-sm">Deskriptor</button></td> -->
-                            </tr>
-
-
-                            <tr>
-                                <th scope="row">8</th>
-                                <td>Rami</td>
-                                <td><?= ($rami); ?> </td>
-                                <td><?= ($des_rami); ?></td>
-                                <!-- <td><button type="button" data-toggle="modal" href="#abaka" class="btn btn-success btn-sm">Deskriptor</button></td> -->
-                            </tr>
-
-                            <tr>
-                                <th scope="row">9</th>
-                                <td>Tebu</td>
-                                <td><?= ($tebu); ?> </td>
-                                <td><?= ($des_tebu); ?></td>
-                                <!-- <td><button type="button" data-toggle="modal" href="#abaka" class="btn btn-success btn-sm">Deskriptor</button></td> -->
-                            </tr>
-
-                            <tr>
-                                <th scope="row">10</th>
-                                <td>Tembakau</td>
-                                <td><?= ($tembakau); ?> </td>
-                                <td><?= ($des_tembakau); ?></td>
-                                <!-- <td><button type="button" data-toggle="modal" href="#abaka" class="btn btn-success btn-sm">Deskriptor</button></td> -->
-                            </tr>
-
-                            <tr>
-                                <th scope="row">11</th>
-                                <td>Wijen</td>
-                                <td><?= ($wijen); ?> </td>
-                                <td><?= ($des_wijen); ?></td>
-                                <!-- <td><button type="button" data-toggle="modal" href="#abaka" class="btn btn-success btn-sm">Deskriptor</button></td> -->
-                            </tr>
-                        </tbody>
-                    </table>
-                </h3>
+                </div>
+                <div class="col-lg">
+                    <div class="portfolio-item">
+                        <a class="portfolio-link" href="auth">
+                            <div class="portfolio-hover">
+                                <div class="portfolio-hover-content"><i class="fas fa-plus fa-3x"></i></div>
+                            </div>
+                            <img class="img-fluid" src="vendor/startbootstrap-agency-gh-pages/assets/img/portfolio/tembakau.jpg" alt="" />
+                        </a>
+                        <div class="portfolio-caption">
+                            <div class="portfolio-caption-heading">Tanaman Tembakau</div>
+                            <!-- <div class="portfolio-caption-subheading text-muted">Identity</div> -->
+                        </div>
+                    </div>
+                </div>
+                <div class="col-lg">
+                    <div class="portfolio-item">
+                        <a class="portfolio-link" href="auth">
+                            <div class="portfolio-hover">
+                                <div class="portfolio-hover-content"><i class="fas fa-plus fa-3x"></i></div>
+                            </div>
+                            <img class="img-fluid" src="vendor/startbootstrap-agency-gh-pages/assets/img/portfolio/bm.jpg" alt="" />
+                        </a>
+                        <div class="portfolio-caption">
+                            <div class="portfolio-caption-heading">Tanaman Minyak</div>
+                            <!-- <div class="portfolio-caption-subheading text-muted">Branding</div> -->
+                        </div>
+                    </div>
+                </div>
             </div>
         </div>
     </section>
-
-    <!-- Clients-->
-    <div class="py-5">
-        <div class="container">
-            <div class="row">
-                <div class="col-md-3 col-sm-6 my-3">
-                    <a href="#!"><img class="img-fluid d-block mx-auto" src="vendor/startbootstrap-agency-gh-pages/assets/img/logos/envato.jpg" alt="" /></a>
-                </div>
-                <div class="col-md-3 col-sm-6 my-3">
-                    <a href="#!"><img class="img-fluid d-block mx-auto" src="vendor/startbootstrap-agency-gh-pages/assets/img/logos/designmodo.jpg" alt="" /></a>
-                </div>
-                <div class="col-md-3 col-sm-6 my-3">
-                    <a href="#!"><img class="img-fluid d-block mx-auto" src="vendor/startbootstrap-agency-gh-pages/assets/img/logos/themeforest.jpg" alt="" /></a>
-                </div>
-                <div class="col-md-3 col-sm-6 my-3">
-                    <a href="#!"><img class="img-fluid d-block mx-auto" src="vendor/startbootstrap-agency-gh-pages/assets/img/logos/creative-market.jpg" alt="" /></a>
-                </div>
-            </div>
-        </div>
-    </div>
-    <!-- Contact-->
 
     <!-- Footer-->
     <footer class="footer py-4">
