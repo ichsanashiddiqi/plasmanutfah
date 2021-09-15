@@ -17,7 +17,7 @@ if (isset($kar_data) and !empty($kar_data)) {
         <img class="center" src="<?php echo base_url('assets/data/' . $kps['image']) ?>" width="300" />
         <br>
         <div class="form">
-            <?php if ($kps["kar_01"] != null) { ?>
+            <?php if ($kps["kar_1"] != null) { ?>
                 <form class="user" method="post">
                     <div class="form-group row">
                         <div class="col-sm-6 mb-3 mb-sm-0">
@@ -79,12 +79,12 @@ if (isset($kar_data) and !empty($kar_data)) {
                 <?php } ?>
                 <div class="form-group row">
                     <?php foreach ($idkar as $das) : ?>
-                        <?php if ($das['kar'] == 'kar_01') {
+                        <?php if ($das['kar'] == 'kar_1') {
 
                         ?>
                             <div class="col-md-4 top-buffer">
                                 <label><?= $das['question']; ?></label>
-                                <input type="text" class="form-control" id="<?= $das['kar']; ?>" name="<?= $das['kar']; ?>" value="<?= $kps['kar_01']; ?>" readonly>
+                                <input type="text" class="form-control" id="<?= $das['kar']; ?>" name="<?= $das['kar']; ?>" value="<?= $kps['kar_1']; ?>" readonly>
                             </div>
                         <?php } else {
                             echo null;
@@ -94,7 +94,7 @@ if (isset($kar_data) and !empty($kar_data)) {
                         ?>
                             <div class="col-md-4 top-buffer">
                                 <label><?= $das['question']; ?></label>
-                                <input type="text" class="form-control" id="<?= $das['kar']; ?>" name="<?= $das['kar']; ?>" value="<?= $kps['kar_02']; ?>" readonly>
+                                <input type="text" class="form-control" id="<?= $das['kar']; ?>" name="<?= $das['kar']; ?>" value="<?= $kps['kar_2']; ?>" readonly>
                             </div>
                         <?php } else {
                             echo null;
@@ -105,7 +105,7 @@ if (isset($kar_data) and !empty($kar_data)) {
                         ?>
                             <div class="col-md-4 top-buffer">
                                 <label><?= $das['question']; ?></label>
-                                <input type="text" class="form-control" id="<?= $das['kar']; ?>" name="<?= $das['kar']; ?>" value="<?= $kps['kar_03']; ?>" readonly>
+                                <input type="text" class="form-control" id="<?= $das['kar']; ?>" name="<?= $das['kar']; ?>" value="<?= $kps['kar_3']; ?>" readonly>
                             </div>
                         <?php } else {
                             echo null;
@@ -116,7 +116,7 @@ if (isset($kar_data) and !empty($kar_data)) {
                         ?>
                             <div class="col-md-4 top-buffer">
                                 <label><?= $das['question']; ?></label>
-                                <input type="text" class="form-control" id="<?= $das['kar']; ?>" name="<?= $das['kar']; ?>" value="<?= $kps['kar_04']; ?>" readonly>
+                                <input type="text" class="form-control" id="<?= $das['kar']; ?>" name="<?= $das['kar']; ?>" value="<?= $kps['kar_4']; ?>" readonly>
                             </div>
                         <?php } else {
                             echo null;
@@ -127,7 +127,7 @@ if (isset($kar_data) and !empty($kar_data)) {
                         ?>
                             <div class="col-md-4 top-buffer">
                                 <label><?= $das['question']; ?></label>
-                                <input type="text" class="form-control" id="<?= $das['kar']; ?>" name="<?= $das['kar']; ?>" value="<?= $kps['kar_05']; ?>" readonly>
+                                <input type="text" class="form-control" id="<?= $das['kar']; ?>" name="<?= $das['kar']; ?>" value="<?= $kps['kar_5']; ?>" readonly>
                             </div>
                         <?php } else {
                             echo null;
@@ -138,7 +138,7 @@ if (isset($kar_data) and !empty($kar_data)) {
                         ?>
                             <div class="col-md-4 top-buffer">
                                 <label><?= $das['question']; ?></label>
-                                <input type="text" class="form-control" id="<?= $das['kar']; ?>" name="<?= $das['kar']; ?>" value="<?= $kps['kar_06']; ?>" readonly>
+                                <input type="text" class="form-control" id="<?= $das['kar']; ?>" name="<?= $das['kar']; ?>" value="<?= $kps['kar_6']; ?>" readonly>
                             </div>
                         <?php } else {
                             echo null;
@@ -149,7 +149,7 @@ if (isset($kar_data) and !empty($kar_data)) {
                         ?>
                             <div class="col-md-4 top-buffer">
                                 <label><?= $das['question']; ?></label>
-                                <input type="text" class="form-control" id="<?= $das['kar']; ?>" name="<?= $das['kar']; ?>" value="<?= $kps['kar_07']; ?>" readonly>
+                                <input type="text" class="form-control" id="<?= $das['kar']; ?>" name="<?= $das['kar']; ?>" value="<?= $kps['kar_7']; ?>" readonly>
                             </div>
                         <?php } else {
                             echo null;
@@ -160,7 +160,7 @@ if (isset($kar_data) and !empty($kar_data)) {
                         ?>
                             <div class="col-md-4 top-buffer">
                                 <label><?= $das['question']; ?></label>
-                                <input type="text" class="form-control" id="<?= $das['kar']; ?>" name="<?= $das['kar']; ?>" value="<?= $kps['kar_08']; ?>" readonly>
+                                <input type="text" class="form-control" id="<?= $das['kar']; ?>" name="<?= $das['kar']; ?>" value="<?= $kps['kar_8']; ?>" readonly>
                             </div>
                         <?php } else {
                             echo null;
@@ -171,7 +171,7 @@ if (isset($kar_data) and !empty($kar_data)) {
                         ?>
                             <div class="col-md-4 top-buffer">
                                 <label><?= $das['question']; ?></label>
-                                <input type="text" class="form-control" id="<?= $das['kar']; ?>" name="<?= $das['kar']; ?>" value="<?= $kps['kar_09']; ?>" readonly>
+                                <input type="text" class="form-control" id="<?= $das['kar']; ?>" name="<?= $das['kar']; ?>" value="<?= $kps['kar_9']; ?>" readonly>
                             </div>
                         <?php } else {
                             echo null;
