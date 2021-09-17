@@ -427,6 +427,6 @@ class Tambah extends CI_Controller
 	{
 		$where = array('kar' => $kar);
 		$this->m_edit_data->hapus_data($where, 'tab_tebu');
-		redirect('tanaman/tebu');
+		redirect('tambah/tebu');
 	}
 }
