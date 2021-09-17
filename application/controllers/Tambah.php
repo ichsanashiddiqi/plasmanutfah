@@ -14,6 +14,7 @@ class Tambah extends CI_Controller
         $this->load->helper('url');
         $this->load->model('m_add_data');
         $this->load->model('m_view_idkar');
+        $this->load->model('m_edit_data');
     }
 
     public function abaka()
