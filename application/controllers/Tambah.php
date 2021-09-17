@@ -421,4 +421,11 @@ class Tambah extends CI_Controller
         $this->load->view('tambah/tambah_jarak_kepyar2.php', $data);
         $this->load->view('templates/footer.php', $data);
     }
+
+    function hapus_tebu($kar)
+	{
+		$where = array('kar' => $kar);
+		$this->m_edit_data->hapus_data($where, 'tab_tebu');
+		redirect('tanaman/tebu');
+	}
 }
