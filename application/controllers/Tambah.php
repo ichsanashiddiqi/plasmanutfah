@@ -423,10 +423,118 @@ class Tambah extends CI_Controller
         $this->load->view('templates/footer.php', $data);
     }
 
-    function hapus_tebu($kar)
+  //  ====================== BATASSS HAPUSSSS ========================
+
+  function hapus_abaka($kar)
+	{
+		$where = array('kar' => $kar);
+		$this->m_edit_data->hapus_data($where, 'tab_abaka');
+		redirect('tambah/abaka');
+	}  
+
+    function hapus_agave($kar)
+	{
+		$where = array('kar' => $kar);
+		$this->m_edit_data->hapus_data($where, 'tab_agave');
+		redirect('tambah/agave');
+	}
+
+    function hapus_bm($kar)
+	{
+		$where = array('kar' => $kar);
+		$this->m_edit_data->hapus_data($where, 'tab_bm');
+		redirect('tambah/bunga_matahari');
+	}
+
+    function hapus_gulabit($kar)
+	{
+		$where = array('kar' => $kar);
+		$this->m_edit_data->hapus_data($where, 'tab_gulabit');
+		redirect('tambah/gulabit');
+	}
+
+    function hapus_jk($kar)
+	{
+		$where = array('kar' => $kar);
+		$this->m_edit_data->hapus_data($where, 'tab_jarak_kepyar');
+		redirect('tambah/jarak_kepyar');
+	}
+
+    function hapus_jp($kar)
+	{
+		$where = array('kar' => $kar);
+		$this->m_edit_data->hapus_data($where, 'tab_jarak_pagar');
+		redirect('tambah/jarak_pagar');
+	}
+
+    function hapus_kapas($kar)
+	{
+		$where = array('kar' => $kar);
+		$this->m_edit_data->hapus_data($where, 'tab_kapas');
+		redirect('tambah/kapas');
+	}
+
+    function hapus_kapuk($kar)
+	{
+		$where = array('kar' => $kar);
+		$this->m_edit_data->hapus_data($where, 'tab_kapuk');
+		redirect('tambah/kapuk');
+	}
+
+    function hapus_kemiri($kar)
+	{
+		$where = array('kar' => $kar);
+		$this->m_edit_data->hapus_data($where, 'tab_kemiri');
+		redirect('tambah/kemiri');
+	}
+
+    function hapus_kenaf($kar)
+	{
+		$where = array('kar' => $kar);
+		$this->m_edit_data->hapus_data($where, 'tab_kenaf');
+		redirect('tambah/kenaf');
+	}
+
+    function hapus_rami($kar)
+	{
+		$where = array('kar' => $kar);
+		$this->m_edit_data->hapus_data($where, 'tab_rami');
+		redirect('tambah/rami');
+	}
+
+    function hapus_rosela($kar)
+	{
+		$where = array('kar' => $kar);
+		$this->m_edit_data->hapus_data($where, 'tab_rosela');
+		redirect('tambah/rosela');
+	}
+
+    function hapus_stevia($kar)
+	{
+		$where = array('kar' => $kar);
+		$this->m_edit_data->hapus_data($where, 'tab_stevia');
+		redirect('tambah/stevia');
+	}
+
+    
+  function hapus_tebu($kar)
 	{
 		$where = array('kar' => $kar);
 		$this->m_edit_data->hapus_data($where, 'tab_tebu');
 		redirect('tambah/tebu');
+	}
+
+    function hapus_tembakau($kar)
+	{
+		$where = array('kar' => $kar);
+		$this->m_edit_data->hapus_data($where, 'tab_tembakau');
+		redirect('tambah/tembakau');
+	}
+
+    function hapus_wijen($kar)
+	{
+		$where = array('kar' => $kar);
+		$this->m_edit_data->hapus_data($where, 'tab_wijen');
+		redirect('tambah/wijen');
 	}
 }
