@@ -91,7 +91,7 @@
                             <div class="form-group row">
                                 <div class="col-sm">
                                     <label>Umur panen serat 1</label>
-                                    <input type="text" class="form-control" name="kar_01" value="<?= $k->kar_01; ?>">
+                                    <input type="text" class="form-control" name="kar_1" value="<?= $k->kar_1; ?>">
                                 </div>
                                 <div class="col-sm">
                                     <label>Warna batang tanaman tua</label>
@@ -111,7 +111,7 @@
                             <div class="form-group row">
                                 <div class="col-sm">
                                     <label>Umur panen serat 2</label>
-                                    <input type="text" class="form-control" name="kar_02" value="<?= $k->kar_02; ?>">
+                                    <input type="text" class="form-control" name="kar_2" value="<?= $k->kar_2; ?>">
                                 </div>
                                 <div class="col-sm">
                                     <label>Warna helai daun</label>
@@ -131,7 +131,7 @@
                             <div class="form-group row">
                                 <div class="col-sm">
                                     <label>Umur serat panen 3</label>
-                                    <input type="text" class="form-control" name="kar_03" value="<?= $k->kar_03; ?>">
+                                    <input type="text" class="form-control" name="kar_3" value="<?= $k->kar_3; ?>">
                                 </div>
                                 <div class="col-sm">
                                     <label>Warna urat utama daun</label>
@@ -152,8 +152,8 @@
                             <div class="form-group row">
                                 <div class="col-sm">
                                     <label>Bentuk daun</label>
-                                    <select class="form-control form-select-user" name="kar_04">
-                                        <option selected><?= $k->kar_04; ?></option>
+                                    <select class="form-control form-select-user" name="kar_4">
+                                        <option selected><?= $k->kar_4; ?></option>
                                         <option value="1">1. Ovate</option>
                                         <option value="2">2. Cordate</option>
                                         <option value="3">3. Lanceolate</option>
@@ -178,8 +178,8 @@
                             <div class="form-group row">
                                 <div class="col-sm">
                                     <label>Bentuk gerigi daun</label>
-                                    <select class="form-control form-select-user" name="kar_05">
-                                        <option selected><?= $k->kar_05; ?></option>
+                                    <select class="form-control form-select-user" name="kar_5">
+                                        <option selected><?= $k->kar_5; ?></option>
                                         <option value="1">1. Besar tumpul</option>
                                         <option value="2">2. Besar lancip</option>
                                         <option value="3">3. Kecil tumpul</option>
@@ -205,7 +205,7 @@
                             <div class="form-group row">
                                 <div class="col-sm">
                                     <label>Panjang daun</label>
-                                    <input type="text" class="form-control" name="kar_06" value="<?= $k->kar_06; ?>">
+                                    <input type="text" class="form-control" name="kar_6" value="<?= $k->kar_6; ?>">
                                 </div>
                                 <div class="col-sm">
                                     <label>Warna bunga betina</label>
@@ -226,7 +226,7 @@
                             <div class="form-group row">
                                 <div class="col-sm">
                                     <label>Lebar daun</label>
-                                    <input type="text" class="form-control" name="kar_07" <?= $k->kar_07; ?>>
+                                    <input type="text" class="form-control" name="kar_7" <?= $k->kar_7; ?>>
                                 </div>
                                 <div class="col-sm">
                                     <label>Umur berbunga</label>
@@ -241,7 +241,7 @@
                             <div class="form-group row">
                                 <div class="col-sm">
                                     <label>Luas daun</label>
-                                    <input type="text" class="form-control" name="kar_08" <?= $k->kar_08; ?>>
+                                    <input type="text" class="form-control" name="kar_8" <?= $k->kar_8; ?>>
                                 </div>
                                 <div class="col-sm">
                                     <label>Tipe pembungaan</label>
@@ -262,8 +262,8 @@
                             <div class="form-group row">
                                 <div class="col-sm">
                                     <label>Sudut daun</label>
-                                    <select class="form-control form-select-user" name="kar_09">
-                                        <option selected><?= $k->kar_09; ?></option>
+                                    <select class="form-control form-select-user" name="kar_9">
+                                        <option selected><?= $k->kar_9; ?></option>
                                         <option value="1">1. Erect (0-20 derajat)</option>
                                         <option value="2">2. Intermediate (21-60 derajat)</option>
                                         <option value="3">3. Horisontal (61-100 derajat)</option>
