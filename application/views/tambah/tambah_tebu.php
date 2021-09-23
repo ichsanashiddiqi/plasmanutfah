@@ -63,7 +63,6 @@
                                 <tr>
                                     <td><?php echo $no++ ?></td>
                                     <td>
-                                        <a data-toggle="modal" data-target="#modal-edit<?=$abk->;?>" class="btn btn-warning btn-circle" data-popup="tooltip" data-placement="top" title="Edit Data"><i class="fas fa-edit" style="color: chartreuse;"></i></a>
                                         <a href="hapus_tebu/<?= $abk->kar; ?>"><i class="fas fa-trash-alt" style="color: red;"></i></a>
                                     </td>
                                     <td><?php echo $abk->kar ?></td>
