@@ -89,7 +89,7 @@ if (isset($kar_data) and !empty($kar_data)) {
                         <?php } else {
                             echo null;
                         } ?>
-                        <?php if ($das['kar'] == 'kar_02') {
+                        <?php if ($das['kar'] == 'kar_2') {
 
                         ?>
                             <div class="col-md-4 top-buffer">
@@ -100,7 +100,7 @@ if (isset($kar_data) and !empty($kar_data)) {
                             echo null;
                         } ?>
 
-                        <?php if ($das['kar'] == 'kar_03') {
+                        <?php if ($das['kar'] == 'kar_3') {
 
                         ?>
                             <div class="col-md-4 top-buffer">
@@ -111,7 +111,7 @@ if (isset($kar_data) and !empty($kar_data)) {
                             echo null;
                         } ?>
 
-                        <?php if ($das['kar'] == 'kar_04') {
+                        <?php if ($das['kar'] == 'kar_4') {
 
                         ?>
                             <div class="col-md-4 top-buffer">
@@ -122,7 +122,7 @@ if (isset($kar_data) and !empty($kar_data)) {
                             echo null;
                         } ?>
 
-                        <?php if ($das['kar'] == 'kar_05') {
+                        <?php if ($das['kar'] == 'kar_5') {
 
                         ?>
                             <div class="col-md-4 top-buffer">
@@ -133,7 +133,7 @@ if (isset($kar_data) and !empty($kar_data)) {
                             echo null;
                         } ?>
 
-                        <?php if ($das['kar'] == 'kar_06') {
+                        <?php if ($das['kar'] == 'kar_6') {
 
                         ?>
                             <div class="col-md-4 top-buffer">
@@ -144,7 +144,7 @@ if (isset($kar_data) and !empty($kar_data)) {
                             echo null;
                         } ?>
 
-                        <?php if ($das['kar'] == 'kar_07') {
+                        <?php if ($das['kar'] == 'kar_7') {
 
                         ?>
                             <div class="col-md-4 top-buffer">
@@ -155,7 +155,7 @@ if (isset($kar_data) and !empty($kar_data)) {
                             echo null;
                         } ?>
 
-                        <?php if ($das['kar'] == 'kar_08') {
+                        <?php if ($das['kar'] == 'kar_8') {
 
                         ?>
                             <div class="col-md-4 top-buffer">
@@ -166,7 +166,7 @@ if (isset($kar_data) and !empty($kar_data)) {
                             echo null;
                         } ?>
 
-                        <?php if ($das['kar'] == 'kar_09') {
+                        <?php if ($das['kar'] == 'kar_9') {
 
                         ?>
                             <div class="col-md-4 top-buffer">
