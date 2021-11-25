@@ -8,7 +8,7 @@ if (isset($kar_data) and !empty($kar_data)) {
         <h4 class="text-center"><?= $k["nama_aksesi"] ?></h4><br>
         <img class="center" src="<?php echo base_url('assets/data/' . $k['image']) ?>" width="300" />
         <div class="form">
-            <?php if ($row["kar_1"] != null) { ?>
+            <?php if ($k["kar_1"] != null) { ?>
 
                 <div class="form-group row">
                     <div class="col-sm-6 mb-3 mb-sm-0">

@@ -459,6 +459,16 @@ class Tanaman extends CI_Controller
 		redirect('tanaman/abaka');
 	}
 
+	function hapus_jarak_pagar($no_aksesi)
+	{
+		$where = array('no_aksesi' => $no_aksesi);
+		$this->m_edit_data->hapus_data($where, 'dat_jarak_pagar');
+		$this->m_edit_data->hapus_data($where, 'foto_jarak_pagar');
+		$this->m_edit_data->hapus_data($where, 'benih_jarak_pagar');
+		$this->m_edit_data->hapus_data($where, 'pas_jarak_pagar');
+		redirect('tanaman/jarak_pagar');
+	}
+
 	function hapus_bm($no_aksesi)
 	{
 		$where = array('no_aksesi' => $no_aksesi);

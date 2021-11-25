@@ -17,7 +17,7 @@ if (isset($kar_data) and !empty($kar_data)) {
         <img class="center" src="<?php echo base_url('assets/data/' . $k['image']) ?>" width="300" />
         <br>
         <div class="form">
-            <?php if ($k["kar_01"] != null) { ?>
+            <?php if ($k["kar_1"] != null) { ?>
                 <form class="user">
                     <div class="form-group row">
                         <div class="col-sm-6 mb-3 mb-sm-0">
@@ -82,7 +82,7 @@ if (isset($kar_data) and !empty($kar_data)) {
                         <div class="col-sm">
                             <label>Warna daun</label>
                             <select class="form-control form-select-user" name="kar_01" disabled>
-                                <option selected><?= $k['kar_01']; ?></option>
+                                <option selected><?= $k['kar_1']; ?></option>
                                 <option value="1">1. Hijau</option>
                                 <option value="2">2. Hijau kekuningan</option>
                                 <option value="3">3. Hijau tua</option>
@@ -107,7 +107,7 @@ if (isset($kar_data) and !empty($kar_data)) {
                         <div class="col-sm">
                             <label>Bulu daun</label>
                             <select class="form-control form-select-user" name="kar_02" disabled>
-                                <option selected><?= $k['kar_02']; ?></option>
+                                <option selected><?= $k['kar_2']; ?></option>
                                 <option value="1">1. Tidak berbulu</option>
                                 <option value="2">2. Berbulu halus</option>
                                 <option value="3">3. Berbulu</option>
@@ -137,7 +137,7 @@ if (isset($kar_data) and !empty($kar_data)) {
                         <div class="col-sm">
                             <label>Posisi daun</label>
                             <select class="form-control form-select-user" name="kar_03" disabled>
-                                <option selected><?= $k['kar_03']; ?></option>
+                                <option selected><?= $k['kar_3']; ?></option>
                                 <option value="1">1. Menyirip</option>
                                 <option value="2">2. Campuran</option>
                                 <option value="3">3. Zig-zag</option>
@@ -162,7 +162,7 @@ if (isset($kar_data) and !empty($kar_data)) {
                         <div class="col-sm">
                             <label>Bentik daun</label>
                             <select class="form-control form-select-user" name="kar_04" disabled>
-                                <option selected><?= $k['kar_04']; ?></option>
+                                <option selected><?= $k['kar_4']; ?></option>
                                 <option value="1">1. Utuh</option>
                                 <option value="2">2. Berlekuk</option>
                             </select>
@@ -190,7 +190,7 @@ if (isset($kar_data) and !empty($kar_data)) {
                         <div class="col-sm">
                             <label>Permukaan daun</label>
                             <select class="form-control form-select-user" name="kar_05" disabled>
-                                <option selected><?= $k['kar_05']; ?></option>
+                                <option selected><?= $k['kar_5']; ?></option>
                                 <option value="1">1. Datar</option>
                                 <option value="2">2. Cembung</option>
                             </select>
@@ -214,7 +214,7 @@ if (isset($kar_data) and !empty($kar_data)) {
                         <div class="col-sm">
                             <label>Sudut daun pada batang</label>
                             <select class="form-control form-select-user" name="kar_06" disabled>
-                                <option selected><?= $k['kar_06']; ?></option>
+                                <option selected><?= $k['kar_6']; ?></option>
                                 <option value="1">1. Tegak</option>
                                 <option value="2">2. Mendatar</option>
                                 <option value="3">3. Menggantung</option>
@@ -235,7 +235,7 @@ if (isset($kar_data) and !empty($kar_data)) {
                         <div class="col-sm">
                             <label>Warna mahkota bunga</label>
                             <select class="form-control form-select-user" name="kar_07" disabled>
-                                <option selected><?= $k['kar_07']; ?></option>
+                                <option selected><?= $k['kar_7']; ?></option>
                                 <option value="1">1. Putih</option>
                                 <option value="2">2. Putih sedikit ungu</option>
                                 <option value="3">3. Putih keunguan</option>
@@ -259,7 +259,7 @@ if (isset($kar_data) and !empty($kar_data)) {
                         <div class="col-sm">
                             <label>Warna bibir bunga</label>
                             <select class="form-control form-select-user" name="kar_08" disabled>
-                                <option selected><?= $k['kar_08']; ?></option>
+                                <option selected><?= $k['kar_8']; ?></option>
                                 <option value="1">1. Warna halus</option>
                                 <option value="2">2. Warna tajam</option>
                             </select>
@@ -278,7 +278,7 @@ if (isset($kar_data) and !empty($kar_data)) {
                         <div class="col-sm">
                             <label>Bulu mahkota bunga</label>
                             <select class="form-control form-select-user" name="kar_09" disabled>
-                                <option selected><?= $k['kar_09']; ?></option>
+                                <option selected><?= $k['kar_9']; ?></option>
                                 <option value="1">1. Tidak berbulu</option>
                                 <option value="2">2. berbulu</option>
                             </select>
