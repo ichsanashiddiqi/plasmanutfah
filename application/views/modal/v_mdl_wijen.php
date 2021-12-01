@@ -367,6 +367,7 @@ if (isset($kar_data) and !empty($kar_data)) {
                         <?php } else {
                             echo null;
                         } ?>
+                        
 
                     <?php endforeach; ?>
 

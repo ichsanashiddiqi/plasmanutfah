@@ -26,62 +26,63 @@
             <div class="tab-content">
                 <div role="tabpanel" class="tab-pane active" id="karakter">
                     <?php
-                    foreach ($dat_tebu as $k) {
+
+                    foreach ($dat_tebu as $kps) {
                     ?>
                         <form class="user" method="post" action="<?php echo base_url('edit_plant/edit_tebu/kar_tebu'); ?>">
                             <div class="form-group row">
                                 <div class="col-sm-6 mb-3 mb-sm-0">
                                     <label>No. Aksesi</label>
-                                    <input type="text" class="form-control" id="no_aksesi" name="no_aksesi" placeholder="No. Aksesi" value="<?= $k->no_aksesi; ?>" readonly>
+                                    <input type="text" class="form-control" id="no_aksesi" name="no_aksesi" placeholder="No. Aksesi" value="<?= $kps['no_aksesi']; ?>" readonly>
                                 </div>
                                 <div class="col-sm-6">
                                     <label>No. Aksesi KNPN</label>
-                                    <input type="text" class="form-control" id="no_aksesi_IDN" name="no_aksesi_IDN" value="<?= $k->no_aksesi_IDN; ?>">
+                                    <input type="text" class="form-control" id="no_aksesi_IDN" name="no_aksesi_IDN" value="<?= $kps['no_aksesi_IDN']; ?>">
                                 </div>
                             </div>
                             <div class="form-group">
                                 <label>Nama Aksesi</label>
-                                <input type="text" class="form-control" id="nama_aksesi" name="nama_aksesi" value="<?= $k->nama_aksesi; ?>">
+                                <input type="text" class="form-control" id="nama_aksesi" name="nama_aksesi" value="<?= $kps['nama_aksesi']; ?>">
                             </div>
                             <hr>
                             <div class="form-group row">
                                 <div class="col-sm-6 mb-3 mb-sm-0">
                                     <label>Negara Asal</label>
-                                    <input type="text" class="form-control" id="Negara" name="Negara" value="<?= $k->Negara; ?>">
+                                    <input type="text" class="form-control" id="Negara" name="Negara" value="<?= $kps['Negara']; ?>">
                                 </div>
                                 <div class="col-sm-6">
                                     <label>Donor</label>
-                                    <input type="text" class="form-control" id="Donor" name="Donor" value="<?= $k->Donor; ?>">
+                                    <input type="text" class="form-control" id="Donor" name="Donor" value="<?= $kps['Donor']; ?>">
                                 </div>
                             </div>
                             <div class="form-group row">
                                 <div class="col-sm-6 mb-3 mb-sm-0">
                                     <label>Desa</label>
-                                    <input type="text" class="form-control" id="Desa" name="Desa" value="<?= $k->Desa; ?>">
+                                    <input type="text" class="form-control" id="Desa" name="Desa" value="<?= $kps['Desa']; ?>">
                                 </div>
                                 <div class="col-sm-6">
                                     <label>Kecamatan</label>
-                                    <input type="text" class="form-control" id="Kecamatan" name="Kecamatan" value="<?= $k->Kecamatan; ?>">
+                                    <input type="text" class="form-control" id="Kecamatan" name="Kecamatan" value="<?= $kps['Kecamatan']; ?>">
                                 </div>
                             </div>
                             <div class="form-group row">
                                 <div class="col-sm-6 mb-3 mb-sm-0">
                                     <label>Kabupaten</label>
-                                    <input type="text" class="form-control" id="Kabupaten" name="Kabupaten" value="<?= $k->Kabupaten; ?>">
+                                    <input type="text" class="form-control" id="Kabupaten" name="Kabupaten" value="<?= $kps['Kabupaten']; ?>">
                                 </div>
                                 <div class="col-sm-6">
                                     <label>Provinsi Asal</label>
-                                    <input type="text" class="form-control" id="Propinsi" name="Propinsi" value="<?= $k->Propinsi; ?>">
+                                    <input type="text" class="form-control" id="Propinsi" name="Propinsi" value="<?= $kps['Propinsi']; ?>">
                                 </div>
                             </div>
                             <div class="form-group row">
                                 <div class="col-sm-6 mb-3 mb-sm-0">
                                     <label>Posisi Lintang</label>
-                                    <input type="text" class="form-control" id="latittude" name="lattitude" value="<?= $k->lattitude; ?>">
+                                    <input type="text" class="form-control" id="latittude" name="lattitude" value="<?= $kps['lattitude']; ?>">
                                 </div>
                                 <div class="col-sm-6">
                                     <label>Bujur</label>
-                                    <input type="text" class="form-control" id="longitude" name="longitude" value="<?= $k->longitude; ?>">
+                                    <input type="text" class="form-control" id="longitude" name="longitude" value="<?= $kps['longitude']; ?>">
                                 </div>
                             </div>
                             <hr>
@@ -90,365 +91,622 @@
 
                             <div class="form-group row">
 
-                                <div class="col-sm">
-                                    <label>Helai daun</label>
-                                    <select class="form-control form-select-user" name="kar_1">
-                                        <option selected><?= $k->kar_1; ?></option>
-                                        <option value="1">1. Tegak</option>
-                                        <option value="2">2. Melengkung < 1/2</option>
-                                        <option value="3">3. Melengkung >= 1/2</option>
-                                    </select>
-                                </div>
-                                <div class="col-sm">
-                                    <label>Warna batang</label>
-                                    <select class="form-control form-select-user" name="kar_14">
-                                        <option selected><?= $k->kar_14; ?></option>
-                                        <option value="1">1. Kuning kemerahan</option>
-                                    </select>
-                                </div>
-                                <div class="col-sm">
-                                    <label>Bentuk mata</label>
-                                    <select class="form-control form-select-user" name="kar_27">
-                                        <option selected><?= $k->kar_27; ?></option>
-                                        <option value="1">1. Bulat</option>
-                                        <option value="2">2. Bulat panjang</option>
-                                        <option value="3">3. Bulat telur</option>
-                                        <option value="4">4. Bulat telur terbalik</option>
-                                        <option value="5">5. Segitiga</option>
-                                    </select>
-                                </div>
-                            </div>
-                            <!-- xxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxx -->
-                            <div class="form-group row">
-                                <div class="col-sm">
-                                    <label>Lebar helai daun</label>
-                                    <select class="form-control form-select-user" name="kar_2">
-                                        <option selected><?= $k->kar_2; ?></option>
-                                        <option value="1">1. Lebar < 4cm</option>
-                                        <option value="2">2. Lebar 4-6 cm</option>
-                                        <option value="3">3. Lebar > 6</option>
-                                    </select>
-                                </div>
-                                <div class="col-sm">
-                                    <label>Lapisan lilin batang</label>
-                                    <select class="form-control form-select-user" name="kar_15">
-                                        <option selected><?= $k->kar_15; ?></option>
-                                        <option value="1">1. Tidak ada</option>
-                                        <option value="2">2. Tipis</option>
-                                        <option value="3">3. Sedang</option>
-                                        <option value="4">4. Tebal</option>
-                                    </select>
-                                </div>
-                                <div class="col-sm">
-                                    <label>Bagian terlebar</label>
-                                    <select class="form-control form-select-user" name="kar_28">
-                                        <option selected><?= $k->kar_28; ?></option>
-                                        <option value="1">1. Di bawah tengah-tengah mata</option>
-                                        <option value="2">2. Pada tengah-tengah mata</option>
-                                        <option value="3">3. Di atas tengah-tengah mata</option>
-                                    </select>
-                                </div>
-                            </div>
-                            <!-- xxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxx -->
-                            <div class="form-group row">
-                                <div class="col-sm">
-                                    <label>Warna daun</label>
-                                    <select class="form-control form-select-user" name="kar_3">
-                                        <option selected><?= $k->kar_3; ?></option>
-                                        <option value="1">1. Hijau</option>
-                                        <option value="2">2. Hijau tua</option>
-                                        <option value="3">3. Kekuningan</option>
-                                    </select>
-                                </div>
-                                <div class="col-sm">
-                                    <label>Bentuk ruas</label>
-                                    <select class="form-control form-select-user" name="kar_16">
-                                        <option selected><?= $k->kar_16; ?></option>
-                                        <option value="1">1. Silindris</option>
-                                        <option value="2">2. Konis</option>
-                                        <option value="3">3. Konis terbalik</option>
-                                        <option value="4">4. Tong</option>
-                                        <option value="5">5. Kumparan</option>
-                                        <option value="6">6. Cembung-cekung</option>
-                                    </select>
-                                </div>
-                                <div class="col-sm">
-                                    <label>Ukuran sayap</label>
-                                    <select class="form-control form-select-user" name="kar_29">
-                                        <option selected><?= $k->kar_29; ?></option>
-                                        <option value="1">1. Sama lebar</option>
-                                        <option value="2">2. Tidak sama lebar</option>
-                                    </select>
-                                </div>
-                            </div>
-                            <!-- xxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxx -->
-                            <div class="form-group row">
-                                <div class="col-sm">
-                                    <label>Warna sendi segitiga</label>
-                                    <select class="form-control form-select-user" name="kar_4">
-                                        <option selected><?= $k->kar_4; ?></option>
-                                        <option value="1">1. Hijau kecoklatan</option>
-                                        <option value="2">2. Coklat kehijauan</option>
-                                        <option value="3">3. Coklat muda</option>
-                                        <option value="4">4. Coklat kekuningan</option>
-                                    </select>
-                                </div>
-                                <div class="col-sm">
-                                    <label>Susunan ruas</label>
-                                    <select class="form-control form-select-user" name="kar_17">
-                                        <option selected><?= $k->kar_17; ?></option>
-                                        <option value="1">1. Lurus</option>
-                                        <option value="2">2. Berbiku</option>
-                                    </select>
-                                </div>
-                                <div class="col-sm">
-                                    <label>Tepi sayap</label>
-                                    <select class="form-control form-select-user" name="kar_30">
-                                        <option selected><?= $k->kar_30; ?></option>
-                                        <option value="1">1. Rata</option>
-                                        <option value="2">2. Bergerigi</option>
-                                        <option value="3">3. Puncak berlekuk</option>
-                                    </select>
-                                </div>
-                            </div>
-                            <!-- xxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxx -->
-                            <div class="form-group row">
-                                <div class="col-sm">
-                                    <label>Telinga daun</label>
-                                    <select class="form-control form-select-user" name="kar_5">
-                                        <option selected><?= $k->kar_5; ?></option>
-                                        <option value="1">1. Tidak ada</option>
-                                        <option value="2">2. Tinggi 1 kali lebarnya</option>
-                                        <option value="3">3. 1 < tinggi < 3 kali lebarnya</option>
-                                        <option value="4">4. Tinggi >= 3 kali lebarnya</option>
-                                        <option value="5">5. Tegak / serong</option>
-                                    </select>
-                                </div>
-                                <div class="col-sm">
-                                    <label>Noda gabus</label>
-                                    <select class="form-control form-select-user" name="kar_18">
-                                        <option selected><?= $k->kar_18; ?></option>
-                                        <option value="1">1. Tidak ada</option>
-                                        <option value="2">2. Jarang, mencapai ruas</option>
-                                        <option value="3">3. Jarang, tidak mencapai ruas</option>
-                                        <option value="4">4. Rapat, mencapai ruas</option>
-                                        <option value="5">5. Rapat, tidak mencapai ruas</option>
-                                    </select>
-                                </div>
-                                <div class="col-sm">
-                                    <label>Pusat tumbuh</label>
-                                    <select class="form-control form-select-user" name="kar_31">
-                                        <option selected><?= $k->kar_31; ?></option>
-                                        <option value="1">1. Di bawah mata</option>
-                                        <option value="2">2. Pada mata</option>
-                                        <option value="3">3. Di atas tengah mata</option>
-                                        <option value="4">4. Di puncak mata</option>
-                                    </select>
-                                </div>
-                            </div>
-                            <!-- xxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxx -->
-                            <div class="form-group row">
-                                <div class="col-sm">
-                                    <label>Bulu bidang punggung</label>
-                                    <select class="form-control form-select-user" name="kar_6">
-                                        <option selected><?= $k->kar_6; ?></option>
-                                        <option value="1">1. Tidak ada</option>
-                                        <option value="2">2. Lebar</option>
-                                    </select>
-                                </div>
-                                <div class="col-sm">
-                                    <label>Retak gabus</label>
-                                    <select class="form-control form-select-user" name="kar_19">
-                                        <option selected><?= $k->kar_19; ?></option>
-                                        <option value="1">1. Tidak ada</option>
-                                        <option value="2">2. Jarang, mencapai ruas</option>
-                                        <option value="3">3. Jarang, tidak mencapai ruas</option>
-                                        <option value="4">4. Rapat, mencapai ruas</option>
-                                        <option value="5">5. Rapat, tidak mencapai ruas</option>
-                                    </select>
-                                </div>
-                                <div class="col-sm">
-                                    <label>Rambut tepi basal</label>
-                                    <select class="form-control form-select-user" name="kar_32">
-                                        <option selected><?= $k->kar_32; ?></option>
-                                        <option value="1">1. Ada</option>
-                                        <option value="2">2. Tidak ada</option>
-                                    </select>
-                                </div>
-                            </div>
-                            <div class="form-group row">
-                                <div class="col-sm">
-                                    <label>Sebaran bulu bidang</label>
-                                    <select class="form-control form-select-user" name="kar_7">
-                                        <option selected><?= $k->kar_7; ?></option>
-                                        <option value="1">1. Tidak mencapai puncak</option>
-                                        <option value="2">2. Hampir mencapai puncak</option>
-                                        <option value="3">3. Mencapai puncak</option>
-                                    </select>
-                                </div>
-                                <div class="col-sm">
-                                    <label>Retakan tumbuh</label>
-                                    <select class="form-control form-select-user" name="kar_20">
-                                        <option selected><?= $k->kar_20; ?></option>
-                                        <option value="1">1. Tidak ada</option>
-                                        <option value="2">2. < 1/4 dari jumlah ruas</option>
-                                        <option value="3">3. >= 1/4 dari jumlah ruas</option>
-                                        <option value="4">4. Semua ruas</option>
-                                    </select>
-                                </div>
-                                <div class="col-sm">
-                                    <label>Rambut jambul</label>
-                                    <select class="form-control form-select-user" name="kar_33">
-                                        <option selected><?= $k->kar_33; ?></option>
-                                        <option value="1">1. Ada</option>
-                                        <option value="2">2. Tidak ada</option>
-                                    </select>
-                                </div>
-                            </div>
-                            <!-- xxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxx -->
-                            <div class="form-group row">
-                                <div class="col-sm">
-                                    <label>Posisi bulu bidang</label>
-                                    <select class="form-control form-select-user" name="kar_8">
-                                        <option selected><?= $k->kar_8; ?></option>
-                                        <option value="1">1. Rebah</option>
-                                        <option value="2">2. Condong</option>
-                                        <option value="3">3. Tegak</option>
-                                    </select>
-                                </div>
-                                <div class="col-sm">
-                                    <label>Alur mata</label>
-                                    <select class="form-control form-select-user" name="kar_21">
-                                        <option selected><?= $k->kar_21; ?></option>
-                                        <option value="1">1. Tidak ada</option>
-                                        <option value="2">2. Sempit, mencapai tengah ruas, dangkal</option>
-                                        <option value="3">3. Sempit, mencapai tengah ruas, dalam</option>
-                                        <option value="4">4. Sempit, tidak mencapai tengah ruas, dangkal</option>
-                                        <option value="5">5. Sempit, tidak mencapai tengah ruas, dalam</option>
-                                        <option value="6">6. Lebar, mencapai tengah ruas, dangkal</option>
-                                        <option value="7">7. Lebar, mencapai tengah ruas, dalam</option>
-                                        <option value="8">8. Lebar, tidak mencapai tengah ruas, dangkal</option>
-                                        <option value="9">9. Lebar, tidak mencapai tengah ruas, dalam</option>
-                                    </select>
-                                </div>
-                                <div class="col-sm">
-                                    <label>Ukuran rambut kambul</label>
-                                    <select class="form-control form-select-user" name="kar_34">
-                                        <option selected><?= $k->kar_34; ?></option>
-                                        <option value="1">1. Kecil</option>
-                                        <option value="2">2. Sedang</option>
-                                        <option value="3">3. Besar</option>
-                                    </select>
-                                </div>
-                            </div>
-                            <!-- xxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxx -->
-                            <div class="form-group row">
-                                <div class="col-sm">
-                                    <label>Kuantitas bulu bidang</label>
-                                    <select class="form-control form-select-user" name="kar_9">
-                                        <option selected><?= $k->kar_9; ?></option>
-                                        <option value="1">1. Jarang</option>
-                                        <option value="2">2. Lebat</option>
-                                    </select>
-                                </div>
-                                <div class="col-sm">
-                                    <label>Penampang melintang</label>
-                                    <select class="form-control form-select-user" name="kar_22">
-                                        <option selected><?= $k->kar_22; ?></option>
-                                        <option value="1">1. Bulat</option>
-                                        <option value="2">2. Pipih</option>
-                                    </select>
-                                </div>
-                            </div>
-                            <!-- xxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxx -->
-                            <div class="form-group row">
-                                <div class="col-sm">
-                                    <label>Lebar pelapah bulu</label>
-                                    <select class="form-control form-select-user" name="kar_10">
-                                        <option selected><?= $k->kar_10; ?></option>
-                                        <option value="1">1. < 1/4 lebar pelepah</option>
-                                        <option value="2">2. > 1/4 lebar pelepah</option>
-                                    </select>
-                                </div>
-                                <div class="col-sm">
-                                    <label>Teras batang</label>
-                                    <select class="form-control form-select-user" name="kar_23">
-                                        <option selected><?= $k->kar_23; ?></option>
-                                        <option value="1">1. Masip, voos kecil </option>
-                                        <option value="2">2. Masip, voos besar</option>
-                                        <option value="3">3. Lubang kecil, voos kecil</option>
-                                        <option value="4">4. Lubang kecil, voos besar</option>
-                                        <option value="5">5. Sedang, voos kecil</option>
-                                        <option value="6">6. Sedang, voos besar</option>
-                                        <option value="7">7. Kecil, voos kecil</option>
-                                        <option value="8">8. Besar, voos besar</option>
-                                    </select>
-                                </div>
-                            </div>
-                            <!-- xxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxx -->
-                            <div class="form-group row">
-                                <div class="col-sm">
-                                    <label>Sifat lepas pelepah</label>
-                                    <select class="form-control form-select-user" name="kar_11">
-                                        <option selected><?= $k->kar_11; ?></option>
-                                        <option value="1">1. Sukar</option>
-                                        <option value="2">2. Agak mudah</option>
-                                        <option value="3">3. Mudah</option>
-                                    </select>
-                                </div>
-                                <div class="col-sm">
-                                    <label>Cincin tumbuh</label>
-                                    <select class="form-control form-select-user" name="kar_24">
-                                        <option selected><?= $k->kar_24; ?></option>
-                                        <option value="1">1. Di atas</option>
-                                        <option value="2">2. Menyinggung</option>
-                                        <option value="3">3. Di belakang</option>
-                                        <option value="4">4. Di bawah</option>
-                                        <option value="5">5. Puncak mata</option>
-                                    </select>
-                                </div>
-                            </div>
-                            <!-- xxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxx -->
-                            <div class="form-group row">
-                                <div class="col-sm">
-                                    <label>Lapisan lilin pada pelepah</label>
-                                    <select class="form-control form-select-user" name="kar_12">
-                                        <option selected><?= $k->kar_12; ?></option>
-                                        <option value="1">1. Tidak ada</option>
-                                        <option value="2">2. Sedikit</option>
-                                        <option value="3">3. Sedang</option>
-                                    </select>
-                                </div>
-                                <div class="col-sm">
-                                    <label>Mata akar</label>
-                                    <select class="form-control form-select-user" name="kar_25">
-                                        <option selected><?= $k->kar_25; ?></option>
-                                        <option value="1">1. Kosong</option>
-                                    </select>
-                                </div>
-                            </div>
-                            <!-- xxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxx -->
-                            <div class="form-group row">
-                                <div class="col-sm">
-                                    <label>Warna pelepah daun</label>
-                                    <select class="form-control form-select-user" name="kar_13">
-                                        <option selected><?= $k->kar_13; ?></option>
-                                        <option value="1">1. Hijau tua</option>
-                                        <option value="2">2. Hijau muda</option>
-                                        <option value="3">3. Hijau kekuningan</option>
-                                        <option value="4">4. Ungu muda</option>
-                                        <option value="5">5. Ungu tua</option>
-                                        <option value="6">6. Hijau kemerahan</option>
-                                    </select>
-                                </div>
-                                <div class="col-sm">
-                                    <label>Kedudukan mata</label>
-                                    <select class="form-control form-select-user" name="kar_26">
-                                        <option selected><?= $k->kar_26; ?></option>
-                                        <option value="1">1. Pada bekas pangkal pelapah daun</option>
-                                        <option value="2">2. Di atas bekas pangkal pelapah daun</option>
-                                    </select>
-                                </div>
+                                <?php foreach ($idkar as $das) : ?>
+                                    <?php if ($das['kar'] == 'kar_1') {
+
+                                    ?>
+                                        <div class="col-md-4 top-buffer">
+                                            <label><?= $das['question']; ?></label>
+                                            <input type="text" class="form-control" id="<?= $das['kar']; ?>" name="<?= $das['kar']; ?>" value="<?= $kps['kar_1']; ?>">
+                                        </div>
+                                    <?php } else {
+                                        echo null;
+                                    } ?>
+                                    <?php if ($das['kar'] == 'kar_2') {
+
+                                    ?>
+                                        <div class="col-md-4 top-buffer">
+                                            <label><?= $das['question']; ?></label>
+                                            <input type="text" class="form-control" id="<?= $das['kar']; ?>" name="<?= $das['kar']; ?>" value="<?= $kps['kar_2']; ?>">
+                                        </div>
+                                    <?php } else {
+                                        echo null;
+                                    } ?>
+
+                                    <?php if ($das['kar'] == 'kar_3') {
+
+                                    ?>
+                                        <div class="col-md-4 top-buffer">
+                                            <label><?= $das['question']; ?></label>
+                                            <input type="text" class="form-control" id="<?= $das['kar']; ?>" name="<?= $das['kar']; ?>" value="<?= $kps['kar_3']; ?>">
+                                        </div>
+                                    <?php } else {
+                                        echo null;
+                                    } ?>
+
+                                    <?php if ($das['kar'] == 'kar_4') {
+
+                                    ?>
+                                        <div class="col-md-4 top-buffer">
+                                            <label><?= $das['question']; ?></label>
+                                            <input type="text" class="form-control" id="<?= $das['kar']; ?>" name="<?= $das['kar']; ?>" value="<?= $kps['kar_4']; ?>">
+                                        </div>
+                                    <?php } else {
+                                        echo null;
+                                    } ?>
+
+                                    <?php if ($das['kar'] == 'kar_5') {
+
+                                    ?>
+                                        <div class="col-md-4 top-buffer">
+                                            <label><?= $das['question']; ?></label>
+                                            <input type="text" class="form-control" id="<?= $das['kar']; ?>" name="<?= $das['kar']; ?>" value="<?= $kps['kar_5']; ?>">
+                                        </div>
+                                    <?php } else {
+                                        echo null;
+                                    } ?>
+
+                                    <?php if ($das['kar'] == 'kar_6') {
+
+                                    ?>
+                                        <div class="col-md-4 top-buffer">
+                                            <label><?= $das['question']; ?></label>
+                                            <input type="text" class="form-control" id="<?= $das['kar']; ?>" name="<?= $das['kar']; ?>" value="<?= $kps['kar_6']; ?>">
+                                        </div>
+                                    <?php } else {
+                                        echo null;
+                                    } ?>
+
+                                    <?php if ($das['kar'] == 'kar_7') {
+
+                                    ?>
+                                        <div class="col-md-4 top-buffer">
+                                            <label><?= $das['question']; ?></label>
+                                            <input type="text" class="form-control" id="<?= $das['kar']; ?>" name="<?= $das['kar']; ?>" value="<?= $kps['kar_7']; ?>">
+                                        </div>
+                                    <?php } else {
+                                        echo null;
+                                    } ?>
+
+                                    <?php if ($das['kar'] == 'kar_8') {
+
+                                    ?>
+                                        <div class="col-md-4 top-buffer">
+                                            <label><?= $das['question']; ?></label>
+                                            <input type="text" class="form-control" id="<?= $das['kar']; ?>" name="<?= $das['kar']; ?>" value="<?= $kps['kar_8']; ?>">
+                                        </div>
+                                    <?php } else {
+                                        echo null;
+                                    } ?>
+
+                                    <?php if ($das['kar'] == 'kar_9') {
+
+                                    ?>
+                                        <div class="col-md-4 top-buffer">
+                                            <label><?= $das['question']; ?></label>
+                                            <input type="text" class="form-control" id="<?= $das['kar']; ?>" name="<?= $das['kar']; ?>" value="<?= $kps['kar_9']; ?>">
+                                        </div>
+                                    <?php } else {
+                                        echo null;
+                                    } ?>
+
+                                    <?php if ($das['kar'] == 'kar_10') {
+
+                                    ?>
+                                        <div class="col-md-4 top-buffer">
+                                            <label><?= $das['question']; ?></label>
+                                            <input type="text" class="form-control" id="<?= $das['kar']; ?>" name="<?= $das['kar']; ?>" value="<?= $kps['kar_10']; ?>">
+                                        </div>
+                                    <?php } else {
+                                        echo null;
+                                    } ?>
+
+                                    <?php if ($das['kar'] == 'kar_11') {
+
+                                    ?>
+                                        <div class="col-md-4 top-buffer">
+                                            <label><?= $das['question']; ?></label>
+                                            <input type="text" class="form-control" id="<?= $das['kar']; ?>" name="<?= $das['kar']; ?>" value="<?= $kps['kar_11']; ?>">
+                                        </div>
+                                    <?php } else {
+                                        echo null;
+                                    } ?>
+
+                                    <?php if ($das['kar'] == 'kar_12') {
+
+                                    ?>
+                                        <div class="col-md-4 top-buffer">
+                                            <label><?= $das['question']; ?></label>
+                                            <input type="text" class="form-control" id="<?= $das['kar']; ?>" name="<?= $das['kar']; ?>" value="<?= $kps['kar_12']; ?>">
+                                        </div>
+                                    <?php } else {
+                                        echo null;
+                                    } ?>
+
+                                    <?php if ($das['kar'] == 'kar_13') {
+
+                                    ?>
+                                        <div class="col-md-4 top-buffer">
+                                            <label><?= $das['question']; ?></label>
+                                            <input type="text" class="form-control" id="<?= $das['kar']; ?>" name="<?= $das['kar']; ?>" value="<?= $kps['kar_13']; ?>">
+                                        </div>
+                                    <?php } else {
+                                        echo null;
+                                    } ?>
+
+                                    <?php if ($das['kar'] == 'kar_14') {
+
+                                    ?>
+                                        <div class="col-md-4 top-buffer">
+                                            <label><?= $das['question']; ?></label>
+                                            <input type="text" class="form-control" id="<?= $das['kar']; ?>" name="<?= $das['kar']; ?>" value="<?= $kps['kar_14']; ?>">
+                                        </div>
+                                    <?php } else {
+                                        echo null;
+                                    } ?>
+
+                                    <?php if ($das['kar'] == 'kar_15') {
+
+                                    ?>
+                                        <div class="col-md-4 top-buffer">
+                                            <label><?= $das['question']; ?></label>
+                                            <input type="text" class="form-control" id="<?= $das['kar']; ?>" name="<?= $das['kar']; ?>" value="<?= $kps['kar_15']; ?>">
+                                        </div>
+                                    <?php } else {
+                                        echo null;
+                                    } ?>
+
+                                    <?php if ($das['kar'] == 'kar_16') {
+
+                                    ?>
+                                        <div class="col-md-4 top-buffer">
+                                            <label><?= $das['question']; ?></label>
+                                            <input type="text" class="form-control" id="<?= $das['kar']; ?>" name="<?= $das['kar']; ?>" value="<?= $kps['kar_16']; ?>">
+                                        </div>
+                                    <?php } else {
+                                        echo null;
+                                    } ?>
+
+                                    <?php if ($das['kar'] == 'kar_17') {
+
+                                    ?>
+                                        <div class="col-md-4 top-buffer">
+                                            <label><?= $das['question']; ?></label>
+                                            <input type="text" class="form-control" id="<?= $das['kar']; ?>" name="<?= $das['kar']; ?>" value="<?= $kps['kar_17']; ?>">
+                                        </div>
+                                    <?php } else {
+                                        echo null;
+                                    } ?>
+
+                                    <?php if ($das['kar'] == 'kar_18') {
+
+                                    ?>
+                                        <div class="col-md-4 top-buffer">
+                                            <label><?= $das['question']; ?></label>
+                                            <input type="text" class="form-control" id="<?= $das['kar']; ?>" name="<?= $das['kar']; ?>" value="<?= $kps['kar_18']; ?>">
+                                        </div>
+                                    <?php } else {
+                                        echo null;
+                                    } ?>
+
+                                    <?php if ($das['kar'] == 'kar_19') {
+
+                                    ?>
+                                        <div class="col-md-4 top-buffer">
+                                            <label><?= $das['question']; ?></label>
+                                            <input type="text" class="form-control" id="<?= $das['kar']; ?>" name="<?= $das['kar']; ?>" value="<?= $kps['kar_19']; ?>">
+                                        </div>
+                                    <?php } else {
+                                        echo null;
+                                    } ?>
+
+                                    <?php if ($das['kar'] == 'kar_20') {
+
+                                    ?>
+                                        <div class="col-md-4 top-buffer">
+                                            <label><?= $das['question']; ?></label>
+                                            <input type="text" class="form-control" id="<?= $das['kar']; ?>" name="<?= $das['kar']; ?>" value="<?= $kps['kar_20']; ?>">
+                                        </div>
+                                    <?php } else {
+                                        echo null;
+                                    } ?>
+
+                                    <?php if ($das['kar'] == 'kar_21') {
+
+                                    ?>
+                                        <div class="col-md-4 top-buffer">
+                                            <label><?= $das['question']; ?></label>
+                                            <input type="text" class="form-control" id="<?= $das['kar']; ?>" name="<?= $das['kar']; ?>" value="<?= $kps['kar_21']; ?>">
+                                        </div>
+                                    <?php } else {
+                                        echo null;
+                                    } ?>
+
+                                    <?php if ($das['kar'] == 'kar_22') {
+
+                                    ?>
+                                        <div class="col-md-4 top-buffer">
+                                            <label><?= $das['question']; ?></label>
+                                            <input type="text" class="form-control" id="<?= $das['kar']; ?>" name="<?= $das['kar']; ?>" value="<?= $kps['kar_22']; ?>">
+                                        </div>
+                                    <?php } else {
+                                        echo null;
+                                    } ?>
+
+                                    <?php if ($das['kar'] == 'kar_23') {
+
+                                    ?>
+                                        <div class="col-md-4 top-buffer">
+                                            <label><?= $das['question']; ?></label>
+                                            <input type="text" class="form-control" id="<?= $das['kar']; ?>" name="<?= $das['kar']; ?>" value="<?= $kps['kar_23']; ?>">
+                                        </div>
+                                    <?php } else {
+                                        echo null;
+                                    } ?>
+
+                                    <?php if ($das['kar'] == 'kar_24') {
+
+                                    ?>
+                                        <div class="col-md-4 top-buffer">
+                                            <label><?= $das['question']; ?></label>
+                                            <input type="text" class="form-control" id="<?= $das['kar']; ?>" name="<?= $das['kar']; ?>" value="<?= $kps['kar_24']; ?>">
+                                        </div>
+                                    <?php } else {
+                                        echo null;
+                                    } ?>
+
+                                    <?php if ($das['kar'] == 'kar_25') {
+
+                                    ?>
+                                        <div class="col-md-4 top-buffer">
+                                            <label><?= $das['question']; ?></label>
+                                            <input type="text" class="form-control" id="<?= $das['kar']; ?>" name="<?= $das['kar']; ?>" value="<?= $kps['kar_25']; ?>">
+                                        </div>
+                                    <?php } else {
+                                        echo null;
+                                    } ?>
+
+                                    <?php if ($das['kar'] == 'kar_26') {
+
+                                    ?>
+                                        <div class="col-md-4 top-buffer">
+                                            <label><?= $das['question']; ?></label>
+                                            <input type="text" class="form-control" id="<?= $das['kar']; ?>" name="<?= $das['kar']; ?>" value="<?= $kps['kar_26']; ?>">
+                                        </div>
+                                    <?php } else {
+                                        echo null;
+                                    } ?>
+
+                                    <?php if ($das['kar'] == 'kar_27') {
+
+                                    ?>
+                                        <div class="col-md-4 top-buffer">
+                                            <label><?= $das['question']; ?></label>
+                                            <input type="text" class="form-control" id="<?= $das['kar']; ?>" name="<?= $das['kar']; ?>" value="<?= $kps['kar_27']; ?>">
+                                        </div>
+                                    <?php } else {
+                                        echo null;
+                                    } ?>
+
+                                    <?php if ($das['kar'] == 'kar_28') {
+
+                                    ?>
+                                        <div class="col-md-4 top-buffer">
+                                            <label><?= $das['question']; ?></label>
+                                            <input type="text" class="form-control" id="<?= $das['kar']; ?>" name="<?= $das['kar']; ?>" value="<?= $kps['kar_28']; ?>">
+                                        </div>
+                                    <?php } else {
+                                        echo null;
+                                    } ?>
+
+                                    <?php if ($das['kar'] == 'kar_29') {
+
+                                    ?>
+                                        <div class="col-md-4 top-buffer">
+                                            <label><?= $das['question']; ?></label>
+                                            <input type="text" class="form-control" id="<?= $das['kar']; ?>" name="<?= $das['kar']; ?>" value="<?= $kps['kar_29']; ?>">
+                                        </div>
+                                    <?php } else {
+                                        echo null;
+                                    } ?>
+
+                                    <?php if ($das['kar'] == 'kar_30') {
+
+                                    ?>
+                                        <div class="col-md-4 top-buffer">
+                                            <label><?= $das['question']; ?></label>
+                                            <input type="text" class="form-control" id="<?= $das['kar']; ?>" name="<?= $das['kar']; ?>" value="<?= $kps['kar_30']; ?>">
+                                        </div>
+                                    <?php } else {
+                                        echo null;
+                                    } ?>
+
+                                    <?php if ($das['kar'] == 'kar_31') {
+
+                                    ?>
+                                        <div class="col-md-4 top-buffer">
+                                            <label><?= $das['question']; ?></label>
+                                            <input type="text" class="form-control" id="<?= $das['kar']; ?>" name="<?= $das['kar']; ?>" value="<?= $kps['kar_31']; ?>">
+                                        </div>
+                                    <?php } else {
+                                        echo null;
+                                    } ?>
+
+                                    <?php if ($das['kar'] == 'kar_32') {
+
+                                    ?>
+                                        <div class="col-md-4 top-buffer">
+                                            <label><?= $das['question']; ?></label>
+                                            <input type="text" class="form-control" id="<?= $das['kar']; ?>" name="<?= $das['kar']; ?>" value="<?= $kps['kar_32']; ?>">
+                                        </div>
+                                    <?php } else {
+                                        echo null;
+                                    } ?>
+
+                                    <?php if ($das['kar'] == 'kar_33') {
+
+                                    ?>
+                                        <div class="col-md-4 top-buffer">
+                                            <label><?= $das['question']; ?></label>
+                                            <input type="text" class="form-control" id="<?= $das['kar']; ?>" name="<?= $das['kar']; ?>" value="<?= $kps['kar_33']; ?>">
+                                        </div>
+                                    <?php } else {
+                                        echo null;
+                                    } ?>
+
+                                    <?php if ($das['kar'] == 'kar_34') {
+
+                                    ?>
+                                        <div class="col-md-4 top-buffer">
+                                            <label><?= $das['question']; ?></label>
+                                            <input type="text" class="form-control" id="<?= $das['kar']; ?>" name="<?= $das['kar']; ?>" value="<?= $kps['kar_34']; ?>">
+                                        </div>
+                                    <?php } else {
+                                        echo null;
+                                    } ?>
+
+                                    <?php if ($das['kar'] == 'kar_35') {
+
+                                    ?>
+                                        <div class="col-md-4 top-buffer">
+                                            <label><?= $das['question']; ?></label>
+                                            <input type="text" class="form-control" id="<?= $das['kar']; ?>" name="<?= $das['kar']; ?>" value="<?= $kps['kar_35']; ?>">
+                                        </div>
+                                    <?php } else {
+                                        echo null;
+                                    } ?>
+
+                                    <?php if ($das['kar'] == 'kar_36') {
+
+                                    ?>
+                                        <div class="col-md-4 top-buffer">
+                                            <label><?= $das['question']; ?></label>
+                                            <input type="text" class="form-control" id="<?= $das['kar']; ?>" name="<?= $das['kar']; ?>" value="<?= $kps['kar_36']; ?>">
+                                        </div>
+                                    <?php } else {
+                                        echo null;
+                                    } ?>
+
+                                    <?php if ($das['kar'] == 'kar_37') {
+
+                                    ?>
+                                        <div class="col-md-4 top-buffer">
+                                            <label><?= $das['question']; ?></label>
+                                            <input type="text" class="form-control" id="<?= $das['kar']; ?>" name="<?= $das['kar']; ?>" value="<?= $kps['kar_37']; ?>">
+                                        </div>
+                                    <?php } else {
+                                        echo null;
+                                    } ?>
+
+                                    <?php if ($das['kar'] == 'kar_38') {
+
+                                    ?>
+                                        <div class="col-md-4 top-buffer">
+                                            <label><?= $das['question']; ?></label>
+                                            <input type="text" class="form-control" id="<?= $das['kar']; ?>" name="<?= $das['kar']; ?>" value="<?= $kps['kar_38']; ?>">
+                                        </div>
+                                    <?php } else {
+                                        echo null;
+                                    } ?>
+
+                                    <?php if ($das['kar'] == 'kar_39') {
+
+                                    ?>
+                                        <div class="col-md-4 top-buffer">
+                                            <label><?= $das['question']; ?></label>
+                                            <input type="text" class="form-control" id="<?= $das['kar']; ?>" name="<?= $das['kar']; ?>" value="<?= $kps['kar_39']; ?>">
+                                        </div>
+                                    <?php } else {
+                                        echo null;
+                                    } ?>
+
+                                    <?php if ($das['kar'] == 'kar_40') {
+
+                                    ?>
+                                        <div class="col-md-4 top-buffer">
+                                            <label><?= $das['question']; ?></label>
+                                            <input type="text" class="form-control" id="<?= $das['kar']; ?>" name="<?= $das['kar']; ?>" value="<?= $kps['kar_40']; ?>">
+                                        </div>
+                                    <?php } else {
+                                        echo null;
+                                    } ?>
+
+                                    <?php if ($das['kar'] == 'kar_41') {
+
+                                    ?>
+                                        <div class="col-md-4 top-buffer">
+                                            <label><?= $das['question']; ?></label>
+                                            <input type="text" class="form-control" id="<?= $das['kar']; ?>" name="<?= $das['kar']; ?>" value="<?= $kps['kar_41']; ?>">
+                                        </div>
+                                    <?php } else {
+                                        echo null;
+                                    } ?>
+
+                                    <?php if ($das['kar'] == 'kar_42') {
+
+                                    ?>
+                                        <div class="col-md-4 top-buffer">
+                                            <label><?= $das['question']; ?></label>
+                                            <input type="text" class="form-control" id="<?= $das['kar']; ?>" name="<?= $das['kar']; ?>" value="<?= $kps['kar_42']; ?>">
+                                        </div>
+                                    <?php } else {
+                                        echo null;
+                                    } ?>
+
+                                    <?php if ($das['kar'] == 'kar_43') {
+
+                                    ?>
+                                        <div class="col-md-4 top-buffer">
+                                            <label><?= $das['question']; ?></label>
+                                            <input type="text" class="form-control" id="<?= $das['kar']; ?>" name="<?= $das['kar']; ?>" value="<?= $kps['kar_43']; ?>">
+                                        </div>
+                                    <?php } else {
+                                        echo null;
+                                    } ?>
+
+                                    <?php if ($das['kar'] == 'kar_44') {
+
+                                    ?>
+                                        <div class="col-md-4 top-buffer">
+                                            <label><?= $das['question']; ?></label>
+                                            <input type="text" class="form-control" id="<?= $das['kar']; ?>" name="<?= $das['kar']; ?>" value="<?= $kps['kar_44']; ?>">
+                                        </div>
+                                    <?php } else {
+                                        echo null;
+                                    } ?>
+
+                                    <?php if ($das['kar'] == 'kar_45') {
+
+                                    ?>
+                                        <div class="col-md-4 top-buffer">
+                                            <label><?= $das['question']; ?></label>
+                                            <input type="text" class="form-control" id="<?= $das['kar']; ?>" name="<?= $das['kar']; ?>" value="<?= $kps['kar_45']; ?>">
+                                        </div>
+                                    <?php } else {
+                                        echo null;
+                                    } ?>
+
+                                    <?php if ($das['kar'] == 'kar_46') {
+
+                                    ?>
+                                        <div class="col-md-4 top-buffer">
+                                            <label><?= $das['question']; ?></label>
+                                            <input type="text" class="form-control" id="<?= $das['kar']; ?>" name="<?= $das['kar']; ?>" value="<?= $kps['kar_46']; ?>">
+                                        </div>
+                                    <?php } else {
+                                        echo null;
+                                    } ?>
+
+                                    <?php if ($das['kar'] == 'kar_47') {
+
+                                    ?>
+                                        <div class="col-md-4 top-buffer">
+                                            <label><?= $das['question']; ?></label>
+                                            <input type="text" class="form-control" id="<?= $das['kar']; ?>" name="<?= $das['kar']; ?>" value="<?= $kps['kar_47']; ?>">
+                                        </div>
+                                    <?php } else {
+                                        echo null;
+                                    } ?>
+
+                                    <?php if ($das['kar'] == 'kar_48') {
+
+                                    ?>
+                                        <div class="col-md-4 top-buffer">
+                                            <label><?= $das['question']; ?></label>
+                                            <input type="text" class="form-control" id="<?= $das['kar']; ?>" name="<?= $das['kar']; ?>" value="<?= $kps['kar_48']; ?>">
+                                        </div>
+                                    <?php } else {
+                                        echo null;
+                                    } ?>
+
+                                    <?php if ($das['kar'] == 'kar_49') {
+
+                                    ?>
+                                        <div class="col-md-4 top-buffer">
+                                            <label><?= $das['question']; ?></label>
+                                            <input type="text" class="form-control" id="<?= $das['kar']; ?>" name="<?= $das['kar']; ?>" value="<?= $kps['kar_49']; ?>">
+                                        </div>
+                                    <?php } else {
+                                        echo null;
+                                    } ?>
+
+                                    <?php if ($das['kar'] == 'kar_50') {
+
+                                    ?>
+                                        <div class="col-md-4 top-buffer">
+                                            <label><?= $das['question']; ?></label>
+                                            <input type="text" class="form-control" id="<?= $das['kar']; ?>" name="<?= $das['kar']; ?>" value="<?= $kps['kar_50']; ?>">
+                                        </div>
+                                    <?php } else {
+                                        echo null;
+                                    } ?>
+
+                                    <?php if ($das['kar'] == 'kar_51') {
+
+                                    ?>
+                                        <div class="col-md-4 top-buffer">
+                                            <label><?= $das['question']; ?></label>
+                                            <input type="text" class="form-control" id="<?= $das['kar']; ?>" name="<?= $das['kar']; ?>" value="<?= $kps['kar_51']; ?>">
+                                        </div>
+                                    <?php } else {
+                                        echo null;
+                                    } ?>
+
+                                    <?php if ($das['kar'] == 'kar_52') {
+
+                                    ?>
+                                        <div class="col-md-4 top-buffer">
+                                            <label><?= $das['question']; ?></label>
+                                            <input type="text" class="form-control" id="<?= $das['kar']; ?>" name="<?= $das['kar']; ?>" value="<?= $kps['kar_52']; ?>">
+                                        </div>
+                                    <?php } else {
+                                        echo null;
+                                    } ?>
+
+                                    <?php if ($das['kar'] == 'kar_53') {
+
+                                    ?>
+                                        <div class="col-md-4 top-buffer">
+                                            <label><?= $das['question']; ?></label>
+                                            <input type="text" class="form-control" id="<?= $das['kar']; ?>" name="<?= $das['kar']; ?>" value="<?= $kps['kar_53']; ?>">
+                                        </div>
+                                    <?php } else {
+                                        echo null;
+                                    } ?>
+
+                                    <?php if ($das['kar'] == 'kar_54') {
+
+                                    ?>
+                                        <div class="col-md-4 top-buffer">
+                                            <label><?= $das['question']; ?></label>
+                                            <input type="text" class="form-control" id="<?= $das['kar']; ?>" name="<?= $das['kar']; ?>" value="<?= $kps['kar_54']; ?>">
+                                        </div>
+                                    <?php } else {
+                                        echo null;
+                                    } ?>
+
+                                    <?php if ($das['kar'] == 'kar_55') {
+
+                                    ?>
+                                        <div class="col-md-4 top-buffer">
+                                            <label><?= $das['question']; ?></label>
+                                            <input type="text" class="form-control" id="<?= $das['kar']; ?>" name="<?= $das['kar']; ?>" value="<?= $kps['kar_55']; ?>">
+                                        </div>
+                                    <?php } else {
+                                        echo null;
+                                    } ?>
+
+                                    <?php if ($das['kar'] == 'kar_56') {
+
+                                    ?>
+                                        <div class="col-md-4 top-buffer">
+                                            <label><?= $das['question']; ?></label>
+                                            <input type="text" class="form-control" id="<?= $das['kar']; ?>" name="<?= $das['kar']; ?>" value="<?= $kps['kar_56']; ?>">
+                                        </div>
+                                    <?php } else {
+                                        echo null;
+                                    } ?>
+                                <?php endforeach; ?>
                             </div>
                             <input class="btn btn-success btn-user btn-block" type="submit" value="Edit Data Karakterisasi">
                         </form>
@@ -463,59 +721,59 @@
                     <?php
                     foreach ($pas_tebu as $pas) {
                     ?>
-                        <?php if ($pas->no_aksesi > 1) {
+                        <?php if ($pas['no_aksesi'] > 1) {
 
                         ?>
                             <form class="user" action="<?php echo base_url('edit_plant/edit_tebu/pas_tebu'); ?>">
 
                                 <div class="form-group row" class="col-sm">
                                     <label>No Aksesi.</label>
-                                    <input class="form-control" type="text" value="<?= $pas->no_aksesi; ?>" readonly>
+                                    <input class="form-control" type="text" value="<?= $pas['no_aksesi']; ?>" readonly>
                                 </div>
                                 <div class="form-group row">
                                     <div class="col-sm">
                                         <label>Nama koleksi</label>
-                                        <input type="text" class="form-control" name="pas_01" value="<?= $pas->pas_01; ?>">
+                                        <input type="text" class="form-control" name="pas_01" value="<?= $pas['pas_01']; ?>">
                                     </div>
                                     <div class="col-sm">
                                         <label>Nama petani</label>
-                                        <input type="text" class="form-control" name="pas_02" value="<?= $pas->pas_02; ?>">
+                                        <input type="text" class="form-control" name="pas_02" value="<?= $pas['pas_02']; ?>">
                                     </div>
 
                                     <div class="col-sm">
                                         <label>Spesies</label>
-                                        <input type="text" class="form-control" name="pas_03" value="<?= $pas->pas_03; ?>">
+                                        <input type="text" class="form-control" name="pas_03" value="<?= $pas['pas_03']; ?>">
                                     </div>
                                 </div>
                                 <div class="form-group row">
                                     <div class="col-sm">
                                         <label>Nama kolektor</label>
-                                        <input type="text" class="form-control" name="pas_04" value="<?= $pas->pas_04; ?>">
+                                        <input type="text" class="form-control" name="pas_04" value="<?= $pas['pas_04']; ?>">
                                     </div>
                                     <div class="col-sm">
                                         <label>Nama kultivar</label>
-                                        <input type="text" class="form-control" name="pas_13" value="<?= $pas->pas_13; ?>">
+                                        <input type="text" class="form-control" name="pas_13" value="<?= $pas['pas_13']; ?>">
                                     </div>
 
                                     <div class="col-sm">
                                         <label>Sinonim</label>
-                                        <input type="text" class="form-control" name="pas_14" value="<?= $pas->pas_14; ?>">
+                                        <input type="text" class="form-control" name="pas_14" value="<?= $pas['pas_14']; ?>">
                                     </div>
                                 </div>
                                 <div class="form-group row">
                                     <div class="col-sm">
                                         <label>Tanggal koleksi</label>
-                                        <input type="text" class="form-control" name="pas_15" value="<?= $pas->pas_15; ?>">
+                                        <input type="text" class="form-control" name="pas_15" value="<?= $pas['pas_15']; ?>">
                                     </div>
                                     <div class="col-sm">
                                         <label>Bahasa</label>
-                                        <input type="text" class="form-control" name="pas_16" value="<?= $pas->pas_16; ?>">
+                                        <input type="text" class="form-control" name="pas_16" value="<?= $pas['pas_16']; ?>">
                                     </div>
 
                                     <div class="col-sm">
                                         <label>Distribusi</label>
                                         <select class="form-control form-select-user" name="pas_17">
-                                            <option selected><?= $pas->pas_17; ?></option>
+                                            <option selected><?= $pas['pas_17']; ?></option>
                                             <option value="Sangat Banyak">Sangat Banyak</option>
                                             <option value="Banyak">Banyak</option>
                                             <option value="Agak Jarang">Agak Jarang</option>
@@ -527,22 +785,22 @@
                                 <div class="form-group row">
                                     <div class="col-sm">
                                         <label>Ekspedisi</label>
-                                        <input type="text" class="form-control" name="pas_18" value="<?= $pas->pas_18; ?>">
+                                        <input type="text" class="form-control" name="pas_18" value="<?= $pas['pas_18']; ?>">
                                     </div>
                                     <div class="col-sm">
                                         <label>Arti</label>
-                                        <input type="text" class="form-control" name="pas_19" value="<?= $pas->pas_19; ?>">
+                                        <input type="text" class="form-control" name="pas_19" value="<?= $pas['pas_19']; ?>">
                                     </div>
 
                                     <div class="col-sm">
                                         <label>Tgl registrasi</label>
-                                        <input type="text" class="form-control" name="pas_20" value="<?= $pas->pas_20; ?>">
+                                        <input type="text" class="form-control" name="pas_20" value="<?= $pas['pas_20']; ?>">
                                     </div>
                                 </div>
                                 <div class="form-group row">
                                     <div class="col-md-3">
                                         <label>Altitude</label>
-                                        <input type="number" class="form-control" name="pas_21" value="<?= $pas->pas_21; ?>">
+                                        <input type="number" class="form-control" name="pas_21" value="<?= $pas['pas_21']; ?>">
                                     </div>
                                 </div>
                                 <hr>
@@ -550,7 +808,7 @@
                                     <div class="col-md-4">
                                         <label>Sumber benih</label>
                                         <select class="form-control form-select-user" name="pas_22">
-                                            <option selected><?= $pas->pas_22; ?></option>
+                                            <option selected><?= $pas['pas_22']; ?></option>
                                             <option value="Lapang">Lapang</option>
                                             <option value="Petani">Petani</option>
                                             <option value="Lumbung">Lumbung</option>
@@ -562,14 +820,14 @@
                                     </div>
                                     <div class="col-sm">
                                         <label>Areal penyeberan</label>
-                                        <input type="text" class="form-control" name="pas_23" value="<?= $pas->pas_23; ?>">
+                                        <input type="text" class="form-control" name="pas_23" value="<?= $pas['pas_23']; ?>">
                                     </div>
                                 </div>
                                 <div class="form-group row">
                                     <div class="col-md-4">
                                         <label>Topografi</label>
                                         <select class="form-control form-select-user" name="pas_24">
-                                            <option selected><?= $pas->pas_24; ?></option>
+                                            <option selected><?= $pas['pas_24']; ?></option>
                                             <option value="Rawa">Rawa</option>
                                             <option value="Datar">Datar</option>
                                             <option value="Bergelombang">Bergelombang</option>
@@ -580,14 +838,14 @@
                                     </div>
                                     <div class="col-sm">
                                         <label>Kegunaan</label>
-                                        <input type="text" class="form-control" name="pas_25" value="<?= $pas->pas_25; ?>">
+                                        <input type="text" class="form-control" name="pas_25" value="<?= $pas['pas_25']; ?>">
                                     </div>
                                 </div>
                                 <div class="form-group row">
                                     <div class="col-md-4">
                                         <label>Tekstur tanah</label>
                                         <select class="form-control form-select-user" name="pas_26">
-                                            <option selected><?= $pas->pas_26; ?></option>
+                                            <option selected><?= $pas['pas_26']; ?></option>
                                             <option value="Pasir">Pasir</option>
                                             <option value="Lempung">Lempung</option>
                                             <option value="Liat">Liat</option>
@@ -596,14 +854,14 @@
                                     </div>
                                     <div class="col-sm">
                                         <label>Sifat penting</label>
-                                        <input type="areatext" class="form-control" name="pas_27" value="<?= $pas->pas_27; ?>">
+                                        <input type="areatext" class="form-control" name="pas_27" value="<?= $pas['pas_27']; ?>">
                                     </div>
                                 </div>
                                 <div class="form-group row">
                                     <div class="col-md-4">
                                         <label>Irigasi</label>
                                         <select class="form-control form-select-user" name="pas_28">
-                                            <option selected><?= $pas->pas_28; ?></option>
+                                            <option selected><?= $pas['pas_28']; ?></option>
                                             <option value="Jelek">Jelek</option>
                                             <option value="Sedang">Sedang</option>
                                             <option value="Baik">Baik</option>
@@ -612,14 +870,14 @@
                                     </div>
                                     <div class="col-sm">
                                         <label>Catatan iklim</label>
-                                        <input type="areatext" class="form-control" name="pas_29" value="<?= $pas->pas_29; ?>">
+                                        <input type="areatext" class="form-control" name="pas_29" value="<?= $pas['pas_29']; ?>">
                                     </div>
                                 </div>
                                 <div class="form-group row">
                                     <div class="col-md-4">
                                         <label>Metode Sampling</label>
                                         <select class="form-control form-select-user" name="pas_30">
-                                            <option selected><?= $pas->pas_30; ?></option>
+                                            <option selected><?= $pas['pas_30']; ?></option>
                                             <option value="Acak">Acak</option>
                                             <option value="Tanpa Acak">Tanpa Acak</option>
                                         </select>
@@ -627,7 +885,7 @@
                                     <div class="col-md-4">
                                         <label>Status contoh</label>
                                         <select class="form-control form-select-user" name="pas_31">
-                                            <option selected><?= $pas->pas_31; ?></option>
+                                            <option selected><?= $pas['pas_31']; ?></option>
                                             <option value="Varietas Lokal">Varietas Lokal</option>
                                             <option value="Liar">Liar</option>
                                             <option value="Varietas Unggul Nasional">Varietas Unggul Nasional</option>
@@ -636,7 +894,7 @@
                                     <div class="col-md-4">
                                         <label>Tipe contoh</label>
                                         <select class="form-control form-select-user" name="pas_32">
-                                            <option selected><?= $pas->pas_32; ?></option>
+                                            <option selected><?= $pas['pas_32']; ?></option>
                                             <option value="Acak">Biji</option>
                                             <option value="Tanpa Acak">Tanaman</option>
                                             <option value="Acak">Organ Vegetatif</option>
@@ -656,7 +914,7 @@
                             <div class="col-sm">
                                 <input class="form-control" type="text" id="no_aksesi" name="no_aksesi" value="<?php foreach ($dat_tebu as $k) {
                                                                                                                     # code...
-                                                                                                                    echo $k->no_aksesi;
+                                                                                                                    echo $k['no_aksesi'];
                                                                                                                 } ?>" readonly>
                             </div>
                         </div>

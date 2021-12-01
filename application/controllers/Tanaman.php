@@ -354,9 +354,10 @@ class Tanaman extends CI_Controller
 	{
 		$where = array('no_aksesi' => $no_aksesi);
 		$data['user'] = $this->db->get_where('user', ['email' => $this->session->userdata('email')])->row_array();
-		$data['dat_tebu'] = $this->m_edit_data->edit_data($where, 'dat_tebu')->result();
-		$data['pas_tebu'] = $this->m_edit_data->edit_data($where, 'pas_tebu')->result();
-		$data['foto_tebu'] = $this->m_edit_data->edit_data($where, 'foto_tebu')->result();
+		$data['dat_tebu'] = $this->m_edit_data->edit_data($where, 'dat_tebu')->result_array();
+		$data['pas_tebu'] = $this->m_edit_data->edit_data($where, 'pas_tebu')->result_array();
+		$data['foto_tebu'] = $this->m_edit_data->edit_data($where, 'foto_tebu')->result_array();
+		$data['idkar'] = $this->db->get('tab_tebu')->result_array();
 
 		$this->load->view('templates/header', $data);
 		$this->load->view('templates/sidebar.php', $data);
