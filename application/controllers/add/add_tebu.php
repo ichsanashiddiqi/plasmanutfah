@@ -19,10 +19,8 @@ class Add_tebu extends CI_Controller
             'is_unique' => 'Nomor Aksesi sudah digunakan!',
             'required' => 'Mohon form untuk diisi'
         ]);
-        $this->form_validation->set_rules('nama_aksesi', 'Nama_aksesi', 'required|trim|is_unique[dat_tebu.nama_aksesi]', [
-            'is_unique' => 'Nomor Aksesi sudah digunakan!',
-            'required' => 'Mohon form untuk diisi'
-        ]);
+        
+
         if ($this->form_validation->run() == false) {
             $data['user'] = $this->db->get_where('user', ['email' => $this->session->userdata('email')])->row_array();
             $data['idkar'] = $this->db->get('tab_tebu')->result_array();

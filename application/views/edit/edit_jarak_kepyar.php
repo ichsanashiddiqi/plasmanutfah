@@ -92,7 +92,7 @@
                             <div class="form-group row">
                                 <div class="col-sm">
                                     <label>Umur Berbunga</label>
-                                    <input type="text" class="form-control" id="kar_01" name="kar_01" value="<?= $k->kar_01; ?>">
+                                    <input type="text" class="form-control" id="kar_1" name="kar_1" value="<?= $k->kar_1; ?>">
                                 </div>
                                 <div class="col-sm">
                                     <label>Donor</label>
@@ -112,7 +112,7 @@
                             <div class="form-group row">
                                 <div class="col-sm">
                                     <label>Umur Panen Serat</label>
-                                    <input type="text" class="form-control" id="kar_02" name="kar_02" value="<?= $k->kar_02; ?>">
+                                    <input type="text" class="form-control" id="kar_2" name="kar_2" value="<?= $k->kar_2; ?>">
                                 </div>
                                 <div class="col-sm">
                                     <label>Warna Buah Muda</label>
@@ -132,7 +132,7 @@
                             <div class="form-group row">
                                 <div class="col-sm">
                                     <label>Umur Panen Benih</label>
-                                    <input type="text" class="form-control" id="kar_03" name="kar_03" value="<?= $k->kar_03; ?>">
+                                    <input type="text" class="form-control" id="kar_3" name="kar_3" value="<?= $k->kar_3; ?>">
                                 </div>
                                 <div class="col-sm">
                                     <label>Warna Buah Matang</label>
@@ -153,8 +153,8 @@
                             <div class="form-group row">
                                 <div class="col-sm">
                                     <label>Bentuk Daun</label>
-                                    <select class="form-control form-select-user" id="kar_04" name="kar_04">
-                                        <option selected><?= $k->kar_04; ?></option>
+                                    <select class="form-control form-select-user" id="kar_4" name="kar_4">
+                                        <option selected><?= $k->kar_4; ?></option>
                                         <option value="1">1. Ovate</option>
                                         <option value="2">2. Cordate</option>
                                         <option value="3">3. Lanceolate</option>
@@ -179,7 +179,7 @@
                             <div class="form-group row">
                                 <div class="col-sm">
                                     <label>Panjang Daun</label>
-                                    <input type="text" class="form-control" id="kar_05" name="kar_05" value="<?= $k->kar_05; ?>">
+                                    <input type="text" class="form-control" id="kar_5" name="kar_5" value="<?= $k->kar_5; ?>">
                                 </div>
                                 <div class="col-sm">
                                     <label>Diameter Batang Bawah</label>
@@ -193,7 +193,7 @@
                             <div class="form-group row">
                                 <div class="col-sm">
                                     <label>Lebar Daun</label>
-                                    <input type="text" class="form-control" id="kar_06" name="kar_06" value="<?= $k->kar_06; ?>">
+                                    <input type="text" class="form-control" id="kar_6" name="kar_6" value="<?= $k->kar_6; ?>">
                                 </div>
                                 <div class="col-sm">
                                     <label>Diameter Batang Tengah</label>
@@ -207,7 +207,7 @@
                             <div class="form-group row">
                                 <div class="col-sm">
                                     <label>Luas Daun</label>
-                                    <input type="text" class="form-control" id="kar_07" name="kar_07" value="<?= $k->kar_07; ?>">
+                                    <input type="text" class="form-control" id="kar_7" name="kar_7" value="<?= $k->kar_7; ?>">
                                 </div>
                                 <div class="col-sm">
                                     <label>Diameter Batang Atas</label>
@@ -221,8 +221,8 @@
                             <div class="form-group row">
                                 <div class="col-sm">
                                     <label>Sudut Daun</label>
-                                    <select class="form-control form-select-user" id="kar_08" name="kar_08">
-                                        <option selected><?= $k->kar_08; ?></option>
+                                    <select class="form-control form-select-user" id="kar_8" name="kar_8">
+                                        <option selected><?= $k->kar_8; ?></option>
                                         <option value="1">1. Erect (2-20 derajat)</option>
                                         <option value="2">2. Intermediate (21-60 derajat)</option>
                                         <option value="3">3. Horisontal (61-100 derajat)</option>
@@ -241,8 +241,8 @@
                             <div class="form-group row">
                                 <div class="col-sm">
                                     <label>Bentuk Jantung</label>
-                                    <select class="form-control form-select-user" id="kar_09" name="kar_09">
-                                        <option selected><?= $k->kar_09; ?></option>
+                                    <select class="form-control form-select-user" id="kar_9" name="kar_9">
+                                        <option selected><?= $k->kar_9; ?></option>
                                         <option value="1">1. Cilinder</option>
                                         <option value="2">2. Conr</option>
                                     </select>

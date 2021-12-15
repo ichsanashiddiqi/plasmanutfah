@@ -8,11 +8,9 @@
 
     <!-- Content Row -->
 
-<<<<<<< HEAD
+
    <!--  <div class="card text-center">
-=======
-    <!-- <div class="card text-center">
->>>>>>> 8ec4ca5d839bd9fa9512e6e23ff5e3d703a30d2b
+ <div class="card text-center">
         <div class="card-header">
             <ul class="nav nav-tabs card-header-tabs">
                 <li class="nav-item">

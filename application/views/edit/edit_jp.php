@@ -88,8 +88,8 @@
                             <div class="form-group row">
                                 <div class="col-sm">
                                     <label>Tinggi tanaman</label>
-                                    <select class="form-control form-select-user" id="kar_01" name="kar_01">
-                                        <option selected><?= $jp->kar_01; ?></option>
+                                    <select class="form-control form-select-user" id="kar_1" name="kar_1">
+                                        <option selected><?= $jp->kar_1; ?></option>
                                         <option value="1">1. Pendek ( < 100 cm)</option>
                                         <option value="2">2. Sedang ( 100 - 200 cm)</option>
                                         <option value="3">3. Tinggi ( > 100 cm)</option>
@@ -119,8 +119,8 @@
                             <div class="form-group row">
                                 <div class="col-sm">
                                     <label>Lingkar batang</label>
-                                    <select class="form-control form-select-user" id="kar_02" name="kar_02">
-                                        <option selected><?= $jp->kar_02; ?></option>
+                                    <select class="form-control form-select-user" id="kar_2" name="kar_2">
+                                        <option selected><?= $jp->kar_2; ?></option>
                                         <option value="1">1. Kecil ( < 8 cm)</option>
                                         <option value="2">2. Sedang ( 8 - 12 cm)</option>
                                         <option value="3">3. Besar ( > 12 cm)</option>
@@ -149,8 +149,8 @@
                             <div class="form-group row">
                                 <div class="col-sm">
                                     <label>Keberadaan torehan daun</label>
-                                    <select class="form-control form-select-user" id="kar_03" name="kar_03">
-                                        <option selected><?= $jp->kar_03; ?></option>
+                                    <select class="form-control form-select-user" id="kar_3" name="kar_3">
+                                        <option selected><?= $jp->kar_3; ?></option>
                                         <option value="1">1. Tidak Ada</option>
                                         <option value="2">2. Ada</option>
                                     </select>
@@ -177,8 +177,8 @@
                             <div class="form-group row">
                                 <div class="col-sm">
                                     <label>Derajat torehan daun</label>
-                                    <select class="form-control form-select-user" id="kar_04" name="kar_04">
-                                        <option selected><?= $jp->kar_04; ?></option>
+                                    <select class="form-control form-select-user" id="kar_4" name="kar_4">
+                                        <option selected><?= $jp->kar_4; ?></option>
                                         <option value="1">1. Tidak Ada/Sangat Lemah</option>
                                         <option value="2">2. Lemah</option>
                                         <option value="3">3. Sedang</option>
@@ -207,8 +207,8 @@
                             <div class="form-group row">
                                 <div class="col-sm">
                                     <label>Bentuk ujung daun</label>
-                                    <select class="form-control form-select-user" id="kar_05" name="kar_05">
-                                        <option selected><?= $jp->kar_05; ?></option>
+                                    <select class="form-control form-select-user" id="kar_5" name="kar_5">
+                                        <option selected><?= $jp->kar_5; ?></option>
                                         <option value="1">1. Runcing</option>
                                         <option value="2">2. Meruncing</option>
                                         <option value="3">3. Tumpul</option>
@@ -236,8 +236,8 @@
                             <div class="form-group row">
                                 <div class="col-sm">
                                     <label>Bentuk pangkal daun</label>
-                                    <select class="form-control form-select-user" id="kar_06" name="kar_06">
-                                        <option selected><?= $jp->kar_06; ?></option>
+                                    <select class="form-control form-select-user" id="kar_6" name="kar_6">
+                                        <option selected><?= $jp->kar_6; ?></option>
                                         <option value="1">1. Runcing</option>
                                         <option value="2">2. Meruncing</option>
                                         <option value="3">3. Tumpul</option>
@@ -271,8 +271,8 @@
                             <div class="form-group row">
                                 <div class="col-sm">
                                     <label>Warna daun muda</label>
-                                    <select class="form-control form-select-user" id="kar_07" name="kar_07">
-                                        <option selected><?= $jp->kar_07; ?></option>
+                                    <select class="form-control form-select-user" id="kar_7" name="kar_7">
+                                        <option selected><?= $jp->kar_7; ?></option>
                                         <option value="1">1. Hijau</option>
                                         <option value="2">2. Hijau Kecokelatan</option>
                                         <option value="3">3. Oranye</option>
@@ -302,8 +302,8 @@
                             <div class="form-group row">
                                 <div class="col-sm">
                                     <label>Intensitas hijau daun</label>
-                                    <select class="form-control form-select-user" id="kar_08" name="kar_08">
-                                        <option selected><?= $jp->kar_08; ?></option>
+                                    <select class="form-control form-select-user" id="kar_8" name="kar_8">
+                                        <option selected><?= $jp->kar_8; ?></option>
                                         <option value="1">1. Muda</option>
                                         <option value="2">2. Sedang</option>
                                         <option value="3">3. Tua</option>
@@ -332,8 +332,8 @@
                             <div class="form-group row">
                                 <div class="col-sm">
                                     <label>Panjang daun</label>
-                                    <select class="form-control form-select-user" id="kar_09" name="kar_09">
-                                        <option selected><?= $jp->kar_09; ?></option>
+                                    <select class="form-control form-select-user" id="kar_9" name="kar_9">
+                                        <option selected><?= $jp->kar_9; ?></option>
                                         <option value="1">1. Pendek ( < 12 cm)</option>
                                         <option value="2">2. Sedang ( 13 - 17 cm)</option>
                                         <option value="3">3. Tinggi ( > 17 cm)</option>

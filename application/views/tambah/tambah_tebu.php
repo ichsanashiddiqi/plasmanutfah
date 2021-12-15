@@ -62,8 +62,8 @@
                             ?>
                                 <tr>
                                     <td><?php echo $no++ ?></td>
-                                    <td><a href=""><i class="fas fa-edit" style="color: chartreuse;"></i></a>
-                                        <a href=""><i class="fas fa-trash-alt" style="color: red;"></i></a>
+                                    <td>
+                                        <a href="hapus_tebu/<?= $abk->kar; ?>"><i class="fas fa-trash-alt" style="color: red;"></i></a>
                                     </td>
                                     <td><?php echo $abk->kar ?></td>
                                     <td><?php echo $abk->question ?></td>
@@ -203,3 +203,9 @@
 </body>
 
 </html>
+
+<style>
+    .top-buffer {
+        margin-top: 20px;
+    }
+</style>

@@ -62,8 +62,9 @@
                             ?>
                                 <tr>
                                     <td><?php echo $no++ ?></td>
-                                    <td><a href=""><i class="fas fa-edit" style="color: chartreuse;"></i></a>
-                                        <a href=""><i class="fas fa-trash-alt" style="color: red;"></i></a>
+                                    <td>
+                                        <a href=""><i class="fas fa-edit" style="color: chartreuse;"></i></a>
+                                        <a href="hapus_jk/<?= $abk->kar; ?>"><i class="fas fa-trash-alt" style="color: red;"></i></a>
                                     </td>
                                     <td><?php echo $abk->kar ?></td>
                                     <td><?php echo $abk->question ?></td>
@@ -100,7 +101,7 @@
         <div class="card-body">
             <h5 class="card-title">Tambah tanaman Gulabit</h5>
             <!-- <p class="card-text">With supporting text below as a natural lead-in to additional content.</p> -->
-            <form class="user" method="post" action="<?php echo base_url('add/add_jp/tambah_aksi'); ?>">
+            <form class="user" method="post" action="<?php echo base_url('add/add_jk/tambah_aksi'); ?>">
                 <div class="form-group row">
                     <div class="col-sm-6 mb-3 mb-sm-0">
                         <input type="text" class="form-control" id="no_aksesi" name="no_aksesi" placeholder="No. Aksesi">

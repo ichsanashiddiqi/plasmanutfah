@@ -228,11 +228,15 @@
                         </div>
                     </div>
                     <div class="form-group row">
-                        <label for="name" class="col-sm-2 col-form-label">Image</label>
+                        <div class="col-sm-2">Picture</div>
                         <div class="col-sm-10">
-                            <div class="custom-file">
-                                <input type="file" class="custom-file-input" id="Image" name="Image">
-                                <label class="custom-file-label" for="Image">Choose file</label>
+                            <div class="row">
+                                <div class="col-sm-9">
+                                    <div class="custom-file">
+                                        <input type="file" class="custom-file-input" id="image" name="image">
+                                        <label class="custom-file-label" for="image">Choose file</label>
+                                    </div>
+                                </div>
                             </div>
                         </div>
                     </div>

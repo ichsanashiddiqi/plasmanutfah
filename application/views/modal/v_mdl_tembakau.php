@@ -81,7 +81,7 @@ if (isset($kar_data) and !empty($kar_data)) {
                     <div class="form-group row">
                         <div class="col-sm">
                             <label>Tipe</label>
-                            <input type="text" class="form-control" name="kar_01" value="<?= $k['kar_1']; ?>" disabled>
+                            <input type="text" class="form-control" name="kar_1" value="<?= $k['kar_1']; ?>" disabled>
                         </div>
                         <div class="col-sm">
                             <label>Tangkai daun</label>
@@ -100,7 +100,7 @@ if (isset($kar_data) and !empty($kar_data)) {
                     <div class="form-group row">
                         <div class="col-sm">
                             <label>Habitus</label>
-                            <select class="form-control form-select-user" name="kar_02" disabled>
+                            <select class="form-control form-select-user" name="kar_2" disabled>
                                 <option selected><?= $k['kar_2']; ?></option>
                                 <option value="1">1. Silindris</option>
                                 <option value="2">2. Piramid</option>
@@ -119,7 +119,7 @@ if (isset($kar_data) and !empty($kar_data)) {
                     <div class="form-group row">
                         <div class="col-sm">
                             <label>Kerapatan</label>
-                            <select class="form-control form-select-user" name="kar_03" disabled>
+                            <select class="form-control form-select-user" name="kar_3" disabled>
                                 <option selected><?= $k['kar_3']; ?></option>
                                 <option value="1">1. Rapat</option>
                                 <option value="2">2. Jarang</option>
@@ -144,7 +144,7 @@ if (isset($kar_data) and !empty($kar_data)) {
                     <div class="form-group row">
                         <div class="col-sm">
                             <label>Panjang ruas</label>
-                            <input type="text" class="form-control" name="kar_04" value="<?= $k['kar_04']; ?>" disabled>
+                            <input type="text" class="form-control" name="kar_4" value="<?= $k['kar_4']; ?>" disabled>
                         </div>
                         <div class="col-sm">
                             <label>Sayap daun</label>
@@ -165,7 +165,7 @@ if (isset($kar_data) and !empty($kar_data)) {
                     <div class="form-group row">
                         <div class="col-sm">
                             <label>Indeks ruas</label>
-                            <input type="text" class="form-control" name="kar_05" value="<?= $k['kar_05']; ?>" disabled>
+                            <input type="text" class="form-control" name="kar_5" value="<?= $k['kar_5']; ?>" disabled>
                         </div>
                         <div class="col-sm">
                             <label>Telinga daun</label>
@@ -185,8 +185,8 @@ if (isset($kar_data) and !empty($kar_data)) {
                     <div class="form-group row">
                         <div class="col-sm">
                             <label>Warna batang</label>
-                            <select class="form-control form-select-user" name="kar_06" disabled>
-                                <option selected><?= $k['kar_06']; ?></option>
+                            <select class="form-control form-select-user" name="kar_6" disabled>
+                                <option selected><?= $k['kar_6']; ?></option>
                                 <option value="1">1. Hijau</option>
                                 <option value="2">2. Hijau kekuningan</option>
                                 <option value="3">3. Hijau keputihan</option>
@@ -210,8 +210,8 @@ if (isset($kar_data) and !empty($kar_data)) {
                     <div class="form-group row">
                         <div class="col-sm">
                             <label>Bulu batang</label>
-                            <select class="form-control form-select-user" name="kar_07" disabled>
-                                <option selected><?= $k['kar_07']; ?></option>
+                            <select class="form-control form-select-user" name="kar_7" disabled>
+                                <option selected><?= $k['kar_7']; ?></option>
                                 <option value="1">1. Berbulu</option>
                                 <option value="2">2. Tidak berbulu</option>
                             </select>
@@ -234,8 +234,8 @@ if (isset($kar_data) and !empty($kar_data)) {
                     <div class="form-group row">
                         <div class="col-sm">
                             <label>Sudut batang</label>
-                            <select class="form-control form-select-user" name="kar_08" disabled>
-                                <option selected><?= $k['kar_08']; ?></option>
+                            <select class="form-control form-select-user" name="kar_8" disabled>
+                                <option selected><?= $k['kar_8']; ?></option>
                                 <option value="1">1. Tegak (< 60)</option>
                                 <option value="2">2. Horisontal (60-120)</option>
                                 <option value="3">3. Menggantung (> 120)</option>
@@ -265,8 +265,8 @@ if (isset($kar_data) and !empty($kar_data)) {
                     <div class="form-group row">
                         <div class="col-sm">
                             <label>Jumlah daun</label>
-                            <select class="form-control form-select-user" name="kar_09" disabled>
-                                <option selected><?= $k['kar_09']; ?></option>
+                            <select class="form-control form-select-user" name="kar_9" disabled>
+                                <option selected><?= $k['kar_9']; ?></option>
                                 <option value="1">1. Sedikit (< 19 lembar per pohon)</option>
                                 <option value="2">2. Sedang (19-30 lembar per pohon)</option>
                                 <option value="3">3. Banyak (> 30 lembar per pohon)</option>

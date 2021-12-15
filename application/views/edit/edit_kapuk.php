@@ -91,8 +91,8 @@
                             <div class="form-group row">
                                 <div class="col-sm">
                                     <label>Tipe kapuk</label>
-                                    <select class="form-control form-select-user" id="kar_01" name="kar_01">
-                                        <option selected><?= $k->kar_01; ?></option>
+                                    <select class="form-control form-select-user" id="kar_1" name="kar_1">
+                                        <option selected><?= $k->kar_1; ?></option>
                                         <option value="1">1. Indica</option>
                                         <option value="2">2. Caribia</option>
                                         <option value="3">3. Hibrida (campuran)</option>
@@ -115,8 +115,8 @@
                             <div class="form-group row">
                                 <div class="col-sm">
                                     <label>Tipe percabangan</label>
-                                    <select class="form-control form-select-user" id="kar_02" name="kar_02">
-                                        <option selected><?= $k->kar_02; ?></option>
+                                    <select class="form-control form-select-user" id="kar_2" name="kar_2">
+                                        <option selected><?= $k->kar_2; ?></option>
                                         <option value="1">1. Perempuan</option>
                                         <option value="2">2. Lanang</option>
                                         <option value="3">3. Minyak (campuran)</option>
@@ -137,8 +137,8 @@
                             <div class="form-group row">
                                 <div class="col-sm">
                                     <label>Sifat meluruhkan cabang bawah</label>
-                                    <select class="form-control form-select-user" id="kar_03" name="kar_03">
-                                        <option selected><?= $k->kar_03; ?></option>
+                                    <select class="form-control form-select-user" id="kar_3" name="kar_3">
+                                        <option selected><?= $k->kar_3; ?></option>
                                         <option value="1">1. Ada</option>
                                         <option value="2">2. Tidak ada</option>
                                     </select>
@@ -162,8 +162,8 @@
                             <div class="form-group row">
                                 <div class="col-sm">
                                     <label>Banir pada dangkal cabang</label>
-                                    <select class="form-control form-select-user" id="kar_04" name="kar_04">
-                                        <option selected><?= $k->kar_04; ?></option>
+                                    <select class="form-control form-select-user" id="kar_4" name="kar_4">
+                                        <option selected><?= $k->kar_4; ?></option>
                                         <option value="1">1. Tidak Ada</option>
                                         <option value="2">2. Kecil</option>
                                         <option value="3">3. Sedang</option>
@@ -189,8 +189,8 @@
                             <div class="form-group row">
                                 <div class="col-sm">
                                     <label>Banir pada dangkal akar</label>
-                                    <select class="form-control form-select-user" id="kar_05" name="kar_05">
-                                        <option selected><?= $k->kar_05; ?></option>
+                                    <select class="form-control form-select-user" id="kar_5" name="kar_5">
+                                        <option selected><?= $k->kar_5; ?></option>
                                         <option value="1">1. Tidak Ada</option>
                                         <option value="2">2. Kecil</option>
                                         <option value="3">3. Sedang</option>
@@ -210,8 +210,8 @@
                             <div class="form-group row">
                                 <div class="col-sm">
                                     <label>Intensitas duri pada batang</label>
-                                    <select class="form-control form-select-user" id="kar_06" name="kar_06">
-                                        <option selected><?= $k->kar_06; ?></option>
+                                    <select class="form-control form-select-user" id="kar_6" name="kar_6">
+                                        <option selected><?= $k->kar_6; ?></option>
                                         <option value="1">1. Sedikit</option>
                                         <option value="2">2. Sedang</option>
                                         <option value="3">3. Banyak</option>
@@ -230,8 +230,8 @@
                             <div class="form-group row">
                                 <div class="col-sm">
                                     <label>Bentuk duri pada batang</label>
-                                    <select class="form-control form-select-user" id="kar_07" name="kar_07">
-                                        <option selected><?= $k->kar_07; ?></option>
+                                    <select class="form-control form-select-user" id="kar_7" name="kar_7">
+                                        <option selected><?= $k->kar_7; ?></option>
                                         <option value="1">1. Pendek besar</option>
                                         <option value="2">2. Pendek kecil</option>
                                         <option value="3">3. Panjang besar</option>
@@ -257,8 +257,8 @@
                             <div class="form-group row">
                                 <div class="col-sm">
                                     <label>Intensitas duri pada cabang</label>
-                                    <select class="form-control form-select-user" id="kar_08" name="kar_08">
-                                        <option selected><?= $k->kar_08; ?></option>
+                                    <select class="form-control form-select-user" id="kar_8" name="kar_8">
+                                        <option selected><?= $k->kar_8; ?></option>
                                         <option value="1">1. Sedikit</option>
                                         <option value="2">2. Sedang</option>
                                         <option value="3">3. Banyak</option>
@@ -273,8 +273,8 @@
                             <div class="form-group row">
                                 <div class="col-sm">
                                     <label>Bentuk duri pada cabang</label>
-                                    <select class="form-control form-select-user" id="kar_09" name="kar_09">
-                                        <option selected><?= $k->kar_09; ?></option>
+                                    <select class="form-control form-select-user" id="kar_9" name="kar_9">
+                                        <option selected><?= $k->kar_9; ?></option>
                                         <option value="1">1. Pendek besar</option>
                                         <option value="2">2. Pendek kecil</option>
                                         <option value="3">3. Panjang besar</option>

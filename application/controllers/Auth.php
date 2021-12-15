@@ -50,7 +50,7 @@ class Auth extends CI_Controller
 					];
 					$this->session->set_userdata($data);
 					if ($user['role_id'] <= 5) {
-						redirect('user');
+						redirect('user/profile');
 					} else {
 						$this->session->set_flashdata('message', '<div class="alert alert-danger" role="alert">Maaf role akun anda tidak terdaftar</div>');
 						redirect('auth');

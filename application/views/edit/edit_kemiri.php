@@ -91,7 +91,7 @@
                             <div class="form-group row">
                                 <div class="col-sm">
                                     <label>Lingkar batang</label>
-                                    <input type="text" class="form-control" id="kar_01" name="kar_01" value="<?= $k->kar_01; ?>">
+                                    <input type="text" class="form-control" id="kar_1" name="kar_1" value="<?= $k->kar_1; ?>">
                                 </div>
                                 <div class="col-sm">
                                     <label>Panjang daun</label>
@@ -110,7 +110,7 @@
                             <div class="form-group row">
                                 <div class="col-sm">
                                     <label>Bentuk batang</label>
-                                    <input type="text" class="form-control" id="kar_02" name="kar_02" value="<?= $k->kar_02; ?>">
+                                    <input type="text" class="form-control" id="kar_2" name="kar_2" value="<?= $k->kar_2; ?>">
                                 </div>
                                 <div class="col-sm">
                                     <label>Lebar daun</label>
@@ -129,7 +129,7 @@
                             <div class="form-group row">
                                 <div class="col-sm">
                                     <label>Permukaan kulit batang</label>
-                                    <input type="text" class="form-control" id="kar_03" name="kar_03" value="<?= $k->kar_03; ?>">
+                                    <input type="text" class="form-control" id="kar_3" name="kar_3" value="<?= $k->kar_3; ?>">
                                 </div>
                                 <div class="col-sm">
                                     <label>Panjang tangkai daun</label>
@@ -148,7 +148,7 @@
                             <div class="form-group row">
                                 <div class="col-sm">
                                     <label>Warna kulit batang</label>
-                                    <input type="text" class="form-control" id="kar_04" name="kar_04" value="<?= $k->kar_04; ?>">
+                                    <input type="text" class="form-control" id="kar_4" name="kar_4" value="<?= $k->kar_4; ?>">
                                 </div>
                                 <div class="col-sm">
                                     <label>Ujung daun</label>
@@ -167,7 +167,7 @@
                             <div class="form-group row">
                                 <div class="col-sm">
                                     <label>Bentuk tajuk</label>
-                                    <input type="text" class="form-control" id="kar_05" name="kar_05" value="<?= $k->kar_05; ?>">
+                                    <input type="text" class="form-control" id="kar_5" name="kar_5" value="<?= $k->kar_5; ?>">
                                 </div>
                                 <div class="col-sm">
                                     <label>Daging daun</label>
@@ -186,7 +186,7 @@
                             <div class="form-group row">
                                 <div class="col-sm">
                                     <label>Lebar tajuk U-S</label>
-                                    <input type="text" class="form-control" id="kar_06" name="kar_06" value="<?= $k->kar_06; ?>">
+                                    <input type="text" class="form-control" id="kar_6" name="kar_6" value="<?= $k->kar_6; ?>">
                                 </div>
                                 <div class="col-sm">
                                     <label>Periode pembungaan</label>
@@ -205,7 +205,7 @@
                             <div class="form-group row">
                                 <div class="col-sm">
                                     <label>Luas tajuk T-B</label>
-                                    <input type="text" class="form-control" id="kar_07" name="kar_07" value="<?= $k->kar_07; ?>">
+                                    <input type="text" class="form-control" id="kar_7" name="kar_7" value="<?= $k->kar_7; ?>">
                                 </div>
                                 <div class="col-sm">
                                     <label>Mekar bunga</label>
@@ -224,7 +224,7 @@
                             <div class="form-group row">
                                 <div class="col-sm">
                                     <label>Bentuk percabangan</label>
-                                    <input type="text" class="form-control" id="kar_08" name="kar_08" value="<?= $k->kar_08; ?>">
+                                    <input type="text" class="form-control" id="kar_8" name="kar_8" value="<?= $k->kar_8; ?>">
                                 </div>
                                 <div class="col-sm">
                                     <label>Panjang inflorensia</label>
@@ -243,7 +243,7 @@
                             <div class="form-group row">
                                 <div class="col-sm">
                                     <label>Bentuk daun</label>
-                                    <input type="text" class="form-control" id="kar_09" name="kar_09" value="<?= $k->kar_09; ?>">
+                                    <input type="text" class="form-control" id="kar_9" name="kar_9" value="<?= $k->kar_9; ?>">
                                 </div>
                                 <div class="col-sm">
                                     <label>Total bunga</label>

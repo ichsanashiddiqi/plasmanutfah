@@ -17,7 +17,7 @@ if (isset($kar_data) and !empty($kar_data)) {
         <img class="center" src="<?php echo base_url('assets/data/' . $kps['image']) ?>" width="300" />
         <br>
         <div class="form">
-            <?php if ($kps["kar_01"] != null) { ?>
+            <?php if ($kps["kar_1"] != null) { ?>
                 <form class="user" method="post">
                     <div class="form-group row">
                         <div class="col-sm-6 mb-3 mb-sm-0">
@@ -79,99 +79,99 @@ if (isset($kar_data) and !empty($kar_data)) {
                 <?php } ?>
                 <div class="form-group row">
                     <?php foreach ($idkar as $das) : ?>
-                        <?php if ($das['kar'] == 'kar_01') {
+                        <?php if ($das['kar'] == 'kar_1') {
 
                         ?>
                             <div class="col-md-4 top-buffer">
                                 <label><?= $das['question']; ?></label>
-                                <input type="text" class="form-control" id="<?= $das['kar']; ?>" name="<?= $das['kar']; ?>" value="<?= $kps['kar_01']; ?>" readonly>
+                                <input type="text" class="form-control" id="<?= $das['kar']; ?>" name="<?= $das['kar']; ?>" value="<?= $kps['kar_1']; ?>" readonly>
                             </div>
                         <?php } else {
                             echo null;
                         } ?>
-                        <?php if ($das['kar'] == 'kar_02') {
+                        <?php if ($das['kar'] == 'kar_2') {
 
                         ?>
                             <div class="col-md-4 top-buffer">
                                 <label><?= $das['question']; ?></label>
-                                <input type="text" class="form-control" id="<?= $das['kar']; ?>" name="<?= $das['kar']; ?>" value="<?= $kps['kar_02']; ?>" readonly>
-                            </div>
-                        <?php } else {
-                            echo null;
-                        } ?>
-
-                        <?php if ($das['kar'] == 'kar_03') {
-
-                        ?>
-                            <div class="col-md-4 top-buffer">
-                                <label><?= $das['question']; ?></label>
-                                <input type="text" class="form-control" id="<?= $das['kar']; ?>" name="<?= $das['kar']; ?>" value="<?= $kps['kar_03']; ?>" readonly>
+                                <input type="text" class="form-control" id="<?= $das['kar']; ?>" name="<?= $das['kar']; ?>" value="<?= $kps['kar_2']; ?>" readonly>
                             </div>
                         <?php } else {
                             echo null;
                         } ?>
 
-                        <?php if ($das['kar'] == 'kar_04') {
+                        <?php if ($das['kar'] == 'kar_3') {
 
                         ?>
                             <div class="col-md-4 top-buffer">
                                 <label><?= $das['question']; ?></label>
-                                <input type="text" class="form-control" id="<?= $das['kar']; ?>" name="<?= $das['kar']; ?>" value="<?= $kps['kar_04']; ?>" readonly>
+                                <input type="text" class="form-control" id="<?= $das['kar']; ?>" name="<?= $das['kar']; ?>" value="<?= $kps['kar_3']; ?>" readonly>
                             </div>
                         <?php } else {
                             echo null;
                         } ?>
 
-                        <?php if ($das['kar'] == 'kar_05') {
+                        <?php if ($das['kar'] == 'kar_4') {
 
                         ?>
                             <div class="col-md-4 top-buffer">
                                 <label><?= $das['question']; ?></label>
-                                <input type="text" class="form-control" id="<?= $das['kar']; ?>" name="<?= $das['kar']; ?>" value="<?= $kps['kar_05']; ?>" readonly>
+                                <input type="text" class="form-control" id="<?= $das['kar']; ?>" name="<?= $das['kar']; ?>" value="<?= $kps['kar_4']; ?>" readonly>
                             </div>
                         <?php } else {
                             echo null;
                         } ?>
 
-                        <?php if ($das['kar'] == 'kar_06') {
+                        <?php if ($das['kar'] == 'kar_5') {
 
                         ?>
                             <div class="col-md-4 top-buffer">
                                 <label><?= $das['question']; ?></label>
-                                <input type="text" class="form-control" id="<?= $das['kar']; ?>" name="<?= $das['kar']; ?>" value="<?= $kps['kar_06']; ?>" readonly>
+                                <input type="text" class="form-control" id="<?= $das['kar']; ?>" name="<?= $das['kar']; ?>" value="<?= $kps['kar_5']; ?>" readonly>
                             </div>
                         <?php } else {
                             echo null;
                         } ?>
 
-                        <?php if ($das['kar'] == 'kar_07') {
+                        <?php if ($das['kar'] == 'kar_6') {
 
                         ?>
                             <div class="col-md-4 top-buffer">
                                 <label><?= $das['question']; ?></label>
-                                <input type="text" class="form-control" id="<?= $das['kar']; ?>" name="<?= $das['kar']; ?>" value="<?= $kps['kar_07']; ?>" readonly>
+                                <input type="text" class="form-control" id="<?= $das['kar']; ?>" name="<?= $das['kar']; ?>" value="<?= $kps['kar_6']; ?>" readonly>
                             </div>
                         <?php } else {
                             echo null;
                         } ?>
 
-                        <?php if ($das['kar'] == 'kar_08') {
+                        <?php if ($das['kar'] == 'kar_7') {
 
                         ?>
                             <div class="col-md-4 top-buffer">
                                 <label><?= $das['question']; ?></label>
-                                <input type="text" class="form-control" id="<?= $das['kar']; ?>" name="<?= $das['kar']; ?>" value="<?= $kps['kar_08']; ?>" readonly>
+                                <input type="text" class="form-control" id="<?= $das['kar']; ?>" name="<?= $das['kar']; ?>" value="<?= $kps['kar_7']; ?>" readonly>
                             </div>
                         <?php } else {
                             echo null;
                         } ?>
 
-                        <?php if ($das['kar'] == 'kar_09') {
+                        <?php if ($das['kar'] == 'kar_8') {
 
                         ?>
                             <div class="col-md-4 top-buffer">
                                 <label><?= $das['question']; ?></label>
-                                <input type="text" class="form-control" id="<?= $das['kar']; ?>" name="<?= $das['kar']; ?>" value="<?= $kps['kar_09']; ?>" readonly>
+                                <input type="text" class="form-control" id="<?= $das['kar']; ?>" name="<?= $das['kar']; ?>" value="<?= $kps['kar_8']; ?>" readonly>
+                            </div>
+                        <?php } else {
+                            echo null;
+                        } ?>
+
+                        <?php if ($das['kar'] == 'kar_9') {
+
+                        ?>
+                            <div class="col-md-4 top-buffer">
+                                <label><?= $das['question']; ?></label>
+                                <input type="text" class="form-control" id="<?= $das['kar']; ?>" name="<?= $das['kar']; ?>" value="<?= $kps['kar_9']; ?>" readonly>
                             </div>
                         <?php } else {
                             echo null;
@@ -265,7 +265,434 @@ if (isset($kar_data) and !empty($kar_data)) {
                             echo null;
                         } ?>
 
+                        <?php if ($das['kar'] == 'kar_18') {
 
+                        ?>
+                            <div class="col-md-4 top-buffer">
+                                <label><?= $das['question']; ?></label>
+                                <input type="text" class="form-control" id="<?= $das['kar']; ?>" name="<?= $das['kar']; ?>" value="<?= $kps['kar_18']; ?>" readonly>
+                            </div>
+                        <?php } else {
+                            echo null;
+                        } ?>
+
+                        <?php if ($das['kar'] == 'kar_19') {
+
+                        ?>
+                            <div class="col-md-4 top-buffer">
+                                <label><?= $das['question']; ?></label>
+                                <input type="text" class="form-control" id="<?= $das['kar']; ?>" name="<?= $das['kar']; ?>" value="<?= $kps['kar_19']; ?>" readonly>
+                            </div>
+                        <?php } else {
+                            echo null;
+                        } ?>
+
+                        <?php if ($das['kar'] == 'kar_20') {
+
+                        ?>
+                            <div class="col-md-4 top-buffer">
+                                <label><?= $das['question']; ?></label>
+                                <input type="text" class="form-control" id="<?= $das['kar']; ?>" name="<?= $das['kar']; ?>" value="<?= $kps['kar_20']; ?>" readonly>
+                            </div>
+                        <?php } else {
+                            echo null;
+                        } ?>
+
+                        <?php if ($das['kar'] == 'kar_21') {
+
+                        ?>
+                            <div class="col-md-4 top-buffer">
+                                <label><?= $das['question']; ?></label>
+                                <input type="text" class="form-control" id="<?= $das['kar']; ?>" name="<?= $das['kar']; ?>" value="<?= $kps['kar_21']; ?>" readonly>
+                            </div>
+                        <?php } else {
+                            echo null;
+                        } ?>
+
+                        <?php if ($das['kar'] == 'kar_22') {
+
+                        ?>
+                            <div class="col-md-4 top-buffer">
+                                <label><?= $das['question']; ?></label>
+                                <input type="text" class="form-control" id="<?= $das['kar']; ?>" name="<?= $das['kar']; ?>" value="<?= $kps['kar_22']; ?>" readonly>
+                            </div>
+                        <?php } else {
+                            echo null;
+                        } ?>
+
+                        <?php if ($das['kar'] == 'kar_23') {
+
+                        ?>
+                            <div class="col-md-4 top-buffer">
+                                <label><?= $das['question']; ?></label>
+                                <input type="text" class="form-control" id="<?= $das['kar']; ?>" name="<?= $das['kar']; ?>" value="<?= $kps['kar_23']; ?>" readonly>
+                            </div>
+                        <?php } else {
+                            echo null;
+                        } ?>
+
+                        <?php if ($das['kar'] == 'kar_24') {
+
+                        ?>
+                            <div class="col-md-4 top-buffer">
+                                <label><?= $das['question']; ?></label>
+                                <input type="text" class="form-control" id="<?= $das['kar']; ?>" name="<?= $das['kar']; ?>" value="<?= $kps['kar_24']; ?>" readonly>
+                            </div>
+                        <?php } else {
+                            echo null;
+                        } ?>
+
+                        <?php if ($das['kar'] == 'kar_25') {
+
+                        ?>
+                            <div class="col-md-4 top-buffer">
+                                <label><?= $das['question']; ?></label>
+                                <input type="text" class="form-control" id="<?= $das['kar']; ?>" name="<?= $das['kar']; ?>" value="<?= $kps['kar_25']; ?>" readonly>
+                            </div>
+                        <?php } else {
+                            echo null;
+                        } ?>
+
+                        <?php if ($das['kar'] == 'kar_26') {
+
+                        ?>
+                            <div class="col-md-4 top-buffer">
+                                <label><?= $das['question']; ?></label>
+                                <input type="text" class="form-control" id="<?= $das['kar']; ?>" name="<?= $das['kar']; ?>" value="<?= $kps['kar_26']; ?>" readonly>
+                            </div>
+                        <?php } else {
+                            echo null;
+                        } ?>
+
+                        <?php if ($das['kar'] == 'kar_27') {
+
+                        ?>
+                            <div class="col-md-4 top-buffer">
+                                <label><?= $das['question']; ?></label>
+                                <input type="text" class="form-control" id="<?= $das['kar']; ?>" name="<?= $das['kar']; ?>" value="<?= $kps['kar_27']; ?>" readonly>
+                            </div>
+                        <?php } else {
+                            echo null;
+                        } ?>
+
+                        <?php if ($das['kar'] == 'kar_28') {
+
+                        ?>
+                            <div class="col-md-4 top-buffer">
+                                <label><?= $das['question']; ?></label>
+                                <input type="text" class="form-control" id="<?= $das['kar']; ?>" name="<?= $das['kar']; ?>" value="<?= $kps['kar_28']; ?>" readonly>
+                            </div>
+                        <?php } else {
+                            echo null;
+                        } ?>
+
+                        <?php if ($das['kar'] == 'kar_29') {
+
+                        ?>
+                            <div class="col-md-4 top-buffer">
+                                <label><?= $das['question']; ?></label>
+                                <input type="text" class="form-control" id="<?= $das['kar']; ?>" name="<?= $das['kar']; ?>" value="<?= $kps['kar_29']; ?>" readonly>
+                            </div>
+                        <?php } else {
+                            echo null;
+                        } ?>
+
+                        <?php if ($das['kar'] == 'kar_30') {
+
+                        ?>
+                            <div class="col-md-4 top-buffer">
+                                <label><?= $das['question']; ?></label>
+                                <input type="text" class="form-control" id="<?= $das['kar']; ?>" name="<?= $das['kar']; ?>" value="<?= $kps['kar_30']; ?>" readonly>
+                            </div>
+                        <?php } else {
+                            echo null;
+                        } ?>
+
+                        <?php if ($das['kar'] == 'kar_31') {
+
+                        ?>
+                            <div class="col-md-4 top-buffer">
+                                <label><?= $das['question']; ?></label>
+                                <input type="text" class="form-control" id="<?= $das['kar']; ?>" name="<?= $das['kar']; ?>" value="<?= $kps['kar_31']; ?>" readonly>
+                            </div>
+                        <?php } else {
+                            echo null;
+                        } ?>
+
+                        <?php if ($das['kar'] == 'kar_32') {
+
+                        ?>
+                            <div class="col-md-4 top-buffer">
+                                <label><?= $das['question']; ?></label>
+                                <input type="text" class="form-control" id="<?= $das['kar']; ?>" name="<?= $das['kar']; ?>" value="<?= $kps['kar_32']; ?>" readonly>
+                            </div>
+                        <?php } else {
+                            echo null;
+                        } ?>
+
+                        <?php if ($das['kar'] == 'kar_33') {
+
+                        ?>
+                            <div class="col-md-4 top-buffer">
+                                <label><?= $das['question']; ?></label>
+                                <input type="text" class="form-control" id="<?= $das['kar']; ?>" name="<?= $das['kar']; ?>" value="<?= $kps['kar_33']; ?>" readonly>
+                            </div>
+                        <?php } else {
+                            echo null;
+                        } ?>
+
+                        <?php if ($das['kar'] == 'kar_34') {
+
+                        ?>
+                            <div class="col-md-4 top-buffer">
+                                <label><?= $das['question']; ?></label>
+                                <input type="text" class="form-control" id="<?= $das['kar']; ?>" name="<?= $das['kar']; ?>" value="<?= $kps['kar_34']; ?>" readonly>
+                            </div>
+                        <?php } else {
+                            echo null;
+                        } ?>
+
+                        <?php if ($das['kar'] == 'kar_35') {
+
+                        ?>
+                            <div class="col-md-4 top-buffer">
+                                <label><?= $das['question']; ?></label>
+                                <input type="text" class="form-control" id="<?= $das['kar']; ?>" name="<?= $das['kar']; ?>" value="<?= $kps['kar_35']; ?>" readonly>
+                            </div>
+                        <?php } else {
+                            echo null;
+                        } ?>
+
+                        <?php if ($das['kar'] == 'kar_36') {
+
+                        ?>
+                            <div class="col-md-4 top-buffer">
+                                <label><?= $das['question']; ?></label>
+                                <input type="text" class="form-control" id="<?= $das['kar']; ?>" name="<?= $das['kar']; ?>" value="<?= $kps['kar_36']; ?>" readonly>
+                            </div>
+                        <?php } else {
+                            echo null;
+                        } ?>
+
+                        <?php if ($das['kar'] == 'kar_37') {
+
+                        ?>
+                            <div class="col-md-4 top-buffer">
+                                <label><?= $das['question']; ?></label>
+                                <input type="text" class="form-control" id="<?= $das['kar']; ?>" name="<?= $das['kar']; ?>" value="<?= $kps['kar_37']; ?>" readonly>
+                            </div>
+                        <?php } else {
+                            echo null;
+                        } ?>
+
+                        <?php if ($das['kar'] == 'kar_38') {
+
+                        ?>
+                            <div class="col-md-4 top-buffer">
+                                <label><?= $das['question']; ?></label>
+                                <input type="text" class="form-control" id="<?= $das['kar']; ?>" name="<?= $das['kar']; ?>" value="<?= $kps['kar_38']; ?>" readonly>
+                            </div>
+                        <?php } else {
+                            echo null;
+                        } ?>
+
+                        <?php if ($das['kar'] == 'kar_39') {
+
+                        ?>
+                            <div class="col-md-4 top-buffer">
+                                <label><?= $das['question']; ?></label>
+                                <input type="text" class="form-control" id="<?= $das['kar']; ?>" name="<?= $das['kar']; ?>" value="<?= $kps['kar_39']; ?>" readonly>
+                            </div>
+                        <?php } else {
+                            echo null;
+                        } ?>
+
+                        <?php if ($das['kar'] == 'kar_40') {
+
+                        ?>
+                            <div class="col-md-4 top-buffer">
+                                <label><?= $das['question']; ?></label>
+                                <input type="text" class="form-control" id="<?= $das['kar']; ?>" name="<?= $das['kar']; ?>" value="<?= $kps['kar_40']; ?>" readonly>
+                            </div>
+                        <?php } else {
+                            echo null;
+                        } ?>
+
+                        <?php if ($das['kar'] == 'kar_41') {
+
+                        ?>
+                            <div class="col-md-4 top-buffer">
+                                <label><?= $das['question']; ?></label>
+                                <input type="text" class="form-control" id="<?= $das['kar']; ?>" name="<?= $das['kar']; ?>" value="<?= $kps['kar_41']; ?>" readonly>
+                            </div>
+                        <?php } else {
+                            echo null;
+                        } ?>
+
+                        <?php if ($das['kar'] == 'kar_42') {
+
+                        ?>
+                            <div class="col-md-4 top-buffer">
+                                <label><?= $das['question']; ?></label>
+                                <input type="text" class="form-control" id="<?= $das['kar']; ?>" name="<?= $das['kar']; ?>" value="<?= $kps['kar_42']; ?>" readonly>
+                            </div>
+                        <?php } else {
+                            echo null;
+                        } ?>
+
+                        <?php if ($das['kar'] == 'kar_43') {
+
+                        ?>
+                            <div class="col-md-4 top-buffer">
+                                <label><?= $das['question']; ?></label>
+                                <input type="text" class="form-control" id="<?= $das['kar']; ?>" name="<?= $das['kar']; ?>" value="<?= $kps['kar_43']; ?>" readonly>
+                            </div>
+                        <?php } else {
+                            echo null;
+                        } ?>
+
+                        <?php if ($das['kar'] == 'kar_44') {
+
+                        ?>
+                            <div class="col-md-4 top-buffer">
+                                <label><?= $das['question']; ?></label>
+                                <input type="text" class="form-control" id="<?= $das['kar']; ?>" name="<?= $das['kar']; ?>" value="<?= $kps['kar_44']; ?>" readonly>
+                            </div>
+                        <?php } else {
+                            echo null;
+                        } ?>
+
+                        <?php if ($das['kar'] == 'kar_45') {
+
+                        ?>
+                            <div class="col-md-4 top-buffer">
+                                <label><?= $das['question']; ?></label>
+                                <input type="text" class="form-control" id="<?= $das['kar']; ?>" name="<?= $das['kar']; ?>" value="<?= $kps['kar_45']; ?>" readonly>
+                            </div>
+                        <?php } else {
+                            echo null;
+                        } ?>
+
+                        <?php if ($das['kar'] == 'kar_46') {
+
+                        ?>
+                            <div class="col-md-4 top-buffer">
+                                <label><?= $das['question']; ?></label>
+                                <input type="text" class="form-control" id="<?= $das['kar']; ?>" name="<?= $das['kar']; ?>" value="<?= $kps['kar_46']; ?>" readonly>
+                            </div>
+                        <?php } else {
+                            echo null;
+                        } ?>
+
+                        <?php if ($das['kar'] == 'kar_47') {
+
+                        ?>
+                            <div class="col-md-4 top-buffer">
+                                <label><?= $das['question']; ?></label>
+                                <input type="text" class="form-control" id="<?= $das['kar']; ?>" name="<?= $das['kar']; ?>" value="<?= $kps['kar_47']; ?>" readonly>
+                            </div>
+                        <?php } else {
+                            echo null;
+                        } ?>
+
+                        <?php if ($das['kar'] == 'kar_48') {
+
+                        ?>
+                            <div class="col-md-4 top-buffer">
+                                <label><?= $das['question']; ?></label>
+                                <input type="text" class="form-control" id="<?= $das['kar']; ?>" name="<?= $das['kar']; ?>" value="<?= $kps['kar_48']; ?>" readonly>
+                            </div>
+                        <?php } else {
+                            echo null;
+                        } ?>
+
+                        <?php if ($das['kar'] == 'kar_49') {
+
+                        ?>
+                            <div class="col-md-4 top-buffer">
+                                <label><?= $das['question']; ?></label>
+                                <input type="text" class="form-control" id="<?= $das['kar']; ?>" name="<?= $das['kar']; ?>" value="<?= $kps['kar_49']; ?>" readonly>
+                            </div>
+                        <?php } else {
+                            echo null;
+                        } ?>
+
+                        <?php if ($das['kar'] == 'kar_50') {
+
+                        ?>
+                            <div class="col-md-4 top-buffer">
+                                <label><?= $das['question']; ?></label>
+                                <input type="text" class="form-control" id="<?= $das['kar']; ?>" name="<?= $das['kar']; ?>" value="<?= $kps['kar_50']; ?>" readonly>
+                            </div>
+                        <?php } else {
+                            echo null;
+                        } ?>
+
+                        <?php if ($das['kar'] == 'kar_51') {
+
+                        ?>
+                            <div class="col-md-4 top-buffer">
+                                <label><?= $das['question']; ?></label>
+                                <input type="text" class="form-control" id="<?= $das['kar']; ?>" name="<?= $das['kar']; ?>" value="<?= $kps['kar_51']; ?>" readonly>
+                            </div>
+                        <?php } else {
+                            echo null;
+                        } ?>
+
+                        <?php if ($das['kar'] == 'kar_52') {
+
+                        ?>
+                            <div class="col-md-4 top-buffer">
+                                <label><?= $das['question']; ?></label>
+                                <input type="text" class="form-control" id="<?= $das['kar']; ?>" name="<?= $das['kar']; ?>" value="<?= $kps['kar_52']; ?>" readonly>
+                            </div>
+                        <?php } else {
+                            echo null;
+                        } ?>
+
+                        <?php if ($das['kar'] == 'kar_53') {
+
+                        ?>
+                            <div class="col-md-4 top-buffer">
+                                <label><?= $das['question']; ?></label>
+                                <input type="text" class="form-control" id="<?= $das['kar']; ?>" name="<?= $das['kar']; ?>" value="<?= $kps['kar_53']; ?>" readonly>
+                            </div>
+                        <?php } else {
+                            echo null;
+                        } ?>
+
+                        <?php if ($das['kar'] == 'kar_54') {
+
+                        ?>
+                            <div class="col-md-4 top-buffer">
+                                <label><?= $das['question']; ?></label>
+                                <input type="text" class="form-control" id="<?= $das['kar']; ?>" name="<?= $das['kar']; ?>" value="<?= $kps['kar_54']; ?>" readonly>
+                            </div>
+                        <?php } else {
+                            echo null;
+                        } ?>
+
+                        <?php if ($das['kar'] == 'kar_55') {
+
+                        ?>
+                            <div class="col-md-4 top-buffer">
+                                <label><?= $das['question']; ?></label>
+                                <input type="text" class="form-control" id="<?= $das['kar']; ?>" name="<?= $das['kar']; ?>" value="<?= $kps['kar_55']; ?>" readonly>
+                            </div>
+                        <?php } else {
+                            echo null;
+                        } ?>
+
+                        <?php if ($das['kar'] == 'kar_56') {
+
+                        ?>
+                            <div class="col-md-4 top-buffer">
+                                <label><?= $das['question']; ?></label>
+                                <input type="text" class="form-control" id="<?= $das['kar']; ?>" name="<?= $das['kar']; ?>" value="<?= $kps['kar_56']; ?>" readonly>
+                            </div>
+                        <?php } else {
+                            echo null;
+                        } ?>
                     <?php endforeach; ?>
 
                 </div>

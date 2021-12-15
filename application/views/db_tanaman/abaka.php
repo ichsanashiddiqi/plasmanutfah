@@ -39,7 +39,8 @@
                             ?>
                                 <tr>
                                     <td><?php echo $no++ ?></td>
-                                    <td><a href="edit_abaka/<?= $agv->no_aksesi; ?>"><i class="fas fa-edit" style="color: chartreuse;"></i></a>
+                                    <td>
+                                        <!-- <a href="edit_abaka/<?= $agv->no_aksesi; ?>"><i class="fas fa-edit" style="color: chartreuse;"></i></a> -->
                                         <a href="hapus_abaka/<?= $agv->no_aksesi; ?>"><i class="fas fa-trash-alt" style="color: red;"></i></a>
                                     </td>
                                     <td><?php echo $agv->no_aksesi ?></td>
