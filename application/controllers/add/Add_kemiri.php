@@ -291,7 +291,119 @@ class Add_kemiri extends CI_Controller
             'daya_percambahan' =>  $daya_percambahan,
             'jumlah' =>  $jumlah,
         );
-        $this->m_add_data->input_data($data, 'benih_abaka');
-        redirect('tambah/abaka2');
+        $this->m_add_data->input_data($data, 'benih_kemiri');
+        redirect('tambah/kemiri2');
+    }
+
+    
+    function tambah_pas2()
+    {
+        $no_aksesi = $this->input->post('no_aksesi');
+        $pas_01 = $this->input->post('pas_01');
+        $pas_02 = $this->input->post('pas_02');
+        $pas_03 = $this->input->post('pas_03');
+        $pas_04 = $this->input->post('pas_04');
+        $pas_13 = $this->input->post('pas_13');
+        $pas_14 = $this->input->post('pas_14');
+        $pas_15 = $this->input->post('pas_15');
+        $pas_16 = $this->input->post('pas_16');
+        $pas_17 = $this->input->post('pas_17');
+        $pas_18 = $this->input->post('pas_18');
+        $pas_19 = $this->input->post('pas_19');
+        $pas_20 = $this->input->post('pas_20');
+        $pas_21 = $this->input->post('pas_21');
+        $pas_22 = $this->input->post('pas_22');
+        $pas_23 = $this->input->post('pas_23');
+        $pas_24 = $this->input->post('pas_24');
+        $pas_25 = $this->input->post('pas_25');
+        $pas_26 = $this->input->post('pas_26');
+        $pas_27 = $this->input->post('pas_27');
+        $pas_28 = $this->input->post('pas_28');
+        $pas_29 = $this->input->post('pas_29');
+        $pas_30 = $this->input->post('pas_30');
+        $pas_31 = $this->input->post('pas_31');
+        $pas_32 = $this->input->post('pas_32');
+        $pas_33 = $this->input->post('pas_33');
+
+        $data = array(
+            'no_aksesi' =>  $no_aksesi,
+            'pas_01' => $pas_01,
+            'pas_02' => $pas_02,
+            'pas_03' => $pas_03,
+            'pas_04' => $pas_04,
+            'pas_13' => $pas_13,
+            'pas_14' => $pas_14,
+            'pas_15' => $pas_15,
+            'pas_16' => $pas_16,
+            'pas_17' => $pas_17,
+            'pas_18' => $pas_18,
+            'pas_19' => $pas_19,
+            'pas_20' => $pas_20,
+            'pas_21' => $pas_21,
+            'pas_22' => $pas_22,
+            'pas_23' => $pas_23,
+            'pas_24' => $pas_24,
+            'pas_25' => $pas_25,
+            'pas_26' => $pas_26,
+            'pas_27' => $pas_27,
+            'pas_28' => $pas_28,
+            'pas_29' => $pas_29,
+            'pas_30' => $pas_30,
+            'pas_31' => $pas_31,
+            'pas_32' => $pas_32,
+            'pas_33' => $pas_33,
+
+        );
+        $this->m_add_data->input_data($data, 'pas_kemiri');
+        redirect('tanaman/kemiri');
+    }
+
+
+    function tambah_foto2()
+    {
+        $no_aksesi = $this->input->post('no_aksesi');
+        $image_nama = $this->input->post('image_nama');
+        $image_keterangan = $this->input->post('image_keterangan');
+        $image = isset($_FILES['image']);
+        if ($image = '') {
+        } else {
+            $config['upload_path'] = './assets/data/';
+            $config['allowed_types'] = 'jpg|png|gif';
+
+            $this->load->library('upload', $config);
+            if (!$this->upload->do_upload('image')) {
+                echo "Upload Gagal";
+                die();
+            } else {
+                $image = $this->upload->data('file_name');
+            }
+        }
+
+        $data = array(
+            'no_aksesi' => $no_aksesi,
+            'image' => $image,
+            'image_nama' => $image_nama,
+            'image_keterangan' => $image_keterangan
+
+        );
+        $this->m_add_data->input_data($data, 'foto_kemiri');
+        redirect('tanaman/kemiri');
+    }
+
+    function tambah_benih2()
+    {
+        $no_aksesi = $this->input->post('no_aksesi');
+        $tahun = $this->input->post('tahun');
+        $daya_percambahan = $this->input->post('daya_percambahan');
+        $jumlah = $this->input->post('jumlah');
+
+        $data = array(
+            'no_aksesi' =>  $no_aksesi,
+            'tahun' =>  $tahun,
+            'daya_percambahan' =>  $daya_percambahan,
+            'jumlah' =>  $jumlah,
+        );
+        $this->m_add_data->input_data($data, 'benih_kemiri');
+        redirect('tanaman/kemiri');
     }
 }

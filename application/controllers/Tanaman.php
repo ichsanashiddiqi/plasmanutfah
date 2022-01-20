@@ -232,8 +232,9 @@ class Tanaman extends CI_Controller
 		$where = array('no_aksesi' => $no_aksesi);
 		$data['user'] = $this->db->get_where('user', ['email' => $this->session->userdata('email')])->row_array();
 		$data['dat_abaka'] = $this->m_edit_data->edit_data($where, 'dat_abaka')->result_array();
-		$data['pas_abaka'] = $this->m_edit_data->edit_data($where, 'pas_abaka')->result();
-		$data['foto_abaka'] = $this->m_edit_data->edit_data($where, 'foto_abaka')->result();
+		$data['pas_abaka'] = $this->m_edit_data->edit_data($where, 'pas_abaka')->result_array();
+		$data['foto_abaka'] = $this->m_edit_data->edit_data($where, 'foto_abaka')->result_array();
+		$data['benih_abaka'] = $this->m_edit_data->edit_data($where, 'benih_abaka')->result_array();
 		$data['idkar'] = $this->db->get('tab_abaka')->result_array();
 
 		$this->load->view('templates/header', $data);
@@ -243,13 +244,32 @@ class Tanaman extends CI_Controller
 		$this->load->view('templates/footer.php', $data);
 	}
 
+	function edit_agave($no_aksesi)
+	{
+		$where = array('no_aksesi' => $no_aksesi);
+		$data['user'] = $this->db->get_where('user', ['email' => $this->session->userdata('email')])->row_array();
+		$data['dat_agave'] = $this->m_edit_data->edit_data($where, 'dat_agave')->result_array();
+		$data['pas_agave'] = $this->m_edit_data->edit_data($where, 'pas_agave')->result_array();
+		$data['foto_agave'] = $this->m_edit_data->edit_data($where, 'foto_agave')->result_array();
+		$data['benih_agave'] = $this->m_edit_data->edit_data($where, 'benih_agave')->result_array();
+		$data['idkar'] = $this->db->get('tab_agave')->result_array();
+
+		$this->load->view('templates/header', $data);
+		$this->load->view('templates/sidebar.php', $data);
+		$this->load->view('templates/topbar.php', $data);
+		$this->load->view('edit/edit_agave.php', $data);
+		$this->load->view('templates/footer.php', $data);
+	}
+
 	function edit_bm($no_aksesi)
 	{
 		$where = array('no_aksesi' => $no_aksesi);
 		$data['user'] = $this->db->get_where('user', ['email' => $this->session->userdata('email')])->row_array();
-		$data['dat_bunga_matahari'] = $this->m_edit_data->edit_data($where, 'dat_bunga_matahari')->result();
-		$data['pas_bunga_matahari'] = $this->m_edit_data->edit_data($where, 'pas_bunga_matahari')->result();
-		$data['foto_bunga_matahari'] = $this->m_edit_data->edit_data($where, 'foto_bunga_matahari')->result();
+		$data['dat_bunga_matahari'] = $this->m_edit_data->edit_data($where, 'dat_bunga_matahari')->result_array();
+		$data['pas_bunga_matahari'] = $this->m_edit_data->edit_data($where, 'pas_bunga_matahari')->result_array();
+		$data['foto_bunga_matahari'] = $this->m_edit_data->edit_data($where, 'foto_bunga_matahari')->result_array();
+		$data['benih_bunga_matahari'] = $this->m_edit_data->edit_data($where, 'benih_bunga_matahari')->result_array();
+		$data['idkar'] = $this->db->get('tab_bunga_matahari')->result_array();
 
 		$this->load->view('templates/header', $data);
 		$this->load->view('templates/sidebar.php', $data);
@@ -262,9 +282,11 @@ class Tanaman extends CI_Controller
 	{
 		$where = array('no_aksesi' => $no_aksesi);
 		$data['user'] = $this->db->get_where('user', ['email' => $this->session->userdata('email')])->row_array();
-		$data['dat_jarak_pagar'] = $this->m_edit_data->edit_data($where, 'dat_jarak_pagar')->result();
-		$data['pas_jarak_pagar'] = $this->m_edit_data->edit_data($where, 'pas_jarak_pagar')->result();
-		$data['foto_jarak_pagar'] = $this->m_edit_data->edit_data($where, 'foto_jarak_pagar')->result();
+		$data['dat_jarak_pagar'] = $this->m_edit_data->edit_data($where, 'dat_jarak_pagar')->result_array();
+		$data['pas_jarak_pagar'] = $this->m_edit_data->edit_data($where, 'pas_jarak_pagar')->result_array();
+		$data['foto_jarak_pagar'] = $this->m_edit_data->edit_data($where, 'foto_jarak_pagar')->result_array();
+		$data['benih_jarak_pagar'] = $this->m_edit_data->edit_data($where, 'benih_jarak_pagar')->result_array();
+		$data['idkar'] = $this->db->get('tab_jarak_pagar')->result_array();
 
 		$this->load->view('templates/header', $data);
 		$this->load->view('templates/sidebar.php', $data);
@@ -273,13 +295,33 @@ class Tanaman extends CI_Controller
 		$this->load->view('templates/footer.php', $data);
 	}
 
+	function edit_jarak_kepyar($no_aksesi)
+	{
+		$where = array('no_aksesi' => $no_aksesi);
+		$data['user'] = $this->db->get_where('user', ['email' => $this->session->userdata('email')])->row_array();
+		$data['dat_jarak_kepyar'] = $this->m_edit_data->edit_data($where, 'dat_jarak_kepyar')->result_array();
+		$data['pas_jarak_kepyar'] = $this->m_edit_data->edit_data($where, 'pas_jarak_kepyar')->result_array();
+		$data['foto_jarak_kepyar'] = $this->m_edit_data->edit_data($where, 'foto_jarak_kepyar')->result_array();
+		$data['benih_jarak_kepyar'] = $this->m_edit_data->edit_data($where, 'benih_jarak_kepyar')->result_array();
+		$data['idkar'] = $this->db->get('tab_jarak_kepyar')->result_array();
+
+		$this->load->view('templates/header', $data);
+		$this->load->view('templates/sidebar.php', $data);
+		$this->load->view('templates/topbar.php', $data);
+		$this->load->view('edit/edit_jarak_kepyar.php', $data);
+		$this->load->view('templates/footer.php', $data);
+	}
+
 	function edit_kapas($no_aksesi)
 	{
 		$where = array('no_aksesi' => $no_aksesi);
 		$data['user'] = $this->db->get_where('user', ['email' => $this->session->userdata('email')])->row_array();
-		$data['dat_kapas'] = $this->m_edit_data->edit_data($where, 'dat_kapas')->result();
-		$data['pas_kapas'] = $this->m_edit_data->edit_data($where, 'pas_kapas')->result();
-		$data['foto_kapas'] = $this->m_edit_data->edit_data($where, 'foto_kapas')->result();
+		$data['dat_kapas'] = $this->m_edit_data->edit_data($where, 'dat_kapas')->result_array();
+		$data['pas_kapas'] = $this->m_edit_data->edit_data($where, 'pas_kapas')->result_array();
+		$data['foto_kapas'] = $this->m_edit_data->edit_data($where, 'foto_kapas')->result_array();
+		$data['benih_kapas'] = $this->m_edit_data->edit_data($where, 'benih_kapas')->result_array();
+		$data['idkar'] = $this->db->get('tab_kapas')->result_array();
+
 
 		$this->load->view('templates/header', $data);
 		$this->load->view('templates/sidebar.php', $data);
@@ -292,9 +334,11 @@ class Tanaman extends CI_Controller
 	{
 		$where = array('no_aksesi' => $no_aksesi);
 		$data['user'] = $this->db->get_where('user', ['email' => $this->session->userdata('email')])->row_array();
-		$data['dat_kapuk'] = $this->m_edit_data->edit_data($where, 'dat_kapuk')->result();
-		$data['pas_kapuk'] = $this->m_edit_data->edit_data($where, 'pas_kapuk')->result();
-		$data['foto_kapuk'] = $this->m_edit_data->edit_data($where, 'foto_kapuk')->result();
+		$data['dat_kapuk'] = $this->m_edit_data->edit_data($where, 'dat_kapuk')->result_array();
+		$data['pas_kapuk'] = $this->m_edit_data->edit_data($where, 'pas_kapuk')->result_array();
+		$data['foto_kapuk'] = $this->m_edit_data->edit_data($where, 'foto_kapuk')->result_array();
+		$data['benih_kapuk'] = $this->m_edit_data->edit_data($where, 'benih_kapuk')->result_array();
+		$data['idkar'] = $this->db->get('tab_kapuk')->result_array();
 
 		$this->load->view('templates/header', $data);
 		$this->load->view('templates/sidebar.php', $data);
@@ -307,9 +351,11 @@ class Tanaman extends CI_Controller
 	{
 		$where = array('no_aksesi' => $no_aksesi);
 		$data['user'] = $this->db->get_where('user', ['email' => $this->session->userdata('email')])->row_array();
-		$data['dat_kemiri'] = $this->m_edit_data->edit_data($where, 'dat_kemiri')->result();
-		$data['pas_kemiri'] = $this->m_edit_data->edit_data($where, 'pas_kemiri')->result();
-		$data['foto_kemiri'] = $this->m_edit_data->edit_data($where, 'foto_kemiri')->result();
+		$data['dat_kemiri'] = $this->m_edit_data->edit_data($where, 'dat_kemiri')->result_array();
+		$data['pas_kemiri'] = $this->m_edit_data->edit_data($where, 'pas_kemiri')->result_array();
+		$data['foto_kemiri'] = $this->m_edit_data->edit_data($where, 'foto_kemiri')->result_array();
+		$data['benih_kemiri'] = $this->m_edit_data->edit_data($where, 'benih_kemiri')->result_array();
+		$data['idkar'] = $this->db->get('tab_kemiri')->result_array();
 
 		$this->load->view('templates/header', $data);
 		$this->load->view('templates/sidebar.php', $data);
@@ -322,9 +368,12 @@ class Tanaman extends CI_Controller
 	{
 		$where = array('no_aksesi' => $no_aksesi);
 		$data['user'] = $this->db->get_where('user', ['email' => $this->session->userdata('email')])->row_array();
-		$data['dat_kenaf'] = $this->m_edit_data->edit_data($where, 'dat_kenaf')->result();
-		$data['pas_kenaf'] = $this->m_edit_data->edit_data($where, 'pas_kenaf')->result();
-		$data['foto_kenaf'] = $this->m_edit_data->edit_data($where, 'foto_kenaf')->result();
+		$data['dat_kenaf'] = $this->m_edit_data->edit_data($where, 'dat_kenaf')->result_array();
+		$data['pas_kenaf'] = $this->m_edit_data->edit_data($where, 'pas_kenaf')->result_array();
+		$data['foto_kenaf'] = $this->m_edit_data->edit_data($where, 'foto_kenaf')->result_array();
+		$data['benih_kenaf'] = $this->m_edit_data->edit_data($where, 'benih_kenaf')->result_array();
+		$data['idkar'] = $this->db->get('tab_kenaf')->result_array();
+
 
 		$this->load->view('templates/header', $data);
 		$this->load->view('templates/sidebar.php', $data);
@@ -338,9 +387,11 @@ class Tanaman extends CI_Controller
 	{
 		$where = array('no_aksesi' => $no_aksesi);
 		$data['user'] = $this->db->get_where('user', ['email' => $this->session->userdata('email')])->row_array();
-		$data['dat_rami'] = $this->m_edit_data->edit_data($where, 'dat_rami')->result();
-		$data['pas_rami'] = $this->m_edit_data->edit_data($where, 'pas_rami')->result();
-		$data['foto_rami'] = $this->m_edit_data->edit_data($where, 'foto_rami')->result();
+		$data['dat_rami'] = $this->m_edit_data->edit_data($where, 'dat_rami')->result_array();
+		$data['pas_rami'] = $this->m_edit_data->edit_data($where, 'pas_rami')->result_array();
+		$data['foto_rami'] = $this->m_edit_data->edit_data($where, 'foto_rami')->result_array();
+		$data['benih_rami'] = $this->m_edit_data->edit_data($where, 'benih_rami')->result_array();
+		$data['idkar'] = $this->db->get('tab_rami')->result_array();
 
 		$this->load->view('templates/header', $data);
 		$this->load->view('templates/sidebar.php', $data);
@@ -357,6 +408,7 @@ class Tanaman extends CI_Controller
 		$data['dat_tebu'] = $this->m_edit_data->edit_data($where, 'dat_tebu')->result_array();
 		$data['pas_tebu'] = $this->m_edit_data->edit_data($where, 'pas_tebu')->result_array();
 		$data['foto_tebu'] = $this->m_edit_data->edit_data($where, 'foto_tebu')->result_array();
+		$data['benih_tebu'] = $this->m_edit_data->edit_data($where, 'benih_tebu')->result_array();
 		$data['idkar'] = $this->db->get('tab_tebu')->result_array();
 
 		$this->load->view('templates/header', $data);
@@ -371,9 +423,11 @@ class Tanaman extends CI_Controller
 	{
 		$where = array('no_aksesi' => $no_aksesi);
 		$data['user'] = $this->db->get_where('user', ['email' => $this->session->userdata('email')])->row_array();
-		$data['dat_tembakau'] = $this->m_edit_data->edit_data($where, 'dat_tembakau')->result();
-		$data['pas_tembakau'] = $this->m_edit_data->edit_data($where, 'pas_tembakau')->result();
-		$data['foto_tembakau'] = $this->m_edit_data->edit_data($where, 'foto_tembakau')->result();
+		$data['dat_tembakau'] = $this->m_edit_data->edit_data($where, 'dat_tembakau')->result_array();
+		$data['pas_tembakau'] = $this->m_edit_data->edit_data($where, 'pas_tembakau')->result_array();
+		$data['foto_tembakau'] = $this->m_edit_data->edit_data($where, 'foto_tembakau')->result_array();
+		$data['benih_tembakau'] = $this->m_edit_data->edit_data($where, 'benih_tembakau')->result_array();
+		$data['idkar'] = $this->db->get('tab_tembakau')->result_array();
 
 		$this->load->view('templates/header', $data);
 		$this->load->view('templates/sidebar.php', $data);
@@ -387,9 +441,11 @@ class Tanaman extends CI_Controller
 	{
 		$where = array('no_aksesi' => $no_aksesi);
 		$data['user'] = $this->db->get_where('user', ['email' => $this->session->userdata('email')])->row_array();
-		$data['dat_wijen'] = $this->m_edit_data->edit_data($where, 'dat_wijen')->result();
-		$data['pas_wijen'] = $this->m_edit_data->edit_data($where, 'pas_wijen')->result();
-		$data['foto_wijen'] = $this->m_edit_data->edit_data($where, 'foto_wijen')->result();
+		$data['dat_wijen'] = $this->m_edit_data->edit_data($where, 'dat_wijen')->result_array();
+		$data['pas_wijen'] = $this->m_edit_data->edit_data($where, 'pas_wijen')->result_array();
+		$data['foto_wijen'] = $this->m_edit_data->edit_data($where, 'foto_wijen')->result_array();
+		$data['benih_wijen'] = $this->m_edit_data->edit_data($where, 'benih_wijen')->result_array();
+		$data['idkar'] = $this->db->get('tab_wijen')->result_array();
 
 		$this->load->view('templates/header', $data);
 		$this->load->view('templates/sidebar.php', $data);

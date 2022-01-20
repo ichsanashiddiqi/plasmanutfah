@@ -15,25 +15,6 @@ class Edit_tebu extends CI_Controller
 
     function kar_tebu()
     {
-        $this->form_validation->set_rules('no_aksesi', 'No_aksesi', 'required|trim|is_unique[dat_tembakau.no_aksesi]', [
-            'is_unique' => 'Nomor Aksesi sudah digunakan!',
-            'required' => 'Mohon form untuk diisi'
-        ]);
-        $this->form_validation->set_rules('nama_aksesi', 'Nama_aksesi', 'required|trim|is_unique[dat_tembakau.nama_aksesi]', [
-            'is_unique' => 'Nomor Aksesi sudah digunakan!',
-            'required' => 'Mohon form untuk diisi'
-        ]);
-        if ($this->form_validation->run() == false) {
-            $data['user'] = $this->db->get_where('user', ['email' => $this->session->userdata('email')])->row_array();
-            $data['idkar'] = $this->db->get('tab_tembakau')->result_array();
-            $data['tabel'] = $this->db->get('tab_tembakau')->result();
-            $this->load->view('templates/header.php', $data);
-            $this->load->view('templates/sidebar.php', $data);
-            $this->load->view('templates/topbar.php', $data);
-            $this->load->view('tambah/tambah_tebu.php', $data);
-            $this->load->view('templates/footer.php', $data);
-        } else {
-
             $no_aksesi = $this->input->post('no_aksesi');
             $no_aksesi_IDN = $this->input->post('no_aksesi_IDN');
             $nama_aksesi = $this->input->post('nama_aksesi');
@@ -134,12 +115,12 @@ class Edit_tebu extends CI_Controller
             );
 
             $this->m_edit_data->update_data($where, $data, 'dat_tebu');
-            redirect('tanaman/tebu');
-        }
+            redirect('tanaman/edit_tebu/' . $no_aksesi);
     }
 
     function pas_tebu()
     {
+        
         $no_aksesi = $this->input->post('no_aksesi');
         $pas_01 = $this->input->post('pas_01');
         $pas_02 = $this->input->post('pas_02');
@@ -167,7 +148,6 @@ class Edit_tebu extends CI_Controller
         $pas_32 = $this->input->post('pas_32');
 
         $data = array(
-            'no_aksesi' =>  $no_aksesi,
             'pas_01' => $pas_01,
             'pas_02' => $pas_02,
             'pas_03' => $pas_03,
@@ -200,7 +180,8 @@ class Edit_tebu extends CI_Controller
         );
 
         $this->m_edit_data->update_data($where, $data, 'pas_tebu');
-        redirect('tanaman/edit_tebu' . $no_aksesi);
+            redirect('tanaman/edit_tebu/' . $no_aksesi);
+        
     }
 
     function tambah_foto()
@@ -230,11 +211,35 @@ class Edit_tebu extends CI_Controller
             'image_keterangan' => $image_keterangan
 
         );
+
+         $where = array(
+            'no_aksesi' => $no_aksesi
+        );
+        
+        $this->m_edit_data->update_data($where, $data, 'foto_tebu');
+        redirect('tanaman/edit_tebu/' . $no_aksesi);
+    }
+
+    function benih_tebu()
+    {
+        $no_aksesi = $this->input->post('no_aksesi');
+        $tahun = $this->input->post('tahun');
+        $daya_percambahan = $this->input->post('daya_percambahan');
+        $jumlah = $this->input->post('jumlah');
+
+        $data = array(
+            'no_aksesi' =>  $no_aksesi,
+            'tahun' => $tahun,
+            'daya_percambahan' => $daya_percambahan,
+            'jumlah' => $jumlah,
+
+        );
+
         $where = array(
             'no_aksesi' => $no_aksesi
         );
 
-        $this->m_edit_data->update_data($where, $data, 'foto_tebu');
-        redirect('tanaman/edit_tebu');
+        $this->m_edit_data->update_data($where, $data, 'benih_tebu');
+        redirect('tanaman/tebu');
     }
 }

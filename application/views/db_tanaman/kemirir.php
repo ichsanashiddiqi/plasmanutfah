@@ -37,19 +37,19 @@
                             $no = 1;
                             foreach ($dat_kemiri as $agv) {
                             ?>
-                                <tr>
-                                    <td><?php echo $no++ ?></td>
-                                    <td>
-                                        <!-- <a href="edit_kemiri/<?= $agv->no_aksesi; ?>"><i class="fas fa-edit" style="color: chartreuse;"></i></a> -->
-                                        <a href="hapus_kemiri/<?= $agv->no_aksesi; ?>"><i class="fas fa-trash-alt" style="color: red;"></i></a>
-                                    </td>
-                                    <td><?php echo $agv->no_aksesi ?></td>
-                                    <td><?php echo $agv->nama_aksesi ?></td>
-                                    <td><img src="<?php echo base_url('assets/data/' . $agv->image) ?>" width="64" /></td>
-                                    <td>
-                                        <center><input type="button" class="btn btn-info btn-sm view_data" value="Data Krakterisasi" id="<?php echo $agv->no_aksesi; ?>"></center>
-                                    </td>
-                                </tr>
+                            <tr>
+                                <td><?php echo $no++ ?></td>
+                                <td>
+                                    <a href="edit_kemiri/<?= $agv->no_aksesi; ?>"><i class="fas fa-edit" style="color: chartreuse;"></i></a>
+                                    <a href="hapus_kemiri/<?= $agv->no_aksesi; ?>"><i class="fas fa-trash-alt" style="color: red;"></i></a>
+                                </td>
+                                <td><?php echo $agv->no_aksesi ?></td>
+                                <td><?php echo $agv->nama_aksesi ?></td>
+                                <td><img src="<?php echo base_url('assets/data/' . $agv->image) ?>" width="64" /></td>
+                                <td>
+                                    <center><input type="button" class="btn btn-info btn-sm view_data" value="Data Krakterisasi" id="<?php echo $agv->no_aksesi; ?>"></center>
+                                </td>
+                            </tr>
                             <?php } ?>
                         </tbody>
                     </table>
@@ -93,36 +93,36 @@
     </div>
 </footer>
 <script type="text/javascript">
-    // Start jQuery function after page is loaded
-    $(document).ready(function() {
-        // Initiate DataTable function comes with plugin
-        $('#dataTable').DataTable();
-        // Start jQuery click function to view Bootstrap modal when view info button is clicked
-        $('#dataTable').on('click', '.view_data', function() {
-            // Get the id of selected phone and assign it in a variable called phoneData
-            var kar_data = $(this).attr('id');
-            // Start AJAX function
-            $.ajax({
-                // Path for controller function which fetches selected phone data
-                url: "<?php echo base_url() ?>Modal/kemiri_result",
-                // Method of getting data
-                method: "POST",
-                // Data is sent to the server
-                data: {
-                    kar_data: kar_data
-                },
-                // Callback function that is executed after data is successfully sent and recieved
-                success: function(data) {
-                    // Print the fetched data of the selected phone in the section called #phone_result 
-                    // within the Bootstrap modal
-                    $('#kar_result').html(data);
-                    // Display the Bootstrap modal
-                    $('#modal').modal('show');
-                },
-            });
-            // End AJAX function
+// Start jQuery function after page is loaded
+$(document).ready(function() {
+    // Initiate DataTable function comes with plugin
+    $('#dataTable').DataTable();
+    // Start jQuery click function to view Bootstrap modal when view info button is clicked
+    $('#dataTable').on('click', '.view_data', function() {
+        // Get the id of selected phone and assign it in a variable called phoneData
+        var kar_data = $(this).attr('id');
+        // Start AJAX function
+        $.ajax({
+            // Path for controller function which fetches selected phone data
+            url: "<?php echo base_url() ?>Modal/kemiri_result",
+            // Method of getting data
+            method: "POST",
+            // Data is sent to the server
+            data: {
+                kar_data: kar_data
+            },
+            // Callback function that is executed after data is successfully sent and recieved
+            success: function(data) {
+                // Print the fetched data of the selected phone in the section called #phone_result 
+                // within the Bootstrap modal
+                $('#kar_result').html(data);
+                // Display the Bootstrap modal
+                $('#modal').modal('show');
+            },
         });
+        // End AJAX function
     });
+});
 </script>
 <!-- Scroll to Top Button-->
 <a class="scroll-to-top rounded" href="#page-top">

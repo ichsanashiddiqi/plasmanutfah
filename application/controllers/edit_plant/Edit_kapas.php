@@ -26,15 +26,15 @@ class Edit_kapas extends CI_Controller
         $Donor = $this->input->post('Donor');
         $Longitude = $this->input->post('Longitude');
         $Lattitude = $this->input->post('Lattitude');
-        $kar_01 = $this->input->post('kar_01');
-        $kar_02 = $this->input->post('kar_02');
-        $kar_03 = $this->input->post('kar_03');
-        $kar_04 = $this->input->post('kar_04');
-        $kar_05 = $this->input->post('kar_05');
-        $kar_06 = $this->input->post('kar_06');
-        $kar_07 = $this->input->post('kar_07');
-        $kar_08 = $this->input->post('kar_08');
-        $kar_09 = $this->input->post('kar_09');
+        $kar_1 = $this->input->post('kar_1');
+        $kar_2 = $this->input->post('kar_2');
+        $kar_3 = $this->input->post('kar_3');
+        $kar_4 = $this->input->post('kar_4');
+        $kar_5 = $this->input->post('kar_5');
+        $kar_6 = $this->input->post('kar_6');
+        $kar_7 = $this->input->post('kar_7');
+        $kar_8 = $this->input->post('kar_8');
+        $kar_9 = $this->input->post('kar_9');
         $kar_10 = $this->input->post('kar_10');
         $kar_11 = $this->input->post('kar_11');
         $kar_12 = $this->input->post('kar_12');
@@ -71,6 +71,19 @@ class Edit_kapas extends CI_Controller
         $kar_42 = $this->input->post('kar_42');
         $kar_43 = $this->input->post('kar_43');
         $kar_44 = $this->input->post('kar_44');
+        $kar_45 = $this->input->post('kar_45');
+        $kar_46 = $this->input->post('kar_46');
+        $kar_47 = $this->input->post('kar_47');
+        $kar_48 = $this->input->post('kar_48');
+        $kar_49 = $this->input->post('kar_49');
+        $kar_50 = $this->input->post('kar_50');
+        $kar_51 = $this->input->post('kar_51');
+        $kar_52 = $this->input->post('kar_52');
+        $kar_53 = $this->input->post('kar_53');
+        $kar_54 = $this->input->post('kar_54');
+        $kar_55 = $this->input->post('kar_55');
+        $kar_56 = $this->input->post('kar_56');
+
 
         $data = array(
             'no_aksesi_IDN' => $no_aksesi_IDN,
@@ -83,15 +96,15 @@ class Edit_kapas extends CI_Controller
             'Donor' => $Donor,
             'Longitude' => $Longitude,
             'Lattitude' => $Lattitude,
-            'kar_01' => $kar_01,
-            'kar_02' => $kar_02,
-            'kar_03' => $kar_03,
-            'kar_04' => $kar_04,
-            'kar_05' => $kar_05,
-            'kar_06' => $kar_06,
-            'kar_07' => $kar_07,
-            'kar_08' => $kar_08,
-            'kar_09' => $kar_09,
+            'kar_1' => $kar_1,
+            'kar_2' => $kar_2,
+            'kar_3' => $kar_3,
+            'kar_4' => $kar_4,
+            'kar_5' => $kar_5,
+            'kar_6' => $kar_6,
+            'kar_7' => $kar_7,
+            'kar_8' => $kar_8,
+            'kar_9' => $kar_9,
             'kar_10' => $kar_10,
             'kar_11' => $kar_11,
             'kar_12' => $kar_12,
@@ -128,6 +141,19 @@ class Edit_kapas extends CI_Controller
             'kar_42' => $kar_42,
             'kar_43' => $kar_43,
             'kar_44' => $kar_44,
+            'kar_45' => $kar_45,
+            'kar_46' => $kar_46,
+            'kar_47' => $kar_47,
+            'kar_48' => $kar_48,
+            'kar_49' => $kar_49,
+            'kar_50' => $kar_50,
+            'kar_51' => $kar_51,
+            'kar_52' => $kar_52,
+            'kar_53' => $kar_53,
+            'kar_54' => $kar_54,
+            'kar_55' => $kar_55,
+            'kar_56' => $kar_56,
+
 
         );
 
@@ -136,7 +162,7 @@ class Edit_kapas extends CI_Controller
         );
 
         $this->m_edit_data->update_data($where, $data, 'dat_kapas');
-        redirect('tanaman/edit_kapas');
+        redirect('tanaman/edit_kapas/' . $no_aksesi);
     }
 
     function pas_kapuk()
@@ -202,7 +228,7 @@ class Edit_kapas extends CI_Controller
         );
 
         $this->m_edit_data->update_data($where, $data, 'pas_kapas');
-        redirect('tanaman/edit_kapas' . $no_aksesi);
+        redirect('tanaman/edit_kapas/' . $no_aksesi);
     }
 
     function tambah_foto()
